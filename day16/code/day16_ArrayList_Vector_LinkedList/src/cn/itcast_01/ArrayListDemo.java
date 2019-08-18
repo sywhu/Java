@@ -6,29 +6,29 @@ import java.util.Iterator;
 /*
  * List:
  * 		ArrayList:
- * 			µ×²ãÊı¾İ½á¹¹ÊÇÊı×é£¬²éÑ¯¿ì£¬ÔöÉ¾Âı
- * 			Ïß³Ì²»°²È«£¬Ğ§ÂÊ¸ß
+ * 			åº•å±‚æ•°æ®ç»“æ„æ˜¯æ•°ç»„ï¼ŒæŸ¥è¯¢å¿«ï¼Œå¢åˆ æ…¢
+ * 			çº¿ç¨‹ä¸å®‰å…¨ï¼Œæ•ˆç‡é«˜
  * 		Vector:
- * 			µ×²ãÊı¾İ½á¹¹ÊÇÊı×é£¬²éÑ¯¿ì£¬ÔöÉ¾Âı
- * 			Ïß³Ì°²È«£¬Ğ§ÂÊµÍ
+ * 			åº•å±‚æ•°æ®ç»“æ„æ˜¯æ•°ç»„ï¼ŒæŸ¥è¯¢å¿«ï¼Œå¢åˆ æ…¢
+ * 			çº¿ç¨‹å®‰å…¨ï¼Œæ•ˆç‡ä½
  * 		LinkedList:
- * 			µ×²ãÊı¾İ½á¹¹ÊÇÁ´±í£¬²éÑ¯Âı£¬ÔöÉ¾¿ì
- * 			Ïß³Ì²»°²È«£¬Ğ§ÂÊ¸ß
+ * 			åº•å±‚æ•°æ®ç»“æ„æ˜¯é“¾è¡¨ï¼ŒæŸ¥è¯¢æ…¢ï¼Œå¢åˆ å¿«
+ * 			çº¿ç¨‹ä¸å®‰å…¨ï¼Œæ•ˆç‡é«˜
  * 
- * ÃæÊÔÌâ£ºArrayList£¬VectorºÍLinkedListµÄ¸÷×ÔÌØµã?
+ * é¢è¯•é¢˜ï¼šArrayListï¼ŒVectorå’ŒLinkedListçš„å„è‡ªç‰¹ç‚¹?
  * 
- * Ë¼¿¼Ìâ£ºArrayList£¬VectorºÍLinkedListÎÒÃÇµ½µ×Ê¹ÓÃË­ÄØ?
- * 			¿´Çé¿ö
+ * æ€è€ƒé¢˜ï¼šArrayListï¼ŒVectorå’ŒLinkedListæˆ‘ä»¬åˆ°åº•ä½¿ç”¨è°å‘¢?
+ * 			çœ‹æƒ…å†µ
  * 			
- * 			Òª°²È«Âğ?
- * 				Òª£ºVector(Õâ¸öÏÖÔÚÒ²²»³£ÓÃ£¬ÔÚCollectionsÀïÃæÓĞĞÂµÄ·½Ê½)
- * 				²»Òª£ºArrayListºÍLinkedList
- * 					²éÑ¯¶à£ºArrayList
- * 					ÔöÉ¾¶à£ºLinkedList
+ * 			è¦å®‰å…¨å—?
+ * 				è¦ï¼šVector(è¿™ä¸ªç°åœ¨ä¹Ÿä¸å¸¸ç”¨ï¼Œåœ¨Collectionsé‡Œé¢æœ‰æ–°çš„æ–¹å¼)
+ * 				ä¸è¦ï¼šArrayListå’ŒLinkedList
+ * 					æŸ¥è¯¢å¤šï¼šArrayList
+ * 					å¢åˆ å¤šï¼šLinkedList
  * 
- * 		²»ÖªµÀÓÃÄÄ¸ö£¬¾ÍÓÃArrayList¡£
+ * 		ä¸çŸ¥é“ç”¨å“ªä¸ªï¼Œå°±ç”¨ArrayListã€‚
  * 
- * ĞèÇó£ºÓÃArrayList´æ´¢×Ö·û´®²¢±éÀú
+ * éœ€æ±‚ï¼šç”¨ArrayListå­˜å‚¨å­—ç¬¦ä¸²å¹¶éå†
  */
 public class ArrayListDemo {
 	public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class ArrayListDemo {
 		array.add("world");
 		array.add("java");
 
-		// µü´úÆ÷
+		// è¿­ä»£å™¨
 		Iterator it = array.iterator();
 		while (it.hasNext()) {
 			String s = (String) it.next();
@@ -46,7 +46,7 @@ public class ArrayListDemo {
 		}
 		System.out.println("--------------");
 
-		// ÆÕÍ¨for
+		// æ™®é€šfor
 		for (int x = 0; x < array.size(); x++) {
 			String s = (String) array.get(x);
 			System.out.println(s);

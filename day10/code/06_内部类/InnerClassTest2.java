@@ -1,4 +1,4 @@
-//ÄäÃûÄÚ²¿ÀàÔÚ¿ª·¢ÖĞµÄÊ¹ÓÃ
+//åŒ¿åå†…éƒ¨ç±»åœ¨å¼€å‘ä¸­çš„ä½¿ç”¨
 interface Person {
 	public abstract void show();
 }
@@ -19,17 +19,17 @@ class Student implements Person {
 
 class InnerClassTest2 {
 	public static void main(String[] args) {
-		//ĞèÇó£ºÇëµ÷ÓÃPersonDemoÀàµÄmethod·½·¨
+		//éœ€æ±‚ï¼šè¯·è°ƒç”¨PersonDemoç±»çš„methodæ–¹æ³•
 		/*
 		PersonDemo pd = new PersonDemo();
 		Person p = new Student();
 		pd.method(p);
 		*/
 
-		//ÄäÃû¶ÔÏó×ö·¨
+		//åŒ¿åå¯¹è±¡åšæ³•
 		//new PersonDemo().method(new Student());
 
-		//ÄäÃûÄÚ²¿Àà×ö·¨
+		//åŒ¿åå†…éƒ¨ç±»åšæ³•
 		new PersonDemo().method(new Person(){
 			public void show() {
 				System.out.println("show student");

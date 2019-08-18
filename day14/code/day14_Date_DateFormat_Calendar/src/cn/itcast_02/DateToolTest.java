@@ -6,7 +6,7 @@ public class DateToolTest {
 	public static void main(String[] args) {
 		Date d = new Date();
 
-		// 需求：我要获取年月日时分秒
+		// 闇�姹傦細鎴戣鑾峰彇骞存湀鏃ユ椂鍒嗙
 		System.out.println(DateTool.getRiQi(d));
 		System.out.println(DateTool.getNYR(d));
 		System.out.println(DateTool.getSFM(d));

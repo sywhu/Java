@@ -5,15 +5,15 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /*
- * ÌØÓĞ¹¦ÄÜ£º
+ * ç‰¹æœ‰åŠŸèƒ½ï¼š
  * BufferedReader:
- * 		public String readLine()£º°üº¬¸ÃĞĞÄÚÈİµÄ×Ö·û´®£¬²»°üº¬ÈÎºÎĞĞÖÕÖ¹·û£¬Èç¹ûÒÑµ½´ïÁ÷Ä©Î²£¬Ôò·µ»Ø null 
+ * 		public String readLine()ï¼šåŒ…å«è¯¥è¡Œå†…å®¹çš„å­—ç¬¦ä¸²ï¼Œä¸åŒ…å«ä»»ä½•è¡Œç»ˆæ­¢ç¬¦ï¼Œå¦‚æœå·²åˆ°è¾¾æµæœ«å°¾ï¼Œåˆ™è¿”å› null 
  * BufferedWriter:
- * 		public void newLine()£ºĞ´Ò»¸ö»»ĞĞ·û
+ * 		public void newLine()ï¼šå†™ä¸€ä¸ªæ¢è¡Œç¬¦
  */
 public class BufferedDemo {
 	public static void main(String[] args) throws IOException {
-		// Ğ´Êı¾İ
+		// å†™æ•°æ®
 		// BufferedWriter bw = new BufferedWriter(new FileWriter("bw.txt"));
 		// for (int x = 0; x < 10; x++) {
 		// bw.write("hello" + x);
@@ -22,7 +22,7 @@ public class BufferedDemo {
 		// }
 		// bw.close();
 
-		// ¶ÁÈ¡Êı¾İ
+		// è¯»å–æ•°æ®
 		BufferedReader br = new BufferedReader(new FileReader("bw.txt"));
 
 		// String s = br.readLine();

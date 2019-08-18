@@ -1,17 +1,17 @@
 package cn.itcast_01;
 
 public class Student {
-	// ¹¹ÔìË½ÓĞ
+	// æ„é€ ç§æœ‰
 	private Student() {
 	}
 
-	// ±¾Éí´´½¨
-	// ¾²Ì¬Ö»ÄÜ·ÃÎÊ¾²Ì¬,¼Óstatic
-	// ÎªÁË²»ÈÃÍâ¼Ó·ÃÎÊ£¬¼Óprivate
+	// æœ¬èº«åˆ›å»º
+	// é™æ€åªèƒ½è®¿é—®é™æ€,åŠ static
+	// ä¸ºäº†ä¸è®©å¤–åŠ è®¿é—®ï¼ŒåŠ private
 	private static Student s = new Student();
 
-	// Ìá¹©¹«¹²·ÃÎÊ
-	// ÎªÁËÈÃÍâ½ç¿ÉÒÔÖ±½Ó·ÃÎÊ£¬¼Óstatic
+	// æä¾›å…¬å…±è®¿é—®
+	// ä¸ºäº†è®©å¤–ç•Œå¯ä»¥ç›´æ¥è®¿é—®ï¼ŒåŠ static
 	public static Student getStudent() {
 		return s;
 	}

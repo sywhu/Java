@@ -1,13 +1,13 @@
 package cn.itcast_06;
 
 /*
- * Ìæ»»¹¦ÄÜ
+ * æ›¿æ¢åŠŸèƒ½
  *	String replace(char old,char new)
  *	String replace(String old,String new)
  */
 public class StringDemo {
 	public static void main(String[] args) {
-		// ¶¨Òå×Ö·û´®
+		// å®šä¹‰å­—ç¬¦ä¸²
 		String s = "helloworld";
 
 		String s2 = s.replace('l', 'b');

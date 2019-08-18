@@ -1,18 +1,18 @@
 /*
-	ÀàµÄ×é³É£º
-		³ÉÔ±±äÁ¿
-		¹¹Ôì·½·¨
-		³ÉÔ±·½·¨
+	ç±»çš„ç»„æˆï¼š
+		æˆå‘˜å˜é‡
+		æ„é€ æ–¹æ³•
+		æˆå‘˜æ–¹æ³•
 
-	¸øÀàµÄ³ÉÔ±±äÁ¿¸³ÖµÓĞ¼¸ÖÖ·½Ê½£º
-		A:setXxx()·½·¨
-		B:´ø²Î¹¹Ôì·½·¨
+	ç»™ç±»çš„æˆå‘˜å˜é‡èµ‹å€¼æœ‰å‡ ç§æ–¹å¼ï¼š
+		A:setXxx()æ–¹æ³•
+		B:å¸¦å‚æ„é€ æ–¹æ³•
 
-	Á·Ï°£º
+	ç»ƒä¹ ï¼š
 		Phone:
-			³ÉÔ±±äÁ¿£ºbrand,price,color
-			¹¹Ôì·½·¨£ºÎŞ²Î,´ø²Î
-			³ÉÔ±·½·¨£ºsetXxx()/getXxx()
+			æˆå‘˜å˜é‡ï¼šbrand,price,color
+			æ„é€ æ–¹æ³•ï¼šæ— å‚,å¸¦å‚
+			æˆå‘˜æ–¹æ³•ï¼šsetXxx()/getXxx()
 					  show()
 
 		PhoneTest:
@@ -46,22 +46,22 @@ class Student {
 	}
 
 	public void show() {
-		System.out.println("ĞÕÃûÊÇ£º"+name+",ÄêÁäÊÇ£º"+age);
+		System.out.println("å§“åæ˜¯ï¼š"+name+",å¹´é¾„æ˜¯ï¼š"+age);
 	}
 }
 
 class StudentTest {
 	public static void main(String[] args) {
-		//ÎŞ²Î+setXxx
+		//æ— å‚+setXxx
 		Student s1 = new Student();
-		s1.setName("ÁÖÇàÏ¼");
+		s1.setName("æ—é’éœ");
 		s1.setAge(28);
 		System.out.println(s1.getName()+"---"+s1.getAge());
 		s1.show();
 		System.out.println("----------------------------");
 
-		//´ø²Î
-		Student s2 = new Student("ÍõÖØÑô",82);
+		//å¸¦å‚
+		Student s2 = new Student("ç‹é‡é˜³",82);
 		System.out.println(s2.getName()+"---"+s2.getAge());
 		s2.show();
 		

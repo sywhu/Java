@@ -1,6 +1,6 @@
 /*
-	&&ºÍ&µÄÇø±ð? Ç°ÕßÓÐ¶ÌÂ·Ð§¹û£¬Ö»Òª×ó±ßÊÇfalse£¬ÓÒ±ß²»Ö´ÐÐ¡£¶øºóÕß£¬È«²¿Ö´ÐÐ¡£
-	||ºÍ|µÄÇø±ð? Ç°ÕßÓÐ¶ÌÂ·Ð§¹û£¬Ö»Òª×ó±ßÊÇtrue£¬ÓÒ±ß²»Ö´ÐÐ¡£¶øºóÕß£¬È«²¿Ö´ÐÐ¡£
+	&&å’Œ&çš„åŒºåˆ«? å‰è€…æœ‰çŸ­è·¯æ•ˆæžœï¼Œåªè¦å·¦è¾¹æ˜¯falseï¼Œå³è¾¹ä¸æ‰§è¡Œã€‚è€ŒåŽè€…ï¼Œå…¨éƒ¨æ‰§è¡Œã€‚
+	||å’Œ|çš„åŒºåˆ«? å‰è€…æœ‰çŸ­è·¯æ•ˆæžœï¼Œåªè¦å·¦è¾¹æ˜¯trueï¼Œå³è¾¹ä¸æ‰§è¡Œã€‚è€ŒåŽè€…ï¼Œå…¨éƒ¨æ‰§è¡Œã€‚
 */
 class OperatorDemo2 {
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ class OperatorDemo2 {
 		int b = 20;
 		int c = 30;
 
-		//&:Âß¼­Óë	ÓÐfalseÔòfalse
+		//&:é€»è¾‘ä¸Ž	æœ‰falseåˆ™false
 		System.out.println(a>b & a>c); //false & false = false
 		System.out.println(a>b & a<c); //false & true = false
 		System.out.println(a<b & a>c); //true & false = false
@@ -22,7 +22,7 @@ class OperatorDemo2 {
 		System.out.println(a<b && a<c); //true && true = true
 		System.out.println("--------");
 
-		//|:Âß¼­»ò	ÓÐtrueÔòtrue
+		//|:é€»è¾‘æˆ–	æœ‰trueåˆ™true
 		System.out.println(a>b | a>c); //false | false = false
 		System.out.println(a>b | a<c); //false | true = true
 		System.out.println(a<b | a>c); //true | false = true

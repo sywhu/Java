@@ -5,12 +5,12 @@ import java.util.Set;
 
 /*
  * Collection:
- * 		List:ÔªËØÓĞĞò(´æ´¢ºÍÈ¡³öË³ĞòÒ»ÖÂ)£¬¿ÉÖØ¸´
- * 		Set:ÔªËØÎŞĞò,Î¨Ò»
+ * 		List:å…ƒç´ æœ‰åº(å­˜å‚¨å’Œå–å‡ºé¡ºåºä¸€è‡´)ï¼Œå¯é‡å¤
+ * 		Set:å…ƒç´ æ— åº,å”¯ä¸€
  */
 public class SetDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Set<String> set = new HashSet<String>();
 
 		set.add("hello");

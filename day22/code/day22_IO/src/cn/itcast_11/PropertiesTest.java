@@ -9,37 +9,37 @@ import java.util.Properties;
 import java.util.Set;
 
 /*
- * ����һ���ı��ļ�user.txt����֪�������Ǽ�ֵ����ʽ�ģ����ǲ�֪��������ʲô��
- * ��дһ�������ж��Ƿ��С�lisi�������ļ����ڣ�����о͸ı���ֵΪ100
+ * 我有一个文本文件user.txt，我知道数据是键值对形式的，但是不知道内容是什么。
+ * 请写一个程序判断是否有“lisi”这样的键存在，如果有就改变其值为100
  * 
- * ������
- * 		A:���ı��ļ������ݼ��ص�������
- * 		B:�������ϣ���ȡ��ÿһ����
- * 		C:�жϼ���ֵ�Ƿ���Ϊlisi��
- * 			�ǣ����޸���ֵΪ100
- * 			�񣺲�������
- * 		D:�Ѽ����е����ݴ洢���ı��ļ�
+ * 分析：
+ * 		A:把文本文件的数据加载到集合中
+ * 		B:遍历集合，获取到每一个键
+ * 		C:判断键的值是否有为lisi的
+ * 			是：就修改其值为100
+ * 			否：不搭理它
+ * 		D:把集合中的数据存储到文本文件
  */
 public class PropertiesTest {
 	public static void main(String[] args) throws IOException {
-		// ���ı��ļ������ݼ��ص�������
+		// 把文本文件的数据加载到集合中
 		Properties prop = new Properties();
 		Reader r = new FileReader("user.txt");
 		prop.load(r);
 		r.close();
 
-		// �������ϣ���ȡ��ÿһ����
+		// 遍历集合，获取到每一个键
 		Set<String> set = prop.stringPropertyNames();
 		for (String key : set) {
-			// �жϼ���ֵ�Ƿ���Ϊlisi��
+			// 判断键的值是否有为lisi的
 			if ("lisi".equals(key)) {
-				// ���޸���ֵΪ100
+				// 就修改其值为100
 				prop.setProperty(key, "100");
 				break;
 			}
 		}
 
-		// �Ѽ����е����ݴ洢���ı��ļ�
+		// 把集合中的数据存储到文本文件
 		Writer w = new FileWriter("user.txt");
 		prop.store(w, null);
 		w.close();

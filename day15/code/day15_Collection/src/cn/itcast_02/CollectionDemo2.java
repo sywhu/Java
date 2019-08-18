@@ -5,20 +5,20 @@ import java.util.Collection;
 
 /*
  * boolean addAll(Collection c)
- * boolean removeAll(Collection c):É¾³ıÒ»¸ö£¬¾ÍÊÇÉ¾³ı£¬·µ»Øtrue
- * boolean containsAll(Collection c):È«²¿°üº¬£¬²ÅÊÇ°üº¬¡£
+ * boolean removeAll(Collection c):åˆ é™¤ä¸€ä¸ªï¼Œå°±æ˜¯åˆ é™¤ï¼Œè¿”å›true
+ * boolean containsAll(Collection c):å…¨éƒ¨åŒ…å«ï¼Œæ‰æ˜¯åŒ…å«ã€‚
  * boolean retainAll(Collection c)
  */
 public class CollectionDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
+		// åˆ›å»ºé›†åˆ
 		Collection c1 = new ArrayList();
 		c1.add("abc1");
 		c1.add("abc2");
 		c1.add("abc3");
 		c1.add("abc4");
 
-		// ´´½¨¼¯ºÏ
+		// åˆ›å»ºé›†åˆ
 		Collection c2 = new ArrayList();
 		// c2.add("abc1");
 		// c2.add("abc2");
@@ -40,7 +40,7 @@ public class CollectionDemo2 {
 		// boolean retainAll(Collection c)
 		System.out.println("retainAll:" + c1.retainAll(c2));
 		/*
-		 * Èç¹ûÎÒÓĞÁ½¸ö¼¯ºÏA£¬B¡£ÓÃA¶ÔB×ö½»¼¯ ½»¼¯ÔªËØ´æ´¢ÔÚA¼¯ºÏ£¬B¼¯ºÏ²»·¢Éú¸Ä±ä¡£ ·µ»ØÖµ±í´ïÊÇA¼¯ºÏÊÇ·ñ·¢Éú¹ı¸Ä±ä¡£
+		 * å¦‚æœæˆ‘æœ‰ä¸¤ä¸ªé›†åˆAï¼ŒBã€‚ç”¨Aå¯¹Båšäº¤é›† äº¤é›†å…ƒç´ å­˜å‚¨åœ¨Aé›†åˆï¼ŒBé›†åˆä¸å‘ç”Ÿæ”¹å˜ã€‚ è¿”å›å€¼è¡¨è¾¾æ˜¯Aé›†åˆæ˜¯å¦å‘ç”Ÿè¿‡æ”¹å˜ã€‚
 		 */
 
 		System.out.println("c1:" + c1);

@@ -1,7 +1,7 @@
 package cn.itcast_06;
 
 /*
- * È¥³ý×Ö·û´®Á½¿Õ¸ñ	
+ * åŽ»é™¤å­—ç¬¦ä¸²ä¸¤ç©ºæ ¼	
  * String trim()
  */
 public class StringDemo2 {

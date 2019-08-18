@@ -1,14 +1,14 @@
 package cn.itcast_02;
 
 /*
- * throws£ºËü¾ÍÊÇÔÚ·½·¨ÉÏÉùÃ÷Òì³££¬¸æËßÄã£¬ÎÒÕâ¸ö·½·¨ÓĞÎÊÌâ¡£ÄãÊ¹ÓÃµÄÊ±ºòÒª×¢ÒâÁË¡£
+ * throwsï¼šå®ƒå°±æ˜¯åœ¨æ–¹æ³•ä¸Šå£°æ˜å¼‚å¸¸ï¼Œå‘Šè¯‰ä½ ï¼Œæˆ‘è¿™ä¸ªæ–¹æ³•æœ‰é—®é¢˜ã€‚ä½ ä½¿ç”¨çš„æ—¶å€™è¦æ³¨æ„äº†ã€‚
  */
 public class ExceptionDemo3 {
 	public static void main(String[] args) {
 		// try {
 		// method();
 		// } catch (ArithmeticException e) {
-		// System.out.println("³ıÊı²»ÄÜÎª0");
+		// System.out.println("é™¤æ•°ä¸èƒ½ä¸º0");
 		// }
 		method();
 

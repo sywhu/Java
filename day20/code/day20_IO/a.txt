@@ -4,47 +4,47 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
- * ×Ö½ÚÊäÈëÁ÷¶ÁÊı¾İ²½Öè£º
- * A:´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
- * B:µ÷ÓÃ·½·¨£¬¶ÁÈ¡Êı¾İ
- * C:ÊÍ·Å×ÊÔ´
+ * å­—èŠ‚è¾“å…¥æµè¯»æ•°æ®æ­¥éª¤ï¼š
+ * A:åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
+ * B:è°ƒç”¨æ–¹æ³•ï¼Œè¯»å–æ•°æ®
+ * C:é‡Šæ”¾èµ„æº
  * 
- * ×Ö½ÚÊäÈëÁ÷¶ÁÈ¡Êı¾İÓĞÁ½ÖÖ·½Ê½:
- * A:Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½Ú
- * B:Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½ÚÊı×é
+ * å­—èŠ‚è¾“å…¥æµè¯»å–æ•°æ®æœ‰ä¸¤ç§æ–¹å¼:
+ * A:ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—èŠ‚
+ * B:ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—èŠ‚æ•°ç»„
  * 
- * Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½Ú£ºpublic int read()
+ * ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—èŠ‚ï¼špublic int read()
  */
 public class FileInputStreamDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
+		// åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
 		// FileInputStream fis = new FileInputStream("fis.txt");
 		FileInputStream fis = new FileInputStream("FileOutputStreamDemo.java");
 
-		// µ÷ÓÃ·½·¨£¬¶ÁÈ¡Êı¾İ
-		// µÚÒ»´Î¶ÁÈ¡
+		// è°ƒç”¨æ–¹æ³•ï¼Œè¯»å–æ•°æ®
+		// ç¬¬ä¸€æ¬¡è¯»å–
 		// int by = fis.read();
 		// System.out.println(by);
 		// System.out.println((char) by);
 		//
-		// // µÚ¶ş´Î¶ÁÈ¡
+		// // ç¬¬äºŒæ¬¡è¯»å–
 		// by = fis.read();
 		// System.out.println(by);
 		// System.out.println((char) by);
 		//
-		// // µÚÈı´Î¶ÁÈ¡
+		// // ç¬¬ä¸‰æ¬¡è¯»å–
 		// by = fis.read();
 		// System.out.println(by);
 		// System.out.println((char) by);
-		// ÎÒÃÇ·¢ÏÖÉÏÃæµÄ´úÂëÊÇÒ»ÑùµÄ£¬ËùÒÔ£¬ÎÒÃÇ¿¼ÂÇÒªÓÃÑ­»·¸Ä½ø
-		// ÈçºÎÓÃÑ­»·¸Ä½øÄØ?
-		// ÖØµãÀ´ÁË
-		// ¾ÍÊÇÈçºÎÅĞ¶ÏÑ­»·Ê²Ã´Ê±ºò½áÊø
+		// æˆ‘ä»¬å‘ç°ä¸Šé¢çš„ä»£ç æ˜¯ä¸€æ ·çš„ï¼Œæ‰€ä»¥ï¼Œæˆ‘ä»¬è€ƒè™‘è¦ç”¨å¾ªç¯æ”¹è¿›
+		// å¦‚ä½•ç”¨å¾ªç¯æ”¹è¿›å‘¢?
+		// é‡ç‚¹æ¥äº†
+		// å°±æ˜¯å¦‚ä½•åˆ¤æ–­å¾ªç¯ä»€ä¹ˆæ—¶å€™ç»“æŸ
 		// by = fis.read();
 		// System.out.println(by);
 		// by = fis.read();
 		// System.out.println(by);
-		// Í¨¹ı²âÊÔÎÒÃÇ·¢ÏÖ£¬Õâ¸öÅĞ¶ÏÌõ¼şÖµÊÇ-1
+		// é€šè¿‡æµ‹è¯•æˆ‘ä»¬å‘ç°ï¼Œè¿™ä¸ªåˆ¤æ–­æ¡ä»¶å€¼æ˜¯-1
 
 		// int by = fis.read();
 		// while (by != -1) {
@@ -52,14 +52,14 @@ public class FileInputStreamDemo {
 		// by = fis.read();
 		// }
 
-		// ×îÖÕ´úÂë
+		// æœ€ç»ˆä»£ç 
 		int by = 0;
-		// ¶ÁÈ¡Êı¾İ£¬¸³Öµ£¬ÅĞ¶Ï
+		// è¯»å–æ•°æ®ï¼Œèµ‹å€¼ï¼Œåˆ¤æ–­
 		while ((by = fis.read()) != -1) {
 			System.out.print((char) by);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		fis.close();
 	}
 }

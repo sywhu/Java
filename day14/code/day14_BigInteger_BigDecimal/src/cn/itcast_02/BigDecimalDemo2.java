@@ -3,7 +3,7 @@ package cn.itcast_02;
 import java.math.BigDecimal;
 
 /*
- * 由于在运算的时候，float类型和double很容易丢失精度，演示案例。所以，为了能精确的表示、计算浮点数，Java提供了BigDecimal
+ * 鐢变簬鍦ㄨ繍绠楃殑鏃跺�欙紝float绫诲瀷鍜宒ouble寰堝鏄撲涪澶辩簿搴︼紝婕旂ず妗堜緥銆傛墍浠ワ紝涓轰簡鑳界簿纭殑琛ㄧず銆佽绠楁诞鐐规暟锛孞ava鎻愪緵浜咮igDecimal
  * 
  * public BigDecimal(String val)
  */

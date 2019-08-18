@@ -3,9 +3,9 @@ package cn.itcast_07;
 public class Teacher {
 	public void check(int score) throws MyException {
 		if (score < 0 || score > 100) {
-			throw new MyException("·ÖÊı²»ÔÚ0-100Ö®¼ä");
+			throw new MyException("é’å—˜æšŸæ¶“å¶…æ¹ª0-100æ¶”å¬®æ£¿");
 		} else {
-			System.out.println("·ÖÊıÕı³£");
+			System.out.println("é’å—˜æšŸå§ï½…çˆ¶");
 		}
 	}
 }

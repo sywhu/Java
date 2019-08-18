@@ -4,24 +4,24 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /*
- * public static final PrintStream out:±ê×¼Êä³öÁ÷	¿ØÖÆÌ¨Êä³ö
+ * public static final PrintStream out:æ ‡å‡†è¾“å‡ºæµ	æ§åˆ¶å°è¾“å‡º
  * 
- * ¼üÅÌÂ¼Èë£ºBufferedReader br = new BufferedReader(new InputStreamReader(System.in));
- * ¿ØÖÆÌ¨Êä³ö£ºBufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+ * é”®ç›˜å½•å…¥ï¼šBufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+ * æ§åˆ¶å°è¾“å‡ºï¼šBufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
  */
 public class SystemOutDemo {
 	public static void main(String[] args) throws IOException {
-		// ±ê×¼ÊäÈëÁ÷
+		// æ ‡å‡†è¾“å…¥æµ
 		// PrintStream ps = System.out;
 		// OutputStream os = ps;
-		// OutputStream os = System.out; // PrintStream,¶àÌ¬
+		// OutputStream os = System.out; // PrintStream,å¤šæ€
 		// System.out.println(os);
 
 		// os.write("hello\r\n".getBytes());
 		// os.write("world\r\n".getBytes());
 		// os.write("java\r\n".getBytes());
 
-		// Ğ´Êı¾İµÄÊ±ºò£¬Ã¿´Î²»ÄÜĞ´Ò»¸ö×Ö·û´®£¬±È½ÏÂé·³£¬ËùÒÔÎÒÃÇ¿¼ÂÇ¸Ä½ø
+		// å†™æ•°æ®çš„æ—¶å€™ï¼Œæ¯æ¬¡ä¸èƒ½å†™ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¯”è¾ƒéº»çƒ¦ï¼Œæ‰€ä»¥æˆ‘ä»¬è€ƒè™‘æ”¹è¿›
 		// BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 		// System.out));
 		// bw.write("hello");
@@ -33,7 +33,7 @@ public class SystemOutDemo {
 
 		// bw.close();
 
-		// ±ê×¼Êä³öÁ÷
+		// æ ‡å‡†è¾“å‡ºæµ
 		// PrintStream ps = System.out;
 		// ps.print(100);
 		// ps.print(true);

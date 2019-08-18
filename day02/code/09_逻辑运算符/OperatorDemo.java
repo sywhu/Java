@@ -1,10 +1,10 @@
 /*
-	Âß¼­ÔËËã·û£º
+	é€»è¾‘è¿ç®—ç¬¦ï¼š
 		&,|,!,^
 		&&,||
 
-	×¢Òâ£º
-		Âß¼­ÔËËã·ûÁ¬½ÓµÄÓ¦¸ÃÊÇÒ»¸ö²¼¶û±í´ïÊ½¡£
+	æ³¨æ„ï¼š
+		é€»è¾‘è¿ç®—ç¬¦è¿æ¥çš„åº”è¯¥æ˜¯ä¸€ä¸ªå¸ƒå°”è¡¨è¾¾å¼ã€‚
 */
 class OperatorDemo {
 	public static void main(String[] args) {
@@ -13,29 +13,29 @@ class OperatorDemo {
 		int b = 20;
 		int c = 30;
 
-		//&:Âß¼­Óë	ÓĞfalseÔòfalse
+		//&:é€»è¾‘ä¸	æœ‰falseåˆ™false
 		System.out.println(a>b & a>c); //false & false = false
 		System.out.println(a>b & a<c); //false & true = false
 		System.out.println(a<b & a>c); //true & false = false
 		System.out.println(a<b & a<c); //true & true = true
 		System.out.println("--------");
 
-		//|:Âß¼­»ò	ÓĞtrueÔòtrue
+		//|:é€»è¾‘æˆ–	æœ‰trueåˆ™true
 		System.out.println(a>b | a>c); //false | false = false
 		System.out.println(a>b | a<c); //false | true = true
 		System.out.println(a<b | a>c); //true | false = true
 		System.out.println(a<b | a<c); //true | true = true
 		System.out.println("--------");
 
-		//^:Âß¼­Òì»ò ÏàÍ¬false£¬²»Í¬true¡£
-		//ÇéÂÂ£ºÄĞÄĞ£¬ÄĞÅ®£¬Å®ÄĞ£¬Å®Å®
+		//^:é€»è¾‘å¼‚æˆ– ç›¸åŒfalseï¼Œä¸åŒtrueã€‚
+		//æƒ…ä¾£ï¼šç”·ç”·ï¼Œç”·å¥³ï¼Œå¥³ç”·ï¼Œå¥³å¥³
 		System.out.println(a>b ^ a>c); //false ^ false = false
 		System.out.println(a>b ^ a<c); //false ^ true = true
 		System.out.println(a<b ^ a>c); //true ^ false = true
 		System.out.println(a<b ^ a<c); //true ^ true = false
 		System.out.println("--------");
 
-		//!:Âß¼­·Ç
+		//!:é€»è¾‘é
 		System.out.println((a>b));//false
 		System.out.println(!(a>b));//true
 		System.out.println(!!(a>b));//false

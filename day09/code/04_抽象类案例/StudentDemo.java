@@ -1,7 +1,7 @@
 /*
-	Ñ§Éú°¸Àı
-		¾ßÌåÊÂÎñ£º»ù´¡°àÑ§Ô±£¬¾ÍÒµ°àÑ§Ô±
-		¹²ĞÔ£ºĞÕÃû£¬ÄêÁä£¬°à¼¶£¬Ñ§Ï°£¬³Ô·¹
+	å­¦ç”Ÿæ¡ˆä¾‹
+		å…·ä½“äº‹åŠ¡ï¼šåŸºç¡€ç­å­¦å‘˜ï¼Œå°±ä¸šç­å­¦å‘˜
+		å…±æ€§ï¼šå§“åï¼Œå¹´é¾„ï¼Œç­çº§ï¼Œå­¦ä¹ ï¼Œåƒé¥­
 */
 abstract class Student {
 	private String name;
@@ -40,12 +40,12 @@ abstract class Student {
 		return classId;
 	}
 
-	//³Ô·¹
+	//åƒé¥­
 	public void eat() {
-		System.out.println("Ñ§Éú¶¼Òª³Ô·¹");
+		System.out.println("å­¦ç”Ÿéƒ½è¦åƒé¥­");
 	}
 
-	//Ñ§Ï°
+	//å­¦ä¹ 
 	public abstract void study();
 }
 
@@ -57,7 +57,7 @@ class BasicStudent extends Student {
 	}
 
 	public void study() {
-		System.out.println("»ù´¡°àÑ§ÉúÑ§Ï°JavaSE");
+		System.out.println("åŸºç¡€ç­å­¦ç”Ÿå­¦ä¹ JavaSE");
 	}
 }
 
@@ -69,15 +69,15 @@ class JobStudent extends Student {
 	}
 
 	public void study() {
-		System.out.println("¾ÍÒµ°àÑ§ÉúÑ§Ï°JavaEE+Android");
+		System.out.println("å°±ä¸šç­å­¦ç”Ÿå­¦ä¹ JavaEE+Android");
 	}
 }
 
 class StudentDemo {
 	public static void main(String[] args) {
-		//»ù´¡°à
+		//åŸºç¡€ç­
 		BasicStudent bs = new BasicStudent();
-		bs.setName("±ë¸ç");
+		bs.setName("å½ªå“¥");
 		bs.setAge(22);
 		bs.setClassId("itcast007");
 		System.out.println(bs.getName()+"---"+bs.getAge()+"---"+bs.getClassId());
@@ -85,15 +85,15 @@ class StudentDemo {
 		bs.study();
 		System.out.println("--------------------------------------------------");
 
-		BasicStudent bs2 = new BasicStudent("´ó¸ö×Ó",28,"itcast250");
+		BasicStudent bs2 = new BasicStudent("å¤§ä¸ªå­",28,"itcast250");
 		System.out.println(bs2.getName()+"---"+bs2.getAge()+"---"+bs2.getClassId());
 		bs2.eat();
 		bs2.study();
 		System.out.println("--------------------------------------------------");
 
-		//¶àÌ¬Ê¹ÓÃ
+		//å¤šæ€ä½¿ç”¨
 		Student s = new BasicStudent();
-		s.setName("ÕÅ·½");
+		s.setName("å¼ æ–¹");
 		s.setAge(23);
 		s.setClassId("itcast123");
 		System.out.println(s.getName()+"---"+s.getAge()+"---"+s.getClassId());
@@ -101,7 +101,7 @@ class StudentDemo {
 		s.study();
 		System.out.println("--------------------------------------------------");
 
-		Student s2 = new BasicStudent("xiao¶¬",23,"itcast008");
+		Student s2 = new BasicStudent("xiaoå†¬",23,"itcast008");
 		System.out.println(s2.getName()+"---"+s2.getAge()+"---"+s2.getClassId());
 		s2.eat();
 		s2.study();

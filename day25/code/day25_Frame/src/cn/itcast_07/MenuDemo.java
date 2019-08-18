@@ -10,30 +10,30 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * Ò»¼¶²Ëµ¥
+ * ä¸€çº§èœå•
  */
 public class MenuDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("Ò»¼¶²Ëµ¥");
-		// ÉèÖÃ´°ÌåÊôĞÔ
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
+		final Frame f = new Frame("ä¸€çº§èœå•");
+		// è®¾ç½®çª—ä½“å±æ€§
 		f.setBounds(500, 250, 400, 300);
 
-		// ´´½¨²Ëµ¥À¸
+		// åˆ›å»ºèœå•æ 
 		MenuBar mb = new MenuBar();
-		// ´´½¨²Ëµ¥
-		Menu m = new Menu("ÎÄ¼ş");
-		// ´´½¨²Ëµ¥Ïî
-		MenuItem mi = new MenuItem("ÍË³öÏµÍ³");
+		// åˆ›å»ºèœå•
+		Menu m = new Menu("æ–‡ä»¶");
+		// åˆ›å»ºèœå•é¡¹
+		MenuItem mi = new MenuItem("é€€å‡ºç³»ç»Ÿ");
 
-		// ²Ëµ¥±¾Éí×éºÏ
+		// èœå•æœ¬èº«ç»„åˆ
 		m.add(mi);
 		mb.add(m);
 
-		// Ìí¼Óµ½´°Ìå
+		// æ·»åŠ åˆ°çª—ä½“
 		f.setMenuBar(mb);
 
-		// ×¢²áÊÂ¼ş
+		// æ³¨å†Œäº‹ä»¶
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {

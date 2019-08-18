@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.util.Arrays;
 
 /*
- * throw:ÓÃÔÚ·½·¨ÖĞ£¬ÈÃ³ÌĞòµ÷×ªµÄ¡£
+ * throw:ç”¨åœ¨æ–¹æ³•ä¸­ï¼Œè®©ç¨‹åºè°ƒè½¬çš„ã€‚
  */
 public class ThrowDemo {
 	public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class ThrowDemo {
 
 	public static void show(int a, int b) {
 		if (b == 0) {
-			// System.out.println("Êı¾İÓĞÎó");
+			// System.out.println("æ•°æ®æœ‰è¯¯");
 			throw new ArithmeticException();
 		} else {
 			System.out.println(a / b);

@@ -3,31 +3,31 @@ package cn.itcast_01;
 import java.util.Scanner;
 
 /*
- * ÕýÔò±í´ïÊ½£º·ûºÏÒ»¶¨¹æÔòµÄ×Ö·û´®¡£
+ * æ­£åˆ™è¡¨è¾¾å¼ï¼šç¬¦åˆä¸€å®šè§„åˆ™çš„å­—ç¬¦ä¸²ã€‚
  * 
- * Á·Ï°£º
- * 		Ð£ÑéqqºÅÂë.
- *			1:ÒªÇó±ØÐëÊÇ5-15Î»Êý×Ö
- *			2:0²»ÄÜ¿ªÍ·
+ * ç»ƒä¹ ï¼š
+ * 		æ ¡éªŒqqå·ç .
+ *			1:è¦æ±‚å¿…é¡»æ˜¯5-15ä½æ•°å­—
+ *			2:0ä¸èƒ½å¼€å¤´
  */
 public class RegexDemo {
 	public static void main(String[] args) {
-		//¼üÅÌÂ¼Èë¶ÔÏó
+		//é”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("ÇëÊäÈëÄãµÄqqºÅÂë£º");
+		System.out.println("è¯·è¾“å…¥ä½ çš„qqå·ç ï¼š");
 		String qq = sc.nextLine();
 		
 		boolean flag = checkQQ(qq);
 		System.out.println("flag:"+flag);
 		
-		//Ê¹ÓÃÕýÔò±í´ïÊ½À´ÊµÏÖ
+		//ä½¿ç”¨æ­£åˆ™è¡¨è¾¾å¼æ¥å®žçŽ°
 		boolean flag2 = checkQQ2(qq);
 		System.out.println("flag2:"+flag2);
 	}
 	
 	public static boolean checkQQ2(String qq){
-		//ÕýÔò±í´ïÊ½
+		//æ­£åˆ™è¡¨è¾¾å¼
 		// String regex = "[1-9][0-9]{4,14}";
 		// //public boolean matches(String regex)
 		// boolean flag = qq.matches(regex);
@@ -37,16 +37,16 @@ public class RegexDemo {
 	}
 
 	/*
-	 * ·µ»ØÖµÀàÐÍ£ºboolean ²ÎÊýÁÐ±í£ºString qq
+	 * è¿”å›žå€¼ç±»åž‹ï¼šboolean å‚æ•°åˆ—è¡¨ï¼šString qq
 	 */
 	public static boolean checkQQ(String qq) {
 		boolean flag = true;
 
-		// Ð£Ñé³¤¶È
+		// æ ¡éªŒé•¿åº¦
 		if (qq.length() >= 5 && qq.length() <= 15) {
-			// 0²»ÄÜ¿ªÍ·
+			// 0ä¸èƒ½å¼€å¤´
 			if (!qq.startsWith("0")) {
-				// ÊÇ·ñ¶¼ÊÇÊý×Ö×Ö·û
+				// æ˜¯å¦éƒ½æ˜¯æ•°å­—å­—ç¬¦
 				char[] chs = qq.toCharArray();
 				for (int x = 0; x < chs.length; x++) {
 					char ch = chs[x];

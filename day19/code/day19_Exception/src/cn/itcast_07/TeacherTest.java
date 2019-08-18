@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TeacherTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë¿¼ÊÔ³É¼¨£º ");
+		System.out.println("è¯·è¾“å…¥è€ƒè¯•æˆç»©ï¼š ");
 		int score = sc.nextInt();
 
 		Teacher t = new Teacher();
@@ -13,7 +13,7 @@ public class TeacherTest {
 			t.check(score);
 		} catch (MyException e) {
 			// System.out.println(e.toString()); // cn.itcast_07.MyException:
-			// ·ÖÊı²»ÔÚ0-100Ö®¼ä
+			// åˆ†æ•°ä¸åœ¨0-100ä¹‹é—´
 			e.printStackTrace();
 		}
 	}

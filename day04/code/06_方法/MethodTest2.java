@@ -1,30 +1,30 @@
 /*
-	¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬±È½ÏÁ½¸öÊıÊÇ·ñÏàµÈ
+	é”®ç›˜å½•å…¥ä¸¤ä¸ªæ•°æ®ï¼Œæ¯”è¾ƒä¸¤ä¸ªæ•°æ˜¯å¦ç›¸ç­‰
 */
 import java.util.Scanner;
 
 class MethodTest2 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊı¾İ£º");
+		//é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°æ®ï¼š");
 		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÊı¾İ£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°æ®ï¼š");
 		int b = sc.nextInt();
 
-		//µ÷ÓÃ·½·¨
+		//è°ƒç”¨æ–¹æ³•
 		boolean flag = compare(a,b);
 		System.out.println(flag);
 	}
 
 	/*
-		±È½ÏÁ½¸öÊıÊÇ·ñÏàµÈ
+		æ¯”è¾ƒä¸¤ä¸ªæ•°æ˜¯å¦ç›¸ç­‰
 
-		Á½¸öÃ÷È·£º
-			·µ»ØÖµÀàĞÍ£ºboolean
-			²ÎÊıÁĞ±í£ºint a,int b
+		ä¸¤ä¸ªæ˜ç¡®ï¼š
+			è¿”å›å€¼ç±»å‹ï¼šboolean
+			å‚æ•°åˆ—è¡¨ï¼šint a,int b
 	*/
 	public static boolean compare(int a,int b) {
 		/*
@@ -35,14 +35,14 @@ class MethodTest2 {
 		}
 		*/
 
-		//ÈıÔª¸ñÊ½1
+		//ä¸‰å…ƒæ ¼å¼1
 		//boolean flag = a==b?true:false;
 		//return flag;
 
-		//ÈıÔª¸ñÊ½2
+		//ä¸‰å…ƒæ ¼å¼2
 		//return a==b?true:false;
 	
-		//×îÖÕ°æ
+		//æœ€ç»ˆç‰ˆ
 		return a == b;
 	}
 }

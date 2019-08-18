@@ -1,16 +1,16 @@
 /*
-	�ӿڵĳ�Ա�ص㣺
-		A:��Ա����
-			�ǳ����������Ǿ�̬�����εġ�
-			Ĭ�ϵ����η���public static final
-		B:���췽��
-			û�й��췽��
-		C:��Ա����
-			ֻ���ǳ��󷽷���
-			Ĭ�ϵ����η���public abstract
+	接口的成员特点：
+		A:成员变量
+			是常量，并且是静态的修饰的。
+			默认的修饰符：public static final
+		B:构造方法
+			没有构造方法
+		C:成员方法
+			只能是抽象方法。
+			默认的修饰符：public abstract
 
-		���飺
-			�Լ�д�ӿڵ����ݵ�ʱ�򣬰���ЩĬ�����η����ϡ�
+		建议：
+			自己写接口的内容的时候，把这些默认修饰符加上。
 */
 interface Animal {
 	//int num = 10;

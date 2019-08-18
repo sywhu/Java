@@ -1,25 +1,25 @@
 /*
-	ÎªÁË³ÌĞòµÄÊı¾İ¸ü¼ÓµÄÁé»î£¬ÎÒÃÇ¾ö¶¨¼ÓÈë¼üÅÌÂ¼ÈëÊı¾İ¡£
+	ä¸ºäº†ç¨‹åºçš„æ•°æ®æ›´åŠ çš„çµæ´»ï¼Œæˆ‘ä»¬å†³å®šåŠ å…¥é”®ç›˜å½•å…¥æ•°æ®ã€‚
 
-	ÈçºÎÊ¹ÓÃ¼üÅÌÂ¼ÈëÊı¾İÄØ?Ä¿Ç°Äã¾Í¸øÎÒ¼Ç×¡ÁË¡£
-	A:µ¼°ü
+	å¦‚ä½•ä½¿ç”¨é”®ç›˜å½•å…¥æ•°æ®å‘¢?ç›®å‰ä½ å°±ç»™æˆ‘è®°ä½äº†ã€‚
+	A:å¯¼åŒ…
 		import java.util.Scanner;
 
-		ÔÚclassµÄÉÏÃæ
-	B:´´½¨¶ÔÏó
+		åœ¨classçš„ä¸Šé¢
+	B:åˆ›å»ºå¯¹è±¡
 		Scanner sc = new Scanner(System.in);
-	C:»ñÈ¡Êı¾İ
+	C:è·å–æ•°æ®
 		int i = sc.nextInt();
 */
 import java.util.Scanner;
 
 class OperatorDemo {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı£º");
-		//»ñÈ¡Êı¾İ
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
+		//è·å–æ•°æ®
 		int i = sc.nextInt();
 
 		System.out.println("i:"+i);

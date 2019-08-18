@@ -1,10 +1,10 @@
 package cn.itcast_02;
 
 /*
- * ·ºĞÍ½Ó¿Ú£º°Ñ·ºĞÍ¶¨ÒåÔÚ½Ó¿ÚÉÏ
+ * æ³›å‹æ¥å£ï¼šæŠŠæ³›å‹å®šä¹‰åœ¨æ¥å£ä¸Š
  * 
- * ¸ñÊ½£º
- * 		interface ½Ó¿ÚÃû<·ºĞÍÀàĞÍ,...>
+ * æ ¼å¼ï¼š
+ * 		interface æ¥å£å<æ³›å‹ç±»å‹,...>
  */
 public interface Inter<YY> {
 	public abstract void show(YY yy);

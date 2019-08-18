@@ -1,10 +1,10 @@
 /*
-	if���ע�����
-		A:��ϵ����ʽ���ۼ򵥻��Ǹ��ӣ����������boolean����
-		B:�����жϵ�ʱ�򣬽��鳣������ߡ�
-		C:if�����Ƶ�����������һ����䣬�����ſ���ʡ�ԣ�
-		  ����Ƕ�����䣬�Ͳ���ʡ�ԡ�������Զ��Ҫʡ��
-		D:һ����˵����������ž�û�зֺţ��зֺž�û���������
+	if语句注意事项：
+		A:关系表达式无论简单还是复杂，结果必须是boolean类型
+		B:在做判断的时候，建议常量放左边。
+		C:if语句控制的语句体如果是一条语句，大括号可以省略；
+		  如果是多条语句，就不能省略。建议永远不要省略
+		D:一般来说：有左大括号就没有分号，有分号就没有左大括号
 */
 class IfDemo2 {
 	public static void main(String[] args) {
@@ -16,7 +16,7 @@ class IfDemo2 {
 			System.out.println("hello");
 		}
 
-		//���ﲻ��boolean����
+		//这里不是boolean类型
 		/*
 		if(30) {
 			System.out.println("world");
@@ -63,7 +63,7 @@ class IfDemo2 {
 
 		if(false);
 
-		//�����
+		//代码块
 		{
 			System.out.println("111");
 			System.out.println("222");

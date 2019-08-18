@@ -20,24 +20,24 @@ import java.io.IOException;
  */
 public class MenuDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("¶à¼¶²Ëµ¥");
-		// ÉèÖÃ´°ÌåÊôĞÔ
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
+		final Frame f = new Frame("å¤šçº§èœå•");
+		// è®¾ç½®çª—ä½“å±æ€§
 		f.setBounds(500, 250, 400, 300);
 
-		// ´´½¨²Ëµ¥À¸
+		// åˆ›å»ºèœå•æ 
 		MenuBar mb = new MenuBar();
-		// ´´½¨²Ëµ¥
-		Menu m1 = new Menu("ÎÄ¼ş");
-		Menu m2 = new Menu("¸ü¸ÄÃû³Æ");
-		// ´´½¨²Ëµ¥Ïî
-		final MenuItem mi1 = new MenuItem("ºÃºÃÑ§Ï°");
-		final MenuItem mi2 = new MenuItem("ÌìÌìÏòÉÏ");
-		MenuItem mi3 = new MenuItem("»Ö¸´±êÌâ");
-		MenuItem mi4 = new MenuItem("´ò¿ª¼ÇÊÂ±¾");
-		MenuItem mi5 = new MenuItem("ÍË³öÏµÍ³");
+		// åˆ›å»ºèœå•
+		Menu m1 = new Menu("æ–‡ä»¶");
+		Menu m2 = new Menu("æ›´æ”¹åç§°");
+		// åˆ›å»ºèœå•é¡¹
+		final MenuItem mi1 = new MenuItem("å¥½å¥½å­¦ä¹ ");
+		final MenuItem mi2 = new MenuItem("å¤©å¤©å‘ä¸Š");
+		MenuItem mi3 = new MenuItem("æ¢å¤æ ‡é¢˜");
+		MenuItem mi4 = new MenuItem("æ‰“å¼€è®°äº‹æœ¬");
+		MenuItem mi5 = new MenuItem("é€€å‡ºç³»ç»Ÿ");
 
-		// ²Ëµ¥±¾Éí×éºÏ
+		// èœå•æœ¬èº«ç»„åˆ
 		m2.add(mi1);
 		m2.add(mi2);
 		m2.add(mi3);
@@ -48,13 +48,13 @@ public class MenuDemo2 {
 
 		mb.add(m1);
 
-		// Ìí¼Óµ½´°Ìå
+		// æ·»åŠ åˆ°çª—ä½“
 		f.setMenuBar(mb);
 
-		// »ñÈ¡ÒÔÇ°µÄ±êÌâ
+		// è·å–ä»¥å‰çš„æ ‡é¢˜
 		final String title = f.getTitle();
 
-		// ×¢²áÊÂ¼ş
+		// æ³¨å†Œäº‹ä»¶
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {

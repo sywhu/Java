@@ -1,40 +1,40 @@
 /*
-	ĞèÇó£º¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬²¢¶ÔÕâÁ½¸öÊı¾İÇóºÍ£¬Êä³öÆä½á¹û
+	éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä¸¤ä¸ªæ•°æ®ï¼Œå¹¶å¯¹è¿™ä¸¤ä¸ªæ•°æ®æ±‚å’Œï¼Œè¾“å‡ºå…¶ç»“æœ
 	
-	·ÖÎö£º
-		A:¼üÅÌÂ¼ÈëÊı¾İ£¬Í¨¹ıScannerÊµÏÖ¡£
-			µ¼°ü	import java.util.Scanner;
-			´´½¨¶ÔÏó	Scanner sc = new Scanner(System.in);
-			»ñÈ¡Êı¾İ	int i = sc.nextInt();
+	åˆ†æï¼š
+		A:é”®ç›˜å½•å…¥æ•°æ®ï¼Œé€šè¿‡Scannerå®ç°ã€‚
+			å¯¼åŒ…	import java.util.Scanner;
+			åˆ›å»ºå¯¹è±¡	Scanner sc = new Scanner(System.in);
+			è·å–æ•°æ®	int i = sc.nextInt();
 
-		B:Â¼ÈëÁ½¸öÊı¾İ
-			ËùÒÔ¾ÍÊÇint i = sc.nextInt();À´Á½´Î¡£·Ö±ğÓÃ²»Í¬µÄ±äÁ¿½ÓÊÜ
+		B:å½•å…¥ä¸¤ä¸ªæ•°æ®
+			æ‰€ä»¥å°±æ˜¯int i = sc.nextInt();æ¥ä¸¤æ¬¡ã€‚åˆ†åˆ«ç”¨ä¸åŒçš„å˜é‡æ¥å—
 				int i = sc.nextInt();
 				int j = sc.nextInt();
 
-		C:ÇóÁ½¸öÊı¾İµÄºÍ
+		C:æ±‚ä¸¤ä¸ªæ•°æ®çš„å’Œ
 			int sum = i + j;
 
-		D:Êä³ö½á¹û
+		D:è¾“å‡ºç»“æœ
 			System.out.println(sum);
 */
 import java.util.Scanner;
 
 class OperatorTest {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//Â¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊı¾İ£º");
+		//å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°æ®ï¼š");
 		int firstNumber = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÊı¾İ£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°æ®ï¼š");
 		int secondNumber = sc.nextInt();
 
-		//×ö¼Ó·¨
+		//åšåŠ æ³•
 		int sum = firstNumber + secondNumber;
 
-		//Êä³ö½á¹û
-		System.out.println("Êı¾İºÍÊÇ£º"+sum);
+		//è¾“å‡ºç»“æœ
+		System.out.println("æ•°æ®å’Œæ˜¯ï¼š"+sum);
 	}
 }

@@ -4,18 +4,18 @@ import java.io.File;
 import java.io.IOException;
 
 /*
- * É¾³ı¹¦ÄÜ£ºpublic boolean delete() ¼È¿ÉÒÔÉ¾³ıÎÄ¼ş£¬Ò²¿ÉÒÔÉ¾³ıÎÄ¼ş¼Ğ¡£
+ * åˆ é™¤åŠŸèƒ½ï¼špublic boolean delete() æ—¢å¯ä»¥åˆ é™¤æ–‡ä»¶ï¼Œä¹Ÿå¯ä»¥åˆ é™¤æ–‡ä»¶å¤¹ã€‚
  * 
- * Ïà¶ÔÂ·¾¶£º²»ÒÔÅÌ·û¿ªÊ¼µÄÂ·¾¶
- * ¾ø¶ÔÂ·¾¶£ºÒÔÅÌ·û¿ªÊ¼µÄÂ·¾¶
+ * ç›¸å¯¹è·¯å¾„ï¼šä¸ä»¥ç›˜ç¬¦å¼€å§‹çš„è·¯å¾„
+ * ç»å¯¹è·¯å¾„ï¼šä»¥ç›˜ç¬¦å¼€å§‹çš„è·¯å¾„
  * 
- * ×¢ÒâÊÂÏî£º
- * 		A:Èç¹ûÒ»¸öÎÄ¼ş¼ĞÄÚÓĞÄÚÈİ£¬ÊÇ²»ÄÜÖ±½ÓÉ¾³ıµÄ¡£
- * 		B:Java³ÌĞòµÄÉ¾³ı²»×ß»ØÊÕÕ¾£¬Ö±½ÓÉ¾³ı¡£
+ * æ³¨æ„äº‹é¡¹ï¼š
+ * 		A:å¦‚æœä¸€ä¸ªæ–‡ä»¶å¤¹å†…æœ‰å†…å®¹ï¼Œæ˜¯ä¸èƒ½ç›´æ¥åˆ é™¤çš„ã€‚
+ * 		B:Javaç¨‹åºçš„åˆ é™¤ä¸èµ°å›æ”¶ç«™ï¼Œç›´æ¥åˆ é™¤ã€‚
  */
 public class FileDemo2 {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨File¶ÔÏó
+		// åˆ›å»ºFileå¯¹è±¡
 		File file = new File("a.txt");
 		System.out.println("createNewFile:" + file.createNewFile());
 
@@ -25,10 +25,10 @@ public class FileDemo2 {
 		File file3 = new File(file2, "b.txt");
 		System.out.println("createNewFile:" + file3.createNewFile());
 
-		// É¾³ıÎÄ¼ş
+		// åˆ é™¤æ–‡ä»¶
 		System.out.println("delete:" + file.delete());
 
-		// É¾³ıÎÄ¼ş¼Ğ
+		// åˆ é™¤æ–‡ä»¶å¤¹
 		File file4 = new File("aaa\\bbb\\ccc");
 		System.out.println("delete:" + file4.delete());
 

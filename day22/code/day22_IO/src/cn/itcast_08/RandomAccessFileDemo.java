@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /*
- * RandomAccessFile:´ËÀàµÄÊµÀıÖ§³Ö¶ÔËæ»ú·ÃÎÊÎÄ¼şµÄ¶ÁÈ¡ºÍĞ´Èë¡£
+ * RandomAccessFile:æ­¤ç±»çš„å®ä¾‹æ”¯æŒå¯¹éšæœºè®¿é—®æ–‡ä»¶çš„è¯»å–å’Œå†™å…¥ã€‚
  * RandomAccessFile(String name, String mode) 
  * 
- * public long getFilePointer():·µ»ØÆ«ÒÆÁ¿£¬ÒÔ×Ö½ÚÎªµ¥Î»
- * public void seek(long pos):ÉèÖÃµ½´ËÎÄ¼ş¿ªÍ·²âÁ¿µ½µÄÎÄ¼şÖ¸ÕëÆ«ÒÆÁ¿£¬ÔÚ¸ÃÎ»ÖÃ·¢ÉúÏÂÒ»¸ö¶ÁÈ¡»òĞ´Èë²Ù×÷¡£
+ * public long getFilePointer():è¿”å›åç§»é‡ï¼Œä»¥å­—èŠ‚ä¸ºå•ä½
+ * public void seek(long pos):è®¾ç½®åˆ°æ­¤æ–‡ä»¶å¼€å¤´æµ‹é‡åˆ°çš„æ–‡ä»¶æŒ‡é’ˆåç§»é‡ï¼Œåœ¨è¯¥ä½ç½®å‘ç”Ÿä¸‹ä¸€ä¸ªè¯»å–æˆ–å†™å…¥æ“ä½œã€‚
  */
 public class RandomAccessFileDemo {
 	public static void main(String[] args) throws IOException {
@@ -17,10 +17,10 @@ public class RandomAccessFileDemo {
 	}
 
 	private static void read() throws IOException {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		RandomAccessFile raf = new RandomAccessFile("raf.txt", "rw");
 
-		// ¶ÁÊı¾İ
+		// è¯»æ•°æ®
 		System.out.println(raf.getFilePointer());
 		System.out.println(raf.readInt());
 		System.out.println(raf.getFilePointer());
@@ -39,24 +39,24 @@ public class RandomAccessFileDemo {
 		raf.seek(1000);
 		System.out.println(raf.readUTF());
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		raf.close();
 	}
 
 	private static void write() throws IOException {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		RandomAccessFile raf = new RandomAccessFile("raf.txt", "rw");
 
-		// Ğ´Êı¾İ
+		// å†™æ•°æ®
 		raf.writeInt(100);
 		raf.writeChar('a');
 		// raf.writeUTF("hello");
-		raf.writeUTF("ÁÖÇàÏ¼");
+		raf.writeUTF("æ—é’éœ");
 
 		raf.seek(1000);
-		raf.writeUTF("¹ş¹ş");
+		raf.writeUTF("å“ˆå“ˆ");
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		raf.close();
 	}
 }

@@ -4,35 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * List¼¯ºÏµÄÌØÓĞ¹¦ÄÜ£º
- * 		void add(int index,Object obj):ÔÚÖ¸¶¨Ë÷ÒıÎ»ÖÃÌí¼ÓÔªËØ
- *		Object remove(int index):É¾³ıÖ¸¶¨Ë÷ÒıÎ»ÖÃµÄÔªËØ£¬²¢°ÑÉ¾³ıµôµÄÔªËØÖµ·µ»Ø
- *		Object get(int index):¸ù¾İ¸ø¶¨Ë÷Òı£¬·µ»ØÔªËØ
- *		Object set(int index,E element):ĞŞ¸ÄÖ¸¶¨Ë÷Òı´¦µÄÔªËØÎª¸ø¶¨µÄÔªËØ£¬²¢·µ»Ø±»ĞŞ¸ÄµÄÖµ
+ * Listé›†åˆçš„ç‰¹æœ‰åŠŸèƒ½ï¼š
+ * 		void add(int index,Object obj):åœ¨æŒ‡å®šç´¢å¼•ä½ç½®æ·»åŠ å…ƒç´ 
+ *		Object remove(int index):åˆ é™¤æŒ‡å®šç´¢å¼•ä½ç½®çš„å…ƒç´ ï¼Œå¹¶æŠŠåˆ é™¤æ‰çš„å…ƒç´ å€¼è¿”å›
+ *		Object get(int index):æ ¹æ®ç»™å®šç´¢å¼•ï¼Œè¿”å›å…ƒç´ 
+ *		Object set(int index,E element):ä¿®æ”¹æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ä¸ºç»™å®šçš„å…ƒç´ ï¼Œå¹¶è¿”å›è¢«ä¿®æ”¹çš„å€¼
  */
 public class ListDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
+		// åˆ›å»ºé›†åˆ
 		// Collection c = new ArrayList();
 		List list = new ArrayList();
 
-		// ²âÊÔ¹¦ÄÜ
+		// æµ‹è¯•åŠŸèƒ½
 		list.add("hello");
 		list.add("world");
 		list.add("java");
 
-		// void add(int index,Object obj):ÔÚÖ¸¶¨Ë÷ÒıÎ»ÖÃÌí¼ÓÔªËØ
+		// void add(int index,Object obj):åœ¨æŒ‡å®šç´¢å¼•ä½ç½®æ·»åŠ å…ƒç´ 
 		// list.add(1, "android");
 		// list.add(3, "android");
-		// list.add(4, "android"); //ÓĞÎÊÌâ
+		// list.add(4, "android"); //æœ‰é—®é¢˜
 
-		// Object remove(int index):É¾³ıÖ¸¶¨Ë÷ÒıÎ»ÖÃµÄÔªËØ£¬²¢°ÑÉ¾³ıµôµÄÔªËØÖµ·µ»Ø
+		// Object remove(int index):åˆ é™¤æŒ‡å®šç´¢å¼•ä½ç½®çš„å…ƒç´ ï¼Œå¹¶æŠŠåˆ é™¤æ‰çš„å…ƒç´ å€¼è¿”å›
 		// System.out.println("remove:" + list.remove(1));
 
-		// Object get(int index):¸ù¾İ¸ø¶¨Ë÷Òı£¬·µ»ØÔªËØ
+		// Object get(int index):æ ¹æ®ç»™å®šç´¢å¼•ï¼Œè¿”å›å…ƒç´ 
 		// System.out.println("get:" + list.get(1));
 
-		// Object set(int index,E element):ĞŞ¸ÄÖ¸¶¨Ë÷Òı´¦µÄÔªËØÎª¸ø¶¨µÄÔªËØ£¬²¢·µ»Ø±»ĞŞ¸ÄµÄÖµ
+		// Object set(int index,E element):ä¿®æ”¹æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ä¸ºç»™å®šçš„å…ƒç´ ï¼Œå¹¶è¿”å›è¢«ä¿®æ”¹çš„å€¼
 		System.out.println("set:" + list.set(1, "android"));
 
 		System.out.println("list:" + list);

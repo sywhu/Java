@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * È¥³ı¼¯ºÏÖĞ×Ö·û´®µÄÖØ¸´Öµ(×Ö·û´®µÄÄÚÈİÏàÍ¬)
- * ¾ÙÀı£º
+ * å»é™¤é›†åˆä¸­å­—ç¬¦ä¸²çš„é‡å¤å€¼(å­—ç¬¦ä¸²çš„å†…å®¹ç›¸åŒ)
+ * ä¸¾ä¾‹ï¼š
  * 		hello,world,java,android,world,java,javaee,java,java,java,android
- * ½á¹û£º
+ * ç»“æœï¼š
  * 		hello,world,java,android,javaee
  * 
- * ºÍÊı×éÅÅĞòµÄÑ¡ÔñÅÅĞòË¼ÏëÒ»Ñù¡£
+ * å’Œæ•°ç»„æ’åºçš„é€‰æ‹©æ’åºæ€æƒ³ä¸€æ ·ã€‚
  */
 public class ArrayListTest2 {
 	public static void main(String[] args) {
-		// ¶¨Òå¼¯ºÏ£¬´æ´¢´øÖØ¸´µÄÔªËØ
+		// å®šä¹‰é›†åˆï¼Œå­˜å‚¨å¸¦é‡å¤çš„å…ƒç´ 
 		ArrayList array = new ArrayList();
 		array.add("hello");
 		array.add("world");
@@ -32,12 +32,12 @@ public class ArrayListTest2 {
 			for (int y = x + 1; y < array.size(); y++) {
 				if (array.get(y).equals(array.get(x))) {
 					array.remove(y);
-					y--; // °ÑÔªËØÉ¾³ıºó£¬»¹ÒªºÍµ±Ç°Î»ÖÃµÄ±È½ÏÒ»´Î
+					y--; // æŠŠå…ƒç´ åˆ é™¤åï¼Œè¿˜è¦å’Œå½“å‰ä½ç½®çš„æ¯”è¾ƒä¸€æ¬¡
 				}
 			}
 		}
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		Iterator it = array.iterator();
 		while (it.hasNext()) {
 			String s = (String) it.next();

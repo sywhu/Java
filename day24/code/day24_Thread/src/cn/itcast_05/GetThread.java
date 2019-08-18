@@ -13,24 +13,24 @@ public class GetThread implements Runnable {
 		while (true) {
 			synchronized (s) {
 				if (!s.flag) {
-					// Èç¹ûÃ»ÓĞÊı¾İ£¬¾ÍµÈ´ı
+					// å¦‚æœæ²¡æœ‰æ•°æ®ï¼Œå°±ç­‰å¾…
 					try {
-						s.wait(); // t2¾ÍµÈ´ıÁË,ÊÍ·ÅÁËËø¶ÔÏó,´ÓÄÄÀïµøµ¹´ÓÄÄÀïÅÀÆğ¡£
+						s.wait(); // t2å°±ç­‰å¾…äº†,é‡Šæ”¾äº†é”å¯¹è±¡,ä»å“ªé‡Œè·Œå€’ä»å“ªé‡Œçˆ¬èµ·ã€‚
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
 				}
 
 				System.out.println(s.name + "---" + s.age);
-				// ÁÖÇàÏ¼---28
-				// ÁõÒâ ---31
+				// æ—é’éœ---28
+				// åˆ˜æ„ ---31
 
-				// ¸ø³öÌáÊ¾
+				// ç»™å‡ºæç¤º
 				s.flag = false;
 				s.notify();
 			}
 
-			// t1,t2ÇÀ
+			// t1,t2æŠ¢
 		}
 	}
 

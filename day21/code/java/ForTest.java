@@ -1,6 +1,6 @@
 class ForTest {
 	public static void main(String[] args) {
-		//ÇëÔÚ¿ØÖÆÌ¨Êä³öÊı¾İ1-10
+		//è¯·åœ¨æ§åˆ¶å°è¾“å‡ºæ•°æ®1-10
 		System.out.println(1);
 		System.out.println(2);
 		System.out.println(3);

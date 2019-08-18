@@ -1,58 +1,58 @@
 package cn.itcast_02;
 
 /*
- * ÍÃ×ÓÎÊÌâ(ì³²¨ÄÇÆõÊýÁÐ):ÓÐÒ»¶ÔÍÃ×Ó£¬´Ó³öÉúºóµÚ3¸öÔÂÆðÃ¿¸öÔÂ¶¼ÉúÒ»¶ÔÍÃ×Ó£¬Ð¡ÍÃ×Ó³¤µ½µÚÈý¸öÔÂºóÃ¿¸öÔÂÓÖÉúÒ»¶ÔÍÃ×Ó£¬¼ÙÈçÍÃ×Ó¶¼²»ËÀ£¬ÎÊµÚ20¸öÔÂµÄÍÃ×Ó¶ÔÊýÎª¶àÉÙ£¿
- * 			ÍÃ×Ó¶ÔÊý
- *  µÚÒ»¸öÔÂ£º	1
- *  µÚ¶þ¸öÔÂ£º	1
- *  µÚÈý¸öÔÂ£º	2
- *  µÚËÄ¸öÔÂ£º	3
- *  µÚÎå¸öÔÂ£º	5
- *  µÚÁù¸öÔÂ£º	8
+ * å…”å­é—®é¢˜(æ–æ³¢é‚£å¥‘æ•°åˆ—):æœ‰ä¸€å¯¹å…”å­ï¼Œä»Žå‡ºç”ŸåŽç¬¬3ä¸ªæœˆèµ·æ¯ä¸ªæœˆéƒ½ç”Ÿä¸€å¯¹å…”å­ï¼Œå°å…”å­é•¿åˆ°ç¬¬ä¸‰ä¸ªæœˆåŽæ¯ä¸ªæœˆåˆç”Ÿä¸€å¯¹å…”å­ï¼Œå‡å¦‚å…”å­éƒ½ä¸æ­»ï¼Œé—®ç¬¬20ä¸ªæœˆçš„å…”å­å¯¹æ•°ä¸ºå¤šå°‘ï¼Ÿ
+ * 			å…”å­å¯¹æ•°
+ *  ç¬¬ä¸€ä¸ªæœˆï¼š	1
+ *  ç¬¬äºŒä¸ªæœˆï¼š	1
+ *  ç¬¬ä¸‰ä¸ªæœˆï¼š	2
+ *  ç¬¬å››ä¸ªæœˆï¼š	3
+ *  ç¬¬äº”ä¸ªæœˆï¼š	5
+ *  ç¬¬å…­ä¸ªæœˆï¼š	8
  *  ...
  *  
- *  ì³²¨ÄÇÆõÊýÁÐ£º1,1,2,3,5,8...
+ *  æ–æ³¢é‚£å¥‘æ•°åˆ—ï¼š1,1,2,3,5,8...
  *  
- *  ¹æÂÉ£º´ÓµÚÈýÏî¿ªÊ¼£¬Ã¿Ò»ÏîÊÇÇ°Á½ÏîÖ®ºÍ¡£	
- *  ³ö¿Ú£ºÇ°Á½ÏîÓ¦¸ÃÊÇÒÑÖª¡£µÚÒ»Ïî1£¬µÚ¶þÏî1
+ *  è§„å¾‹ï¼šä»Žç¬¬ä¸‰é¡¹å¼€å§‹ï¼Œæ¯ä¸€é¡¹æ˜¯å‰ä¸¤é¡¹ä¹‹å’Œã€‚	
+ *  å‡ºå£ï¼šå‰ä¸¤é¡¹åº”è¯¥æ˜¯å·²çŸ¥ã€‚ç¬¬ä¸€é¡¹1ï¼Œç¬¬äºŒé¡¹1
  *  
- *  ÏàÁÚµÄÁ½¸öÔÂÎÒÃÇÓÃa£¬b±íÊ¾
- *  µÚÒ»¸öÏàÁÚ£ºa=1,b=1
- *  µÚ¶þ¸öÏàÁÚ£ºa=1,b=2
- *  µÚÈý¸öÏàÁÚ£ºa=2,b=3
- *  µÚËÄ¸öÏàÁÚ£ºa=3,b=5
+ *  ç›¸é‚»çš„ä¸¤ä¸ªæœˆæˆ‘ä»¬ç”¨aï¼Œbè¡¨ç¤º
+ *  ç¬¬ä¸€ä¸ªç›¸é‚»ï¼ša=1,b=1
+ *  ç¬¬äºŒä¸ªç›¸é‚»ï¼ša=1,b=2
+ *  ç¬¬ä¸‰ä¸ªç›¸é‚»ï¼ša=2,b=3
+ *  ç¬¬å››ä¸ªç›¸é‚»ï¼ša=3,b=5
  *  ...
- *  Ã¿´ÎÏÂÒ»¸öÏàÁÚµÄaÊÇÒÔÇ°µÄb£¬bÊÇÒÔÇ°µÄa+b
+ *  æ¯æ¬¡ä¸‹ä¸€ä¸ªç›¸é‚»çš„aæ˜¯ä»¥å‰çš„bï¼Œbæ˜¯ä»¥å‰çš„a+b
  */
 public class DiGuiTest {
 	public static void main(String[] args) {
-		// ÓÃÊý×é×ö
+		// ç”¨æ•°ç»„åš
 		int[] arr = new int[20];
 		arr[0] = 1;
 		arr[1] = 1;
 		for (int x = 2; x < arr.length; x++) {
 			arr[x] = arr[x - 1] + arr[x - 2];
 		}
-		System.out.println("µÚ20¸öÔÂµÄÍÃ×Ó¶ÔÊýÊÇ£º" + arr[19]);
+		System.out.println("ç¬¬20ä¸ªæœˆçš„å…”å­å¯¹æ•°æ˜¯ï¼š" + arr[19]);
 		
-		//ÓÃ±äÁ¿µÄ±ä»¯À´×ö
+		//ç”¨å˜é‡çš„å˜åŒ–æ¥åš
 		int a = 1;
 		int b = 1;
 		for(int x=0; x<18; x++){
-			int temp = a;//ÒÔÇ°µÄa
+			int temp = a;//ä»¥å‰çš„a
 			a = b;
 			b = temp + b;
 		}
-		System.out.println("µÚ20¸öÔÂµÄÍÃ×Ó¶ÔÊýÊÇ£º"+b);
+		System.out.println("ç¬¬20ä¸ªæœˆçš„å…”å­å¯¹æ•°æ˜¯ï¼š"+b);
 		
-		//ÓÃµÝ¹éÊµÏÖ
-		System.out.println("µÚ20¸öÔÂµÄÍÃ×Ó¶ÔÊýÊÇ£º"+fib(20));
+		//ç”¨é€’å½’å®žçŽ°
+		System.out.println("ç¬¬20ä¸ªæœˆçš„å…”å­å¯¹æ•°æ˜¯ï¼š"+fib(20));
 	}
 	
 	/*
-	 * ¶¨Òå·½·¨fib(int n)
-	 * fib(n)±íÊ¾ÊÇµÚn¸öÔÂµÄÍÃ×Ó¶ÔÊý¡£
-	 * ÇëÎÊ£¬n-1ºÍn-2¸öÔÂµÄÍÃ×Ó¶ÔÊýÈçºÎ±íÊ¾ÄØ?
+	 * å®šä¹‰æ–¹æ³•fib(int n)
+	 * fib(n)è¡¨ç¤ºæ˜¯ç¬¬nä¸ªæœˆçš„å…”å­å¯¹æ•°ã€‚
+	 * è¯·é—®ï¼Œn-1å’Œn-2ä¸ªæœˆçš„å…”å­å¯¹æ•°å¦‚ä½•è¡¨ç¤ºå‘¢?
 	 * fib(n-1),fib(n-2)
 	 */
 	public static int fib(int n){

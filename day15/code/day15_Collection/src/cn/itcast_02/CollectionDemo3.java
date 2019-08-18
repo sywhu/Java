@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /*
- * Object[] toArray():°Ñ¼¯ºÏ×ª³É¶ÔÏóÊı×é
+ * Object[] toArray():æŠŠé›†åˆè½¬æˆå¯¹è±¡æ•°ç»„
  * 
- * Á·Ï°£ºÓÃ¼¯ºÏ´æ´¢Èı¸öÑ§Éú¶ÔÏó£¬²¢±éÀú¡£
+ * ç»ƒä¹ ï¼šç”¨é›†åˆå­˜å‚¨ä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡ï¼Œå¹¶éå†ã€‚
  */
 public class CollectionDemo3 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Collection c = new ArrayList();
 
-		// Íù¼¯ºÏÖĞÌí¼ÓÔªËØ
+		// å¾€é›†åˆä¸­æ·»åŠ å…ƒç´ 
 		// String s = "hello";
 		c.add("hello");
 		c.add("world");
 		c.add("java");
 
-		// Object[] toArray():°Ñ¼¯ºÏ×ª³É¶ÔÏóÊı×é
+		// Object[] toArray():æŠŠé›†åˆè½¬æˆå¯¹è±¡æ•°ç»„
 		Object[] objs = c.toArray();
-		// ±éÀúÊı×é
+		// éå†æ•°ç»„
 		for (int x = 0; x < objs.length; x++) {
 			// System.out.println(objs[x]);
 			String s = (String) objs[x];

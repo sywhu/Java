@@ -6,19 +6,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /*
- * ´ÓÎÄ±¾ÎÄ¼şÖĞ¶ÁÈ¡Êı¾İ(Ã¿Ò»ĞĞÎªÒ»¸ö×Ö·û´®Êı¾İ)µ½¼¯ºÏÖĞ£¬²¢±éÀú¼¯ºÏ
+ * ä»æ–‡æœ¬æ–‡ä»¶ä¸­è¯»å–æ•°æ®(æ¯ä¸€è¡Œä¸ºä¸€ä¸ªå­—ç¬¦ä¸²æ•°æ®)åˆ°é›†åˆä¸­ï¼Œå¹¶éå†é›†åˆ
  * 
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		array.txt
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		ArrayList
  */
 public class FileToArrayListDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´
+		// å°è£…æ•°æ®æº
 		BufferedReader br = new BufferedReader(new FileReader("array.txt"));
 
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		ArrayList<String> array = new ArrayList<String>();
 
 		String line = null;
@@ -28,7 +28,7 @@ public class FileToArrayListDemo {
 
 		br.close();
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		for (String s : array) {
 			System.out.println(s);
 		}

@@ -1,41 +1,41 @@
 package cn.itcast_05;
 
 /*
- * StringµÄ×ª»»¹¦ÄÜ£º
- * byte[] getBytes():°Ñ×Ö·û´®×ª»»Îª×Ö½ÚÊı×é
- * char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é
- * static String valueOf(char[] chs):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®
- * static String valueOf(int i):°ÑintÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®
- * 		°ÑÈÎÒâÀàĞÍ×ª»»Îª×Ö·û´®µÄ·½·¨¡£
- * String toLowerCase():°Ñ×Ö·û´®×ªĞ¡Ğ´
- * String toUpperCase():°Ñ×Ö·û´®×ª´óĞ´
- * String concat(String str):×Ö·û´®µÄÁ¬½Ó
+ * Stringçš„è½¬æ¢åŠŸèƒ½ï¼š
+ * byte[] getBytes():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„
+ * char[] toCharArray():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
+ * static String valueOf(char[] chs):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+ * static String valueOf(int i):æŠŠintç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²
+ * 		æŠŠä»»æ„ç±»å‹è½¬æ¢ä¸ºå­—ç¬¦ä¸²çš„æ–¹æ³•ã€‚
+ * String toLowerCase():æŠŠå­—ç¬¦ä¸²è½¬å°å†™
+ * String toUpperCase():æŠŠå­—ç¬¦ä¸²è½¬å¤§å†™
+ * String concat(String str):å­—ç¬¦ä¸²çš„è¿æ¥
  */
 public class StringDemo {
 	public static void main(String[] args) {
-		// ¶¨ÒåÒ»¸ö×Ö·û´®
+		// å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²
 		String s = "abcde";
 
-		// byte[] getBytes():°Ñ×Ö·û´®×ª»»Îª×Ö½ÚÊı×é
+		// byte[] getBytes():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„
 		byte[] bys = s.getBytes();
 		for (int x = 0; x < bys.length; x++) {
 			System.out.println(bys[x]);
 		}
 		System.out.println("----------------");
 
-		// char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é
+		// char[] toCharArray():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
 		char[] chs = s.toCharArray();
 		for (int x = 0; x < chs.length; x++) {
 			System.out.println(chs[x]);
 		}
 		System.out.println("----------------");
 
-		// static String valueOf(char[] chs):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®
+		// static String valueOf(char[] chs):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
 		String s2 = String.valueOf(chs);
 		System.out.println("s2:" + s2);
 		System.out.println("----------------");
 
-		// static String valueOf(int i):°ÑintÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®
+		// static String valueOf(int i):æŠŠintç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²
 		int number = 100;
 		String s3 = number + "";
 		String s4 = String.valueOf(number);
@@ -43,13 +43,13 @@ public class StringDemo {
 		System.out.println("s4:" + s4);
 		System.out.println("----------------");
 
-		// String toLowerCase():°Ñ×Ö·û´®×ªĞ¡Ğ´
-		// String toUpperCase():°Ñ×Ö·û´®×ª´óĞ´
+		// String toLowerCase():æŠŠå­—ç¬¦ä¸²è½¬å°å†™
+		// String toUpperCase():æŠŠå­—ç¬¦ä¸²è½¬å¤§å†™
 		System.out.println("toLowerCase():" + "HelloWorld".toLowerCase());
 		System.out.println("toUpperCase():" + "HelloWorld".toUpperCase());
 		System.out.println("----------------");
 
-		// String concat(String str):×Ö·û´®µÄÁ¬½Ó
+		// String concat(String str):å­—ç¬¦ä¸²çš„è¿æ¥
 		String s5 = "hello";
 		String s6 = "world";
 		String s7 = s5.concat(s6);

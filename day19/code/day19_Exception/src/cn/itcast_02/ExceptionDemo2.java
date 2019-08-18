@@ -1,16 +1,16 @@
 package cn.itcast_02;
 
 /*
- * ¶à¸öÒì³£µÄÇé¿ö£º
- * A:Õë¶ÔÃ¿¸öÒì³££¬¸ø³öÒ»¸ö´¦Àí
+ * å¤šä¸ªå¼‚å¸¸çš„æƒ…å†µï¼š
+ * A:é’ˆå¯¹æ¯ä¸ªå¼‚å¸¸ï¼Œç»™å‡ºä¸€ä¸ªå¤„ç†
  * B:try...catch...catch...catch...
- * 		×¢Òâ£º
- * 			a:Ò»µ©tryÀïÃæµÄ´úÂëÓĞÎÊÌâ£¬¾Í²»ÔÚÖ´ĞĞtryÀïÃæµÄÄÚÈİ£¬ºÍcatchÀïÃæµÄÄÚÈİÒÀ´ÎµÄÆ¥Åä£¬Ò»µ©ÓĞÒ»¸öÆ¥Åä£¬ÆäËûµÄ²»Ö´ĞĞ¡£
- * 			b:Èç¹ûÒì³£ÊÇÆ½¼¶¹ØÏµ£¬Ë­ÏÈË­ºóÎŞËùÎ½¡£
- *            Èç¹ûÒì³£²»ÊÇÆ½¼¶¹ØÏµ£¬×ÓÏÈ¸¸ºó¡£
+ * 		æ³¨æ„ï¼š
+ * 			a:ä¸€æ—¦tryé‡Œé¢çš„ä»£ç æœ‰é—®é¢˜ï¼Œå°±ä¸åœ¨æ‰§è¡Œtryé‡Œé¢çš„å†…å®¹ï¼Œå’Œcatché‡Œé¢çš„å†…å®¹ä¾æ¬¡çš„åŒ¹é…ï¼Œä¸€æ—¦æœ‰ä¸€ä¸ªåŒ¹é…ï¼Œå…¶ä»–çš„ä¸æ‰§è¡Œã€‚
+ * 			b:å¦‚æœå¼‚å¸¸æ˜¯å¹³çº§å…³ç³»ï¼Œè°å…ˆè°åæ— æ‰€è°“ã€‚
+ *            å¦‚æœå¼‚å¸¸ä¸æ˜¯å¹³çº§å…³ç³»ï¼Œå­å…ˆçˆ¶åã€‚
  *            
- * JDK7µÄĞÂÌØĞÔ£ºÕë¶ÔÆ½¼¶¹ØÏµµÄ
- * 		catch(Òì³£1 | Òì³£2 | Òì³£3 ... e) {}
+ * JDK7çš„æ–°ç‰¹æ€§ï¼šé’ˆå¯¹å¹³çº§å…³ç³»çš„
+ * 		catch(å¼‚å¸¸1 | å¼‚å¸¸2 | å¼‚å¸¸3 ... e) {}
  */
 public class ExceptionDemo2 {
 	public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class ExceptionDemo2 {
 			System.out.println(a / b);
 			System.out.println(arr[3]);
 		} catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
-			System.out.println("³ÌĞò³öÎÊÌâÁË");
+			System.out.println("ç¨‹åºå‡ºé—®é¢˜äº†");
 		}
 		System.out.println("over");
 	}
@@ -44,11 +44,11 @@ public class ExceptionDemo2 {
 			System.out.println(a / b);
 			System.out.println(arr[3]);
 		} catch (ArithmeticException e) {
-			System.out.println("³ıÊı²»ÄÜÎª0");
+			System.out.println("é™¤æ•°ä¸èƒ½ä¸º0");
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Ë÷ÒıÔ½½çÒì³£");
+			System.out.println("ç´¢å¼•è¶Šç•Œå¼‚å¸¸");
 		} catch (Exception e) {
-			System.out.println("³ÌĞò³öÎÊÌâÁË");
+			System.out.println("ç¨‹åºå‡ºé—®é¢˜äº†");
 		}
 
 		System.out.println("over");
@@ -60,14 +60,14 @@ public class ExceptionDemo2 {
 		try {
 			System.out.println(a / b); // ArithmeticException: / by zero
 		} catch (ArithmeticException e) {
-			System.out.println("³ıÊı²»ÄÜÎª0");
+			System.out.println("é™¤æ•°ä¸èƒ½ä¸º0");
 		}
 
 		int[] arr = { 1, 2, 3 };
 		try {
 			System.out.println(arr[3]); // ArrayIndexOutOfBoundsException: 3
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Ë÷ÒıÔ½½çÒì³£");
+			System.out.println("ç´¢å¼•è¶Šç•Œå¼‚å¸¸");
 		}
 
 		System.out.println("over");

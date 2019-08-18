@@ -1,12 +1,12 @@
 package cn.itcast_07;
 
 /*
- * java APIËäÈ»Ìá¹©ÁË´ó¶àÊýµÄÒì³£Àà£¬µ«ÊÇËû²»¿ÉÄÜ¿¼ÂÇµ½ËùÓÐµÄÇé¿ö¡£
- * ËùÒÔÄØ£¬Õë¶ÔÎÒÃÇ×Ô¼ºµÄÌØÊâÐèÇóµÄÒì³££¬ÎÒÃÇÐèÒª×Ô¼º¶¨ÒåÒì³£¡£
- * ¶øÎÒÃÇÒª×Ô¼º¶¨ÒåÒ»¸öÀà£¬ÈÃËû³ÉÎªÒì³£Àà£¬ÄÇÃ´£¬Ëü±ØÐëÒª¼Ì³Ð×ÔÒì³£Àà¡£
- * ¼Ì³Ð×ÔÄÄ¸öÄØ?
- * 		¼Ì³Ð×ÔException
- *		¼Ì³Ð×ÔRuntimeException
+ * java APIè™½ç„¶æä¾›äº†å¤§å¤šæ•°çš„å¼‚å¸¸ç±»ï¼Œä½†æ˜¯ä»–ä¸å¯èƒ½è€ƒè™‘åˆ°æ‰€æœ‰çš„æƒ…å†µã€‚
+ * æ‰€ä»¥å‘¢ï¼Œé’ˆå¯¹æˆ‘ä»¬è‡ªå·±çš„ç‰¹æ®Šéœ€æ±‚çš„å¼‚å¸¸ï¼Œæˆ‘ä»¬éœ€è¦è‡ªå·±å®šä¹‰å¼‚å¸¸ã€‚
+ * è€Œæˆ‘ä»¬è¦è‡ªå·±å®šä¹‰ä¸€ä¸ªç±»ï¼Œè®©ä»–æˆä¸ºå¼‚å¸¸ç±»ï¼Œé‚£ä¹ˆï¼Œå®ƒå¿…é¡»è¦ç»§æ‰¿è‡ªå¼‚å¸¸ç±»ã€‚
+ * ç»§æ‰¿è‡ªå“ªä¸ªå‘¢?
+ * 		ç»§æ‰¿è‡ªException
+ *		ç»§æ‰¿è‡ªRuntimeException
  */
 public class MyException extends Exception {
 	public MyException() {

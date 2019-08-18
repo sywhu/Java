@@ -3,34 +3,34 @@ package cn.itcast_03;
 import java.util.Calendar;
 
 /*
- * Calendar:°ÑÊ±¼ä·Ö¸î³ÉÁËÒ»¸ö¸öµÄÄê£¬ÔÂ£¬ÈÕ£¬Ê±£¬·Ö£¬ÃëµÈ¡£Èç¹ûÎÒÒªµÃµ½Ò»¸öÍêÕûµÄÄêÔÂÈÕÊ±·ÖÃë£¬ĞèÒªÎÒÃÇ×Ô¼ºÆ´Êı¾İ¡£
+ * Calendar:æŠŠæ—¶é—´åˆ†å‰²æˆäº†ä¸€ä¸ªä¸ªçš„å¹´ï¼Œæœˆï¼Œæ—¥ï¼Œæ—¶ï¼Œåˆ†ï¼Œç§’ç­‰ã€‚å¦‚æœæˆ‘è¦å¾—åˆ°ä¸€ä¸ªå®Œæ•´çš„å¹´æœˆæ—¥æ—¶åˆ†ç§’ï¼Œéœ€è¦æˆ‘ä»¬è‡ªå·±æ‹¼æ•°æ®ã€‚
  * 
- * ÈÕÀú¶ÔÏó	---		Äê£¬ÔÂ£¬ÈÕ£¬Ê±£¬·Ö£¬Ãë
+ * æ—¥å†å¯¹è±¡	---		å¹´ï¼Œæœˆï¼Œæ—¥ï¼Œæ—¶ï¼Œåˆ†ï¼Œç§’
  * 
- * public int get(int field):·µ»Ø¸ø¶¨ÈÕÀú×Ö¶ÎµÄÖµ¡£
+ * public int get(int field):è¿”å›ç»™å®šæ—¥å†å­—æ®µçš„å€¼ã€‚
  */
 public class CalendarDemo {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		// ÈÕÀú×Ö¶ÎÒÑÓÉµ±Ç°ÈÕÆÚºÍÊ±¼ä³õÊ¼»¯£º
-		Calendar rightNow = Calendar.getInstance(); // ¶àÌ¬
+		// åˆ›å»ºå¯¹è±¡
+		// æ—¥å†å­—æ®µå·²ç”±å½“å‰æ—¥æœŸå’Œæ—¶é—´åˆå§‹åŒ–ï¼š
+		Calendar rightNow = Calendar.getInstance(); // å¤šæ€
 
-		// »ñÈ¡Äê
+		// è·å–å¹´
 		int year = rightNow.get(Calendar.YEAR);
 		System.out.println(year);
-		// »ñÈ¡ÔÂ
+		// è·å–æœˆ
 		int month = rightNow.get(Calendar.MONTH);
 		System.out.println(month + 1);
-		// »ñÈ¡ÈÕ
+		// è·å–æ—¥
 		int date = rightNow.get(Calendar.DATE);
 		System.out.println(date);
-		// »ñÈ¡Ê±
+		// è·å–æ—¶
 		int hour = rightNow.get(Calendar.HOUR);
 		System.out.println(hour);
-		// »ñÈ¡·Ö
+		// è·å–åˆ†
 		int minute = rightNow.get(Calendar.MINUTE);
 		System.out.println(minute);
-		// »ñÈ¡Ãë
+		// è·å–ç§’
 		int second = rightNow.get(Calendar.SECOND);
 		System.out.println(second);
 	}

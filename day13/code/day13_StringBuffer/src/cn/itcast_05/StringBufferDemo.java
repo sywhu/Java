@@ -1,18 +1,18 @@
 package cn.itcast_05;
 
 /*
- * 1:String,StringBuffer,StringBuilder������?
- * A:String���ȹ̶���StringBuffer��StringBuilder�ĳ��ȿɱ䡣
- * B:StringBuffer�̰߳�ȫ��Ч�ʵ͡�StringBuilder�̲߳���ȫ��Ч�ʸߡ�
+ * 1:String,StringBuffer,StringBuilder的区别?
+ * A:String长度固定，StringBuffer和StringBuilder的长度可变。
+ * B:StringBuffer线程安全，效率低。StringBuilder线程不安全，效率高。
  * 
- * 2:StringBuffer�����������
- * A:StringBuffer�ĳ��ȿɱ䣬���Դ洢�����������ͣ����ս����ʵ��һ���ַ�����
- * B:���鳤�ȹ̶����洢ͬһ���������͵�Ԫ�ء�
+ * 2:StringBuffer和数组的区别
+ * A:StringBuffer的长度可变，可以存储任意数据类型，最终结果其实是一个字符串。
+ * B:数组长度固定，存储同一种数据类型的元素。
  * 
- * 3:������д�����
- * 		String��Ϊ�������ݣ�StringBuffer��Ϊ��������
+ * 3:看程序写结果：
+ * 		String作为参数传递，StringBuffer作为参数传递
  * 
- * 		String��һ��������������ͣ�����Ϊ�������ݵ�ʱ�򣬿��Ե�������������������Ϊ�����ݵ�Ҳ�ǳ���ֵ��
+ * 		String是一种特殊的引用类型，在作为参数传递的时候，可以当作基本类型来看。因为它传递的也是常量值。
  * 		
  */
 public class StringBufferDemo {

@@ -1,6 +1,6 @@
 package cn.itcast_06;
 
-//¿´³ÌĞòĞ´½á¹û:byte·¶Î§µÄ»º´æ³Ø
+//çœ‹ç¨‹åºå†™ç»“æœ:byteèŒƒå›´çš„ç¼“å­˜æ± 
 public class IntegerDemo {
 	public static void main(String[] args) {
 		Integer i1 = new Integer(127);
@@ -23,11 +23,11 @@ public class IntegerDemo {
 		System.out.println(i7 == i8);// false
 		System.out.println(i7.equals(i8));// true
 
-		// ÒªÏëÖªµÀÎªÊ²Ã´£¬¾Í±ØĞë¿´Ô´Âë¡£
+		// è¦æƒ³çŸ¥é“ä¸ºä»€ä¹ˆï¼Œå°±å¿…é¡»çœ‹æºç ã€‚
 		// public static Integer valueOf(int i)
 		//char ch = 127;
 		//Integer i = Integer.valueOf(ch);
-		// Í¨¹ı²é¿´Ô´ÂëÎÒÃÇÖªµÀÈç¹ûÊı¾İÔÚ-128µ½127Ö®¼ä£¬ÊÇ´ÓÒ»¸ö»º´æÊı×éÖĞ·µ»ØµÄ¡£
-		// Èç¹û²»ÔÚÕâ¸ö·¶Î§ÄÚ£¬¾ÍÊÇÖØĞÂ´´½¨µÄnew³öÀ´µÄ¶ÔÏó¡£
+		// é€šè¿‡æŸ¥çœ‹æºç æˆ‘ä»¬çŸ¥é“å¦‚æœæ•°æ®åœ¨-128åˆ°127ä¹‹é—´ï¼Œæ˜¯ä»ä¸€ä¸ªç¼“å­˜æ•°ç»„ä¸­è¿”å›çš„ã€‚
+		// å¦‚æœä¸åœ¨è¿™ä¸ªèŒƒå›´å†…ï¼Œå°±æ˜¯é‡æ–°åˆ›å»ºçš„newå‡ºæ¥çš„å¯¹è±¡ã€‚
 	}
 }

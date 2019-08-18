@@ -1,9 +1,9 @@
-//ËµÓ¢ÓïµÄ½Ó¿Ú
+//è¯´è‹±è¯­çš„æ¥å£
 interface SpeakEnglish {
 	public abstract void speak();
 }
 
-//³éÏóÈËÀà
+//æŠ½è±¡äººç±»
 abstract class People {
 	private String name;
 	private int age;
@@ -38,7 +38,7 @@ abstract class People {
 	public abstract void eat();
 }
 
-//³éÏóµÄ½ÌÁ·Àà
+//æŠ½è±¡çš„æ•™ç»ƒç±»
 abstract class Coach extends People {
 	public Coach() {}
 
@@ -49,7 +49,7 @@ abstract class Coach extends People {
 	public abstract void teach();
 }
 
-//³éÏóµÄÔË¶¯Ô±Àà
+//æŠ½è±¡çš„è¿åŠ¨å‘˜ç±»
 abstract class Player extends People {
 	public Player() {}
 
@@ -60,7 +60,7 @@ abstract class Player extends People {
 	public abstract void study();
 }
 
-//Æ¹ÅÒÇò½ÌÁ·Àà
+//ä¹’ä¹“çƒæ•™ç»ƒç±»
 class PingPangCoach extends Coach implements SpeakEnglish {
 	public PingPangCoach() {}
 
@@ -69,19 +69,19 @@ class PingPangCoach extends Coach implements SpeakEnglish {
 	}
 
 	public void speak() {
-		System.out.println("Æ¹ÅÒÇò½ÌÁ·Ñ§ËµÓ¢Óï");
+		System.out.println("ä¹’ä¹“çƒæ•™ç»ƒå­¦è¯´è‹±è¯­");
 	}
 
 	public void eat() {
-		System.out.println("Æ¹ÅÒÇò½ÌÁ·³Ô°×²Ë¶¹¸¯");
+		System.out.println("ä¹’ä¹“çƒæ•™ç»ƒåƒç™½èœè±†è…");
 	}
 
 	public void teach() {
-		System.out.println("Æ¹ÅÒÇò½ÌÁ·½ÌÈçºÎ·¢ÇòºÍ½ÓÇò");
+		System.out.println("ä¹’ä¹“çƒæ•™ç»ƒæ•™å¦‚ä½•å‘çƒå’Œæ¥çƒ");
 	}
 }
 
-//ÀºÇò½ÌÁ·
+//ç¯®çƒæ•™ç»ƒ
 class BasketBallCoach extends Coach {
 	public BasketBallCoach() {}
 
@@ -90,15 +90,15 @@ class BasketBallCoach extends Coach {
 	}
 
 	public void eat() {
-		System.out.println("ÀºÇò½ÌÁ·³ÔºìÉÕÈâ");
+		System.out.println("ç¯®çƒæ•™ç»ƒåƒçº¢çƒ§è‚‰");
 	}
 
 	public void teach() {
-		System.out.println("ÀºÇò½ÌÁ·½ÌÈçºÎ´øÇòºÍÍ¶Àº");
+		System.out.println("ç¯®çƒæ•™ç»ƒæ•™å¦‚ä½•å¸¦çƒå’ŒæŠ•ç¯®");
 	}
 }
 
-//Æ¹ÅÒÇòÔË¶¯Ô±Àà
+//ä¹’ä¹“çƒè¿åŠ¨å‘˜ç±»
 class PingPangPlayer extends Player implements SpeakEnglish {
 	public PingPangPlayer() {}
 
@@ -107,19 +107,19 @@ class PingPangPlayer extends Player implements SpeakEnglish {
 	}
 
 	public void speak() {
-		System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±Ñ§ËµÓ¢Óï");
+		System.out.println("ä¹’ä¹“çƒè¿åŠ¨å‘˜å­¦è¯´è‹±è¯­");
 	}
 
 	public void eat() {
-		System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±³ÔÎ÷ºìÊÁ¼¦µ°");
+		System.out.println("ä¹’ä¹“çƒè¿åŠ¨å‘˜åƒè¥¿çº¢æŸ¿é¸¡è›‹");
 	}
 
 	public void study() {
-		System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±Ñ§ÈçºÎ·¢ÇòºÍ½ÓÇò");
+		System.out.println("ä¹’ä¹“çƒè¿åŠ¨å‘˜å­¦å¦‚ä½•å‘çƒå’Œæ¥çƒ");
 	}
 }
 
-//ÀºÇòÔË¶¯Ô±
+//ç¯®çƒè¿åŠ¨å‘˜
 class BasketBallPlayer extends Player {
 	public BasketBallPlayer() {}
 
@@ -128,35 +128,35 @@ class BasketBallPlayer extends Player {
 	}
 
 	public void eat() {
-		System.out.println("ÀºÇòÔË¶¯Ô±³ÔÅ£Èâ");
+		System.out.println("ç¯®çƒè¿åŠ¨å‘˜åƒç‰›è‚‰");
 	}
 
 	public void study() {
-		System.out.println("ÀºÇòÔË¶¯Ô±Ñ§ÈçºÎ´øÇòºÍÍ¶Àº");
+		System.out.println("ç¯®çƒè¿åŠ¨å‘˜å­¦å¦‚ä½•å¸¦çƒå’ŒæŠ•ç¯®");
 	}
 }
 
 class PeopleDemo {
 	public static void main(String[] args) {
-		//²âÊÔ
-		PingPangCoach ppc = new PingPangCoach("Áõ¹úÁº",50);
+		//æµ‹è¯•
+		PingPangCoach ppc = new PingPangCoach("åˆ˜å›½æ¢",50);
 		ppc.eat();
 		ppc.teach();
 		ppc.speak();
 		System.out.println("---------------------------");
 
-		PingPangPlayer ppp = new PingPangPlayer("ÍõºÆ",30);
+		PingPangPlayer ppp = new PingPangPlayer("ç‹æµ©",30);
 		ppp.eat();
 		ppp.study();
 		ppp.speak();
 		System.out.println("---------------------------");
 
-		BasketBallCoach bbc = new BasketBallCoach("ÇÇµ¤",60);
+		BasketBallCoach bbc = new BasketBallCoach("ä¹”ä¸¹",60);
 		bbc.eat();
 		bbc.teach();
 		System.out.println("---------------------------");
 
-		BasketBallPlayer bbp = new BasketBallPlayer("ÕÅ²®Â×",30);
+		BasketBallPlayer bbp = new BasketBallPlayer("å¼ ä¼¯ä¼¦",30);
 		bbp.eat();
 		bbp.study();
 	}

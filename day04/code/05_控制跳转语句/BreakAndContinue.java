@@ -1,20 +1,20 @@
 /*
-	¸ù¾İÒªÇóÌî¿Õ
+	æ ¹æ®è¦æ±‚å¡«ç©º
 */
 class BreakAndContinue {
 	public static void main(String[] args) {
 		for(int x=1; x<=10; x++) {
 			if(x%3==0) {
-				//ÔÚ´Ë´¦ÌîĞ´´úÂë
+				//åœ¨æ­¤å¤„å¡«å†™ä»£ç 
 				break;
 				//continue;
-				//System.out.println("Java»ù´¡°à");
+				//System.out.println("JavaåŸºç¡€ç­");
 			}
-			System.out.println("Java»ù´¡°à");
+			System.out.println("JavaåŸºç¡€ç­");
 		}
 			
-		//ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö2´Î:¡°Java»ù´¡°à¡°
-		//ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö7´Î:¡°Java»ù´¡°à¡°
-		//ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö13´Î:¡°Java»ù´¡°à¡°	
+		//æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º2æ¬¡:â€œJavaåŸºç¡€ç­â€œ
+		//æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º7æ¬¡:â€œJavaåŸºç¡€ç­â€œ
+		//æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º13æ¬¡:â€œJavaåŸºç¡€ç­â€œ	
 	}
 }

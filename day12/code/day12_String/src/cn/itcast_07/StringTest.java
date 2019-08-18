@@ -1,22 +1,22 @@
 package cn.itcast_07;
 
 /*
- * °ÑÊı×éÖĞµÄÊı¾İ°´ÕÕÖ¸¶¨¸ñÊ½Æ´½Ó³ÉÒ»¸ö×Ö·û´®
- * ¾ÙÀı£ºint[] arr = {1,2,3};	
- * Êä³ö½á¹û£º[1, 2, 3] 
+ * æŠŠæ•°ç»„ä¸­çš„æ•°æ®æŒ‰ç…§æŒ‡å®šæ ¼å¼æ‹¼æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²
+ * ä¸¾ä¾‹ï¼šint[] arr = {1,2,3};	
+ * è¾“å‡ºç»“æœï¼š[1, 2, 3] 
  */
 public class StringTest {
 	public static void main(String[] args) {
-		// ¶¨ÒåÒ»¸öÊı×é
+		// å®šä¹‰ä¸€ä¸ªæ•°ç»„
 		int[] arr = { 1, 2, 3 };
 		
 		String result = arrayToString(arr);
 		System.out.println(result);
 	}
 
-	// Ğ´¹¦ÄÜÊµÏÖ
-	// ĞÎÊ½²ÎÊı£ºÊı×é
-	// ·µ»ØÖµÀàĞÍ£ºString
+	// å†™åŠŸèƒ½å®ç°
+	// å½¢å¼å‚æ•°ï¼šæ•°ç»„
+	// è¿”å›å€¼ç±»å‹ï¼šString
 	public static String arrayToString(int[] arr) {
 		String s = "";
 

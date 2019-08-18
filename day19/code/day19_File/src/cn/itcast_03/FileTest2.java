@@ -4,13 +4,13 @@ import java.io.File;
 import java.io.FilenameFilter;
 
 /*
- * ÐèÇó£ºÇë°ÑdÅÌÄ¿Â¼ÏÂËùÓÐµÄ.jpg½áÎ²µÄÎÄ¼þÃû³Æ¸øÊä³ö³öÀ´
- * A·½°¸Ë¼Â·:
- *		ÏÈ»ñÈ¡ËùÓÐµÄÎÄ¼þ»òÕßÎÄ¼þ¼ÐµÄFileÊý×é£¬ÔÚ±éÀúµÄÊ±ºò£¬ÒÀ´ÎÅÐ¶Ï£¬Èç¹ûÂú×ãÌõ¼þ£¬¾ÍÊä³ö¡£
- * B·½°¸Ë¼Â·£º
- * 		ÏÈÅÐ¶ÏÂú×ãÌõ¼þÂð?Èç¹ûÂú×ã£¬¾ÍÍùÊý×éÀïÃæ·½·¨£¬×îºóÖ±½Ó±éÀú¼´¿É¡£
+ * éœ€æ±‚ï¼šè¯·æŠŠdç›˜ç›®å½•ä¸‹æ‰€æœ‰çš„.jpgç»“å°¾çš„æ–‡ä»¶åç§°ç»™è¾“å‡ºå‡ºæ¥
+ * Aæ–¹æ¡ˆæ€è·¯:
+ *		å…ˆèŽ·å–æ‰€æœ‰çš„æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„Fileæ•°ç»„ï¼Œåœ¨éåŽ†çš„æ—¶å€™ï¼Œä¾æ¬¡åˆ¤æ–­ï¼Œå¦‚æžœæ»¡è¶³æ¡ä»¶ï¼Œå°±è¾“å‡ºã€‚
+ * Bæ–¹æ¡ˆæ€è·¯ï¼š
+ * 		å…ˆåˆ¤æ–­æ»¡è¶³æ¡ä»¶å—?å¦‚æžœæ»¡è¶³ï¼Œå°±å¾€æ•°ç»„é‡Œé¢æ–¹æ³•ï¼Œæœ€åŽç›´æŽ¥éåŽ†å³å¯ã€‚
  * 
- * ÒªÏëÊµÏÖB·½°¸£¬¾Í±ØÐëÖªµÀÒ»¸ö¶«Î÷£ºFilenameFilter ÎÄ¼þÃû³Æ¹ýÂËÆ÷¡£
+ * è¦æƒ³å®žçŽ°Bæ–¹æ¡ˆï¼Œå°±å¿…é¡»çŸ¥é“ä¸€ä¸ªä¸œè¥¿ï¼šFilenameFilter æ–‡ä»¶åç§°è¿‡æ»¤å™¨ã€‚
  */
 public class FileTest2 {
 	public static void main(String[] args) {

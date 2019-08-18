@@ -1,24 +1,24 @@
 /*
-	¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬±È½ÏÕâÁ½¸öÊı¾İÊÇ·ñÏàµÈ
+	é”®ç›˜å½•å…¥ä¸¤ä¸ªæ•°æ®ï¼Œæ¯”è¾ƒè¿™ä¸¤ä¸ªæ•°æ®æ˜¯å¦ç›¸ç­‰
 */
 import java.util.Scanner;
 
 class OperatorTest4 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//»ñÈ¡¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊı¾İ£º");
+		//è·å–é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°æ®ï¼š");
 		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÊı¾İ£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°æ®ï¼š");
 		int b = sc.nextInt();
 
-		//±È½ÏÊÇ·ñÏàµÈ
+		//æ¯”è¾ƒæ˜¯å¦ç›¸ç­‰
 		//boolean flag =  (a==b)?true:false;
 		boolean flag = (a==b);
 
-		//Êä³ö½á¹û
+		//è¾“å‡ºç»“æœ
 		System.out.println(flag);
 	}
 }

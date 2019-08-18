@@ -1,7 +1,7 @@
 /*
-	ÀÏÊ¦°¸Àı
-		¾ßÌåÊÂÎï£º»ù´¡°àÀÏÊ¦£¬¾ÍÒµ°àÀÏÊ¦
-		¹²ĞÔ£ºĞÕÃû£¬ÄêÁä£¬½²¿Î¡£
+	è€å¸ˆæ¡ˆä¾‹
+		å…·ä½“äº‹ç‰©ï¼šåŸºç¡€ç­è€å¸ˆï¼Œå°±ä¸šç­è€å¸ˆ
+		å…±æ€§ï¼šå§“åï¼Œå¹´é¾„ï¼Œè®²è¯¾ã€‚
 */
 abstract class Teacher {
 	private String name;
@@ -30,7 +30,7 @@ abstract class Teacher {
 		return age;
 	}
 
-	//³éÏó·½·¨
+	//æŠ½è±¡æ–¹æ³•
 	public abstract void teach();
 }
 
@@ -42,45 +42,45 @@ class BasicTeacher extends Teacher {
 	}
 
 	public void teach() {
-		System.out.println("»ù´¡°àÀÏÊ¦½²½âJavaSE");
+		System.out.println("åŸºç¡€ç­è€å¸ˆè®²è§£JavaSE");
 	}
 }
 
-//Á·Ï°1£º¾ÍÒµ°àÀÏÊ¦µÄ´úÂë
+//ç»ƒä¹ 1ï¼šå°±ä¸šç­è€å¸ˆçš„ä»£ç 
 
 class TeacherDemo {
 	public static void main(String[] args) {
-		//²âÊÔ»ù´¡°àÀÏÊ¦
+		//æµ‹è¯•åŸºç¡€ç­è€å¸ˆ
 		BasicTeacher bt = new BasicTeacher();
-		bt.setName("ÁÖÇàÏ¼");
+		bt.setName("æ—é’éœ");
 		bt.setAge(28);
 		System.out.println(bt.getName()+"---"+bt.getAge());
 		bt.teach();
 		System.out.println("----------------------------");
 
-		BasicTeacher bt2 = new BasicTeacher("ÁÖÇàÏ¼",28);
+		BasicTeacher bt2 = new BasicTeacher("æ—é’éœ",28);
 		System.out.println(bt2.getName()+"---"+bt2.getAge());
 		bt2.teach();
 		System.out.println("----------------------------");
 
-		//¶àÌ¬²âÊÔ
+		//å¤šæ€æµ‹è¯•
 		Teacher t = new BasicTeacher();
-		t.setName("ÁÖÇàÏ¼");
+		t.setName("æ—é’éœ");
 		t.setAge(28);
 		System.out.println(t.getName()+"---"+t.getAge());
 		t.teach();
 		System.out.println("----------------------------");
 
-		Teacher t2 = new BasicTeacher("ÁÖÇàÏ¼",28);
+		Teacher t2 = new BasicTeacher("æ—é’éœ",28);
 		System.out.println(t2.getName()+"---"+t2.getAge());
 		t2.teach();
 		System.out.println("----------------------------");
 
-		//Á·Ï°2£º¾ÍÒµ°àÀÏÊ¦²âÊÔ£¬¶àÌ¬²âÊÔ
+		//ç»ƒä¹ 2ï¼šå°±ä¸šç­è€å¸ˆæµ‹è¯•ï¼Œå¤šæ€æµ‹è¯•
 	}
 }
 
-//Á·Ï°3£ºÑ§Éú°¸Àı
-//¾ßÌåÊÂÎñ£º»ù´¡°àÑ§Ô±£¬¾ÍÒµ°àÑ§Ô±
-//¹²ĞÔ£ºĞÕÃû£¬ÄêÁä£¬°à¼¶£¬Ñ§Ï°£¬³Ô·¹
-//×Ô¼º·ÖÎö£¬×Ô¼ºĞ´´úÂë£¬×Ô¼º²âÊÔ
+//ç»ƒä¹ 3ï¼šå­¦ç”Ÿæ¡ˆä¾‹
+//å…·ä½“äº‹åŠ¡ï¼šåŸºç¡€ç­å­¦å‘˜ï¼Œå°±ä¸šç­å­¦å‘˜
+//å…±æ€§ï¼šå§“åï¼Œå¹´é¾„ï¼Œç­çº§ï¼Œå­¦ä¹ ï¼Œåƒé¥­
+//è‡ªå·±åˆ†æï¼Œè‡ªå·±å†™ä»£ç ï¼Œè‡ªå·±æµ‹è¯•

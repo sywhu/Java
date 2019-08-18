@@ -3,31 +3,31 @@ package cn.itcast_03;
 import java.io.File;
 
 /*
- * �������d��Ŀ¼�����е�.jpg��β���ļ����Ƹ��������
+ * 需求：请把d盘目录下所有的.jpg结尾的文件名称给输出出来
  * 
- * ������
- * 		A:��װĿ¼
- * 		B:��ȡ��Ŀ¼�����е��ļ������ļ��е�File����
- * 		C:������File���飬�õ�ÿһ��File����
- * 		D:�жϸ�File����
- * 			���ж��Ƿ����ļ�
- * 				�ǣ�
- * 					�����ж��Ƿ���.jpg��β
- * 						�ǣ��������
+ * 分析：
+ * 		A:封装目录
+ * 		B:获取该目录下所有的文件或者文件夹的File数组
+ * 		C:遍历该File数组，得到每一个File对象
+ * 		D:判断该File对象
+ * 			先判断是否是文件
+ * 				是：
+ * 					继续判断是否以.jpg结尾
+ * 						是：输出名称
  */
 public class FileTest {
 	public static void main(String[] args) {
-		// ��װĿ¼
+		// 封装目录
 		File folder = new File("d:\\");
 
-		// ��ȡ��Ŀ¼�����е��ļ������ļ��е�File����
+		// 获取该目录下所有的文件或者文件夹的File数组
 		File[] fileArray = folder.listFiles();
 
-		// ������File���飬�õ�ÿһ��File����
+		// 遍历该File数组，得到每一个File对象
 		for (File file : fileArray) {
-			// ���ж��Ƿ����ļ�
+			// 先判断是否是文件
 			if (file.isFile()) {
-				// �����ж��Ƿ���.jpg��β
+				// 继续判断是否以.jpg结尾
 				if (file.getName().endsWith(".jpg")) {
 					System.out.println(file.getName());
 				}

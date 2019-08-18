@@ -3,23 +3,23 @@ package cn.itcast_03;
 import java.util.LinkedList;
 
 /*
- * LinkedListµÄÌØÓĞ¹¦ÄÜ£º
- * 		A:Ìí¼Ó¹¦ÄÜ
+ * LinkedListé¨å‹­å£’éˆå¤Šå§›é‘³æ–¤ç´°
+ * 		A:å¨£è¯²å§é”ç†»å…˜
  * 			void addFirst()
  * 			void addLast()
- * 		B:ÒÆ³ı¹¦ÄÜ
+ * 		B:ç»‰å©šæ«é”ç†»å…˜
  * 			Object removeFirst()
  * 			Object removeLast()
- * 		C:»ñÈ¡¹¦ÄÜ
+ * 		C:é‘¾å³°å½‡é”ç†»å…˜
  * 			Object getFirst()
  * 			Object getLast()
  */
 public class LinkedListDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// é’æ¶˜ç¼“é—†å——æ‚ç€µç¡…è–„
 		LinkedList link = new LinkedList();
 
-		// Ìí¼ÓÔªËØ
+		// å¨£è¯²å§éå†ªç¤Œ
 		link.add("hello");
 		link.add("world");
 		link.add("java");

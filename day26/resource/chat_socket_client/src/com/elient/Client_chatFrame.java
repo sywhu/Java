@@ -55,7 +55,7 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 		getContentPane().setLayout(null);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBorder(BorderFactory.createTitledBorder("ÁÄÌìÏûÏ¢"));
+		scrollPane.setBorder(BorderFactory.createTitledBorder("èŠå¤©æ¶ˆæ¯"));
 		scrollPane.setBounds(10, 10, 283, 167);
 		scrollPane.setWheelScrollingEnabled(true);
 		getContentPane().add(scrollPane);
@@ -71,25 +71,25 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 		jtf_inputMess.setColumns(10);
 
 		jbt_trans = new JButton("\u53D1  \u9001");
-		jbt_trans.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		jbt_trans.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		jbt_trans.setBounds(212, 241, 93, 32);
 		jbt_trans.addActionListener(this);
 		getContentPane().add(jbt_trans);
 
 		jbt_clear = new JButton("\u6E05\u9664\u804A\u5929\u8BB0\u5F55");
-		jbt_clear.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		jbt_clear.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		jbt_clear.setBounds(158, 187, 135, 37);
 		jbt_clear.addActionListener(this);
 		getContentPane().add(jbt_clear);
 
 		jbt_exit = new JButton("\u9000\u51FA\u804A\u5929\u5BA4");
-		jbt_exit.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		jbt_exit.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		jbt_exit.setBounds(20, 189, 128, 37);
 		jbt_exit.addActionListener(this);
 		getContentPane().add(jbt_exit);
 
 		scrollPane_1 = new JScrollPane();
-		scrollPane_1.setBorder(BorderFactory.createTitledBorder("ÔÚÏßÓÃ»§"));
+		scrollPane_1.setBorder(BorderFactory.createTitledBorder("åœ¨çº¿ç”¨æˆ·"));
 		scrollPane_1.setBounds(303, 10, 128, 214);
 		getContentPane().add(scrollPane_1);
 
@@ -131,7 +131,7 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 			mess.trim();
 			jtf_inputMess.setText("");
 			if (mess.equals("")) {
-				JOptionPane.showMessageDialog(this, "²»ÄÜ·¢ËÍ¿ÕÏûÏ¢");
+				JOptionPane.showMessageDialog(this, "ä¸èƒ½å‘é€ç©ºæ¶ˆæ¯");
 				jtf_inputMess.setText("");
 			} else {
 				client.transMess(mess);
@@ -139,7 +139,7 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 		}
 		if (e.getSource() == jbt_exit) {
 			if (JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(this,
-					"ÊÇ·ñÈ·¶¨ÒªÍË³öÁÄÌìÊÒ£¿", "ÌáÊ¾", JOptionPane.OK_CANCEL_OPTION)) {
+					"æ˜¯å¦ç¡®å®šè¦é€€å‡ºèŠå¤©å®¤ï¼Ÿ", "æç¤º", JOptionPane.OK_CANCEL_OPTION)) {
 				this.setVisible(false);
 				client.exitChat();
 				System.exit(0);
@@ -148,7 +148,7 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 		if (e.getSource() == jbt_singlChat) {
 			String user_names = (String) jlt_disUsers.getSelectedValue();
 			if (user_names == null) {
-				JOptionPane.showMessageDialog(this, "ÄúÎ´Ñ¡ÔñÁÄÌì¶ÔÏó\nÇëÑ¡ÔñÒªµ¥¶ÀÁÄÌìµÄ¶ÔÏó");
+				JOptionPane.showMessageDialog(this, "æ‚¨æœªé€‰æ‹©èŠå¤©å¯¹è±¡\nè¯·é€‰æ‹©è¦å•ç‹¬èŠå¤©çš„å¯¹è±¡");
 			} else {
 				if (!client.c_singleFrames.containsKey(user_names)) {
 					createSingleChatFrame(user_names);
@@ -193,9 +193,9 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 				if (client.getThreadID() == id_user) {
 					if (!client.username.equals(infos[i - 1])) {
 						JOptionPane.showMessageDialog(this,
-								"ÓÉÓÚÓĞÍ¬ÃûµÄÓÃ»§µÇÂ¼£¬ËùÒÔÄúµÄÓÃ»§ÃûºóÃæ¼ÓÉÏÁË±àºÅ");
+								"ç”±äºæœ‰åŒåçš„ç”¨æˆ·ç™»å½•ï¼Œæ‰€ä»¥æ‚¨çš„ç”¨æˆ·ååé¢åŠ ä¸Šäº†ç¼–å·");
 						client.username = infos[i - 1];
-						this.setTitle("ÁÄÌìÊÒ    " + client.username);
+						this.setTitle("èŠå¤©å®¤    " + client.username);
 						break;
 					} else {
 						break;
@@ -221,7 +221,7 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 			jlt_disUsers.setListData(s);
 		} else {
 			if ((infos.length / 2 - 1) < client.username_online.size()) {
-				// ÓĞÈËÏÂÏß
+				// æœ‰äººä¸‹çº¿
 				List<String> rec = new ArrayList<String>();
 				int i = 0;
 				for (; i < infos.length; i++) {
@@ -308,7 +308,7 @@ public class Client_chatFrame extends JFrame implements ActionListener,
 	}
 
 	public void closeClient() {
-		JOptionPane.showMessageDialog(this, "·şÎñÆ÷ÒÑ¹Ø±Õ", "ÌáÊ¾",
+		JOptionPane.showMessageDialog(this, "æœåŠ¡å™¨å·²å…³é—­", "æç¤º",
 				JOptionPane.OK_OPTION);
 		client.exitClient();
 		setVisible(false);

@@ -4,12 +4,12 @@ class Demo {
 }
 
 public class MovieTicket implements Runnable {
-	// ¶¨Òå100ÕÅÆ±
+	// å®šä¹‰100å¼ ç¥¨
 	private static int tickets = 100;
 	private Object obj = new Object();
 	private int x = 0;
 
-	// ¸Ä½øÎªif...elseµÄÊµÏÖ
+	// æ”¹è¿›ä¸ºif...elseçš„å®ç°
 	// @Override
 	// public void run() {
 	// while (true) {
@@ -23,7 +23,7 @@ public class MovieTicket implements Runnable {
 	// }
 	//
 	// System.out.println(Thread.currentThread().getName()
-	// + "ÕıÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
+	// + "æ­£åœ¨å‡ºå”®ç¬¬" + (tickets--) + "å¼ ç¥¨");
 	// }
 	// }
 	// } else {
@@ -36,7 +36,7 @@ public class MovieTicket implements Runnable {
 	// }
 	//
 	// System.out.println(Thread.currentThread().getName()
-	// + "ÕıÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
+	// + "æ­£åœ¨å‡ºå”®ç¬¬" + (tickets--) + "å¼ ç¥¨");
 	// }
 	// }
 	// }
@@ -57,7 +57,7 @@ public class MovieTicket implements Runnable {
 						}
 
 						System.out.println(Thread.currentThread().getName()
-								+ "ÕıÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
+								+ "æ­£åœ¨å‡ºå”®ç¬¬" + (tickets--) + "å¼ ç¥¨");
 					}
 				}
 			} else {
@@ -67,7 +67,7 @@ public class MovieTicket implements Runnable {
 		}
 	}
 
-	// ¸Ä½øÎªÒ»¸ö·½·¨ÊµÏÖ¡£
+	// æ”¹è¿›ä¸ºä¸€ä¸ªæ–¹æ³•å®ç°ã€‚
 	// private void sellTicket() {
 	// synchronized (obj) {
 	// if (tickets > 0) {
@@ -77,8 +77,8 @@ public class MovieTicket implements Runnable {
 	// e.printStackTrace();
 	// }
 	//
-	// System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ"
-	// + (tickets--) + "ÕÅÆ±");
+	// System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬"
+	// + (tickets--) + "å¼ ç¥¨");
 	// }
 	// }
 	// }
@@ -91,8 +91,8 @@ public class MovieTicket implements Runnable {
 	// e.printStackTrace();
 	// }
 	//
-	// System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ"
-	// + (tickets--) + "ÕÅÆ±");
+	// System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬"
+	// + (tickets--) + "å¼ ç¥¨");
 	// }
 	// }
 
@@ -104,8 +104,8 @@ public class MovieTicket implements Runnable {
 				e.printStackTrace();
 			}
 
-			System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ"
-					+ (tickets--) + "ÕÅÆ±");
+			System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬"
+					+ (tickets--) + "å¼ ç¥¨");
 		}
 	}
 }

@@ -5,16 +5,16 @@ import java.util.Scanner;
 
 public class CalendarTest {
 	public static void main(String[] args) {
-		// »ñÈ¡ÈÎÒâÒ»ÄêµÄ¶şÔÂÓĞ¶àÉÙÌì?
+		// è·å–ä»»æ„ä¸€å¹´çš„äºŒæœˆæœ‰å¤šå°‘å¤©?
 		Calendar c = Calendar.getInstance();
 
-		// ÉèÖÃÄêÔÂÈÕ
+		// è®¾ç½®å¹´æœˆæ—¥
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄãÒª»ñÈ¡ÄÄÒ»ÄêµÄ2ÔÂ·İ£º");
+		System.out.println("è¯·è¾“å…¥ä½ è¦è·å–å“ªä¸€å¹´çš„2æœˆä»½ï¼š");
 		int year = sc.nextInt();
 
-		c.set(year, 2, 1); // ÈÎÒâÒ»ÄêµÄ3ÔÂ1ÈÕ
-		c.add(Calendar.DATE, -1); // ÈÎÒâÒ»ÄêµÄ2ÔÂ×îºóÒ»Ìì
+		c.set(year, 2, 1); // ä»»æ„ä¸€å¹´çš„3æœˆ1æ—¥
+		c.add(Calendar.DATE, -1); // ä»»æ„ä¸€å¹´çš„2æœˆæœ€åä¸€å¤©
 
 		System.out.println(c.get(Calendar.DATE));
 	}

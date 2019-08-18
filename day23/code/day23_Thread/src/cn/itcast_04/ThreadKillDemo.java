@@ -1,16 +1,16 @@
 package cn.itcast_04;
 
 /*
- * ÖĞ¶ÏÏß³Ì
- *		public final void stop():Ö±½ÓËÀ
- *		public void interrupt():ËÀºó»¹¿ÉÒÔĞ´ÒÅÖö
+ * ä¸­æ–­çº¿ç¨‹
+ *		public final void stop():ç›´æ¥æ­»
+ *		public void interrupt():æ­»åè¿˜å¯ä»¥å†™é—å˜±
  */
 public class ThreadKillDemo {
 	public static void main(String[] args) {
 		ThreadKill tk = new ThreadKill();
 		tk.start();
 
-		// ¼ÙÉèÎÒÈıÃë¾Í²»ÈÃÈÃÄãÔÙÖ´ĞĞÁË£¬±ØĞëÈÃÄãËÀÈ¥
+		// å‡è®¾æˆ‘ä¸‰ç§’å°±ä¸è®©è®©ä½ å†æ‰§è¡Œäº†ï¼Œå¿…é¡»è®©ä½ æ­»å»
 		try {
 			Thread.sleep(3000);
 			// tk.stop();

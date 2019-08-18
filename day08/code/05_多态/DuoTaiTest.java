@@ -12,7 +12,7 @@ class Zi extends Fu{
 		System.out.println("zi method");
 	}
 }
-//±àÒë±¨´í
+//ç¼‚æ ¬ç˜§éŽ¶ãƒ©æ•Š
 class DuoTaiTest {
 	public static void main(String[] args) {
 		Fu f = new Zi();

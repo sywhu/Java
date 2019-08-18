@@ -1,88 +1,88 @@
 /*
-	ĞèÇó£º¼üÅÌÂ¼ÈëÔÂ·İµÄÖµ£¬Êä³ö¶ÔÓ¦µÄ¼¾½Ú¡£
-		´º 3,4,5
-		ÏÄ 6,7,8
-		Çï 9,10,11
-		¶¬ 12,1,2
+	éœ€æ±‚ï¼šé”®ç›˜å½•å…¥æœˆä»½çš„å€¼ï¼Œè¾“å‡ºå¯¹åº”çš„å­£èŠ‚ã€‚
+		æ˜¥ 3,4,5
+		å¤ 6,7,8
+		ç§‹ 9,10,11
+		å†¬ 12,1,2
 
-	·ÖÎö£º
-		A:¼üÅÌÂ¼ÈëÔÂ·İ£¬ÓÃScannerÊµÏÖ¡£
-		B:ÓÃifÓï¾äÊµÏÖÅĞ¶Ï
+	åˆ†æï¼š
+		A:é”®ç›˜å½•å…¥æœˆä»½ï¼Œç”¨Scannerå®ç°ã€‚
+		B:ç”¨ifè¯­å¥å®ç°åˆ¤æ–­
 */
 import java.util.Scanner;
 
 class IfTest4 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÔÂ·İ
-		System.out.println("ÇëÊäÈëÔÂ·İ£º");
+		//é”®ç›˜å½•å…¥æœˆä»½
+		System.out.println("è¯·è¾“å…¥æœˆä»½ï¼š");
 		int month = sc.nextInt();
 		
 		/*
 		if(month<1 || month>12) {
-			System.out.println("ÔÂ·İÊäÈëÓĞÎó");
+			System.out.println("æœˆä»½è¾“å…¥æœ‰è¯¯");
 		}else if(month == 1) {
-			System.out.println("¶¬¼¾");
+			System.out.println("å†¬å­£");
 		}else if(month == 2) {
-			System.out.println("¶¬¼¾");
+			System.out.println("å†¬å­£");
 		}else if(month == 3) {
-			System.out.println("´º¼¾");
+			System.out.println("æ˜¥å­£");
 		}else if(month == 4) {
-			System.out.println("´º¼¾");
+			System.out.println("æ˜¥å­£");
 		}else if(month == 5) {
-			System.out.println("´º¼¾");
+			System.out.println("æ˜¥å­£");
 		}else if(month == 6) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("å¤å­£");
 		}else if(month == 7) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("å¤å­£");
 		}else if(month == 8) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("å¤å­£");
 		}else if(month == 9) {
-			System.out.println("Çï¼¾");
+			System.out.println("ç§‹å­£");
 		}else if(month == 10) {
-			System.out.println("Çï¼¾");
+			System.out.println("ç§‹å­£");
 		}else if(month == 11) {
-			System.out.println("Çï¼¾");
+			System.out.println("ç§‹å­£");
 		}else {
-			System.out.println("¶¬¼¾");
+			System.out.println("å†¬å­£");
 		}
 		*/
 
-		//ËäÈ»ÏÖÔÚ¿ÉÒÔÊµÏÖ£¬µ«ÊÇ¸Ğ¾õÓĞĞ©Âé·³
-		//ËùÒÔÎÒÃÇÒª¶Ô³ÌĞò½øĞĞ¸Ä½ø
-		//ÈçºÎ¸ÄÄØ?
+		//è™½ç„¶ç°åœ¨å¯ä»¥å®ç°ï¼Œä½†æ˜¯æ„Ÿè§‰æœ‰äº›éº»çƒ¦
+		//æ‰€ä»¥æˆ‘ä»¬è¦å¯¹ç¨‹åºè¿›è¡Œæ”¹è¿›
+		//å¦‚ä½•æ”¹å‘¢?
 		//month==3 || month==4 || month==5
 		/*
 		if(month<1 || month>12) {
-			System.out.println("ÔÂ·İÊäÈëÓĞÎó");
+			System.out.println("æœˆä»½è¾“å…¥æœ‰è¯¯");
 		}else if(month==3 || month==4 || month==5) {
-			System.out.println("´º¼¾");
+			System.out.println("æ˜¥å­£");
 		}else if(month==6 || month==7 || month==8) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("å¤å­£");
 		}else if(month==9 || month==10 || month==11) {
-			System.out.println("Çï¼¾");
+			System.out.println("ç§‹å­£");
 		}else {
-			System.out.println("¶¬¼¾");
+			System.out.println("å†¬å­£");
 		}
 		*/
 
-		//Õâ¸öÊ±ºò£¬ÒÑ¾­¿ÉÒÔÁË¡£
-		//µ«ÊÇ£¬¼ÓÈëÅĞ¶ÏµÄÌõ¼ş½Ï¶à£¬±ÈÈçËµ£¬ÉÏ°ëÄêºÍÏÂ°ëÄê¡£
-		//ÅĞ¶ÏµÄÌõ¼ş±È½Ï¶àµÄ»°£¬ÎÒÃÇÆäÊµ»¹¿ÉÒÔ¿¼ÂÇÍ¨¹ıÁíÍâµÄÒ»ÖÖĞÎÊ½½øĞĞ±í´ï
+		//è¿™ä¸ªæ—¶å€™ï¼Œå·²ç»å¯ä»¥äº†ã€‚
+		//ä½†æ˜¯ï¼ŒåŠ å…¥åˆ¤æ–­çš„æ¡ä»¶è¾ƒå¤šï¼Œæ¯”å¦‚è¯´ï¼Œä¸ŠåŠå¹´å’Œä¸‹åŠå¹´ã€‚
+		//åˆ¤æ–­çš„æ¡ä»¶æ¯”è¾ƒå¤šçš„è¯ï¼Œæˆ‘ä»¬å…¶å®è¿˜å¯ä»¥è€ƒè™‘é€šè¿‡å¦å¤–çš„ä¸€ç§å½¢å¼è¿›è¡Œè¡¨è¾¾
 		//(month>=3 && month<=5)
-		//Õë¶ÔÒ»¸ö·¶Î§µÄÅĞ¶Ï
+		//é’ˆå¯¹ä¸€ä¸ªèŒƒå›´çš„åˆ¤æ–­
 		if(month<1 || month>12) {
-			System.out.println("ÔÂ·İÊäÈëÓĞÎó");
+			System.out.println("æœˆä»½è¾“å…¥æœ‰è¯¯");
 		}else if(month>=3 && month<=5) {
-			System.out.println("´º¼¾");
+			System.out.println("æ˜¥å­£");
 		}else if(month>=6 && month<=8) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("å¤å­£");
 		}else if(month>=9 && month<=11) {
-			System.out.println("Çï¼¾");
+			System.out.println("ç§‹å­£");
 		}else {
-			System.out.println("¶¬¼¾");
+			System.out.println("å†¬å­£");
 		}
 	}
 }

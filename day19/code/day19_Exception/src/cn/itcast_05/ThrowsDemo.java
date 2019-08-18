@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- * throws:ÓÃÔÚ·½·¨ÉÏ£¬Å×³öÒì³££¬ÈÃµ÷ÓÃÕßÈ¥´¦Àí¡£
+ * throws:ç”¨åœ¨æ–¹æ³•ä¸Šï¼ŒæŠ›å‡ºå¼‚å¸¸ï¼Œè®©è°ƒç”¨è€…å»å¤„ç†ã€‚
  */
 public class ThrowsDemo {
 	public static void main(String[] args) {

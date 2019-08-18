@@ -1,17 +1,17 @@
 package cn.itcast_02;
 
 /*
- * ½ØÈ¡¹¦ÄÜ:·µ»ØÖµÀàĞÍÊÇStringÀàĞÍ£¬±¾ÉíÃ»ÓĞ·¢Éú¸Ä±ä
- * public String substring(int start):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ä©Î²
- * public String substring(int start,int end):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊø
+ * æˆªå–åŠŸèƒ½:è¿”å›å€¼ç±»å‹æ˜¯Stringç±»å‹ï¼Œæœ¬èº«æ²¡æœ‰å‘ç”Ÿæ”¹å˜
+ * public String substring(int start):ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æœ«å°¾
+ * public String substring(int start,int end):ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸ
  */
 public class StringBufferDemo5 {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		StringBuffer buffer = new StringBuffer();
 		buffer.append("helloworldjava");
 
-		// public String substring(int start):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ä©Î²
+		// public String substring(int start):ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æœ«å°¾
 		String s = buffer.substring(5);
 
 		System.out.println("s:" + s);

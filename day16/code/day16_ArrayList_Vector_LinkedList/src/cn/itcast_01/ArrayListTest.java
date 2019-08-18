@@ -4,33 +4,33 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * ĞèÇó£º´æ´¢Èı¸öÑ§Éú¶ÔÏó£¬²¢±éÀú¡£ÓÃÁ½ÖÖ·½Ê½±éÀú
+ * éœ€æ±‚ï¼šå­˜å‚¨ä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡ï¼Œå¹¶éå†ã€‚ç”¨ä¸¤ç§æ–¹å¼éå†
  * 
- * Á·Ï°£º
- * 		VectorºÍLinkedList¡£
- * 		´æ´¢×Ö·û´®²¢±éÀú
- * 		´æ´¢×Ô¶¨Òå¶ÔÏó²¢±éÀú
+ * ç»ƒä¹ ï¼š
+ * 		Vectorå’ŒLinkedListã€‚
+ * 		å­˜å‚¨å­—ç¬¦ä¸²å¹¶éå†
+ * 		å­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡å¹¶éå†
  */
 public class ArrayListTest {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		ArrayList array = new ArrayList();
 
-		// ´´½¨ÔªËØ¶ÔÏó
-		Student s1 = new Student("ÖìÔªè°", 50);
+		// åˆ›å»ºå…ƒç´ å¯¹è±¡
+		Student s1 = new Student("æœ±å…ƒç’‹", 50);
 
 		Student s2 = new Student();
-		s2.setName("ÀîÊÀÃñ");
+		s2.setName("æä¸–æ°‘");
 		s2.setAge(60);
 
-		Student s3 = new Student("ÇØÊ¼»Ê", 40);
+		Student s3 = new Student("ç§¦å§‹çš‡", 40);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
+		// æŠŠå…ƒç´ æ·»åŠ åˆ°é›†åˆ
 		array.add(s1);
 		array.add(s2);
 		array.add(s3);
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		Iterator it = array.iterator();
 		while (it.hasNext()) {
 			Student s = (Student) it.next();

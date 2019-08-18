@@ -1,4 +1,4 @@
-//Ã¨¹·°¸Àı
+//çŒ«ç‹—æ¡ˆä¾‹
 class Animal {
 	private String name;
 	private int age;
@@ -73,75 +73,75 @@ class Cat extends Animal {
 
 class AnimalDemo {
 	public static void main(String[] args) {
-		//²âÊÔAnimal
+		//æµ‹è¯•Animal
 		Animal a = new Animal();
-		a.setName("¶¯Îï");
+		a.setName("åŠ¨ç‰©");
 		a.setAge(10);
 		a.eat();
 		a.sleep();
 		a.show();
 		System.out.println("------------");
 
-		Animal a2 = new Animal("¶¯Îï",10);
+		Animal a2 = new Animal("åŠ¨ç‰©",10);
 		a2.eat();
 		a2.sleep();
 		a2.show();
 		System.out.println("------------");
 
-		//²âÊÔDog
+		//æµ‹è¯•Dog
 		Dog d = new Dog();
-		d.setName("´ó»Æ");
+		d.setName("å¤§é»„");
 		d.setAge(5);
 		d.eat();
 		d.sleep();
 		d.show();
 		System.out.println("------------");
 
-		Dog d2 = new Dog("´ó»Æ",5);
+		Dog d2 = new Dog("å¤§é»„",5);
 		d2.eat();
 		d2.sleep();
 		d2.show();
 		System.out.println("------------");
 
-		//Á·Ï°1£º²âÊÔCatÄãÃÇ×Ô¼ºÁ·Ï°
+		//ç»ƒä¹ 1ï¼šæµ‹è¯•Catä½ ä»¬è‡ªå·±ç»ƒä¹ 
 		Cat c = new Cat();
-		c.setName("´ó»¨Ã¨");
+		c.setName("å¤§èŠ±çŒ«");
 		c.setAge(2);
 		c.eat();
 		c.sleep();
 		c.show();
 		System.out.println("------------");
 
-		Cat c2 = new Cat("´ó»¨Ã¨",2);
+		Cat c2 = new Cat("å¤§èŠ±çŒ«",2);
 		c2.eat();
 		c2.sleep();
 		c2.show();
 		System.out.println("------------");
 
-		//Í¨¹ıDog²âÊÔ¶àÌ¬
+		//é€šè¿‡Dogæµ‹è¯•å¤šæ€
 		Animal aa = new Dog();
-		aa.setName("Ğ¡»Æ");
+		aa.setName("å°é»„");
 		aa.setAge(3);
 		aa.eat();
 		aa.sleep();
 		aa.show();
 		System.out.println("------------");
 
-		Animal aa2 = new Dog("Ğ¡»Æ",3);
+		Animal aa2 = new Dog("å°é»„",3);
 		aa2.eat();
 		aa2.sleep();
 		aa2.show();
 		System.out.println("------------");
 
-		//Á·Ï°2£ºÍ¨¹ıCat²âÊÔ¶àÌ¬ÄãÃÇ×Ô¼ºÁ·Ï°
-		Animal aa3 = new Cat("Ğ¡»¨Ã¨",1);
+		//ç»ƒä¹ 2ï¼šé€šè¿‡Catæµ‹è¯•å¤šæ€ä½ ä»¬è‡ªå·±ç»ƒä¹ 
+		Animal aa3 = new Cat("å°èŠ±çŒ«",1);
 		aa3.eat();
 		aa3.sleep();
 		aa3.show();
 		System.out.println("------------");
 
 		Animal aa4 = new Cat();
-		aa4.setName("Ğ¡»¨Ã¨");
+		aa4.setName("å°èŠ±çŒ«");
 		aa4.setAge(1);
 		aa4.eat();
 		aa4.sleep();

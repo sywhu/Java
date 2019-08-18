@@ -3,32 +3,32 @@ package cn.itcast_01;
 import java.awt.Frame;
 
 /*
- * Component£º×é¼þ£¬¾ÍÊÇÒ»¸ö¶ÔÏó¡£
- * 		»ù±¾×é¼þ	Ò»¸ö¾ßÓÐ¶ÀÁ¢¹¦ÄÜµÄ×é¼þ£¬µ«ÊÇÒªÒÀÀµÓÚÈÝÆ÷×é¼þ´æÔÚ
- * 		ÈÝÆ÷×é¼þ	¿ÉÒÔ´æ´¢»ù±¾×é¼þºÍÈÝÆ÷×é¼þµÄ×é¼þ
- * Í¨¹ý¹Û²ìËüµÄ¼Ì³ÐÌåÏµÍ¼£¬ÎÒÃÇÈç¹û°´ÕÕÒÔÇ°µÄÑ§Ï°·½Ê½£¬Ñ§Ï°¶¥²ã£¬Ì«Âé·³ÁË¡£
- * ËùÒÔ£¬ÎÒÃÇ½ñÌìÖ±½ÓÉÏÊÖFrame¼´¿É¡£
+ * Componentï¼šç»„ä»¶ï¼Œå°±æ˜¯ä¸€ä¸ªå¯¹è±¡ã€‚
+ * 		åŸºæœ¬ç»„ä»¶	ä¸€ä¸ªå…·æœ‰ç‹¬ç«‹åŠŸèƒ½çš„ç»„ä»¶ï¼Œä½†æ˜¯è¦ä¾èµ–äºŽå®¹å™¨ç»„ä»¶å­˜åœ¨
+ * 		å®¹å™¨ç»„ä»¶	å¯ä»¥å­˜å‚¨åŸºæœ¬ç»„ä»¶å’Œå®¹å™¨ç»„ä»¶çš„ç»„ä»¶
+ * é€šè¿‡è§‚å¯Ÿå®ƒçš„ç»§æ‰¿ä½“ç³»å›¾ï¼Œæˆ‘ä»¬å¦‚æžœæŒ‰ç…§ä»¥å‰çš„å­¦ä¹ æ–¹å¼ï¼Œå­¦ä¹ é¡¶å±‚ï¼Œå¤ªéº»çƒ¦äº†ã€‚
+ * æ‰€ä»¥ï¼Œæˆ‘ä»¬ä»Šå¤©ç›´æŽ¥ä¸Šæ‰‹Frameå³å¯ã€‚
  * 
- * ¹¹Ôì·½·¨£º
+ * æž„é€ æ–¹æ³•ï¼š
  * 		public Frame()
  * 
- * Í¨¹ý¹Û²ì£¬ÎÒÃÇÖªµÀÁËÕâÑùµÄÁ½¸öÐ¡ÎÊÌâ
- * 		A:´°ÌåÔÚÄÚ´æÖÐ´æÔÚÁË£¬Ö»²»¹ýÎÒÃÇÃ»ÓÐ¿´µ½¡£
- * 		B:´´½¨µÄ´æÔÚÒ²ÊÇ¿ªÆôÁËÏß³ÌµÄ¡£
+ * é€šè¿‡è§‚å¯Ÿï¼Œæˆ‘ä»¬çŸ¥é“äº†è¿™æ ·çš„ä¸¤ä¸ªå°é—®é¢˜
+ * 		A:çª—ä½“åœ¨å†…å­˜ä¸­å­˜åœ¨äº†ï¼Œåªä¸è¿‡æˆ‘ä»¬æ²¡æœ‰çœ‹åˆ°ã€‚
+ * 		B:åˆ›å»ºçš„å­˜åœ¨ä¹Ÿæ˜¯å¼€å¯äº†çº¿ç¨‹çš„ã€‚
  */
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
 		Frame f = new Frame();
 
-		// ÉèÖÃ±êÌâ
-		f.setTitle("°Ù¶ÈÒ»ÏÂ,Äã¾ÍÖªµÀ");
-		// ÉèÖÃ´°Ìå´óÐ¡
+		// è®¾ç½®æ ‡é¢˜
+		f.setTitle("ç™¾åº¦ä¸€ä¸‹,ä½ å°±çŸ¥é“");
+		// è®¾ç½®çª—ä½“å¤§å°
 		f.setSize(400, 300);
-		// ÉèÖÃ´°Ìå¿É¼û
+		// è®¾ç½®çª—ä½“å¯è§
 		f.setVisible(true);
 
-		// ÉèÖÃÎ»ÖÃ
+		// è®¾ç½®ä½ç½®
 		f.setLocation(500, 200);
 
 		// f.show();

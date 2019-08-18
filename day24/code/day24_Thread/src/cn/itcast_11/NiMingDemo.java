@@ -1,10 +1,10 @@
 package cn.itcast_11;
 
 /*
- * ÄäÃûÄÚ²¿ÀàµÄ·½Ê½¿ªÆô¶àÏß³Ì³ÌĞò¡£
+ * åŒ¿åå†…éƒ¨ç±»çš„æ–¹å¼å¼€å¯å¤šçº¿ç¨‹ç¨‹åºã€‚
  * 
- * new ÀàÃû() {
- * 		ÖØĞ´·½·¨
+ * new ç±»å() {
+ * 		é‡å†™æ–¹æ³•
  * };
  */
 public class NiMingDemo {
@@ -33,7 +33,7 @@ public class NiMingDemo {
 		 * System.out.println("javaee" + x); } } }).start();
 		 */
 
-		// ÃæÊÔ
+		// é¢è¯•
 		new Thread(new Runnable() {
 			@Override
 			public void run() {

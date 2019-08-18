@@ -1,5 +1,5 @@
 /*
-	¿´³ÌĞòĞ´½á¹û
+	éªå¬¬â–¼æ´å¿“å•“ç¼æ’´ç‰
 */
 class SwitchTest {
 	public static void main(String[] args) {

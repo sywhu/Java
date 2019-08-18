@@ -6,39 +6,39 @@ import java.io.IOException;
 
 /*
  * Writer:
- * 		OutputStreamWriter °Ñ×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷,²¢¿ÉÒÔÖ¸¶¨±àÂë
+ * 		OutputStreamWriter æŠŠå­—èŠ‚æµè½¬æ¢ä¸ºå­—ç¬¦æµ,å¹¶å¯ä»¥æŒ‡å®šç¼–ç 
  * 			FileWriter
  * Reader:
- * 		InputStreamReader °Ñ×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷,²¢¿ÉÒÔÖ¸¶¨±àÂë
+ * 		InputStreamReader æŠŠå­—èŠ‚æµè½¬æ¢ä¸ºå­—ç¬¦æµ,å¹¶å¯ä»¥æŒ‡å®šç¼–ç 
  * 			FileReader
  * 
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		a.txt
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		b.txt
  */
 public class CopyFileDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´
+		// å°è£…æ•°æ®æº
 		FileReader fr = new FileReader("a.txt");
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		FileWriter fw = new FileWriter("b.txt");
 
-		// ¶ÁĞ´
-		// ·½Ê½1
+		// è¯»å†™
+		// æ–¹å¼1
 		// int ch = 0;
 		// while ((ch = fr.read()) != -1) {
 		// fw.write(ch);
 		// }
 
-		// ·½Ê½2
+		// æ–¹å¼2
 		char[] chs = new char[1024];
 		int len = 0;
 		while ((len = fr.read(chs)) != -1) {
 			fw.write(chs, 0, len);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		fw.close();
 		fr.close();
 	}

@@ -3,40 +3,40 @@ package cn.itcast_03;
 import java.util.Scanner;
 
 /*
- * Ä£ÄâµÇÂ¼,¸øÈı´Î»ú»á,²¢ÌáÊ¾»¹ÓĞ¼¸´Î¡£
+ * æ¨¡æ‹Ÿç™»å½•,ç»™ä¸‰æ¬¡æœºä¼š,å¹¶æç¤ºè¿˜æœ‰å‡ æ¬¡ã€‚
  * 
- * ·ÖÎö£º
- * 		A:¸ø³ö¹Ì¶¨µÄÓÃ»§ÃûºÍÃÜÂë
- * 		B:¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
- * 		C:±È½ÏÓÃ»§ÃûºÍÃÜÂë
- * 		D:¸ø³öÈı´Î»ú»á
+ * åˆ†æï¼š
+ * 		A:ç»™å‡ºå›ºå®šçš„ç”¨æˆ·åå’Œå¯†ç 
+ * 		B:é”®ç›˜å½•å…¥ç”¨æˆ·åå’Œå¯†ç 
+ * 		C:æ¯”è¾ƒç”¨æˆ·åå’Œå¯†ç 
+ * 		D:ç»™å‡ºä¸‰æ¬¡æœºä¼š
  */
 public class StringTest {
 	public static void main(String[] args) {
-		// ¸ø³ö¹Ì¶¨µÄÓÃ»§ÃûºÍÃÜÂë
+		// ç»™å‡ºå›ºå®šçš„ç”¨æˆ·åå’Œå¯†ç 
 		// String username = "admin";
 		// String password = "admin";
 
 		for (int x = 0; x < 3; x++) {
 			// x=0,1,2
 
-			// ¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
+			// é”®ç›˜å½•å…¥ç”¨æˆ·åå’Œå¯†ç 
 			Scanner sc = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+			System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 			String name = sc.nextLine();
-			System.out.println("ÇëÊäÈëÃÜÂë£º");
+			System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 			String pwd = sc.nextLine();
 
-			// ±È½ÏÓÃ»§ÃûºÍÃÜÂë
+			// æ¯”è¾ƒç”¨æˆ·åå’Œå¯†ç 
 			if ("admin".equals(name) && "admin".equals(pwd)) {
-				System.out.println("µÇÂ¼³É¹¦");
+				System.out.println("ç™»å½•æˆåŠŸ");
 				break;
 			} else {
 				if (2 - x == 0) {
-					System.out.println("ÕÊºÅ±»Ëø¶¨£¬ÇëÓë°à³¤ÁªÏµ");
+					System.out.println("å¸å·è¢«é”å®šï¼Œè¯·ä¸ç­é•¿è”ç³»");
 				} else {
 					// 2,1,0
-					System.out.println("µÇÂ¼Ê§°Ü£¬Äã»¹ÓĞ" + (2 - x) + "´Î»ú»á");
+					System.out.println("ç™»å½•å¤±è´¥ï¼Œä½ è¿˜æœ‰" + (2 - x) + "æ¬¡æœºä¼š");
 				}
 			}
 		}

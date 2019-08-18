@@ -4,23 +4,23 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /*
- * ÌØÓĞ¹¦ÄÜ£º
- * 		A:Ìí¼ÓÔªËØ
+ * ç‰¹æœ‰åŠŸèƒ½ï¼š
+ * 		A:æ·»åŠ å…ƒç´ 
  * 			public void addElement(Object obj)		--		add(Object obj)
- * 		B:»ñÈ¡ÔªËØ
+ * 		B:è·å–å…ƒç´ 
  *			public Object elementAt(int index)		--		get(int index)
  *			public Enumeration elements()			--		Iterator iterator()
  *						hasMoreElements()							hasNext()
  *						nextElement()								next()
  *
- *		JDK°æ±¾Éı¼¶£º
- *			A:°²È«
- *			B:Ğ§ÂÊ
- *			C:¼ò»¯ÊéĞ´
+ *		JDKç‰ˆæœ¬å‡çº§ï¼š
+ *			A:å®‰å…¨
+ *			B:æ•ˆç‡
+ *			C:ç®€åŒ–ä¹¦å†™
  */
 public class VectorDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		// Collection c = new Vector();
 		// List list = new Vector();
 
@@ -35,13 +35,13 @@ public class VectorDemo {
 		// System.out.println(v.elementAt(0));
 		// System.out.println(v.elementAt(1));
 		// System.out.println(v.elementAt(2));
-		// ÆÕÍ¨for
+		// æ™®é€šfor
 		// for (int x = 0; x < v.size(); x++) {
 		// String s = (String) v.elementAt(x);
 		// System.out.println(s);
 		// }
 
-		// ÀàËÆµü´úÆ÷µÄ·½Ê½
+		// ç±»ä¼¼è¿­ä»£å™¨çš„æ–¹å¼
 		Enumeration en = v.elements();
 		while (en.hasMoreElements()) {
 			String s = (String) en.nextElement();

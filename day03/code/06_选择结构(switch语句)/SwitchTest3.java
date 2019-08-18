@@ -1,92 +1,92 @@
 /*
-	ÓÃswitchÓï¾äÊµÏÖ¼üÅÌÂ¼ÈëÔÂ·İ£¬Êä³ö¶ÔÓ¦µÄ¼¾½Ú
+	ç”¨switchè¯­å¥å®ç°é”®ç›˜å½•å…¥æœˆä»½ï¼Œè¾“å‡ºå¯¹åº”çš„å­£èŠ‚
 
-	ÔÚ×öÅĞ¶ÏµÄÊ±ºò£¬ÎÒÃÇÓĞÁ½ÖÖÑ¡Ôñ£¬ifÓï¾äºÍswitchÓï¾ä£¬ÄÇÃ´£¬ÎÒÃÇµ½µ×¸ÃÈçºÎÑ¡ÔñÊ¹ÓÃÄÇÖÖÓï¾äÄØ?
-		ifÓï¾äÊ¹ÓÃ³¡¾°£º
-			Õë¶Ô½á¹ûÊÇbooleanÀàĞÍµÄÅĞ¶Ï
-			Õë¶ÔÒ»¸ö·¶Î§µÄÅĞ¶Ï
-			Õë¶Ô¼¸¸ö³£Á¿ÖµµÄÅĞ¶Ï
-		switchÓï¾äÊ¹ÓÃ³¡¾°£º
-			Õë¶Ô¼¸¸ö³£Á¿ÖµµÄÅĞ¶Ï
+	åœ¨åšåˆ¤æ–­çš„æ—¶å€™ï¼Œæˆ‘ä»¬æœ‰ä¸¤ç§é€‰æ‹©ï¼Œifè¯­å¥å’Œswitchè¯­å¥ï¼Œé‚£ä¹ˆï¼Œæˆ‘ä»¬åˆ°åº•è¯¥å¦‚ä½•é€‰æ‹©ä½¿ç”¨é‚£ç§è¯­å¥å‘¢?
+		ifè¯­å¥ä½¿ç”¨åœºæ™¯ï¼š
+			é’ˆå¯¹ç»“æœæ˜¯booleanç±»å‹çš„åˆ¤æ–­
+			é’ˆå¯¹ä¸€ä¸ªèŒƒå›´çš„åˆ¤æ–­
+			é’ˆå¯¹å‡ ä¸ªå¸¸é‡å€¼çš„åˆ¤æ–­
+		switchè¯­å¥ä½¿ç”¨åœºæ™¯ï¼š
+			é’ˆå¯¹å‡ ä¸ªå¸¸é‡å€¼çš„åˆ¤æ–­
 */
 import java.util.Scanner;
 
 class SwitchTest3 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëÔÂ·İ£º");
+		//é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥æœˆä»½ï¼š");
 		int month = sc.nextInt();
 
 		/*
 		switch(month) {
 			case 1:
-				System.out.println("¶¬¼¾");
+				System.out.println("å†¬å­£");
 				break;
 			case 2:
-				System.out.println("¶¬¼¾");
+				System.out.println("å†¬å­£");
 				break;
 			case 3:
-				System.out.println("´º¼¾");
+				System.out.println("æ˜¥å­£");
 				break;
 			case 4:
-				System.out.println("´º¼¾");
+				System.out.println("æ˜¥å­£");
 				break;
 			case 5:
-				System.out.println("´º¼¾");
+				System.out.println("æ˜¥å­£");
 				break;
 			case 6:
-				System.out.println("ÏÄ¼¾");
+				System.out.println("å¤å­£");
 				break;
 			case 7:
-				System.out.println("ÏÄ¼¾");
+				System.out.println("å¤å­£");
 				break;
 			case 8:
-				System.out.println("ÏÄ¼¾");
+				System.out.println("å¤å­£");
 				break;
 			case 9:
-				System.out.println("Çï¼¾");
+				System.out.println("ç§‹å­£");
 				break;
 			case 10:
-				System.out.println("Çï¼¾");
+				System.out.println("ç§‹å­£");
 				break;
 			case 11:
-				System.out.println("Çï¼¾");
+				System.out.println("ç§‹å­£");
 				break;
 			case 12:
-				System.out.println("¶¬¼¾");
+				System.out.println("å†¬å­£");
 				break;
 			default:
-				System.out.println("ÄãÊäÈëµÄÔÂ·İÓĞÎó");
+				System.out.println("ä½ è¾“å…¥çš„æœˆä»½æœ‰è¯¯");
 		}
 		*/
 
-		//±È½ÏÂé·³
+		//æ¯”è¾ƒéº»çƒ¦
 		switch(month) {
 			case 1:
 			case 2:
 			case 12:
-				System.out.println("¶¬¼¾");
+				System.out.println("å†¬å­£");
 				break;
 			case 3:
 			case 4:
 			case 5:
-				System.out.println("´º¼¾");
+				System.out.println("æ˜¥å­£");
 				break;
 			case 6:
 			case 7:
 			case 8:
-				System.out.println("ÏÄ¼¾");
+				System.out.println("å¤å­£");
 				break;
 			case 9:
 			case 10:
 			case 11:
-				System.out.println("Çï¼¾");
+				System.out.println("ç§‹å­£");
 				break;
 			default:
-				System.out.println("ÄãÊäÈëµÄÔÂ·İÓĞÎó");
+				System.out.println("ä½ è¾“å…¥çš„æœˆä»½æœ‰è¯¯");
 		}
 	}
 }

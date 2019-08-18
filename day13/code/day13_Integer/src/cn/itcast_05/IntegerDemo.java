@@ -1,19 +1,19 @@
 package cn.itcast_05;
 
 /*
- * JDK5µÄĞÂÌØĞÔ£º
- * 		×Ô¶¯×°Ïä:int -- Integer
- * 				µ×²ã·½·¨£ºpublic static Integer valueOf(int i)
- * 		×Ô¶¯²ğÏä£ºInteger -- int
- * 				µ×²ã·½·¨£ºpublic int intValue()
+ * JDK5çš„æ–°ç‰¹æ€§ï¼š
+ * 		è‡ªåŠ¨è£…ç®±:int -- Integer
+ * 				åº•å±‚æ–¹æ³•ï¼špublic static Integer valueOf(int i)
+ * 		è‡ªåŠ¨æ‹†ç®±ï¼šInteger -- int
+ * 				åº•å±‚æ–¹æ³•ï¼špublic int intValue()
  * 
- * ×¢Òâ£º¶ÔÏó²»ÄÜÎªnull¡£
- * ¿ª·¢Ô­Ôò£ºÖ»ÒªÊÇ¶ÔÏó£¬×ö²Ù×÷£¬¿Ï¶¨ÏÈÅĞ¶Ï¶ÔÏóÊÇ·ñÎªnull£¬Èç¹û²»Îªnull£¬²Å¼ÌĞø²Ù×÷¡£
+ * æ³¨æ„ï¼šå¯¹è±¡ä¸èƒ½ä¸ºnullã€‚
+ * å¼€å‘åŸåˆ™ï¼šåªè¦æ˜¯å¯¹è±¡ï¼Œåšæ“ä½œï¼Œè‚¯å®šå…ˆåˆ¤æ–­å¯¹è±¡æ˜¯å¦ä¸ºnullï¼Œå¦‚æœä¸ä¸ºnullï¼Œæ‰ç»§ç»­æ“ä½œã€‚
  */
 public class IntegerDemo {
 	public static void main(String[] args) {
 		// Integer i = new Integer(100);
-		Integer i = 100; // ×Ô¶¯×°Ïä
+		Integer i = 100; // è‡ªåŠ¨è£…ç®±
 		// Integer i = Integer.valueOf(100);
 
 		i += 200; // i = i + 200

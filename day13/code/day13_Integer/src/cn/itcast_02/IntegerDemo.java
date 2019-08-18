@@ -1,20 +1,20 @@
 package cn.itcast_02;
 
 /*
- * IntegerµÄ¹¹Ôì·½·¨£º
- * Integer(int value)£º °ÑintÀàĞÍµÄÖµ°ü×°³ÉIntegerÀàĞÍ
- * Integer(String s): °ÑÊı×ÖÀàĞÍµÄ×Ö·û´®×ª»»³ÉIntegerÀàĞÍ
+ * Integerçš„æ„é€ æ–¹æ³•ï¼š
+ * Integer(int value)ï¼š æŠŠintç±»å‹çš„å€¼åŒ…è£…æˆIntegerç±»å‹
+ * Integer(String s): æŠŠæ•°å­—ç±»å‹çš„å­—ç¬¦ä¸²è½¬æ¢æˆIntegerç±»å‹
  */
 public class IntegerDemo {
 	public static void main(String[] args) {
-		// ·½Ê½1
+		// æ–¹å¼1
 		int number = 100;
 		Integer i = new Integer(number);
 		System.out.println("i:" + i);
 
-		// ·½Ê½2
+		// æ–¹å¼2
 		String s = "100";
-		// String s = "abc"; // NumberFormatException:ÒòÎªÄã¸ø¶¨µÄÊı¾İ²»ÊÇÊı×ÖĞÎÊ½µÄ×Ö·û´®Êı¾İ
+		// String s = "abc"; // NumberFormatException:å› ä¸ºä½ ç»™å®šçš„æ•°æ®ä¸æ˜¯æ•°å­—å½¢å¼çš„å­—ç¬¦ä¸²æ•°æ®
 		Integer i2 = new Integer(s);
 		System.out.println("i2:" + i2);
 	}

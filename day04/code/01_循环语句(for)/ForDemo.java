@@ -1,16 +1,16 @@
 /*
-	Ñ­»·Óï¾ä£º
-		³õÊ¼»¯:×öÒ»Ğ©³õÊ¼²Ù×÷
-		Ìõ¼şÅĞ¶Ï:ÈÃÎÒÃÇÖªµÀÒª×ö¶àÉÙ´Î
-		Ñ­»·Ìå:¾ÍÊÇÒª×öµÄÊÂÇé
-		¿ØÖÆÌõ¼ş±ä»¯:Í¨¹ı¿ØÖÆÌõ¼ş£¬ÈÃÎÒÃÇÔÚºÏÊÊµÄÊ±ºò½áÊø
+	å¾ªç¯è¯­å¥ï¼š
+		åˆå§‹åŒ–:åšä¸€äº›åˆå§‹æ“ä½œ
+		æ¡ä»¶åˆ¤æ–­:è®©æˆ‘ä»¬çŸ¥é“è¦åšå¤šå°‘æ¬¡
+		å¾ªç¯ä½“:å°±æ˜¯è¦åšçš„äº‹æƒ…
+		æ§åˆ¶æ¡ä»¶å˜åŒ–:é€šè¿‡æ§åˆ¶æ¡ä»¶ï¼Œè®©æˆ‘ä»¬åœ¨åˆé€‚çš„æ—¶å€™ç»“æŸ
 */
 class ForDemo {
 	public static void main(String[] args) {
-		//ÔÚ¿ØÖÆÌ¨Êä³öÒ»´Î"HelloWorld"
+		//åœ¨æ§åˆ¶å°è¾“å‡ºä¸€æ¬¡"HelloWorld"
 		System.out.println("HelloWorld");
 
-		//ÔÚ¿ØÖÆÌ¨Êä³öÊ®´Î"HelloWorld"
+		//åœ¨æ§åˆ¶å°è¾“å‡ºåæ¬¡"HelloWorld"
 		System.out.println("HelloWorld");
 		System.out.println("HelloWorld");
 		System.out.println("HelloWorld");
@@ -22,6 +22,6 @@ class ForDemo {
 		System.out.println("HelloWorld");
 		System.out.println("HelloWorld");
 
-		//ÔÚ¿ØÖÆÌ¨Êä³öÒ»Íò´Î"HelloWorld"
+		//åœ¨æ§åˆ¶å°è¾“å‡ºä¸€ä¸‡æ¬¡"HelloWorld"
 	}
 }

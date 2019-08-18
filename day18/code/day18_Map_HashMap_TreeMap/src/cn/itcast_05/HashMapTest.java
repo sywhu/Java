@@ -4,46 +4,46 @@ import java.util.HashMap;
 import java.util.Set;
 
 /*
- * HashMapÇ¶Ì×HashMap
+ * HashMapåµŒå¥—HashMap
  * 
- * Î÷°²Ğ£Çø£º
- * 	jc	»ù´¡°à
- * 			·çÇåÑï	31
- * 			É³Ê«²©	18
- * 	jy	¾ÍÒµ°à
- * 			¼±ÏÈ·æ	30
- * 			Óñ÷è÷ë	29
- * 	dsj	´óÊı¾İ
- * 			½¹Äş²¨	30
- * 			ÕÅè¤		22
+ * è¥¿å®‰æ ¡åŒºï¼š
+ * 	jc	åŸºç¡€ç­
+ * 			é£æ¸…æ‰¬	31
+ * 			æ²™è¯—åš	18
+ * 	jy	å°±ä¸šç­
+ * 			æ€¥å…ˆé”‹	30
+ * 			ç‰éº’éºŸ	29
+ * 	dsj	å¤§æ•°æ®
+ * 			ç„¦å®æ³¢	30
+ * 			å¼ ç‘œ		22
  */
 public class HashMapTest {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		HashMap<String, HashMap<String, Integer>> xaxq = new HashMap<String, HashMap<String, Integer>>();
 
-		// »ù´¡°àÊı¾İ
+		// åŸºç¡€ç­æ•°æ®
 		HashMap<String, Integer> jc = new HashMap<String, Integer>();
-		jc.put("·çÇåÑï", 31);
-		jc.put("É³Ê«²©", 18);
-		// °ÑÊı¾İÌí¼Óµ½¼¯ºÏ
-		xaxq.put("»ù´¡°à", jc);
+		jc.put("é£æ¸…æ‰¬", 31);
+		jc.put("æ²™è¯—åš", 18);
+		// æŠŠæ•°æ®æ·»åŠ åˆ°é›†åˆ
+		xaxq.put("åŸºç¡€ç­", jc);
 
-		// ¾ÍÒµ°àÊı¾İ
+		// å°±ä¸šç­æ•°æ®
 		HashMap<String, Integer> jy = new HashMap<String, Integer>();
-		jy.put("¼±ÏÈ·æ", 30);
-		jy.put("Óñ÷è÷ë", 29);
-		// °ÑÊı¾İÌí¼Óµ½¼¯ºÏ
-		xaxq.put("¾ÍÒµ°à", jy);
+		jy.put("æ€¥å…ˆé”‹", 30);
+		jy.put("ç‰éº’éºŸ", 29);
+		// æŠŠæ•°æ®æ·»åŠ åˆ°é›†åˆ
+		xaxq.put("å°±ä¸šç­", jy);
 
-		// ´óÊı¾İ°à
+		// å¤§æ•°æ®ç­
 		HashMap<String, Integer> dsj = new HashMap<String, Integer>();
-		dsj.put("½¹Äş²¨", 30);
-		dsj.put("ÕÅè¤", 22);
-		// °ÑÊı¾İÌí¼Óµ½¼¯ºÏ
-		xaxq.put("´óÊı¾İ°à", dsj);
+		dsj.put("ç„¦å®æ³¢", 30);
+		dsj.put("å¼ ç‘œ", 22);
+		// æŠŠæ•°æ®æ·»åŠ åˆ°é›†åˆ
+		xaxq.put("å¤§æ•°æ®ç­", dsj);
 
-		// ±éÀúxaxq
+		// éå†xaxq
 		Set<String> xaxqSet = xaxq.keySet();
 		for (String xaxqKey : xaxqSet) {
 			System.out.println(xaxqKey);

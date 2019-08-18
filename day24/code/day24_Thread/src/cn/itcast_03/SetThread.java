@@ -11,7 +11,7 @@ public class SetThread implements Runnable {
 	@Override
 	public void run() {
 		// Student s = new Student();
-		s.name = "ÁÖÇàÏ¼";
+		s.name = "æ—é’éœ";
 		s.age = 28;
 	}
 

@@ -9,14 +9,14 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /*
- * ĞèÇó£ºnames.txtÖĞ´æ´¢µÄÊÇÎÒÃÇ°àËùÓĞÍ¬Ñ§µÄÃû³Æ¡£
- * ÇëĞ´Ò»¸ö¹¦ÄÜ£¬Ã¿´ÎÔËĞĞ³ÌĞò£¬Ëæ»ú²úÉúÒ»¸öÃû³Æ³öÀ´¡£
+ * éœ€æ±‚ï¼šnames.txtä¸­å­˜å‚¨çš„æ˜¯æˆ‘ä»¬ç­æ‰€æœ‰åŒå­¦çš„åç§°ã€‚
+ * è¯·å†™ä¸€ä¸ªåŠŸèƒ½ï¼Œæ¯æ¬¡è¿è¡Œç¨‹åºï¼Œéšæœºäº§ç”Ÿä¸€ä¸ªåç§°å‡ºæ¥ã€‚
  * 
- * ·ÖÎö£º
- * 		A:Êı¾İÀ´×ÔÓÚÎÄ±¾ÎÄ¼ş,ËùÒÔÎÒÃÇÒª¶ÁÈ¡Êı¾İ
- * 		B:°Ñ¶ÁÈ¡µ½µÄÊı¾İ´æ´¢µ½¼¯ºÏÖĞ
- * 		C:Ëæ»ú²úÉúÒ»¸öË÷Òı
- * 		D:´Ó¼¯ºÏÖĞ¸ù¾İËæ»ú²úÉúµÄË÷Òı»ñÈ¡Ò»¸öÖµ¾Í¿ÉÒÔÁË
+ * åˆ†æï¼š
+ * 		A:æ•°æ®æ¥è‡ªäºæ–‡æœ¬æ–‡ä»¶,æ‰€ä»¥æˆ‘ä»¬è¦è¯»å–æ•°æ®
+ * 		B:æŠŠè¯»å–åˆ°çš„æ•°æ®å­˜å‚¨åˆ°é›†åˆä¸­
+ * 		C:éšæœºäº§ç”Ÿä¸€ä¸ªç´¢å¼•
+ * 		D:ä»é›†åˆä¸­æ ¹æ®éšæœºäº§ç”Ÿçš„ç´¢å¼•è·å–ä¸€ä¸ªå€¼å°±å¯ä»¥äº†
  */
 public class GetNameDemo {
 	public static void main(String[] args) throws IOException {
@@ -30,15 +30,15 @@ public class GetNameDemo {
 
 		br.close();
 
-		// Ëæ»ú²úÉúÒ»¸öË÷Òı
+		// éšæœºäº§ç”Ÿä¸€ä¸ªç´¢å¼•
 		// int index = (int) (Math.random() * array.size()); //
 		// [0,array.size()-1)
 
 		Random r = new Random();
 		int index = r.nextInt(array.size());
-		System.out.println("ĞÒÔËÕßÊÇ£º" + array.get(index));
+		System.out.println("å¹¸è¿è€…æ˜¯ï¼š" + array.get(index));
 
-		// ÒÔÏÂÎªÀ©Õ¹ÄÚÈİ
+		// ä»¥ä¸‹ä¸ºæ‰©å±•å†…å®¹
 		array.remove(index);
 		BufferedWriter bw = new BufferedWriter(new FileWriter("names.txt"));
 		for (String name : array) {

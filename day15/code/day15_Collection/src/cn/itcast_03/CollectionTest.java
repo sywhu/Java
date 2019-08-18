@@ -4,33 +4,33 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /*
- * Object[] toArray():°Ñ¼¯ºÏ×ª³É¶ÔÏóÊı×é
+ * Object[] toArray():æŠŠé›†åˆè½¬æˆå¯¹è±¡æ•°ç»„
  * 
- * Á·Ï°£ºÓÃ¼¯ºÏ´æ´¢Èı¸öÑ§Éú¶ÔÏó£¬²¢±éÀú¡£
+ * ç»ƒä¹ ï¼šç”¨é›†åˆå­˜å‚¨ä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡ï¼Œå¹¶éå†ã€‚
  * 
- * ×Ü½á£º¼¯ºÏµÄÊ¹ÓÃ²½Öè
- * A:´´½¨¼¯ºÏ¶ÔÏó
- * B:´´½¨ÔªËØ¶ÔÏó
- * C:°ÑÔªËØÌí¼Óµ½¼¯ºÏ
- * D:±éÀú¼¯ºÏ
+ * æ€»ç»“ï¼šé›†åˆçš„ä½¿ç”¨æ­¥éª¤
+ * A:åˆ›å»ºé›†åˆå¯¹è±¡
+ * B:åˆ›å»ºå…ƒç´ å¯¹è±¡
+ * C:æŠŠå…ƒç´ æ·»åŠ åˆ°é›†åˆ
+ * D:éå†é›†åˆ
  */
 public class CollectionTest {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ¶ÔÏó
-		Student s1 = new Student("ÁÖ÷ìÓñ", 18);
-		Student s2 = new Student("ÇØ¿ÉÇä", 20);
-		Student s3 = new Student("ÍõÎõ·ï", 22);
+		// åˆ›å»ºå…ƒç´ å¯¹è±¡
+		Student s1 = new Student("æ—é»›ç‰", 18);
+		Student s2 = new Student("ç§¦å¯å¿", 20);
+		Student s3 = new Student("ç‹ç†™å‡¤", 22);
 
-		// °ÑÑ§Éú¶ÔÏóÌí¼Óµ½¼¯ºÏ
+		// æŠŠå­¦ç”Ÿå¯¹è±¡æ·»åŠ åˆ°é›†åˆ
 		c.add(s1);
 		c.add(s2);
 		c.add(s3);
-		// c.add(new Student("¼Ö±¦Óñ", 20));
+		// c.add(new Student("è´¾å®ç‰", 20));
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		Object[] objs = c.toArray();
 		for (int x = 0; x < objs.length; x++) {
 			Student s = (Student) objs[x];

@@ -12,34 +12,34 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-//Ìí¼ÓÓÎÏ·ËµÃ÷
-//Ìí¼Ó±êÌâËµÃ÷
-//ÓÎÏ·½áÊø¶Ô»°¿òÍ¼±ê¹ã¸æ
-//ÓÎÏ·½áÊø¶Ô»°¿ò±êÌâ¹ã¸æ´Ê
-//ËùÓĞÇ¶Èë¹ã¸æµÄÇøÓòÄÚÈİ
+//æ·»åŠ æ¸¸æˆè¯´æ˜
+//æ·»åŠ æ ‡é¢˜è¯´æ˜
+//æ¸¸æˆç»“æŸå¯¹è¯æ¡†å›¾æ ‡å¹¿å‘Š
+//æ¸¸æˆç»“æŸå¯¹è¯æ¡†æ ‡é¢˜å¹¿å‘Šè¯
+//æ‰€æœ‰åµŒå…¥å¹¿å‘Šçš„åŒºåŸŸå†…å®¹
 
 public class MainFrame extends JFrame implements KeyListener {
 	private Container panel;
 	private JLabel player;
-	// ÈËÎïËù´¦ĞĞ
+	// äººç‰©æ‰€å¤„è¡Œ
 	private int playerX;
-	// ÈËÎïËù´¦ÁĞ
+	// äººç‰©æ‰€å¤„åˆ—
 	private int playerY;
-	// ÈÎÎñÍê³É¼ÆÊıÆ÷
+	// ä»»åŠ¡å®Œæˆè®¡æ•°å™¨
 	int count = 0;
-	// ÈÎÎñÍê³É×ÜÊı
+	// ä»»åŠ¡å®Œæˆæ€»æ•°
 	int total = 3;
 
 	public MainFrame() {
-		// Ö÷´°ÌåUI³õÊ¼»¯
+		// ä¸»çª—ä½“UIåˆå§‹åŒ–
 		this.mainFrameBaseUI();
-		// UIÊı¾İ³õÊ¼»¯
+		// UIæ•°æ®åˆå§‹åŒ–
 		this.dateInit();
-		// UI³õÊ¼»¯
+		// UIåˆå§‹åŒ–
 		this.dateUI();
-		// ±³¾°µØ°åUI³õÊ¼»¯
+		// èƒŒæ™¯åœ°æ¿UIåˆå§‹åŒ–
 		this.backgroundUI();
-		// ´°ÌåÌí¼Ó¼üÅÌ¼àÌı
+		// çª—ä½“æ·»åŠ é”®ç›˜ç›‘å¬
 		this.addKeyListener(this);
 		this.setVisible(true);
 	}
@@ -47,7 +47,7 @@ public class MainFrame extends JFrame implements KeyListener {
 	private JLabel[][] uis = new JLabel[12][16];
 
 	private void dateUI() {
-		// Ç½³õÊ¼»¯
+		// å¢™åˆå§‹åŒ–
 		for (int i = 0; i < dates.length; i++) {
 			for (int j = 0; j < dates[i].length; j++) {
 				if (dates[i][j] == 1) {
@@ -57,15 +57,15 @@ public class MainFrame extends JFrame implements KeyListener {
 				}
 			}
 		}
-		// ÈËÎï³õÊ¼Î»ÖÃµÚ3ĞĞ£¬µÚ3ÁĞ(´æÔÚµÚ0ĞĞµÚ0ÁĞ)
+		// äººç‰©åˆå§‹ä½ç½®ç¬¬3è¡Œï¼Œç¬¬3åˆ—(å­˜åœ¨ç¬¬0è¡Œç¬¬0åˆ—)
 		this.playerX = 3;
 		this.playerY = 3;
 		player = new JLabel(new ImageIcon("-10.png"));
 		player.setBounds(10 + playerX * 50, 10 + playerY * 50, 50, 50);
 		this.panel.add(player);
 
-		// Ä¿±ê³õÊ¼»¯
-		// ÓëtotalÓĞ¹Ø
+		// ç›®æ ‡åˆå§‹åŒ–
+		// ä¸totalæœ‰å…³
 		JLabel tar1 = new JLabel(new ImageIcon("8.png"));
 		tar1.setBounds(10 + 14 * 50, 10 + 5 * 50, 50, 50);
 		this.panel.add(tar1);
@@ -82,8 +82,8 @@ public class MainFrame extends JFrame implements KeyListener {
 		dates[7][14] = LogicHelper.TARGET;
 		uis[7][14] = tar3;
 
-		// Ïä×Ó³õÊ¼»¯
-		// ÓëtotalÓĞ¹Ø
+		// ç®±å­åˆå§‹åŒ–
+		// ä¸totalæœ‰å…³
 		JLabel box1 = new JLabel(new ImageIcon("4.png"));
 		box1.setBounds(10 + 7 * 50, 10 + 3 * 50, 50, 50);
 		this.panel.add(box1);
@@ -121,7 +121,7 @@ public class MainFrame extends JFrame implements KeyListener {
 	}
 
 	private void backgroundUI() {
-		// ±³¾°Í¼Æ¬ĞÅÏ¢ÉèÖÃ
+		// èƒŒæ™¯å›¾ç‰‡ä¿¡æ¯è®¾ç½®
 		JLabel floor = new JLabel(new ImageIcon("floor.png"));
 		floor.setBounds(10, 10, 800, 600);
 		this.panel.add(floor);
@@ -133,13 +133,13 @@ public class MainFrame extends JFrame implements KeyListener {
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.panel.setLayout(null);
-		// ÉèÖÃ´°Ìå±êÌâÀ¸,Ç¿»¯´«ÖÇ²¥¿ÍÆ·ÅÆÒâÊ¶,Í¬Ê±Ã¿´ÎÉÏ¿Î½áÊø¶¼Òª¶Ô°æ±¾ºÅv1.0½øĞĞµİÔö±ä»¯
-		this.setTitle("ÍÆÏä×Óv1.0 - java.itcast.cn  ´«ÖÇ²¥¿ÍJavaÅàÑµÑ§Ôº£¬È«¹ú×îºÃµÄJavaÅàÑµ£¬¹úÄÚ×î¶¥¼âµÄJavaÅàÑµ¿Î³Ì");
+		// è®¾ç½®çª—ä½“æ ‡é¢˜æ ,å¼ºåŒ–ä¼ æ™ºæ’­å®¢å“ç‰Œæ„è¯†,åŒæ—¶æ¯æ¬¡ä¸Šè¯¾ç»“æŸéƒ½è¦å¯¹ç‰ˆæœ¬å·v1.0è¿›è¡Œé€’å¢å˜åŒ–
+		this.setTitle("æ¨ç®±å­v1.0 - java.itcast.cn  ä¼ æ™ºæ’­å®¢JavaåŸ¹è®­å­¦é™¢ï¼Œå…¨å›½æœ€å¥½çš„JavaåŸ¹è®­ï¼Œå›½å†…æœ€é¡¶å°–çš„JavaåŸ¹è®­è¯¾ç¨‹");
 		this.setResizable(false);
 		this.getContentPane().setLayout(null);
 	}
 
-	// ÒÆ¶¯¿ØÖÆ£¬»ùÓÚÔ­Ê¼Î»ÖÃ½øĞĞÒÆ¶¯£¬µÚ2²ÎÊı±íÊ¾´¹Ö±·½ÏòÒÆ¶¯£¬¼´ĞĞÒÆ¶¯£¬µÚ3²ÎÊı±íÊ¾Ë®Æ½·½ÏòÒÆ¶¯£¬¼´ÁĞÒÆ¶¯
+	// ç§»åŠ¨æ§åˆ¶ï¼ŒåŸºäºåŸå§‹ä½ç½®è¿›è¡Œç§»åŠ¨ï¼Œç¬¬2å‚æ•°è¡¨ç¤ºå‚ç›´æ–¹å‘ç§»åŠ¨ï¼Œå³è¡Œç§»åŠ¨ï¼Œç¬¬3å‚æ•°è¡¨ç¤ºæ°´å¹³æ–¹å‘ç§»åŠ¨ï¼Œå³åˆ—ç§»åŠ¨
 	private static void move(JLabel c, int vMoveType, int hMoveType) {
 		c.setLocation(c.getX() - hMoveType * 50, c.getY() - vMoveType * 50);
 	}
@@ -149,15 +149,15 @@ public class MainFrame extends JFrame implements KeyListener {
 		int x = keyCode % 2 == 0 ? 39 - keyCode : 0;
 		int y = keyCode % 2 == 1 ? 38 - keyCode : 0;
 
-		// ÅöÇ½
+		// ç¢°å¢™
 		if (keyCode >= 37 && keyCode <= 40) {
-			// ÈËÎïÍ¼Æ¬ÇĞ»»
-			// ÉÏ10
-			// ÏÂ-10
-			// ×ó01
-			// ÓÒ0-1
+			// äººç‰©å›¾ç‰‡åˆ‡æ¢
+			// ä¸Š10
+			// ä¸‹-10
+			// å·¦01
+			// å³0-1
 			player.setIcon(new ImageIcon(x + "" + y + ".png"));
-			// ÅöµØ°å¼ì²â,ÅöÄ¿±ê¼ì²â
+			// ç¢°åœ°æ¿æ£€æµ‹,ç¢°ç›®æ ‡æ£€æµ‹
 			if (dates[playerX - x][playerY - y] == LogicHelper.FLOOR
 					|| dates[playerX - x][playerY - y] == LogicHelper.TARGET) {
 				move(player, x, y);
@@ -165,57 +165,57 @@ public class MainFrame extends JFrame implements KeyListener {
 				playerY = playerY - y;
 				return;
 			}
-			// ÅöÏä×Ó¼ì²â
+			// ç¢°ç®±å­æ£€æµ‹
 			if (dates[playerX - x][playerY - y] == LogicHelper.BOX
 					|| dates[playerX - x][playerY - y] == LogicHelper.BOX_AND_TARGET) {
-				// Í¬·½ÏòÊÇ·ñÎª¿ÕµØ°å»òÄ¿±êÎ»ÖÃ
-				// »ñÈ¡Ç°·½ÒÆ¶¯ÕÏ°­ÎïÂë
+				// åŒæ–¹å‘æ˜¯å¦ä¸ºç©ºåœ°æ¿æˆ–ç›®æ ‡ä½ç½®
+				// è·å–å‰æ–¹ç§»åŠ¨éšœç¢ç‰©ç 
 				int code1 = dates[playerX - x][playerY - y];
 				int code2 = dates[playerX - x * 2][playerY - y * 2];
 				if (code2 == LogicHelper.FLOOR || code2 == LogicHelper.TARGET) {
-					// Ïä×ÓÒÆ¶¯
+					// ç®±å­ç§»åŠ¨
 					JLabel box = uis[playerX - x][playerY - y];
 					move(box, x, y);
-					// uisÄ£ĞÍ¸üĞÂ
+					// uisæ¨¡å‹æ›´æ–°
 					uis[playerX - x * 2][playerY - y * 2] = uis[playerX - x][playerY
 							- y];
 					uis[playerX - x][playerY - y] = null;
 
-					// datesÄ£ĞÍ¸üĞÂ
-					// ´ÓÏä×Óµ½¿ÕµØ
+					// datesæ¨¡å‹æ›´æ–°
+					// ä»ç®±å­åˆ°ç©ºåœ°
 					if (code1 == LogicHelper.BOX && code2 == LogicHelper.FLOOR) {
 						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX;
 						dates[playerX - x][playerY - y] = LogicHelper.FLOOR;
 					}
-					// ´ÓÏä×Óµ½Ä¿±ê
+					// ä»ç®±å­åˆ°ç›®æ ‡
 					if (code1 == LogicHelper.BOX && code2 == LogicHelper.TARGET) {
 						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX_AND_TARGET;
 						dates[playerX - x][playerY - y] = LogicHelper.FLOOR;
-						// ¸Ä±äÏä×ÓÄ£ĞÍ
+						// æ”¹å˜ç®±å­æ¨¡å‹
 						box.setIcon(new ImageIcon("40.png"));
 						count++;
 					}
-					// ´ÓÏä×ÓÄ¿±êµ½¿ÕµØ
+					// ä»ç®±å­ç›®æ ‡åˆ°ç©ºåœ°
 					if (code1 == LogicHelper.BOX_AND_TARGET
 							&& code2 == LogicHelper.FLOOR) {
 						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX;
 						dates[playerX - x][playerY - y] = LogicHelper.TARGET;
-						// ¸Ä±äÏä×ÓÄ£ĞÍ
+						// æ”¹å˜ç®±å­æ¨¡å‹
 						box.setIcon(new ImageIcon("4.png"));
 						count--;
 					}
-					// ´ÓÏä×ÓÄ¿±êµ½Ä¿±ê
+					// ä»ç®±å­ç›®æ ‡åˆ°ç›®æ ‡
 					if (code1 == LogicHelper.BOX_AND_TARGET
 							&& code2 == LogicHelper.TARGET) {
 						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX_AND_TARGET;
 						dates[playerX - x][playerY - y] = LogicHelper.TARGET;
-						// ¸Ä±äÏä×ÓÄ£ĞÍ
+						// æ”¹å˜ç®±å­æ¨¡å‹
 						box.setIcon(new ImageIcon("40.png"));
 					}
 
-					// ÈËÎïÄ£ĞÍÒÆ¶¯
+					// äººç‰©æ¨¡å‹ç§»åŠ¨
 					move(player, x, y);
-					// ÈËÎï×ø±ê¸üĞÂ
+					// äººç‰©åæ ‡æ›´æ–°
 					playerX = playerX - x;
 					playerY = playerY - y;
 
@@ -226,13 +226,13 @@ public class MainFrame extends JFrame implements KeyListener {
 		}
 	}
 
-	// Ê¤ÀûÅĞ¶¨
+	// èƒœåˆ©åˆ¤å®š
 	private void victory() {
 		if (count == total) {
-			// ÒÆ³ı´°Ìå¼üÅÌÊÂ¼ş£¬±ÜÃâÓÃ»§¶àÓà²Ù×÷
+			// ç§»é™¤çª—ä½“é”®ç›˜äº‹ä»¶ï¼Œé¿å…ç”¨æˆ·å¤šä½™æ“ä½œ
 			this.removeKeyListener(this);
-			// ÒÔÏÂ´úÂëÎª¹ã¸æÖ²Èë£¬ĞèÒªÓëÃÀ¹¤ÅäºÏºó×îÖÕ¶¨¸å
-			JDialog victory = new JDialog(this, "¹§Ï²ÄãÈ¡µÃÁËÊ¤Àû!´«ÖÇ²¥¿Í¡ª¡ªJAVAÅàÑµĞĞÒµÁì¾üÆì½¢",
+			// ä»¥ä¸‹ä»£ç ä¸ºå¹¿å‘Šæ¤å…¥ï¼Œéœ€è¦ä¸ç¾å·¥é…åˆåæœ€ç»ˆå®šç¨¿
+			JDialog victory = new JDialog(this, "æ­å–œä½ å–å¾—äº†èƒœåˆ©!ä¼ æ™ºæ’­å®¢â€”â€”JAVAåŸ¹è®­è¡Œä¸šé¢†å†›æ——èˆ°",
 					true);
 			victory.setSize(400, 300);
 			victory.setLocationRelativeTo(null);

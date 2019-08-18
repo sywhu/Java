@@ -9,14 +9,14 @@ import java.util.TreeMap;
  */
 public class TreeMapDemo2 {
 	public static void main(String[] args) {
-		// 创建集合
+		// 鍒涘缓闆嗗悎
 		TreeMap<Student, String> tm = new TreeMap<Student, String>(
 				new Comparator<Student>() {
 					@Override
 					public int compare(Student s1, Student s2) {
-						// 主要条件
+						// 涓昏鏉′欢
 						int num = s2.getName().length() - s1.getName().length();
-						// 次要条件
+						// 娆¤鏉′欢
 						int num2 = num == 0 ? s1.getName().compareTo(
 								s2.getName()) : num;
 						int num3 = num2 == 0 ? s2.getAge() - s1.getAge() : num2;
@@ -24,7 +24,7 @@ public class TreeMapDemo2 {
 					}
 				});
 
-		// 创建对象
+		// 鍒涘缓瀵硅薄
 		Student s1 = new Student("linqingxia", 28);
 		Student s2 = new Student("fengqingyang", 31);
 		Student s3 = new Student("wangchongyang", 200);
@@ -32,7 +32,7 @@ public class TreeMapDemo2 {
 		Student s5 = new Student("fengqingyang", 20);
 		Student s6 = new Student("wangyang", 100);
 
-		// 添加元素
+		// 娣诲姞鍏冪礌
 		tm.put(s1, "it001");
 		tm.put(s2, "it002");
 		tm.put(s3, "it003");
@@ -40,7 +40,7 @@ public class TreeMapDemo2 {
 		tm.put(s5, "it005");
 		tm.put(s6, "it006");
 
-		// 遍历
+		// 閬嶅巻
 		Set<Student> set = tm.keySet();
 		for (Student key : set) {
 			String value = tm.get(key);

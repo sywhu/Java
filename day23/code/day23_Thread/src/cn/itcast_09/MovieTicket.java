@@ -4,7 +4,7 @@ class Demo {
 }
 
 public class MovieTicket implements Runnable {
-	// ¶¨Òå100ÕÅÆ±
+	// å®šä¹‰100å¼ ç¥¨
 	private int tickets = 100;
 
 	// private Object obj = new Object();
@@ -14,23 +14,23 @@ public class MovieTicket implements Runnable {
 	public void run() {
 		while (true) {
 			// t1,t2,t3
-			// t1¹ıÀ´ÁË£¬¿´µ½ÁËÍ¬²½´úÂë¿éµÄËø±ê¼Ç£¬ÂÌÉ«±ê¼Ç(»ğ³µÉÏ²ŞËù£¬¹ıÂíÂ·µÄºìÂÌµÆ)
-			// t2,t3¶¼Ö»ÄÜÔÚÕâÀïÉµÉµµÄµÈ´ı
+			// t1è¿‡æ¥äº†ï¼Œçœ‹åˆ°äº†åŒæ­¥ä»£ç å—çš„é”æ ‡è®°ï¼Œç»¿è‰²æ ‡è®°(ç«è½¦ä¸Šå•æ‰€ï¼Œè¿‡é©¬è·¯çš„çº¢ç»¿ç¯)
+			// t2,t3éƒ½åªèƒ½åœ¨è¿™é‡Œå‚»å‚»çš„ç­‰å¾…
 			synchronized (this) {
-				// t1¾Í½øÀ´ÁË£¬Á¢ÂíĞŞ¸Ä±ê¼ÇÎªºìÉ«±ê¼Ç
+				// t1å°±è¿›æ¥äº†ï¼Œç«‹é©¬ä¿®æ”¹æ ‡è®°ä¸ºçº¢è‰²æ ‡è®°
 				if (tickets > 0) {
-					// ¸ü·ûºÏÏÖÊµÇé¿ö
+					// æ›´ç¬¦åˆç°å®æƒ…å†µ
 					try {
-						Thread.sleep(100); // t1ĞİÏ¢»á
+						Thread.sleep(100); // t1ä¼‘æ¯ä¼š
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
 
 					System.out.println(Thread.currentThread().getName()
-							+ "ÕıÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
+							+ "æ­£åœ¨å‡ºå”®ç¬¬" + (tickets--) + "å¼ ç¥¨");
 				}
 			}
-			// t1³öÀ´ÁË£¬Á¢ÂíĞŞ¸Ä±ê¼ÇÎªÂÌÉ«±ê¼Ç
+			// t1å‡ºæ¥äº†ï¼Œç«‹é©¬ä¿®æ”¹æ ‡è®°ä¸ºç»¿è‰²æ ‡è®°
 		}
 	}
 }

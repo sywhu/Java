@@ -1,15 +1,15 @@
 /*
-	¾ÙÀı£ºÉíÌåºÍĞÄÔà¡£
+	ä¸¾ä¾‹ï¼šèº«ä½“å’Œå¿ƒè„ã€‚
 
 	class Body {
 		private class Heart {
 			public void operator() {
-				System.out.println("ĞÄÔà´îÇÅ");
+				System.out.println("å¿ƒè„æ­æ¡¥");
 			}
 		}
 
 		public void method() {
-			if(Èç¹ûÄãÊÇÒ½Éú){
+			if(å¦‚æœä½ æ˜¯åŒ»ç”Ÿ){
 				Heart h = new Heart();
 				h.operator();
 			}
@@ -19,17 +19,17 @@
 	Body.Heart bh = new Body().new Heart();
 	bh.operator();
 
-	ÎªÁË²»ÈÃÍâ½çÖ±½Ó·ÃÎÊĞÄÔà¶ÔÏó£¬ËùÒÔ£¬ÎÒÃÇ°ÑÄÚ²¿ÀàÓÃprivateĞŞÊÎ¡£
-	Õâ¸öÊ±ºò£¬ÓÖ²»ÄÜ×öÊÖÊõÁË£¬ÄÇÃ´£¬µ½µ×¸ÃÔõÃ´½â¾öÄØ?
-	ÎÒÃÇ¾Í¿ÉÒÔÔÚÍâ²¿ÀàÖĞ¶¨ÒåÒ»¸ö¹¦ÄÜ£º
-	ÏÖÔÚÈçºÎÊ¹ÓÃÄØ?
+	ä¸ºäº†ä¸è®©å¤–ç•Œç›´æ¥è®¿é—®å¿ƒè„å¯¹è±¡ï¼Œæ‰€ä»¥ï¼Œæˆ‘ä»¬æŠŠå†…éƒ¨ç±»ç”¨privateä¿®é¥°ã€‚
+	è¿™ä¸ªæ—¶å€™ï¼Œåˆä¸èƒ½åšæ‰‹æœ¯äº†ï¼Œé‚£ä¹ˆï¼Œåˆ°åº•è¯¥æ€ä¹ˆè§£å†³å‘¢?
+	æˆ‘ä»¬å°±å¯ä»¥åœ¨å¤–éƒ¨ç±»ä¸­å®šä¹‰ä¸€ä¸ªåŠŸèƒ½ï¼š
+	ç°åœ¨å¦‚ä½•ä½¿ç”¨å‘¢?
 		Body b = new Body();
 		b.method();
 		
 
-	³ÉÔ±ÄÚ²¿Àà£º
-		private£ºÎªÁËÊı¾İµÄ°²È«ĞÔ
-		static£ºÎªÁËÈÃÊı¾İ·ÃÎÊ¸ü·½±ã
+	æˆå‘˜å†…éƒ¨ç±»ï¼š
+		privateï¼šä¸ºäº†æ•°æ®çš„å®‰å…¨æ€§
+		staticï¼šä¸ºäº†è®©æ•°æ®è®¿é—®æ›´æ–¹ä¾¿
 
 */
 /*
@@ -68,16 +68,16 @@ class Outer {
 
 class InnerClassDemo2 {
 	public static void main(String[] args) {
-		//´íÎó
+		//é”™è¯¯
 		//Outer.Inner oi = new Outer().new Inner();
 	
-		//ÓÃprivateĞŞÊÎ
+		//ç”¨privateä¿®é¥°
 		//Outer o = new Outer();
 		//o.method();
 
-		//ÓÃstaticĞŞÊÎºó£¬ÕâÖÖĞ´·¨´íÎó
+		//ç”¨staticä¿®é¥°åï¼Œè¿™ç§å†™æ³•é”™è¯¯
 		//Outer.Inner oi = new Outer().new Inner();
-		//ÓÃÀàÃûÏŞ¶¨
+		//ç”¨ç±»åé™å®š
 		Outer.Inner oi = new Outer.Inner();
 		oi.show();
 		oi.show2();

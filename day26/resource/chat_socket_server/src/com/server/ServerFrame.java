@@ -77,7 +77,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(10, 64, 221, 192);
 		scrollPane.setWheelScrollingEnabled(true);
-		scrollPane.setBorder(BorderFactory.createTitledBorder("ÁÄÌìÏûÏ¢"));
+		scrollPane.setBorder(BorderFactory.createTitledBorder("èŠå¤©æ¶ˆæ¯"));
 		getContentPane().add(scrollPane);
 		
 		jta_disMess = new JTextArea();
@@ -85,7 +85,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
 		scrollPane_1.setBounds(258, 65, 157, 191);
-		scrollPane_1.setBorder(BorderFactory.createTitledBorder("ÔÚÏßÓÃ»§"));
+		scrollPane_1.setBorder(BorderFactory.createTitledBorder("åœ¨çº¿ç”¨æˆ·"));
 		getContentPane().add(scrollPane_1);
 		
 		jlt_disUsers = new JList();
@@ -106,7 +106,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 			server.startServer();
 		}
 		if(arg0.getSource() == jbt_stop){
-			int flag = JOptionPane.showConfirmDialog(this, "ÊÇ·ñÒªÍ£Ö¹·şÎñÆ÷£¿", "", 
+			int flag = JOptionPane.showConfirmDialog(this, "æ˜¯å¦è¦åœæ­¢æœåŠ¡å™¨ï¼Ÿ", "", 
             		JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
             if(flag == JOptionPane.OK_OPTION){
             	server.stopServer();
@@ -157,7 +157,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 	}
 
 	public void setStartAndStopUnable() {
-		JOptionPane.showMessageDialog(this, "²»ÄÜÍ¬Ê±¿ªÆôÁ½¸ö·şÎñÆ÷");
+		JOptionPane.showMessageDialog(this, "ä¸èƒ½åŒæ—¶å¼€å¯ä¸¤ä¸ªæœåŠ¡å™¨");
 		jbt_start.setEnabled(false);
 		jbt_stop.setEnabled(false);
 	}

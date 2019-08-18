@@ -1,20 +1,20 @@
 /*
-	whileÑ­»·µÄ¸ñÊ½£º
-		while(Ìõ¼þ±í´ïÊ½) {
-			Óï¾äÌå;
+	whileå¾ªçŽ¯çš„æ ¼å¼ï¼š
+		while(æ¡ä»¶è¡¨è¾¾å¼) {
+			è¯­å¥ä½“;
 		}
 
-	±äÐÎ¸ñÊ½£º
-		³õÊ¼»¯Óï¾ä;
-		while(ÅÐ¶ÏÌõ¼þÓï¾ä) {
-			Ñ­»·ÌåÓï¾ä;
-			¿ØÖÆÌõ¼þÓï¾ä;
+	å˜å½¢æ ¼å¼ï¼š
+		åˆå§‹åŒ–è¯­å¥;
+		while(åˆ¤æ–­æ¡ä»¶è¯­å¥) {
+			å¾ªçŽ¯ä½“è¯­å¥;
+			æŽ§åˆ¶æ¡ä»¶è¯­å¥;
 		}
 
-		for(³õÊ¼»¯Óï¾ä;ÅÐ¶ÏÌõ¼þÓï¾ä;¿ØÖÆÌõ¼þÓï¾ä) {
-			 Ñ­»·ÌåÓï¾ä;
+		for(åˆå§‹åŒ–è¯­å¥;åˆ¤æ–­æ¡ä»¶è¯­å¥;æŽ§åˆ¶æ¡ä»¶è¯­å¥) {
+			 å¾ªçŽ¯ä½“è¯­å¥;
 		}
-	ÓÉ´Ë¿É¼ûwhileÑ­»·ºÍforÑ­»·ÊÇ¿ÉÒÔµÈ¼Û×ª»»µÄ¡£
+	ç”±æ­¤å¯è§whileå¾ªçŽ¯å’Œforå¾ªçŽ¯æ˜¯å¯ä»¥ç­‰ä»·è½¬æ¢çš„ã€‚
 */
 class WhileDemo {
 	public static void main(String[] args) {
@@ -35,14 +35,14 @@ class WhileDemo {
 		}
 		*/
 
-		//ÇóºÍ
+		//æ±‚å’Œ
 		//for
 		/*
 		int sum = 0;
 		for(int x=1; x<=100; x++) {
 			sum+=x;
 		}
-		System.out.println("1-100Ö®ºÍÊÇ£º"+sum);
+		System.out.println("1-100ä¹‹å’Œæ˜¯ï¼š"+sum);
 		*/
 
 		//while
@@ -53,10 +53,10 @@ class WhileDemo {
 			sum += x;
 			x++;
 		}
-		System.out.println("1-100Ö®ºÍÊÇ£º"+sum);
+		System.out.println("1-100ä¹‹å’Œæ˜¯ï¼š"+sum);
 		*/
 
-		//Ë®ÏÉ»¨
+		//æ°´ä»™èŠ±
 		//for
 		/*
 		for(int x=100; x<1000; x++) {

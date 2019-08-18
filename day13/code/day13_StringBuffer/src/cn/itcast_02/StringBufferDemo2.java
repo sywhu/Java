@@ -1,24 +1,24 @@
 package cn.itcast_02;
 
 /*
- * É¾³ı¹¦ÄÜ£º 
- * public StringBuffer deleteCharAt(int index)£ºÉ¾³ıÖ¸¶¨Î»ÖÃµÄ×Ö·û
- * public StringBuffer delete(int start,int end):É¾³ı´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÄÚÈİ
+ * åˆ é™¤åŠŸèƒ½ï¼š 
+ * public StringBuffer deleteCharAt(int index)ï¼šåˆ é™¤æŒ‡å®šä½ç½®çš„å­—ç¬¦
+ * public StringBuffer delete(int start,int end):åˆ é™¤ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸçš„å†…å®¹
  */
 public class StringBufferDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		StringBuffer buffer = new StringBuffer();
 
-		// Ìí¼ÓÊı¾İ
+		// æ·»åŠ æ•°æ®
 		buffer.append("hello");
 		buffer.append("world");
 		buffer.append("java");
 
-		// public StringBuffer deleteCharAt(int index)£ºÉ¾³ıÖ¸¶¨Î»ÖÃµÄ×Ö·û
+		// public StringBuffer deleteCharAt(int index)ï¼šåˆ é™¤æŒ‡å®šä½ç½®çš„å­—ç¬¦
 		// buffer.deleteCharAt(5);
 
-		// public StringBuffer delete(int start,int end):É¾³ı´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÄÚÈİ
+		// public StringBuffer delete(int start,int end):åˆ é™¤ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸçš„å†…å®¹
 		// buffer.delete(5, 10);
 		buffer.delete(0, buffer.length());
 

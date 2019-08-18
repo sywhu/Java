@@ -1,31 +1,31 @@
 /*
-	ifÓï¾ä¸ñÊ½2£º
-		if(¹ØÏµ±í´ïÊ½) {
-		     Óï¾äÌå1;
+	ifè¯­å¥æ ¼å¼2ï¼š
+		if(å…³ç³»è¡¨è¾¾å¼) {
+		     è¯­å¥ä½“1;
 		}else {
-			 Óï¾äÌå2;
+			 è¯­å¥ä½“2;
 		}
 
-	Ö´ĞĞÁ÷³Ì£º
-		A:¼ÆËã¹ØÏµ±í´ïÊ½µÄÖµ¡£
-		B:Èç¹ûÊÇtrue£¬¾ÍÖ´ĞĞÓï¾äÌå1
-		  Èç¹ûÊÇfalse£¬¾ÍÖ´ĞĞÓï¾äÌå2
-		C:¼ÌĞøÏòÏÂÖ´ĞĞ
+	æ‰§è¡Œæµç¨‹ï¼š
+		A:è®¡ç®—å…³ç³»è¡¨è¾¾å¼çš„å€¼ã€‚
+		B:å¦‚æœæ˜¯trueï¼Œå°±æ‰§è¡Œè¯­å¥ä½“1
+		  å¦‚æœæ˜¯falseï¼Œå°±æ‰§è¡Œè¯­å¥ä½“2
+		C:ç»§ç»­å‘ä¸‹æ‰§è¡Œ
 */
 class IfDemo3 {
 	public static void main(String[] args) {
 		int x = 3;
 
 		if(x == 3) {
-			System.out.println("xµÈÓÚ3");
+			System.out.println("xç­‰äº3");
 		}else {
-			System.out.println("x²»µÈÓÚ3");
+			System.out.println("xä¸ç­‰äº3");
 		}
 
 		if(x > 5) {
-			System.out.println("x´óÓÚ3");
+			System.out.println("xå¤§äº3");
 		}else {
-			System.out.println("x²»´óÓÚ5");
+			System.out.println("xä¸å¤§äº5");
 		}
 	}
 }

@@ -48,7 +48,7 @@ public class Client_enterFrame extends JFrame implements ActionListener, KeyList
 		});
 		
 		JLabel lblNewLabel = new JLabel("\u7528\u6237\u540D");
-		lblNewLabel.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		lblNewLabel.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		lblNewLabel.setBounds(23, 30, 81, 34);
 		getContentPane().add(lblNewLabel);
 		
@@ -59,7 +59,7 @@ public class Client_enterFrame extends JFrame implements ActionListener, KeyList
 		jtf_username.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("\u670D\u52A1\u5668\u5730\u5740");
-		lblNewLabel_1.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		lblNewLabel_1.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		lblNewLabel_1.setBounds(23, 74, 81, 34);
 		getContentPane().add(lblNewLabel_1);
 		
@@ -76,7 +76,7 @@ public class Client_enterFrame extends JFrame implements ActionListener, KeyList
 		jtf_hostIp.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("\u7AEF\u53E3\u53F7");
-		lblNewLabel_2.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		lblNewLabel_2.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		lblNewLabel_2.setBounds(23, 118, 81, 34);
 		getContentPane().add(lblNewLabel_2);
 		
@@ -90,12 +90,12 @@ public class Client_enterFrame extends JFrame implements ActionListener, KeyList
 		jbt_enter = new JButton("\u8FDB\u5165\u804A\u5929\u5BA4");
 		jbt_enter.addActionListener(this);
 		jbt_enter.addKeyListener(this);
-		jbt_enter.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		jbt_enter.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		jbt_enter.setBounds(23, 162, 108, 39);
 		getContentPane().add(jbt_enter);
 		
 		jbt_exit = new JButton("\u9000\u51FA\u804A\u5929\u5BA4");
-		jbt_exit.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		jbt_exit.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		jbt_exit.setBounds(144, 162, 113, 39);
 		jbt_exit.addActionListener(this);
 		getContentPane().add(jbt_exit);
@@ -137,13 +137,13 @@ public class Client_enterFrame extends JFrame implements ActionListener, KeyList
 							JOptionPane.showMessageDialog(this, login_mess);
 						}
 					}else{
-						JOptionPane.showMessageDialog(this, "·şÎñÆ÷Á¬½Ó¶Ë¿ÚºÅ²»ÄÜÎª¿Õ£¡");
+						JOptionPane.showMessageDialog(this, "æœåŠ¡å™¨è¿æ¥ç«¯å£å·ä¸èƒ½ä¸ºç©ºï¼");
 					}
 				}else{
-					JOptionPane.showMessageDialog(this, "·şÎñÆ÷µØÖ·²»ÄÜÎª¿Õ£¡");
+					JOptionPane.showMessageDialog(this, "æœåŠ¡å™¨åœ°å€ä¸èƒ½ä¸ºç©ºï¼");
 				}
 			}else{
-				JOptionPane.showMessageDialog(this, "ÓÃ»§Ãû²»ÄÜÎª¿Õ£¡");
+				JOptionPane.showMessageDialog(this, "ç”¨æˆ·åä¸èƒ½ä¸ºç©ºï¼");
 			}
 		}
 	}

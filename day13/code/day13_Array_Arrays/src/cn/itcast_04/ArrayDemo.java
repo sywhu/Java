@@ -1,22 +1,22 @@
 package cn.itcast_04;
 
 /*
- * °Ñ×Ö·û´®ÖĞµÄ×Ö·û½øĞĞÅÅĞò¡£
- *¾ÙÀı£º¡±dacgebf¡±
- *½á¹û£º¡±abcdefg¡±
+ * æŠŠå­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦è¿›è¡Œæ’åºã€‚
+ *ä¸¾ä¾‹ï¼šâ€dacgebfâ€
+ *ç»“æœï¼šâ€abcdefgâ€
  */
 public class ArrayDemo {
 	public static void main(String[] args) {
-		// ¶¨Òå×Ö·û´®
+		// å®šä¹‰å­—ç¬¦ä¸²
 		String s = "dacgebf";
 
-		// °Ñ×Ö·û´®×ª³É×Ö·ûÊı×é
+		// æŠŠå­—ç¬¦ä¸²è½¬æˆå­—ç¬¦æ•°ç»„
 		char[] chs = s.toCharArray();
 
-		// ¶Ô×Ö·ûÊı×é½øĞĞÅÅĞò
+		// å¯¹å­—ç¬¦æ•°ç»„è¿›è¡Œæ’åº
 		bubbleSort(chs);
 
-		// °ÑÅÅĞòºóµÄ×Ö·ûÊı×é×ª³É×Ö·û´®
+		// æŠŠæ’åºåçš„å­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
 		String result = String.valueOf(chs);
 
 		System.out.println(result);

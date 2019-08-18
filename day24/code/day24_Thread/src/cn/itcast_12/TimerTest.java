@@ -8,7 +8,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /*
- * ÔÚ4µãÕûÉ¾³ıd:\\helloÎÄ¼ş¼Ğ
+ * åœ¨4ç‚¹æ•´åˆ é™¤d:\\helloæ–‡ä»¶å¤¹
  */
 public class TimerTest {
 	public static void main(String[] args) throws ParseException {

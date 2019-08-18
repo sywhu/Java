@@ -1,13 +1,13 @@
-//ÒıÓÃÀàĞÍ×÷Îª²ÎÊı´«µİ£¬ĞèÒª´«µİÊÇ¶ÔÏó¡£(µØÖ·Öµ)
-//¶¨ÒåÑ§ÉúÀà£¬²¢¶¨ÒåÑ§Ï°¹¦ÄÜ
+//å¼•ç”¨ç±»å‹ä½œä¸ºå‚æ•°ä¼ é€’ï¼Œéœ€è¦ä¼ é€’æ˜¯å¯¹è±¡ã€‚(åœ°å€å€¼)
+//å®šä¹‰å­¦ç”Ÿç±»ï¼Œå¹¶å®šä¹‰å­¦ä¹ åŠŸèƒ½
 class Student {
 	public void study() {
-		System.out.println("Ñ§Éú°®Ñ§Ï°");
+		System.out.println("å­¦ç”Ÿçˆ±å­¦ä¹ ");
 	}
 }
 
 class StudentDemo {
-	//StudentÊÇÀà£¬ÀàÊÇÒıÓÃÊı¾İÀàĞÍ¡£
+	//Studentæ˜¯ç±»ï¼Œç±»æ˜¯å¼•ç”¨æ•°æ®ç±»å‹ã€‚
 	public void test(Student s) {
 		s.study();
 	}
@@ -15,7 +15,7 @@ class StudentDemo {
 
 class StudentTest {
 	public static void main(String[] args) {
-		//ÈçºÎµ÷ÓÃÄØ?
+		//å¦‚ä½•è°ƒç”¨å‘¢?
 		StudentDemo sd = new StudentDemo();
 		Student s = new Student();
 		sd.test(s);

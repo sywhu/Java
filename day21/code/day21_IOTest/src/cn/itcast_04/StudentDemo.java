@@ -8,17 +8,17 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 /*
- * ¼üÅÌÂ¼Èë5¸öÑ§ÉúĞÅÏ¢(ĞÕÃû,ÓïÎÄ³É¼¨,ÊıÑ§³É¼¨,Ó¢Óï³É¼¨),°´ÕÕ×Ü·Ö´Ó¸ßµ½µÍ´æÈëÎÄ±¾ÎÄ¼ş
+ * é”®ç›˜å½•å…¥5ä¸ªå­¦ç”Ÿä¿¡æ¯(å§“å,è¯­æ–‡æˆç»©,æ•°å­¦æˆç»©,è‹±è¯­æˆç»©),æŒ‰ç…§æ€»åˆ†ä»é«˜åˆ°ä½å­˜å…¥æ–‡æœ¬æ–‡ä»¶
  * 
- * ·ÖÎö£º
- * 		A:´´½¨Ñ§ÉúÀà
- * 		B:Ê¹ÓÃTreeSet¼¯ºÏ´æ´¢Ñ§ÉúĞÅÏ¢£¬²¢°´ÕÕ×Ü·ÖÅÅĞò£¬ÓÃ±È½ÏÆ÷ÊµÏÖ
- * 		C:¼üÅÌÂ¼ÈëÑ§ÉúĞÅÏ¢
- * 		D:±éÀúSet¼¯ºÏ£¬°ÑÑ§ÉúĞÅÏ¢´æ´¢µ½ÎÄ±¾ÎÄ¼ş
+ * åˆ†æï¼š
+ * 		A:åˆ›å»ºå­¦ç”Ÿç±»
+ * 		B:ä½¿ç”¨TreeSeté›†åˆå­˜å‚¨å­¦ç”Ÿä¿¡æ¯ï¼Œå¹¶æŒ‰ç…§æ€»åˆ†æ’åºï¼Œç”¨æ¯”è¾ƒå™¨å®ç°
+ * 		C:é”®ç›˜å½•å…¥å­¦ç”Ÿä¿¡æ¯
+ * 		D:éå†Seté›†åˆï¼ŒæŠŠå­¦ç”Ÿä¿¡æ¯å­˜å‚¨åˆ°æ–‡æœ¬æ–‡ä»¶
  */
 public class StudentDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨Set¼¯ºÏ
+		// åˆ›å»ºSeté›†åˆ
 		TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() {
 
 			@Override
@@ -30,34 +30,34 @@ public class StudentDemo {
 			}
 		});
 
-		System.out.println("Ñ§ÉúÂ¼Èë¿ªÊ¼----------------------");
-		// ¼üÅÌÂ¼ÈëÊı¾İ
+		System.out.println("å­¦ç”Ÿå½•å…¥å¼€å§‹----------------------");
+		// é”®ç›˜å½•å…¥æ•°æ®
 		for (int x = 1; x <= 5; x++) {
 			Scanner sc = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄĞÕÃû£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„å§“åï¼š");
 			String name = sc.nextLine();
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÓïÎÄ³É¼¨£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„è¯­æ–‡æˆç»©ï¼š");
 			int chinese = sc.nextInt();
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÊıÑ§³É¼¨£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„æ•°å­¦æˆç»©ï¼š");
 			int math = sc.nextInt();
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÓ¢Óï³É¼¨£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„è‹±è¯­æˆç»©ï¼š");
 			int english = sc.nextInt();
 
-			// ´´½¨Ñ§Éú¶ÔÏó
+			// åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
 			Student s = new Student();
 			s.setName(name);
 			s.setChinese(chinese);
 			s.setMath(math);
 			s.setEnglish(english);
 
-			// °ÑÑ§ÉúÌí¼Óµ½¼¯ºÏ
+			// æŠŠå­¦ç”Ÿæ·»åŠ åˆ°é›†åˆ
 			ts.add(s);
 		}
-		System.out.println("Ñ§ÉúÂ¼Èë½áÊø----------------------");
+		System.out.println("å­¦ç”Ÿå½•å…¥ç»“æŸ----------------------");
 
-		// °ÑÑ§ÉúĞÅÏ¢´æ´¢µ½ÎÄ±¾ÎÄ¼ş
+		// æŠŠå­¦ç”Ÿä¿¡æ¯å­˜å‚¨åˆ°æ–‡æœ¬æ–‡ä»¶
 		BufferedWriter bw = new BufferedWriter(new FileWriter("students.txt"));
-		bw.write("ĞÕÃû,ÓïÎÄ³É¼¨,ÊıÑ§³É¼¨,Ó¢Óï³É¼¨");
+		bw.write("å§“å,è¯­æ–‡æˆç»©,æ•°å­¦æˆç»©,è‹±è¯­æˆç»©");
 		bw.newLine();
 		bw.flush();
 
@@ -72,6 +72,6 @@ public class StudentDemo {
 		}
 
 		bw.close();
-		System.out.println("Êı¾İ³É¹¦Ğ´ÈëÎÄ¼ş");
+		System.out.println("æ•°æ®æˆåŠŸå†™å…¥æ–‡ä»¶");
 	}
 }

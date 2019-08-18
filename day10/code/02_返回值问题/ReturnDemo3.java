@@ -1,4 +1,4 @@
-//·µ»ØÖµÀàĞÍÊÇ½Ó¿Ú£¬ÆäÊµ·µ»ØµÄÊÇ½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó
+//è¿”å›å€¼ç±»å‹æ˜¯æ¥å£ï¼Œå…¶å®è¿”å›çš„æ˜¯æ¥å£çš„å®ç°ç±»å¯¹è±¡
 interface Person {
 	public abstract void study();
 }
@@ -11,7 +11,7 @@ class PersonDemo {
 
 class Student implements Person {
 	public void study() {
-		System.out.println("ºÃºÃÑ§Ï°£¬ÌìÌìÏòÉÏ");
+		System.out.println("å¥½å¥½å­¦ä¹ ï¼Œå¤©å¤©å‘ä¸Š");
 	}
 }
 
@@ -21,7 +21,7 @@ class ReturnDemo3 {
 		//Person p = pd.getPerson();
 		//p.study();
 		
-		//Á´Ê½±à³Ì
+		//é“¾å¼ç¼–ç¨‹
 		new PersonDemo().getPerson().study();
 	}
 }

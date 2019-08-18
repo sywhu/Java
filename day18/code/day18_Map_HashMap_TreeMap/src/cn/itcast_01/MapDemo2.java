@@ -12,18 +12,18 @@ import java.util.Set;
  */
 public class MapDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Map<String, String> map = new HashMap<String, String>();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
-		map.put("ÎÄÕÂ", "ÂíÒÁÀş");
-		map.put("Ğ»öª·æ", "ÕÅ°ØÖ¥");
-		map.put("ÌïÁÁ", "Ò¶Ò»Üç");
-		map.put("Íô·å", "ÕÂ×Óâù");
+		// åˆ›å»ºå¹¶æ·»åŠ å…ƒç´ 
+		map.put("æ–‡ç« ", "é©¬ä¼Šä¿");
+		map.put("è°¢éœ†é”‹", "å¼ æŸèŠ");
+		map.put("ç”°äº®", "å¶ä¸€èŒœ");
+		map.put("æ±ªå³°", "ç« å­æ€¡");
 
 		// V get(Object key)
-		System.out.println("get:" + map.get("ÎÄÕÂ"));
-		System.out.println("get:" + map.get("ÌïÁÁ"));
+		System.out.println("get:" + map.get("æ–‡ç« "));
+		System.out.println("get:" + map.get("ç”°äº®"));
 		System.out.println("---------------------");
 
 		// Set<K> keySet()

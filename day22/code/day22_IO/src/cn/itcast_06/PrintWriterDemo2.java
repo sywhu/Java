@@ -25,7 +25,7 @@ public class PrintWriterDemo2 {
 		// println()
 		PrintWriter pw = new PrintWriter(new FileWriter("pw2.txt"), true);
 
-		// ²»µ«ÄÜË¢ĞÂ£¬»¹ÄÜ¹»ÊµÏÖ»»ĞĞ
+		// ä¸ä½†èƒ½åˆ·æ–°ï¼Œè¿˜èƒ½å¤Ÿå®ç°æ¢è¡Œ
 		pw.println("hello");
 		pw.println("world");
 		pw.println("java");

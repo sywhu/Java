@@ -3,18 +3,18 @@ package cn.itcast_03;
 import java.util.Scanner;
 
 /*
- * ÎÊÌâ£º
+ * é—®é¢˜ï¼š
  * 		int--int
  * 		String--String
  * 		String--int
  * 
- * 		int--StringÓĞÎÊÌâ£¬»á°Ñ»Ø³µ»»ĞĞ¸øÁËString¡£
+ * 		int--Stringæœ‰é—®é¢˜ï¼Œä¼šæŠŠå›è½¦æ¢è¡Œç»™äº†Stringã€‚
  * 
- * ÈçºÎ½â¾öÄØ?
- * 		A:ÖØĞÂ´´½¨Ò»¸öĞÂµÄ¼üÅÌÂ¼Èë¶ÔÏó¡£
- * 		B:°Ñ¼üÅÌËùÓĞÂ¼ÈëÊı¾İÈ«²¿µ±×÷StringÀàĞÍ½ÓÊÜ¡£
- * 		      ĞèÒªÊ²Ã´ÀàĞÍ£¬¾Í°ÑString×ª»»Îª¸ÃÀàĞÍ¡£
- * 		      ÖÁÓÚÔõÃ´×ª£¬Ã÷Ìì½²¡£
+ * å¦‚ä½•è§£å†³å‘¢?
+ * 		A:é‡æ–°åˆ›å»ºä¸€ä¸ªæ–°çš„é”®ç›˜å½•å…¥å¯¹è±¡ã€‚
+ * 		B:æŠŠé”®ç›˜æ‰€æœ‰å½•å…¥æ•°æ®å…¨éƒ¨å½“ä½œStringç±»å‹æ¥å—ã€‚
+ * 		      éœ€è¦ä»€ä¹ˆç±»å‹ï¼Œå°±æŠŠStringè½¬æ¢ä¸ºè¯¥ç±»å‹ã€‚
+ * 		      è‡³äºæ€ä¹ˆè½¬ï¼Œæ˜å¤©è®²ã€‚
  */
 public class ScannerDemo2 {
 	public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class ScannerDemo2 {
 		
 		sc = new Scanner(System.in);
 		
-		String y = sc.nextLine(); // °Ñ»Ø³µ»»ĞĞ¸øÁËÕâÀï
+		String y = sc.nextLine(); // æŠŠå›è½¦æ¢è¡Œç»™äº†è¿™é‡Œ
 		System.out.println(x);
 		System.out.println(y);
 	}

@@ -5,28 +5,28 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * °Ñµ±Ç°ÏîÄ¿Ä¿Â¼ÏÂµÄa.txtÄÚÈİ¸´ÖÆµ½µ±Ç°ÏîÄ¿Ä¿Â¼ÏÂµÄb.txtÖĞ
+ * æŠŠå½“å‰é¡¹ç›®ç›®å½•ä¸‹çš„a.txtå†…å®¹å¤åˆ¶åˆ°å½“å‰é¡¹ç›®ç›®å½•ä¸‹çš„b.txtä¸­
  * 
- * ¸´ÖÆÎÄ¼ş£º
- * Êı¾İÔ´£º
- * 		a.txt	--	InputStream	--	FileInputStream	--	Ò»´Î¶ÁÒ»¸ö×Ö½Ú
- * Ä¿µÄµØ£º
- * 		b.txt	--	OutputStream -- FileOutputStream -- Ò»´ÎĞ´Ò»¸ö×Ö½ÚÂğ?
+ * å¤åˆ¶æ–‡ä»¶ï¼š
+ * æ•°æ®æºï¼š
+ * 		a.txt	--	InputStream	--	FileInputStream	--	ä¸€æ¬¡è¯»ä¸€ä¸ªå­—èŠ‚
+ * ç›®çš„åœ°ï¼š
+ * 		b.txt	--	OutputStream -- FileOutputStream -- ä¸€æ¬¡å†™ä¸€ä¸ªå­—èŠ‚å—?
  */
 public class CopyFileDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İ
+		// å°è£…æ•°æ®
 		FileInputStream fis = new FileInputStream("a.txt");
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		FileOutputStream fos = new FileOutputStream("b.txt");
 
-		// ¶ÁÊı¾İ£¬Ğ´Êı¾İ
+		// è¯»æ•°æ®ï¼Œå†™æ•°æ®
 		int by = 0;
 		while ((by = fis.read()) != -1) {
 			fos.write(by);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		fos.close();
 		fis.close();
 	}

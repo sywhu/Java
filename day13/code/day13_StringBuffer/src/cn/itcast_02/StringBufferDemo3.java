@@ -1,17 +1,17 @@
 package cn.itcast_02;
 
 /*
- * public StringBuffer replace(int start,int end,String str):ÓÃ¸ø¶¨µÄ×Ö·û´®Ìæ»»´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÊı¾İ
+ * public StringBuffer replace(int start,int end,String str):ç”¨ç»™å®šçš„å­—ç¬¦ä¸²æ›¿æ¢ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸçš„æ•°æ®
  */
 public class StringBufferDemo3 {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		StringBuffer buffer = new StringBuffer();
 
 		buffer.append("hello").append("world").append("java");
 
 		// public StringBuffer replace(int start,int end,String
-		// str):ÓÃ¸ø¶¨µÄ×Ö·û´®Ìæ»»´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÊı¾İ
+		// str):ç”¨ç»™å®šçš„å­—ç¬¦ä¸²æ›¿æ¢ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸçš„æ•°æ®
 		buffer.replace(3, 8, "haha");
 
 		System.out.println("buffer:" + buffer);

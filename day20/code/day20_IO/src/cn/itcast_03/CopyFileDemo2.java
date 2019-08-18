@@ -5,27 +5,27 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * °Ñc:\\a.txtÄÚÈİ¸´ÖÆµ½d:\\b.txtÖĞ
- * Êı¾İÔ´£º
+ * æŠŠc:\\a.txtå†…å®¹å¤åˆ¶åˆ°d:\\b.txtä¸­
+ * æ•°æ®æºï¼š
  * 		c:\\a.txt	--	FileInputStream
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		d:\\b.txt	--	FileOutputStream
  */
 public class CopyFileDemo2 {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´
-		// java.io.FileNotFoundException: c:\a.txt (ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼ş¡£)
+		// å°è£…æ•°æ®æº
+		// java.io.FileNotFoundException: c:\a.txt (ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶ã€‚)
 		FileInputStream fis = new FileInputStream("c:\\a.txt");
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		FileOutputStream fos = new FileOutputStream("d:\\b.txt");
 
-		// ¶ÁĞ´Êı¾İ
+		// è¯»å†™æ•°æ®
 		int by = 0;
 		while ((by = fis.read()) != -1) {
 			fos.write(by);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		fos.close();
 		fis.close();
 	}

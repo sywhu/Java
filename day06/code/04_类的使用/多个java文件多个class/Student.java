@@ -1,24 +1,24 @@
 class Student {
-	//Ñ§ºÅ
+	//å­¦å·
 	String sid;
-	//ĞÕÃû
+	//å§“å
 	String name;
-	//ÄêÁä
+	//å¹´é¾„
 	int age;
 
-	//Ñ§Ï°µÄ·½·¨
-	//Ñ§Ï°µÄ·½·¨
+	//å­¦ä¹ çš„æ–¹æ³•
+	//å­¦ä¹ çš„æ–¹æ³•
 	public void study() {
-		System.out.println("Ñ§Éú°®Ñ§Ï°");
+		System.out.println("å­¦ç”Ÿçˆ±å­¦ä¹ ");
 	}
 
-	//³Ô·¹µÄ·½·¨
+	//åƒé¥­çš„æ–¹æ³•
 	public void eat() {
-		System.out.println("Ñ§ÉúÒª³Ô·¹");
+		System.out.println("å­¦ç”Ÿè¦åƒé¥­");
 	}
 
-	//Ë¯¾õµÄ·½·¨
+	//ç¡è§‰çš„æ–¹æ³•
 	public void sleep() {
-		System.out.println("Ñ§ÉúÏëË¯¾õ");
+		System.out.println("å­¦ç”Ÿæƒ³ç¡è§‰");
 	}
 }

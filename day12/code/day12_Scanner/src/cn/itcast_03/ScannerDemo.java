@@ -3,8 +3,8 @@ package cn.itcast_03;
 import java.util.Scanner;
 
 /*
- * public int nextInt():»ñÈ¡Ò»¸öintÀàĞÍµÄÊı¾İ
- * public String nextLine():»ñÈ¡Ò»¸ö×Ö·û´®ÀàĞÍµÄÊı¾İ
+ * public int nextInt():è·å–ä¸€ä¸ªintç±»å‹çš„æ•°æ®
+ * public String nextLine():è·å–ä¸€ä¸ªå­—ç¬¦ä¸²ç±»å‹çš„æ•°æ®
  */
 public class ScannerDemo {
 	public static void main(String[] args) {

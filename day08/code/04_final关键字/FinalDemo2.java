@@ -1,17 +1,17 @@
 /*
-	finalĞŞÊÎ¾Ö²¿±äÁ¿
-		»ù±¾ÀàĞÍ£º»ù±¾ÀàĞÍµÄÖµ²»ÄÜ±äÁ¿
-		ÒıÓÃÀàĞÍ£ºÒıÓÃÀàĞÍµÄµØÖ·Öµ²»ÄÜ¸Ä±ä
+	finalä¿®é¥°å±€éƒ¨å˜é‡
+		åŸºæœ¬ç±»å‹ï¼šåŸºæœ¬ç±»å‹çš„å€¼ä¸èƒ½å˜é‡
+		å¼•ç”¨ç±»å‹ï¼šå¼•ç”¨ç±»å‹çš„åœ°å€å€¼ä¸èƒ½æ”¹å˜
 */
 class Person {
 	public void show() {
-		//¾Ö²¿±äÁ¿
+		//å±€éƒ¨å˜é‡
 		int num  = 10;
 		System.out.println(num);
 		num = 100;
 		System.out.println(num);
 
-		//finalĞŞÊÎ¾Ö²¿±äÁ¿
+		//finalä¿®é¥°å±€éƒ¨å˜é‡
 		final int num2 = 20;
 		System.out.println(num2);
 		//num2 = 200;
@@ -19,7 +19,7 @@ class Person {
 	}
 
 	public void method() {
-		//¾Ö²¿±äÁ¿
+		//å±€éƒ¨å˜é‡
 		Student s1 = new Student();
 		System.out.println(s1.age);
 		s1.age = 100;
@@ -27,7 +27,7 @@ class Person {
 
 		//s1 = new Student();
 
-		//finalĞŞÊÎ¾Ö²¿±äÁ¿
+		//finalä¿®é¥°å±€éƒ¨å˜é‡
 		final Student s2 = new Student();
 		System.out.println(s2.age);
 		s2.age = 100;

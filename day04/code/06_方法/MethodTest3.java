@@ -1,31 +1,31 @@
 /*
-	¼üÅÌÂ¼ÈëÈý¸öÊý¾Ý£¬·µ»ØÈý¸öÊýÖÐµÄ×î´óÖµ
+	é”®ç›˜å½•å…¥ä¸‰ä¸ªæ•°æ®ï¼Œè¿”å›žä¸‰ä¸ªæ•°ä¸­çš„æœ€å¤§å€¼
 */
 import java.util.Scanner;
 
 class MethodTest3 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊý¾Ý£º");
+		//é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°æ®ï¼š");
 		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶þ¸öÊý¾Ý£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°æ®ï¼š");
 		int b = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚÈý¸öÊý¾Ý£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸‰ä¸ªæ•°æ®ï¼š");
 		int c = sc.nextInt();
 		
-		//µ÷ÓÃ¹¦ÄÜ
+		//è°ƒç”¨åŠŸèƒ½
 		int max = getMax(a,b,c);
 		System.out.println(max);
 	}
 
 	/*
-		·µ»ØÈý¸öÊýÖÐµÄ×î´óÖµ
-		Á½¸öÃ÷È·£º
-			·µ»ØÖµÀàÐÍ£ºint
-			²ÎÊýÁÐ±í£ºint a,int b,int c
+		è¿”å›žä¸‰ä¸ªæ•°ä¸­çš„æœ€å¤§å€¼
+		ä¸¤ä¸ªæ˜Žç¡®ï¼š
+			è¿”å›žå€¼ç±»åž‹ï¼šint
+			å‚æ•°åˆ—è¡¨ï¼šint a,int b,int c
 	*/
 	public static int getMax(int a,int b,int c) {
 		/*
@@ -44,7 +44,7 @@ class MethodTest3 {
 		}
 		*/
 
-		//ÈýÔª
+		//ä¸‰å…ƒ
 		//return a>b?a>c?a:c:b>c?b:c;
 
 		int temp = a>b?a:b;

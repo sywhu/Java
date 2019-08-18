@@ -7,40 +7,40 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * ×Ö·û»º³åÇøÁ÷
+ * å­—ç¬¦ç¼“å†²åŒºæµ
  * BufferedReader
  * BufferedWriter
  * 
  * 
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		a.txt
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		b.txt
  * 
- * Ä¿Ç°ÎªÖ¹£º
- * 		¸´ÖÆÎÄ±¾ÎÄ¼ş£º
- * 			8ÖÖ
- * 				×Ö½ÚÁ÷	4ÖÖ
- * 					»ù±¾×Ö½ÚÁ÷
- * 					×Ö½Ú»º³åÁ÷
- * 				×Ö·ûÁ÷	4ÖÖ
- * 					»ù±¾×Ö·ûÁ÷
- * 					×Ö·û»º³åÁ÷
+ * ç›®å‰ä¸ºæ­¢ï¼š
+ * 		å¤åˆ¶æ–‡æœ¬æ–‡ä»¶ï¼š
+ * 			8ç§
+ * 				å­—èŠ‚æµ	4ç§
+ * 					åŸºæœ¬å­—èŠ‚æµ
+ * 					å­—èŠ‚ç¼“å†²æµ
+ * 				å­—ç¬¦æµ	4ç§
+ * 					åŸºæœ¬å­—ç¬¦æµ
+ * 					å­—ç¬¦ç¼“å†²æµ
  * 
- * 		¸´ÖÆÍ¼Æ¬£¬ÊÓÆµ£¬ÒôÆµµÈ£º
- * 			4ÖÖ
- * 				×Ö½ÚÁ÷	4ÖÖ
- * 					»ù±¾×Ö½ÚÁ÷
- * 					×Ö½Ú»º³åÁ÷
+ * 		å¤åˆ¶å›¾ç‰‡ï¼Œè§†é¢‘ï¼ŒéŸ³é¢‘ç­‰ï¼š
+ * 			4ç§
+ * 				å­—èŠ‚æµ	4ç§
+ * 					åŸºæœ¬å­—èŠ‚æµ
+ * 					å­—èŠ‚ç¼“å†²æµ
  */
 public class CopyFileDemo2 {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´
+		// å°è£…æ•°æ®æº
 		BufferedReader br = new BufferedReader(new FileReader("a.txt"));
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		BufferedWriter bw = new BufferedWriter(new FileWriter("c.txt"));
 
-		// Á½ÖÖ·½Ê½
+		// ä¸¤ç§æ–¹å¼
 		char[] chs = new char[1024];
 		int len = 0;
 		while ((len = br.read(chs)) != -1) {

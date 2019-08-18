@@ -5,24 +5,24 @@ import java.util.Set;
 
 /*
  * HashMap<Integer,String>
- * ¼ü£ºInteger	Ñ§ºÅ
- * Öµ£ºString		ĞÕÃû
+ * é”®ï¼šInteger	å­¦å·
+ * å€¼ï¼šString		å§“å
  */
 public class HashMapDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		HashMap<Integer, String> hm = new HashMap<Integer, String>();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
+		// åˆ›å»ºå¹¶æ·»åŠ å…ƒç´ 
 		// Integer i1 = 1;
-		// String s1 = "ÕÅÈı";
+		// String s1 = "å¼ ä¸‰";
 		// hm.put(i1, s1);
 
-		hm.put(1, "ÕÅÈı");
-		hm.put(2, "ÀîËÄ");
-		hm.put(3, "ÍõÎä");
+		hm.put(1, "å¼ ä¸‰");
+		hm.put(2, "æå››");
+		hm.put(3, "ç‹æ­¦");
 
-		// ±éÀú
+		// éå†
 		Set<Integer> set = hm.keySet();
 		for (Integer key : set) {
 			String value = hm.get(key);

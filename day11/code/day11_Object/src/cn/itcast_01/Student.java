@@ -1,6 +1,6 @@
 package cn.itcast_01;
 
-//public class Student extends Object:这种继承是默认存在的
+//public class Student extends Object:杩欑缁ф壙鏄粯璁ゅ瓨鍦ㄧ殑
 public class Student {
 	private String name;
 	private int age;

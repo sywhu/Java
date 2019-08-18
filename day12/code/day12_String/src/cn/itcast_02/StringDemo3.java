@@ -1,7 +1,7 @@
 package cn.itcast_02;
 
 /*
- * ¿´³ÌĞòĞ´½á¹û
+ * éªå¬¬â–¼æ´å¿“å•“ç¼æ’´ç‰
  */
 public class StringDemo3 {
 	public static void main(String[] args) {

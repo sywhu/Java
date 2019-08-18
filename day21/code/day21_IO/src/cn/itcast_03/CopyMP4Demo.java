@@ -7,16 +7,16 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * Êı¾İÔ´£º
- * 		d:\\¸çÓĞÀÏÆÅ.mp4
- * Ä¿µÄµØ£º
- * 		ÏîÄ¿Â·¾¶ÏÂcopy.mp4
+ * æ•°æ®æºï¼š
+ * 		d:\\å“¥æœ‰è€å©†.mp4
+ * ç›®çš„åœ°ï¼š
+ * 		é¡¹ç›®è·¯å¾„ä¸‹copy.mp4
  * 
- * ËÄÖÖ·½Ê½£º
- * A:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú	67023ºÁÃë
- * B:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é	¹²ºÄÊ±£º102ºÁÃë
- * C:¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú	¹²ºÄÊ±£º650ºÁÃë
- * D:¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é	¹²ºÄÊ±£º36ºÁÃë
+ * å››ç§æ–¹å¼ï¼š
+ * A:åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚	67023æ¯«ç§’
+ * B:åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„	å…±è€—æ—¶ï¼š102æ¯«ç§’
+ * C:é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚	å…±è€—æ—¶ï¼š650æ¯«ç§’
+ * D:é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„	å…±è€—æ—¶ï¼š36æ¯«ç§’
  */
 public class CopyMP4Demo {
 	public static void main(String[] args) throws IOException {
@@ -26,12 +26,12 @@ public class CopyMP4Demo {
 		// method3();
 		method4();
 		long end = System.currentTimeMillis();
-		System.out.println("¹²ºÄÊ±£º" + (end - start) + "ºÁÃë");
+		System.out.println("å…±è€—æ—¶ï¼š" + (end - start) + "æ¯«ç§’");
 	}
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú
+	// åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚
 	public static void method1() throws IOException {
-		FileInputStream fis = new FileInputStream("d:\\¸çÓĞÀÏÆÅ.mp4");
+		FileInputStream fis = new FileInputStream("d:\\å“¥æœ‰è€å©†.mp4");
 		FileOutputStream fos = new FileOutputStream("copy1.mp4");
 
 		int by = 0;
@@ -43,9 +43,9 @@ public class CopyMP4Demo {
 		fis.close();
 	}
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é
+	// åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„
 	public static void method2() throws IOException {
-		FileInputStream fis = new FileInputStream("d:\\¸çÓĞÀÏÆÅ.mp4");
+		FileInputStream fis = new FileInputStream("d:\\å“¥æœ‰è€å©†.mp4");
 		FileOutputStream fos = new FileOutputStream("copy2.mp4");
 
 		byte[] bys = new byte[1024];
@@ -58,10 +58,10 @@ public class CopyMP4Demo {
 		fis.close();
 	}
 
-	// ¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú
+	// é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚
 	public static void method3() throws IOException {
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				"d:\\¸çÓĞÀÏÆÅ.mp4"));
+				"d:\\å“¥æœ‰è€å©†.mp4"));
 		BufferedOutputStream bos = new BufferedOutputStream(
 				new FileOutputStream("copy3.mp4"));
 
@@ -74,10 +74,10 @@ public class CopyMP4Demo {
 		bis.close();
 	}
 
-	// ¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é
+	// é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„
 	public static void method4() throws IOException {
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				"d:\\¸çÓĞÀÏÆÅ.mp4"));
+				"d:\\å“¥æœ‰è€å©†.mp4"));
 		BufferedOutputStream bos = new BufferedOutputStream(
 				new FileOutputStream("copy4.mp4"));
 

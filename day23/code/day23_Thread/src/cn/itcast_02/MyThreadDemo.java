@@ -1,29 +1,29 @@
 package cn.itcast_02;
 
 /*
- * ÈçºÎ»ñÈ¡ºÍÉèÖÃÏß³ÌÃû³Æ?
+ * å¦‚ä½•è·å–å’Œè®¾ç½®çº¿ç¨‹åç§°?
  * public final String getName()
- * 		Èç¹ûÄãÃ»ÓĞÉèÖÃÃû³Æ£¬»áÓĞÒ»¸öÄ¬ÈÏÃû³Æ¡£Thread-±àºÅ
+ * 		å¦‚æœä½ æ²¡æœ‰è®¾ç½®åç§°ï¼Œä¼šæœ‰ä¸€ä¸ªé»˜è®¤åç§°ã€‚Thread-ç¼–å·
  * public final void setName(String name)
  * 
- * ÆäÊµÍ¨¹ı¹¹Ôì·½·¨Ò²¿ÉÒÔ¸øÏß³ÌÆğÃû×Ö?
+ * å…¶å®é€šè¿‡æ„é€ æ–¹æ³•ä¹Ÿå¯ä»¥ç»™çº¿ç¨‹èµ·åå­—?
  * 
- * ÇëÎÊmain·½·¨ÔÚÄÄ¸öÏß³ÌÖĞÄØ?
- * 		Ö÷Ïß³Ì
- * 		ÈçºÎ»ñÈ¡Ö÷Ïß³ÌµÄÃû³ÆÄØ?
- * 		public static Thread currentThread():ÕâÑù¾Í¿ÉÒÔ»ñÈ¡ÈÎÒâ·½·¨ËùÔÚµÄÏß³ÌÃû³Æ
+ * è¯·é—®mainæ–¹æ³•åœ¨å“ªä¸ªçº¿ç¨‹ä¸­å‘¢?
+ * 		ä¸»çº¿ç¨‹
+ * 		å¦‚ä½•è·å–ä¸»çº¿ç¨‹çš„åç§°å‘¢?
+ * 		public static Thread currentThread():è¿™æ ·å°±å¯ä»¥è·å–ä»»æ„æ–¹æ³•æ‰€åœ¨çš„çº¿ç¨‹åç§°
  */
 public class MyThreadDemo {
 	public static void main(String[] args) {
-		// ÎŞ²Î+setXxx()
+		// æ— å‚+setXxx()
 		// MyThread mt1 = new MyThread();
 		// MyThread mt2 = new MyThread();
-		// mt1.setName("ÁÖÇàÏ¼");
-		// mt2.setName("ÁõÒâ");
+		// mt1.setName("æ—é’éœ");
+		// mt2.setName("åˆ˜æ„");
 
-		// ´ø²Î
-		MyThread mt1 = new MyThread("Íõ×æÏÍ");
-		MyThread mt2 = new MyThread("Ñî¸Ú");
+		// å¸¦å‚
+		MyThread mt1 = new MyThread("ç‹ç¥–è´¤");
+		MyThread mt2 = new MyThread("æ¨å²—");
 
 		mt1.start();
 		mt2.start();

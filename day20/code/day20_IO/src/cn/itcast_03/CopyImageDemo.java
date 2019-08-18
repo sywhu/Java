@@ -5,27 +5,27 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * °Ñe:\\ÁÖÇàÏ¼.jpgÄÚÈİ¸´ÖÆµ½µ±Ç°ÏîÄ¿Ä¿Â¼ÏÂµÄmn.jpgÖĞ
+ * æŠŠe:\\æ—é’éœ.jpgå†…å®¹å¤åˆ¶åˆ°å½“å‰é¡¹ç›®ç›®å½•ä¸‹çš„mn.jpgä¸­
  * 
- * Êı¾İÔ´£º
- * 		e:\\ÁÖÇàÏ¼.jpg	--	FileInputStream
- * Ä¿µÄµØ£º	
+ * æ•°æ®æºï¼š
+ * 		e:\\æ—é’éœ.jpg	--	FileInputStream
+ * ç›®çš„åœ°ï¼š	
  * 		mn.jpg			--	FileOutputStream
  */
 public class CopyImageDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´
-		FileInputStream fis = new FileInputStream("e:\\ÁÖÇàÏ¼.jpg");
-		// ·â×°Ä¿µÄµØ
+		// å°è£…æ•°æ®æº
+		FileInputStream fis = new FileInputStream("e:\\æ—é’éœ.jpg");
+		// å°è£…ç›®çš„åœ°
 		FileOutputStream fos = new FileOutputStream("mn.jpg");
 
-		// ¶ÁĞ´Êı¾İ
+		// è¯»å†™æ•°æ®
 		int by = 0;
 		while ((by = fis.read()) != -1) {
 			fos.write(by);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		fos.close();
 		fis.close();
 	}

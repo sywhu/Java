@@ -3,20 +3,20 @@ package cn.itcast_07;
 import java.util.Scanner;
 
 /*
- * ×Ö·û´®·´×ª
- * ¾ÙÀı£º¼üÅÌÂ¼Èë¡±abc¡±		Êä³ö½á¹û£º¡±cba¡±
+ * å­—ç¬¦ä¸²åè½¬
+ * ä¸¾ä¾‹ï¼šé”®ç›˜å½•å…¥â€abcâ€		è¾“å‡ºç»“æœï¼šâ€cbaâ€
  */
 public class StringTest2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š");
 		String s = sc.nextLine();
 
 		String result = reverse(s);
 		System.out.println(result);
 	}
 
-	// Ğ´¹¦ÄÜÊµÏÖ
+	// å†™åŠŸèƒ½å®ç°
 	public static String reverse(String s) {
 		String result = "";
 

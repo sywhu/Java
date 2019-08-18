@@ -1,7 +1,7 @@
 package cn.itcast_04;
 
 /*
- * public static void sleep(long millis):ÉèÖÃÏß³ÌĞİÃß
+ * public static void sleep(long millis):ç’å‰§ç–†ç»¾è·¨â–¼æµ¼æˆ æ¹¢
  */
 public class ThreadSleepDemo {
 	public static void main(String[] args) {
@@ -9,9 +9,9 @@ public class ThreadSleepDemo {
 		ThreadSleep ts2 = new ThreadSleep();
 		ThreadSleep ts3 = new ThreadSleep();
 
-		ts1.setName("ºÍ«|");
-		ts2.setName("ÇØèí");
-		ts3.setName("¸ßÙ´");
+		ts1.setName("éœå²€å¼²");
+		ts2.setName("ç»‰ï¸½Â¨");
+		ts3.setName("æ¥‚æ¨¹ç¹€");
 
 		ts1.start();
 		ts2.start();

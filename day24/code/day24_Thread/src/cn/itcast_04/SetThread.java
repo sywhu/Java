@@ -15,10 +15,10 @@ public class SetThread implements Runnable {
 		while (true) {
 			synchronized (s) {
 				if (x % 2 == 0) {
-					s.name = "ÁÖÇàÏ¼"; // Ã»ÓĞÖ´ĞĞÈ¨ÁË¡£
+					s.name = "æ—é’éœ"; // æ²¡æœ‰æ‰§è¡Œæƒäº†ã€‚
 					s.age = 28;
 				} else {
-					s.name = "ÁõÒâ";
+					s.name = "åˆ˜æ„";
 					s.age = 31;
 				}
 				x++;

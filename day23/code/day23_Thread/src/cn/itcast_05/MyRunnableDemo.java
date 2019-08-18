@@ -1,28 +1,28 @@
 package cn.itcast_05;
 
 /*
- * ÊµÏÖRunnable½Ó¿ÚµÄ²½Öè£º
- * A:¶¨ÒåÀàMyRunnableÊµÏÖ½Ó¿ÚRunnable
- * B:ÖØĞ´run()·½·¨
- * C:´´½¨MyRunnableµÄ¶ÔÏó
- * D:´´½¨ThreadÀàµÄ¶ÔÏó£¬²¢°ÑC²½ÖèµÄ¶ÔÏó×÷Îª¹¹Ôì²ÎÊı´«µİ
- * E:Æô¶¯Ïß³Ì
+ * å®ç°Runnableæ¥å£çš„æ­¥éª¤ï¼š
+ * A:å®šä¹‰ç±»MyRunnableå®ç°æ¥å£Runnable
+ * B:é‡å†™run()æ–¹æ³•
+ * C:åˆ›å»ºMyRunnableçš„å¯¹è±¡
+ * D:åˆ›å»ºThreadç±»çš„å¯¹è±¡ï¼Œå¹¶æŠŠCæ­¥éª¤çš„å¯¹è±¡ä½œä¸ºæ„é€ å‚æ•°ä¼ é€’
+ * E:å¯åŠ¨çº¿ç¨‹
  * 
- * ÓĞÁË¼Ì³ĞThreadÀàµÄ·½Ê½£¬ÎªÊ²Ã´»¹ÒªÓĞÊµÏÖRunnable½Ó¿ÚµÄ·½Ê½?
- * Ô­ÒòÊÇÒòÎªÀàÊÇµ¥¼Ì³Ğ¡£
+ * æœ‰äº†ç»§æ‰¿Threadç±»çš„æ–¹å¼ï¼Œä¸ºä»€ä¹ˆè¿˜è¦æœ‰å®ç°Runnableæ¥å£çš„æ–¹å¼?
+ * åŸå› æ˜¯å› ä¸ºç±»æ˜¯å•ç»§æ‰¿ã€‚
  */
 public class MyRunnableDemo {
 	public static void main(String[] args) {
-		// ´´½¨MyRunnableµÄ¶ÔÏó
+		// åˆ›å»ºMyRunnableçš„å¯¹è±¡
 		MyRunnable my = new MyRunnable();
 
-		// ´´½¨ThreadÀàµÄ¶ÔÏó£¬²¢°ÑC²½ÖèµÄ¶ÔÏó×÷Îª¹¹Ôì²ÎÊı´«µİ
+		// åˆ›å»ºThreadç±»çš„å¯¹è±¡ï¼Œå¹¶æŠŠCæ­¥éª¤çš„å¯¹è±¡ä½œä¸ºæ„é€ å‚æ•°ä¼ é€’
 		// Thread(Runnable target)
 		// Thread(Runnable target, String name)
-		Thread t1 = new Thread(my, "ÃÏ·Ç");
-		Thread t2 = new Thread(my, "ÀÖ¼Î");
+		Thread t1 = new Thread(my, "å­Ÿé");
+		Thread t2 = new Thread(my, "ä¹å˜‰");
 
-		// Æô¶¯Ïß³Ì
+		// å¯åŠ¨çº¿ç¨‹
 		t1.start();
 		t2.start();
 	}

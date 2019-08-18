@@ -6,21 +6,21 @@ import java.util.List;
 
 /*
  * Collection
- *	 	List:ÔªËØÓĞĞò(´æ´¢Ë³ĞòºÍÈ¡³öË³ĞòÒ»ÖÂ),ÔªËØ¿ÉÖØ¸´¡£
- *		Set:ÔªËØÎŞĞò,ÔªËØÎ¨Ò»
- * ĞèÇó£ºÓÃList¼¯ºÏ´æ´¢×Ö·û´®²¢±éÀú¡£
+ *	 	List:å…ƒç´ æœ‰åº(å­˜å‚¨é¡ºåºå’Œå–å‡ºé¡ºåºä¸€è‡´),å…ƒç´ å¯é‡å¤ã€‚
+ *		Set:å…ƒç´ æ— åº,å…ƒç´ å”¯ä¸€
+ * éœ€æ±‚ï¼šç”¨Listé›†åˆå­˜å‚¨å­—ç¬¦ä¸²å¹¶éå†ã€‚
  */
 public class ListDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		List list = new ArrayList();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
-		list.add("Öî¸ğÁÁ");
-		list.add("Ë¾ÂíÜ²");
-		list.add("²Ü²Ù");
+		// åˆ›å»ºå¹¶æ·»åŠ å…ƒç´ 
+		list.add("è¯¸è‘›äº®");
+		list.add("å¸é©¬æ‡¿");
+		list.add("æ›¹æ“");
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		Iterator it = list.iterator();
 		while (it.hasNext()) {
 			String s = (String) it.next();

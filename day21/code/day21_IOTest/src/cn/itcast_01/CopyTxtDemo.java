@@ -7,16 +7,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * ¸´ÖÆÎÄ±¾ÎÄ¼ş(9ÖÖ£¬¶øÎÒÃÇÑ¡Ôñ×Ö·ûÁ÷£¬¾ÍÓÃ5ÖÖ·½Ê½ÊµÏÖ)
- * A:»ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
- * B:»ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊı×é
- * C:¸ßĞ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
- * D:¸ßĞ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊı×é
- * E:¸ßĞ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û´®
+ * å¤åˆ¶æ–‡æœ¬æ–‡ä»¶(9ç§ï¼Œè€Œæˆ‘ä»¬é€‰æ‹©å­—ç¬¦æµï¼Œå°±ç”¨5ç§æ–¹å¼å®ç°)
+ * A:åŸºæœ¬å­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦
+ * B:åŸºæœ¬å­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦æ•°ç»„
+ * C:é«˜æ•ˆå­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦
+ * D:é«˜æ•ˆå­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦æ•°ç»„
+ * E:é«˜æ•ˆå­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦ä¸²
  * 
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		c:\\a.txt
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		d:\\b.txt
  */
 public class CopyTxtDemo {
@@ -31,7 +31,7 @@ public class CopyTxtDemo {
 		// method5(srcString, destString);
 	}
 
-	// ¸ßĞ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û´®
+	// é«˜æ•ˆå­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦ä¸²
 	private static void method5(String srcString, String destString)
 			throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(srcString));
@@ -48,7 +48,7 @@ public class CopyTxtDemo {
 		br.close();
 	}
 
-	// ¸ßĞ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊı×é
+	// é«˜æ•ˆå­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦æ•°ç»„
 	private static void method4(String srcString, String destString)
 			throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(srcString));
@@ -64,7 +64,7 @@ public class CopyTxtDemo {
 		br.close();
 	}
 
-	// ¸ßĞ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
+	// é«˜æ•ˆå­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦
 	private static void method3(String srcString, String destString)
 			throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(srcString));
@@ -79,7 +79,7 @@ public class CopyTxtDemo {
 		br.close();
 	}
 
-	// »ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊı×é
+	// åŸºæœ¬å­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦æ•°ç»„
 	private static void method2(String srcString, String destString)
 			throws IOException {
 		FileReader fr = new FileReader(srcString);
@@ -95,7 +95,7 @@ public class CopyTxtDemo {
 		fr.close();
 	}
 
-	// »ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
+	// åŸºæœ¬å­—ç¬¦æµä¸€æ¬¡ä¸€ä¸ªå­—ç¬¦
 	private static void method1(String srcString, String destString)
 			throws IOException {
 		FileReader fr = new FileReader(srcString);

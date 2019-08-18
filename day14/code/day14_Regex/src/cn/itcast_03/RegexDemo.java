@@ -1,8 +1,8 @@
 package cn.itcast_03;
 
 /*
- * ·Ö¸î¹¦ÄÜ
- *		StringÀàµÄ¹¦ÄÜ£º
+ * åˆ†å‰²åŠŸèƒ½
+ *		Stringç±»çš„åŠŸèƒ½ï¼š
  *			public String[] split(String regex)
  */
 public class RegexDemo {

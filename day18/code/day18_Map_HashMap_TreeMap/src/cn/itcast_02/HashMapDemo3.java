@@ -5,29 +5,29 @@ import java.util.Set;
 
 /*
  * HashMap<String,Student>
- * ¼ü£ºString		Ñ§ºÅ 	eg:itcast001
- * Öµ£ºStudent	Ñ§Éú¶ÔÏó (ÁÖÇàÏ¼,28)
+ * é”®ï¼šString		å­¦å· 	eg:itcast001
+ * å€¼ï¼šStudent	å­¦ç”Ÿå¯¹è±¡ (æ—é’éœ,28)
  * 		name,age
- * ÒªÇó´æ´¢Èı¸öÑ§Éú£¬²¢±éÀú¡£±éÀúµÄ½á¹ûÊÇ£º
- * 		itcast001--ÁÖÇàÏ¼---28
+ * è¦æ±‚å­˜å‚¨ä¸‰ä¸ªå­¦ç”Ÿï¼Œå¹¶éå†ã€‚éå†çš„ç»“æœæ˜¯ï¼š
+ * 		itcast001--æ—é’éœ---28
  * 		...
  */
 public class HashMapDemo3 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		HashMap<String, Student> hm = new HashMap<String, Student>();
 
-		// ´´½¨¶ÔÏó
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
-		Student s2 = new Student("·çÇåÑï", 31);
-		Student s3 = new Student("ÍõÖØÑô", 200);
+		// åˆ›å»ºå¯¹è±¡
+		Student s1 = new Student("æ—é’éœ", 28);
+		Student s2 = new Student("é£æ¸…æ‰¬", 31);
+		Student s3 = new Student("ç‹é‡é˜³", 200);
 
-		// Ìí¼ÓÔªËØ
+		// æ·»åŠ å…ƒç´ 
 		hm.put("itcast001", s1);
 		hm.put("itcast002", s2);
 		hm.put("itcast003", s3);
 
-		// ±éÀú
+		// éå†
 		Set<String> set = hm.keySet();
 		for (String key : set) {
 			Student value = hm.get(key);

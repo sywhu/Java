@@ -3,22 +3,22 @@ package cn.itcast_02;
 import java.io.File;
 
 /*
- * public String[] list():·µ»ØµÄÊÇ¸ø¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄÃû³ÆÊı×é¡£
- * public File[] listFiles():·µ»ØµÄÊÇ¸ø¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄFileÊı×é¡£
+ * public String[] list():è¿”å›çš„æ˜¯ç»™å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„åç§°æ•°ç»„ã€‚
+ * public File[] listFiles():è¿”å›çš„æ˜¯ç»™å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„Fileæ•°ç»„ã€‚
  */
 public class FileDemo6 {
 	public static void main(String[] args) {
-		// ¸ø¶¨Ò»¸öÄ¿Â¼£ºd:\\
+		// ç»™å®šä¸€ä¸ªç›®å½•ï¼šd:\\
 		File file = new File("d:\\");
 
-		// public String[] list():·µ»ØµÄÊÇ¸ø¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄÃû³ÆÊı×é¡£
+		// public String[] list():è¿”å›çš„æ˜¯ç»™å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„åç§°æ•°ç»„ã€‚
 		String[] strArray = file.list();
 		for (String str : strArray) {
 			System.out.println(str);
 		}
 		System.out.println("-----------------");
 
-		// public File[] listFiles():·µ»ØµÄÊÇ¸ø¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄFileÊı×é¡£
+		// public File[] listFiles():è¿”å›çš„æ˜¯ç»™å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„Fileæ•°ç»„ã€‚
 		File[] fileArray = file.listFiles();
 		for (File f : fileArray) {
 			// System.out.println(f);

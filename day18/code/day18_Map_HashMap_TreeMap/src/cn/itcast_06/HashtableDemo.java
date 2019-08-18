@@ -3,16 +3,16 @@ package cn.itcast_06;
 import java.util.Hashtable;
 
 /*
- * ÃæÊÔÌâ£º
- * 1:HashMapºÍHashtableµÄÇø±ğ?
- * A:HashMapÊÇÏß³Ì²»°²È«µÄ£¬Ğ§ÂÊ¸ß¡£ÔÊĞíÊ¹ÓÃ null ÖµºÍ null ¼ü¡£
- * B:HashtableÊÇÏß³Ì°²È«µÄ£¬Ğ§ÂÊµÍ¡£²»ÔÊĞíÊ¹ÓÃ null ÖµºÍ null ¼ü¡£
+ * é¢è¯•é¢˜ï¼š
+ * 1:HashMapå’ŒHashtableçš„åŒºåˆ«?
+ * A:HashMapæ˜¯çº¿ç¨‹ä¸å®‰å…¨çš„ï¼Œæ•ˆç‡é«˜ã€‚å…è®¸ä½¿ç”¨ null å€¼å’Œ null é”®ã€‚
+ * B:Hashtableæ˜¯çº¿ç¨‹å®‰å…¨çš„ï¼Œæ•ˆç‡ä½ã€‚ä¸å…è®¸ä½¿ç”¨ null å€¼å’Œ null é”®ã€‚
  * 
- * 2:List,Set,MapµÈ½Ó¿ÚÊÇ·ñ¶¼¼Ì³Ğ×ÔMap½Ó¿Ú
- * List,Set¶¼¼Ì³Ğ×ÔCollection½Ó¿Ú¡£
- * Map±¾Éí¾ÍÊÇ¶¥²ã½Ó¿Ú
+ * 2:List,Set,Mapç­‰æ¥å£æ˜¯å¦éƒ½ç»§æ‰¿è‡ªMapæ¥å£
+ * List,Setéƒ½ç»§æ‰¿è‡ªCollectionæ¥å£ã€‚
+ * Mapæœ¬èº«å°±æ˜¯é¡¶å±‚æ¥å£
  * 
- * 3:Äã³£¼ûµÄ¼¯ºÏÀàÓĞÄÄĞ©£¬¶¼ÓĞÊ²Ã´·½·¨?
+ * 3:ä½ å¸¸è§çš„é›†åˆç±»æœ‰å“ªäº›ï¼Œéƒ½æœ‰ä»€ä¹ˆæ–¹æ³•?
  * 		Collection
  * 			|--List
  * 				|--ArrayList
@@ -29,20 +29,20 @@ import java.util.Hashtable;
  * 			|--TreeMap
  * 
  * 		ArrayList
- * 			Ìí¼Ó¹¦ÄÜ£¬ÒÆ³ı¹¦ÄÜ£¬ÅĞ¶Ï¹¦ÄÜ£¬»ñÈ¡£¬³¤¶È
+ * 			æ·»åŠ åŠŸèƒ½ï¼Œç§»é™¤åŠŸèƒ½ï¼Œåˆ¤æ–­åŠŸèƒ½ï¼Œè·å–ï¼Œé•¿åº¦
  * 		HashSet
- * 			Ìí¼Ó¹¦ÄÜ£¬ÒÆ³ı¹¦ÄÜ£¬ÅĞ¶Ï¹¦ÄÜ£¬»ñÈ¡£¬³¤¶È
+ * 			æ·»åŠ åŠŸèƒ½ï¼Œç§»é™¤åŠŸèƒ½ï¼Œåˆ¤æ–­åŠŸèƒ½ï¼Œè·å–ï¼Œé•¿åº¦
  * 		HashMap
- * 			Ìí¼Ó¹¦ÄÜ£¬ÒÆ³ı¹¦ÄÜ£¬ÅĞ¶Ï¹¦ÄÜ£¬»ñÈ¡£¬³¤¶È
+ * 			æ·»åŠ åŠŸèƒ½ï¼Œç§»é™¤åŠŸèƒ½ï¼Œåˆ¤æ–­åŠŸèƒ½ï¼Œè·å–ï¼Œé•¿åº¦
  */
 public class HashtableDemo {
 	public static void main(String[] args) {
 		// HashMap<String, String> hm = new HashMap<String, String>();
 		Hashtable<String, String> hm = new Hashtable<String, String>();
 
-		hm.put("007", "ÖÜĞÇ³Û");
-		// hm.put(null, "³ÉÁú"); // NullPointerException
-		// hm.put(null, "ÖÜÈó·¢");
+		hm.put("007", "å‘¨æ˜Ÿé©°");
+		// hm.put(null, "æˆé¾™"); // NullPointerException
+		// hm.put(null, "å‘¨æ¶¦å‘");
 		// hm.put("9527", null); // NullPointerException
 
 		System.out.println(hm);

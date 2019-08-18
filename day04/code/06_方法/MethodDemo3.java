@@ -1,11 +1,11 @@
 /*
-	Ã»ÓÐÃ÷È··µ»ØÖµµÄ·½·¨µ÷ÓÃ£ºvoidÐÞÊÎµÄ·½·¨
-		µ¥¶Àµ÷ÓÃ
+	æ²¡æœ‰æ˜Žç¡®è¿”å›žå€¼çš„æ–¹æ³•è°ƒç”¨ï¼švoidä¿®é¥°çš„æ–¹æ³•
+		å•ç‹¬è°ƒç”¨
 */
 class MethodDemo3 {
 	public static void main(String[] args) {
 		/*
-		//ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÒ»¸ö3ÐÐ4ÁÐµÄÐÇÐÎ
+		//éœ€æ±‚ï¼šè¯·åœ¨æŽ§åˆ¶å°è¾“å‡ºä¸€ä¸ª3è¡Œ4åˆ—çš„æ˜Ÿå½¢
 		for(int x=0; x<3; x++){
 			for(int y=0; y<4; y++) {
 				System.out.print("*");
@@ -13,7 +13,7 @@ class MethodDemo3 {
 			System.out.println();
 		}
 		System.out.println("--------");
-		//ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÒ»¸ö5ÐÐ6ÁÐµÄÐÇÐÎ
+		//éœ€æ±‚ï¼šè¯·åœ¨æŽ§åˆ¶å°è¾“å‡ºä¸€ä¸ª5è¡Œ6åˆ—çš„æ˜Ÿå½¢
 		for(int x=0; x<5; x++){
 			for(int y=0; y<6; y++) {
 				System.out.print("*");
@@ -21,7 +21,7 @@ class MethodDemo3 {
 			System.out.println();
 		}
 		System.out.println("--------");
-		//ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÒ»¸ö7ÐÐ8ÁÐµÄÐÇÐÎ
+		//éœ€æ±‚ï¼šè¯·åœ¨æŽ§åˆ¶å°è¾“å‡ºä¸€ä¸ª7è¡Œ8åˆ—çš„æ˜Ÿå½¢
 		for(int x=0; x<7; x++){
 			for(int y=0; y<8; y++) {
 				System.out.print("*");
@@ -31,14 +31,14 @@ class MethodDemo3 {
 		System.out.println("--------");
 		*/
 
-		//µ¥¶Àµ÷ÓÃ
+		//å•ç‹¬è°ƒç”¨
 		//printXing(3,4);
 		//printXing(7,8);
 
-		//Êä³öµ÷ÓÃ
+		//è¾“å‡ºè°ƒç”¨
 		//System.out.println(printXing(7,8));
 
-		//¸³Öµµ÷ÓÃ
+		//èµ‹å€¼è°ƒç”¨
 		//void v = printXing(7,8);
 		//System.out.println(v);
 	}

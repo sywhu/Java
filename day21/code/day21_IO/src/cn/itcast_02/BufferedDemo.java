@@ -8,20 +8,20 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 /*
- * ÓÉÓÚÊı×éµÄ·½Ê½Ò»´Î±ÈÒ»¸ö×Ö½ÚµÄ·½Ê½¿ìºÜ¶à£¬ËùÒÔ£¬java±¾ÉíÔÚÉè¼ÆµÄÊ±ºò£¬Ò²¿¼ÂÇµ½ÁË¡£
- * ¾ÍÉè¼Æ³öÁËÄÚÖÃÊı×éµÄ»º³åÇøÁ÷¡£
- * ×Ö½Ú»º³åÊäÈëÁ÷
+ * ç”±äºæ•°ç»„çš„æ–¹å¼ä¸€æ¬¡æ¯”ä¸€ä¸ªå­—èŠ‚çš„æ–¹å¼å¿«å¾ˆå¤šï¼Œæ‰€ä»¥ï¼Œjavaæœ¬èº«åœ¨è®¾è®¡çš„æ—¶å€™ï¼Œä¹Ÿè€ƒè™‘åˆ°äº†ã€‚
+ * å°±è®¾è®¡å‡ºäº†å†…ç½®æ•°ç»„çš„ç¼“å†²åŒºæµã€‚
+ * å­—èŠ‚ç¼“å†²è¾“å…¥æµ
  * 		BufferedInputStream
- * ×Ö½Ú»º³åÊä³öÁ÷
+ * å­—èŠ‚ç¼“å†²è¾“å‡ºæµ
  * 		BufferedOutputStream
  * 
- * Í¨¹ı¿´¹¹Ôì·½·¨£¬ÎÒÃÇ·¢ÏÖ£¬»º³åÁ÷²»ÄÜÖ±½Ó²Ù×÷ÎÄ¼ş¡£
- * ÊÇ½¨Á¢ÔÚ»ù±¾µÄ²Ù×÷Á÷Ö®ÉÏµÄ¡£
- * ËùÒÔ£¬ÕâÖÖÁ÷Ò²±»³ÆÖ®Îª¸ß¼¶Á÷¡£
+ * é€šè¿‡çœ‹æ„é€ æ–¹æ³•ï¼Œæˆ‘ä»¬å‘ç°ï¼Œç¼“å†²æµä¸èƒ½ç›´æ¥æ“ä½œæ–‡ä»¶ã€‚
+ * æ˜¯å»ºç«‹åœ¨åŸºæœ¬çš„æ“ä½œæµä¹‹ä¸Šçš„ã€‚
+ * æ‰€ä»¥ï¼Œè¿™ç§æµä¹Ÿè¢«ç§°ä¹‹ä¸ºé«˜çº§æµã€‚
  */
 public class BufferedDemo {
 	public static void main(String[] args) throws IOException {
-		// Ğ´Êı¾İ
+		// å†™æ•°æ®
 		// BufferedOutputStream(OutputStream out)
 		// OutputStream out = new FileOutputStream("bos.txt");
 		// BufferedOutputStream bos = new BufferedOutputStream(out);
@@ -30,19 +30,19 @@ public class BufferedDemo {
 		// bos.write("hello".getBytes());
 		// bos.close();
 
-		// ¶ÁÊı¾İ
+		// è¯»æ•°æ®
 		// BufferedInputStream(InputStream is)
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
 				"bos.txt"));
 
-		// ·½Ê½1
+		// æ–¹å¼1
 		int by = 0;
 		while ((by = bis.read()) != -1) {
 			System.out.print((char) by);
 		}
 		System.out.println("-----------------------");
 
-		// ·½Ê½2
+		// æ–¹å¼2
 		bis = new BufferedInputStream(new FileInputStream("bos.txt"));
 		byte[] bys = new byte[1024];
 		int len = 0;

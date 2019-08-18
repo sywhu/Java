@@ -3,12 +3,12 @@ package cn.itcast_03;
 import java.util.Calendar;
 
 /*
- * public void add(int field,int amount):¸ù¾İ¸ø¶¨µÄÈÕÀú×Ô¶¯ºÍÖµ£¬¸Ä±äÊ±¼ä
- * public final void set(int year,int month,int date):ÉèÖÃÄêÔÂÈÕ
+ * public void add(int field,int amount):æ ¹æ®ç»™å®šçš„æ—¥å†è‡ªåŠ¨å’Œå€¼ï¼Œæ”¹å˜æ—¶é—´
+ * public final void set(int year,int month,int date):è®¾ç½®å¹´æœˆæ—¥
  */
 public class CalendarDemo2 {
 	public static void main(String[] args) {
-		// »ñÈ¡ÈÕÀúÀà¶ÔÏó
+		// è·å–æ—¥å†ç±»å¯¹è±¡
 		Calendar c = Calendar.getInstance();
 		System.out.println(c.get(Calendar.YEAR) + "---"
 				+ (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
@@ -18,7 +18,7 @@ public class CalendarDemo2 {
 		System.out.println(c.get(Calendar.YEAR) + "---"
 				+ (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
 
-		// ÖØĞ´¸øc¶ÔÏó¸³Öµ
+		// é‡å†™ç»™cå¯¹è±¡èµ‹å€¼
 		c.set(2012, 3, 4);
 		System.out.println(c.get(Calendar.YEAR) + "---"
 				+ (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));

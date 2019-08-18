@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * Êı¾İÊäÈëÊä³öÁ÷£º°Ñ»ù±¾ÀàĞÍµÄÊı¾İĞ´µ½ÎÄ¼ş£¬»¹¿ÉÒÔ´ÓÎÄ¼ş¶ÁÈ¡
+ * æ•°æ®è¾“å…¥è¾“å‡ºæµï¼šæŠŠåŸºæœ¬ç±»å‹çš„æ•°æ®å†™åˆ°æ–‡ä»¶ï¼Œè¿˜å¯ä»¥ä»æ–‡ä»¶è¯»å–
  */
 public class DataStreamDemo {
 	public static void main(String[] args) throws IOException {
@@ -20,7 +20,7 @@ public class DataStreamDemo {
 		DataInputStream dis = new DataInputStream(
 				new FileInputStream("dos.txt"));
 
-		// ¶ÁÊı¾İ
+		// è¯»æ•°æ®
 		System.out.println(dis.readByte());
 		System.out.println(dis.readShort());
 		System.out.println(dis.readInt());
@@ -30,7 +30,7 @@ public class DataStreamDemo {
 		System.out.println(dis.readChar());
 		System.out.println(dis.readBoolean());
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		dis.close();
 	}
 
@@ -39,7 +39,7 @@ public class DataStreamDemo {
 		DataOutputStream dos = new DataOutputStream(new FileOutputStream(
 				"dos.txt"));
 
-		// Ğ´Êı¾İ
+		// å†™æ•°æ®
 		dos.writeByte(1);
 		dos.writeShort(10);
 		dos.writeInt(100);
@@ -49,7 +49,7 @@ public class DataStreamDemo {
 		dos.writeChar('a');
 		dos.writeBoolean(true);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		dos.close();
 	}
 }

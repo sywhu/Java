@@ -2,7 +2,7 @@ package cn.itcast_02;
 
 public class BigDecimalDemo {
 	public static void main(String[] args) {
-		// ¿´³ÌĞòĞ´½á¹û
+		// éªå¬¬â–¼æ´å¿“å•“ç¼æ’´ç‰
 		System.out.println(0.09 + 0.01); // 0.1
 		System.out.println(1.0 - 0.32); // 0.68
 		System.out.println(1.015 * 100); // 101.5

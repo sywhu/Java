@@ -4,7 +4,7 @@ class MyArrayDemo {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("ÇëÊäÈëÈı¸öÊı¾İ£º");
+		System.out.println("è¯·è¾“å…¥ä¸‰ä¸ªæ•°æ®ï¼š");
 		int[] arr;
 		int i = 0;
 		arr = new int[3];
@@ -33,6 +33,6 @@ class MyArrayDemo {
 		for (int j=1; j<arr.length; j++) {
 			temp = arr[j-1]>=arr[j]?arr[j-1]:arr[j];
 		}
-		System.out.println("arrÊı×éÖĞ×î´óÖµÎª£º" +temp);
+		System.out.println("arræ•°ç»„ä¸­æœ€å¤§å€¼ä¸ºï¼š" +temp);
 	}
 }

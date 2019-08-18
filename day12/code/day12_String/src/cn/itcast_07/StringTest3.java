@@ -1,8 +1,8 @@
 package cn.itcast_07;
 
 /*
- * Í³¼Æ´ó´®ÖĞĞ¡´®³öÏÖµÄ´ÎÊı
- * ¾ÙÀı£ºÔÚ×Ö·û´®¡± woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagun¡±ÖĞjava³öÏÖÁË5´Î
+ * ç»Ÿè®¡å¤§ä¸²ä¸­å°ä¸²å‡ºç°çš„æ¬¡æ•°
+ * ä¸¾ä¾‹ï¼šåœ¨å­—ç¬¦ä¸²â€ woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagunâ€ä¸­javaå‡ºç°äº†5æ¬¡
  */
 public class StringTest3 {
 	public static void main(String[] args) {
@@ -13,25 +13,25 @@ public class StringTest3 {
 		System.out.println(count);
 	}
 
-	// Ğ´¹¦ÄÜÊµÏÖ£º
-	// ĞÎÊ½²ÎÊı:String maxString,String minString;
-	// ·µ»ØÖµÀàĞÍ:int
+	// å†™åŠŸèƒ½å®ç°ï¼š
+	// å½¢å¼å‚æ•°:String maxString,String minString;
+	// è¿”å›å€¼ç±»å‹:int
 	public static int getCount(String maxString, String minString) {
-		// ¶¨ÒåÍ³¼Æ±äÁ¿
+		// å®šä¹‰ç»Ÿè®¡å˜é‡
 		int count = 0;
 
-		// ÏÈ²éÕÒÒ»´Î
+		// å…ˆæŸ¥æ‰¾ä¸€æ¬¡
 		int index = maxString.indexOf(minString);
-		// ¶¨ÒåÒ»¸ö±äÁ¿£¬ÓÃÓÚ¼ÇÂ¼Ã¿´Î×îĞÂµÄ²éÕÒÎ»ÖÃ
+		// å®šä¹‰ä¸€ä¸ªå˜é‡ï¼Œç”¨äºè®°å½•æ¯æ¬¡æœ€æ–°çš„æŸ¥æ‰¾ä½ç½®
 		int startIndex = 0;
 
-		// ÅĞ¶ÏÎ»ÖÃÊÇ²»ÊÇ-1£¬Èç¹ûÊÇ£¬¾Í²»¼ÌĞøÁË
+		// åˆ¤æ–­ä½ç½®æ˜¯ä¸æ˜¯-1ï¼Œå¦‚æœæ˜¯ï¼Œå°±ä¸ç»§ç»­äº†
 		while (index != -1) {
-			// Í³¼Æ±äÁ¿¼Ó1
+			// ç»Ÿè®¡å˜é‡åŠ 1
 			count++;
-			// ¼ÆËã×îĞÂµÄ²éÕÒÎ»ÖÃ
+			// è®¡ç®—æœ€æ–°çš„æŸ¥æ‰¾ä½ç½®
 			startIndex = index + minString.length();
-			// ´Ó×îĞÂµÄ²éÕÒÎ»ÖÃ£¬ÔÙ²éÒ»´ÎĞ¡´®ÔÚ´ó´®ÖĞ³öÏÖµÄÎ»ÖÃ
+			// ä»æœ€æ–°çš„æŸ¥æ‰¾ä½ç½®ï¼Œå†æŸ¥ä¸€æ¬¡å°ä¸²åœ¨å¤§ä¸²ä¸­å‡ºç°çš„ä½ç½®
 			index = maxString.indexOf(minString, startIndex);
 		}
 

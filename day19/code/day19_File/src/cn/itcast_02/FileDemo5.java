@@ -5,11 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- *public String getAbsolutePath():»ñÈ¡¾ø¶ÔÂ·¾¶
- *public String getPath():»ñÈ¡Ïà¶ÔÂ·¾¶
- *public String getName():»ñÈ¡Ãû³Æ
- *public long length():»ñÈ¡ÎÄ¼şµÄ´óĞ¡
- *public long lastModified():»ñÈ¡×îºóÒ»´ÎĞŞ¸ÄÊ±¼äµÄºÁÃëÖµ
+ *public String getAbsolutePath():è·å–ç»å¯¹è·¯å¾„
+ *public String getPath():è·å–ç›¸å¯¹è·¯å¾„
+ *public String getName():è·å–åç§°
+ *public long length():è·å–æ–‡ä»¶çš„å¤§å°
+ *public long lastModified():è·å–æœ€åä¸€æ¬¡ä¿®æ”¹æ—¶é—´çš„æ¯«ç§’å€¼
  */
 public class FileDemo5 {
 	public static void main(String[] args) {

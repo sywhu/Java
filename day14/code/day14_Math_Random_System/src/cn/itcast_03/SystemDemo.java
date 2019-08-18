@@ -1,10 +1,10 @@
 package cn.itcast_03;
 
 /*
- * System:System Àà°üº¬Ò»Ğ©ÓĞÓÃµÄÀà×Ö¶ÎºÍ·½·¨¡£Ëü²»ÄÜ±»ÊµÀı»¯¡£ 
- * 	public static void gc():ÔËĞĞÀ¬»ø»ØÊÕÆ÷¡£ 
- * 	public static void exit(int status):ÖÕÖ¹µ±Ç°ÕıÔÚÔËĞĞµÄ Java ĞéÄâ»ú¡£²ÎÊıÓÃ×÷×´Ì¬Âë£»¸ù¾İ¹ßÀı£¬·Ç 0 µÄ×´Ì¬Âë±íÊ¾Òì³£ÖÕÖ¹¡£ 
- * 	public static long currentTimeMillis():·µ»ØÒÔºÁÃëÎªµ¥Î»µÄµ±Ç°Ê±¼ä
+ * System:System ç±»åŒ…å«ä¸€äº›æœ‰ç”¨çš„ç±»å­—æ®µå’Œæ–¹æ³•ã€‚å®ƒä¸èƒ½è¢«å®ä¾‹åŒ–ã€‚ 
+ * 	public static void gc():è¿è¡Œåƒåœ¾å›æ”¶å™¨ã€‚ 
+ * 	public static void exit(int status):ç»ˆæ­¢å½“å‰æ­£åœ¨è¿è¡Œçš„ Java è™šæ‹Ÿæœºã€‚å‚æ•°ç”¨ä½œçŠ¶æ€ç ï¼›æ ¹æ®æƒ¯ä¾‹ï¼Œé 0 çš„çŠ¶æ€ç è¡¨ç¤ºå¼‚å¸¸ç»ˆæ­¢ã€‚ 
+ * 	public static long currentTimeMillis():è¿”å›ä»¥æ¯«ç§’ä¸ºå•ä½çš„å½“å‰æ—¶é—´
  * 
  * 	public static void arraycopy(Object src,int srcPos,Object dest,int destPos,int length)
  */
@@ -21,6 +21,6 @@ public class SystemDemo {
 			System.out.println(x);
 		}
 		long end = System.currentTimeMillis();
-		System.out.println("¹²ºÄÊ±£º" + (end - start) + "ºÁÃë");
+		System.out.println("å…±è€—æ—¶ï¼š" + (end - start) + "æ¯«ç§’");
 	}
 }

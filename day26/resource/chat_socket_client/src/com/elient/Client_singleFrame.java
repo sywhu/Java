@@ -71,7 +71,7 @@ public class Client_singleFrame extends JFrame implements ActionListener, KeyLis
 
 	private Container createContentPanel() {
 		JPanel jp = new JPanel();
-		jp.setBorder(BorderFactory.createTitledBorder("ÁÄÌìÏûÏ¢"));
+		jp.setBorder(BorderFactory.createTitledBorder("èŠå¤©æ¶ˆæ¯"));
 		jp.setLayout(new BorderLayout());
 		jta_disMess = new JTextArea();
 		jta_disMess.setEditable(false);
@@ -82,11 +82,11 @@ public class Client_singleFrame extends JFrame implements ActionListener, KeyLis
 
 	private Component createInput() {
 		JPanel jp = new JPanel();
-		jp.setBorder(BorderFactory.createTitledBorder("·¢ËÍÏûÏ¢"));
+		jp.setBorder(BorderFactory.createTitledBorder("å‘é€æ¶ˆæ¯"));
 		jp.setLayout(new BorderLayout());
 		jtf_inputMess = new JTextField();
 		jtf_inputMess.addKeyListener(this);
-		jbt_trans = new JButton("·¢ËÍ");
+		jbt_trans = new JButton("å‘é€");
 		jbt_trans.addActionListener(this);
 		jp.add(jtf_inputMess, BorderLayout.CENTER);
 		jp.add(jbt_trans, BorderLayout.EAST);
@@ -115,7 +115,7 @@ public class Client_singleFrame extends JFrame implements ActionListener, KeyLis
 			str.trim();
 			jtf_inputMess.setText("");
 			if(str.equals("")){
-				JOptionPane.showMessageDialog(this, "ĞÅÏ¢²»ÄÜÎª¿Õ");
+				JOptionPane.showMessageDialog(this, "ä¿¡æ¯ä¸èƒ½ä¸ºç©º");
 			}else{
 				SimpleDateFormat form = new SimpleDateFormat("yyyy-MM-dd  HH:mm");
 				String date = form.format(new Date());
@@ -146,7 +146,7 @@ public class Client_singleFrame extends JFrame implements ActionListener, KeyLis
 	}
 
 	public void setExitNotify() {
-		jta_disMess.append(this.getTitle() + "ÒÑÏÂÏß.....");
+		jta_disMess.append(this.getTitle() + "å·²ä¸‹çº¿.....");
 		jbt_trans.setEnabled(false);
 	}
 }

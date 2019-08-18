@@ -7,23 +7,23 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 /*
- * IOÁ÷ÖĞµÄ±àÂë½âÂëÎÊÌâ£ºÒªÏëÔÚIOÁ÷ÖĞ¶ÔÊı¾İ½øĞĞ±àÂëÎÊÌâ£¬±ØĞëÊ¹ÓÃ×ª»»Á÷¡£
+ * IOæµä¸­çš„ç¼–ç è§£ç é—®é¢˜ï¼šè¦æƒ³åœ¨IOæµä¸­å¯¹æ•°æ®è¿›è¡Œç¼–ç é—®é¢˜ï¼Œå¿…é¡»ä½¿ç”¨è½¬æ¢æµã€‚
  */
 public class IOEncodeDemo {
 	public static void main(String[] args) throws IOException {
-		// Ğ´Êı¾İ
-		// Ä¬ÈÏGBK
+		// å†™æ•°æ®
+		// é»˜è®¤GBK
 		// OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
 		// "osw.txt"));
-		// Ö¸¶¨GBK
+		// æŒ‡å®šGBK
 		// OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
 		// "osw.txt"), "GBK");
 		// OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
 		// "osw.txt"), "UTF-8");
-		// osw.write("ÖĞ¹ú");
+		// osw.write("ä¸­å›½");
 		// osw.close();
 
-		// ¶ÁÊı¾İ
+		// è¯»æ•°æ®
 		// InputStreamReader isr = new InputStreamReader(new FileInputStream(
 		// "osw.txt"));
 		// InputStreamReader isr = new InputStreamReader(new FileInputStream(

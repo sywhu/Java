@@ -1,27 +1,27 @@
 /*
-	¼üÅÌÂ¼ÈëÒ»¸öÊı¾İn(1<=n<=9)£¬Êä³ö¶ÔÓ¦µÄnn³Ë·¨±í
+	é”®ç›˜å½•å…¥ä¸€ä¸ªæ•°æ®n(1<=n<=9)ï¼Œè¾“å‡ºå¯¹åº”çš„nnä¹˜æ³•è¡¨
 */
 import java.util.Scanner;
 
 class MethodTest4 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı£º(1~9)");
+		//é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š(1~9)");
 		int n = sc.nextInt();
 
-		//µ÷ÓÃ¹¦ÄÜ£¬Êä³önn³Ë·¨±í
+		//è°ƒç”¨åŠŸèƒ½ï¼Œè¾“å‡ºnnä¹˜æ³•è¡¨
 		printNN(n);
 	}
 
 	/*
-		Êä³ö¶ÔÓ¦µÄnn³Ë·¨±í
+		è¾“å‡ºå¯¹åº”çš„nnä¹˜æ³•è¡¨
 		
-		·µ»ØÖµÀàĞÍ£º
+		è¿”å›å€¼ç±»å‹ï¼š
 			void
-		²ÎÊıÁĞ±í£º
+		å‚æ•°åˆ—è¡¨ï¼š
 			int n
 	*/
 	public static void printNN(int n){

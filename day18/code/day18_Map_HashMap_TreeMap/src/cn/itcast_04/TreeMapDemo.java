@@ -8,18 +8,18 @@ import java.util.TreeMap;
  */
 public class TreeMapDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// é’æ¶˜ç¼“é—†å——æ‚ç€µç¡…è–„
 		TreeMap<String, String> tm = new TreeMap<String, String>();
 
-		// Ìí¼ÓÔªËØ
-		tm.put("zhangsan", "±±¾©");
-		tm.put("lisi", "Ìì½ò");
-		tm.put("wangwu", "ÉÏº£");
-		tm.put("zhaoliu", "ÖØÇì");
-		tm.put("tianqi", "Î÷°²");
-		tm.put("lisi", "Îäºº");
+		// å¨£è¯²å§éå†ªç¤Œ
+		tm.put("zhangsan", "é–æ¤¾å«");
+		tm.put("lisi", "æ¾¶â•‚è§¦");
+		tm.put("wangwu", "æ¶“å©ƒæ£");
+		tm.put("zhaoliu", "é–²å¶…ç°¡");
+		tm.put("tianqi", "ç‘—å®ç•¨");
+		tm.put("lisi", "å§ï¸½çœ½");
 
-		// ±éÀú
+		// é–¬å¶…å·»
 		Set<String> set = tm.keySet();
 		for (String key : set) {
 			String value = tm.get(key);

@@ -9,8 +9,8 @@ public class Tool {
 //		this.student = student;
 //	}
 	
-	//Èç¹ûÕâ¹¤¾ß£¬ÎÒÒªÏë»ñµÃTeacher£¬ÎÒÃÇÖ»ĞèÒª°ÑStudent¸ÄÎªTeacher¾Í¿ÉÒÔÁË
-	//µ«ÊÇ£¬¼ÙÈçÎÒÃÇ¼ÈÒªTeacher£¬ÓÖÒªStudent£¬Õâ¸ö¸ÃÔõÃ´°ëÄØ?
+	//å¦‚æœè¿™å·¥å…·ï¼Œæˆ‘è¦æƒ³è·å¾—Teacherï¼Œæˆ‘ä»¬åªéœ€è¦æŠŠStudentæ”¹ä¸ºTeacherå°±å¯ä»¥äº†
+	//ä½†æ˜¯ï¼Œå‡å¦‚æˆ‘ä»¬æ—¢è¦Teacherï¼Œåˆè¦Studentï¼Œè¿™ä¸ªè¯¥æ€ä¹ˆåŠå‘¢?
 	
 	private Object obj;
 
@@ -25,12 +25,12 @@ public class Tool {
 
 class Student {
 	public void love() {
-		System.out.println("Ñ§Éú°®Ñ§Ï°");
+		System.out.println("å­¦ç”Ÿçˆ±å­¦ä¹ ");
 	}
 }
 
 class Teacher {
 	public void love() {
-		System.out.println("ÀÏÊ¦°®ÁÖÇàÏ¼");
+		System.out.println("è€å¸ˆçˆ±æ—é’éœ");
 	}
 }

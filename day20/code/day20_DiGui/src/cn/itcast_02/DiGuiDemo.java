@@ -1,28 +1,28 @@
 package cn.itcast_02;
 
 /*
- * ÐèÇó£ºÇó5µÄ½×³Ë
+ * éœ€æ±‚ï¼šæ±‚5çš„é˜¶ä¹˜
  */
 public class DiGuiDemo {
 	public static void main(String[] args) {
-		// ÓÃÑ­»·ÊµÏÖ½×³Ë
+		// ç”¨å¾ªçŽ¯å®žçŽ°é˜¶ä¹˜
 		int jc = 1;
 		for (int x = 1; x <= 5; x++) {
 			jc *= x;
 		}
-		System.out.println("5µÄ½×³ËÊÇ£º" + jc);
+		System.out.println("5çš„é˜¶ä¹˜æ˜¯ï¼š" + jc);
 
-		// ÓÃµÝ¹éÊµÏÖÇó½×³Ë
-		System.out.println("5µÄ½×³ËÊÇ£º"+jc(5));
+		// ç”¨é€’å½’å®žçŽ°æ±‚é˜¶ä¹˜
+		System.out.println("5çš„é˜¶ä¹˜æ˜¯ï¼š"+jc(5));
 		
 	}
 	
-	/*¶¨ÒåÒ»¸ö·½·¨jc(int n),
-	 *¼ÙÈçjc(n)±íÊ¾nµÄ½×³Ë£¬ÇëÎÊ
-	 *n-1µÄ½×³ËÈçºÎ±íÊ¾ÄØ?
+	/*å®šä¹‰ä¸€ä¸ªæ–¹æ³•jc(int n),
+	 *å‡å¦‚jc(n)è¡¨ç¤ºnçš„é˜¶ä¹˜ï¼Œè¯·é—®
+	 *n-1çš„é˜¶ä¹˜å¦‚ä½•è¡¨ç¤ºå‘¢?
 	 *jc(n-1)
 	 *
-	 *³ö¿ÚÊÇ1£¡= 1
+	 *å‡ºå£æ˜¯1ï¼= 1
 	 */
 	public static int jc(int n){
 		if(n==1){

@@ -1,15 +1,15 @@
 package cn.itcast_07;
 
 public class MovieTicket implements Runnable {
-	// ¶¨Òå100ÕÅÆ±
+	// å®šä¹‰100å¼ ç¥¨
 	private int tickets = 100;
 
 	@Override
 	public void run() {
 		while (true) {
 			if (tickets > 0) {
-				System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ"
-						+ (tickets--) + "ÕÅÆ±");
+				System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬"
+						+ (tickets--) + "å¼ ç¥¨");
 			}
 		}
 	}

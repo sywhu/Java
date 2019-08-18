@@ -3,5 +3,5 @@ package cn.itcast_05;
 public class Student {
 	String name;
 	int age;
-	boolean flag = false; // ±íÊ¾ÊÇ·ñÓĞÊı¾İ
+	boolean flag = false; // è¡¨ç¤ºæ˜¯å¦æœ‰æ•°æ®
 }

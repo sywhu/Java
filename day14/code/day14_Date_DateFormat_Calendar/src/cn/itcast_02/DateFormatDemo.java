@@ -5,17 +5,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- * DateFormat:ÊÇÕë¶ÔÈÕÆÚ½øĞĞ¸ñÊ½»¯ºÍ½âÎöµÄ³éÏóÀà¡£
- * ËùÒÔ£¬ÎÒÃÇÑ§Ï°Æä×ÓÀà²¢Ê¹ÓÃ¡£
- * SimpleDateForamt£º
- * ¸ñÊ½»¯£¨ÈÕÆÚ -> ÎÄ±¾£©
+ * DateFormat:æ˜¯é’ˆå¯¹æ—¥æœŸè¿›è¡Œæ ¼å¼åŒ–å’Œè§£æçš„æŠ½è±¡ç±»ã€‚
+ * æ‰€ä»¥ï¼Œæˆ‘ä»¬å­¦ä¹ å…¶å­ç±»å¹¶ä½¿ç”¨ã€‚
+ * SimpleDateForamtï¼š
+ * æ ¼å¼åŒ–ï¼ˆæ—¥æœŸ -> æ–‡æœ¬ï¼‰
  * 		Date	--	String
  * 				public final String format(Date date)
- * 				Ä£Ê½¶ÔÏóÄãÏëÒªÊ²Ã´¾ÍĞ´Ê²Ã´¡£
- * ½âÎö£¨ÎÄ±¾ -> ÈÕÆÚ£©
+ * 				æ¨¡å¼å¯¹è±¡ä½ æƒ³è¦ä»€ä¹ˆå°±å†™ä»€ä¹ˆã€‚
+ * è§£æï¼ˆæ–‡æœ¬ -> æ—¥æœŸï¼‰
  * 		String 	-- 	Date
  * 				public Date parse(String source)
- * 				Ä£Ê½¶ÔÏó±ØĞëºÍ¸ø¶¨µÄ×Ö·û´®Æ¥Åä¡£
+ * 				æ¨¡å¼å¯¹è±¡å¿…é¡»å’Œç»™å®šçš„å­—ç¬¦ä¸²åŒ¹é…ã€‚
  */
 public class DateFormatDemo {
 	public static void main(String[] args) throws ParseException {
@@ -24,8 +24,8 @@ public class DateFormatDemo {
 		// public SimpleDateFormat()
 		// SimpleDateFormat sdf = new SimpleDateFormat();
 		// SimpleDateFormat(String pattern)
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ");
+		// SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
+		// SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥");
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 		// public final String format(Date date)
 		String result = sdf.format(d);

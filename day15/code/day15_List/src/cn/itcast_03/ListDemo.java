@@ -4,28 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Á·Ï°£ºÓÃList¼¯ºÏ´æ´¢×Ô¶¨Òå²¢±éÀú¡£
+ * ç»ƒä¹ ï¼šç”¨Listé›†åˆå­˜å‚¨è‡ªå®šä¹‰å¹¶éå†ã€‚
  * Student:name,age
- * ±éÀúÊ¹ÓÃÆÕÍ¨forÑ­»·
+ * éå†ä½¿ç”¨æ™®é€šforå¾ªç¯
  */
 public class ListDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		List list = new ArrayList();
 
-		// ´´½¨Ñ§Éú¶ÔÏó
-		Student s1 = new Student("ÍõÕÑ¾ı", 18);
-		Student s2 = new Student("Î÷Ê©", 19);
-		Student s3 = new Student("ÑîÓñ»·", 20);
-		Student s4 = new Student("õõ²õ", 17);
+		// åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
+		Student s1 = new Student("ç‹æ˜­å›", 18);
+		Student s2 = new Student("è¥¿æ–½", 19);
+		Student s3 = new Student("æ¨ç‰ç¯", 20);
+		Student s4 = new Student("è²‚è‰", 17);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
+		// æŠŠå…ƒç´ æ·»åŠ åˆ°é›†åˆ
 		list.add(s1);
 		list.add(s2);
 		list.add(s3);
 		list.add(s4);
 
-		// ±éÀú
+		// éå†
 		for (int x = 0; x < list.size(); x++) {
 			Student s = (Student) list.get(x);
 			System.out.println(s.getName() + "---" + s.getAge());

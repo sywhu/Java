@@ -3,7 +3,7 @@ package cn.itcast_04;
 import java.util.LinkedList;
 
 /*
- * 定义自己的集合类
+ * 瀹氫箟鑷繁鐨勯泦鍚堢被
  */
 public class MyStack {
 	private LinkedList link;

@@ -3,16 +3,16 @@ package cn.itcast_05;
 import java.util.Arrays;
 
 /*
- * Arrays:Õë¶ÔÊı×é½øĞĞ²Ù×÷µÄ¹¤¾ßÀà¡£Ìá¹©ÁËÅÅĞò£¬²éÕÒµÈ¹¦ÄÜ¡£
+ * Arrays:é’ˆå¯¹æ•°ç»„è¿›è¡Œæ“ä½œçš„å·¥å…·ç±»ã€‚æä¾›äº†æ’åºï¼ŒæŸ¥æ‰¾ç­‰åŠŸèƒ½ã€‚
  * 
- * ³ÉÔ±·½·¨£º
- * 		public static String toString(int[] a):°ÑÊı×é×ª³É×Ö·û´®
- *		public static void sort(int[] a):ÅÅĞò(¿ìËÙÅÅĞò)
- *		public static int binarySearch(int[] a,int key):¶ş·Ö²éÕÒ
+ * æˆå‘˜æ–¹æ³•ï¼š
+ * 		public static String toString(int[] a):æŠŠæ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+ *		public static void sort(int[] a):æ’åº(å¿«é€Ÿæ’åº)
+ *		public static int binarySearch(int[] a,int key):äºŒåˆ†æŸ¥æ‰¾
  *
- * ×¢Òâ£º
- * 		Èç¹ûÊı×é±¾ÉíÊÇÎŞĞòµÄ£¬²»ÄÜÖ±½ÓÊ¹ÓÃ¶ş·Ö²éÕÒ¡£
- * 		²¢ÇÒ£¬ÏÈÅÅĞò£¬ÔÙ¶ş·ÖÒ²ÊÇÓĞÎÊÌâµÄ£¬ÒòÎªÕâÑù¾Í¸Ä±äÁËÊı×éÖĞÔªËØÔ­Ê¼µÄË÷ÒıÎ»ÖÃ¡£
+ * æ³¨æ„ï¼š
+ * 		å¦‚æœæ•°ç»„æœ¬èº«æ˜¯æ— åºçš„ï¼Œä¸èƒ½ç›´æ¥ä½¿ç”¨äºŒåˆ†æŸ¥æ‰¾ã€‚
+ * 		å¹¶ä¸”ï¼Œå…ˆæ’åºï¼Œå†äºŒåˆ†ä¹Ÿæ˜¯æœ‰é—®é¢˜çš„ï¼Œå› ä¸ºè¿™æ ·å°±æ”¹å˜äº†æ•°ç»„ä¸­å…ƒç´ åŸå§‹çš„ç´¢å¼•ä½ç½®ã€‚
  */
 public class ArraysDemo {
 	public static void main(String[] args) {
@@ -20,14 +20,14 @@ public class ArraysDemo {
 
 		// System.out.println(arr);// [I@a0834e7
 
-		// public static String toString(int[] a):°ÑÊı×é×ª³É×Ö·û´®
+		// public static String toString(int[] a):æŠŠæ•°ç»„è½¬æˆå­—ç¬¦ä¸²
 		System.out.println(Arrays.toString(arr)); // [24, 13, 69, 80, 57]
 
-		// public static void sort(int[] a):ÅÅĞò(¿ìËÙÅÅĞò)
+		// public static void sort(int[] a):æ’åº(å¿«é€Ÿæ’åº)
 		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr)); // [13, 24, 57, 69, 80]
 
-		// public static int binarySearch(int[] a,int key):¶ş·Ö²éÕÒ
+		// public static int binarySearch(int[] a,int key):äºŒåˆ†æŸ¥æ‰¾
 		// [13, 24, 57, 69, 80]
 		System.out.println(Arrays.binarySearch(arr, 24));
 		System.out.println(Arrays.binarySearch(arr, 244)); // ??? -6

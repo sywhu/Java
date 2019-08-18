@@ -1,93 +1,93 @@
 /*
-	ifÓï¾ä¸ñÊ½3£º
-		if(¹ØÏµ±í´ïÊ½1) {
-		     Óï¾äÌå1;
-		}else  if (¹ØÏµ±í´ïÊ½2) {
-			 Óï¾äÌå2;
+	ifè¯­å¥æ ¼å¼3ï¼š
+		if(å…³ç³»è¡¨è¾¾å¼1) {
+		     è¯­å¥ä½“1;
+		}else  if (å…³ç³»è¡¨è¾¾å¼2) {
+			 è¯­å¥ä½“2;
 		}
-		¡­
+		â€¦
 		else {
-			 Óï¾äÌån+1;
+			 è¯­å¥ä½“n+1;
 		}
 
-	Ö´ÐÐÁ÷³Ì£º
-		Ê×ÏÈÅÐ¶Ï¹ØÏµ±í´ïÊ½1¿´Æä½á¹ûÊÇtrue»¹ÊÇfalse
-		Èç¹ûÊÇtrue¾ÍÖ´ÐÐÓï¾äÌå1
-		Èç¹ûÊÇfalse¾Í¼ÌÐøÅÐ¶Ï¹ØÏµ±í´ïÊ½2¿´Æä½á¹ûÊÇtrue»¹ÊÇfalse
-		Èç¹ûÊÇtrue¾ÍÖ´ÐÐÓï¾äÌå2
-		Èç¹ûÊÇfalse¾Í¼ÌÐøÅÐ¶Ï¹ØÏµ±í´ïÊ½¡­¿´Æä½á¹ûÊÇtrue»¹ÊÇfalse
-		¡­
-		Èç¹ûÃ»ÓÐÈÎºÎ¹ØÏµ±í´ïÊ½Îªtrue£¬¾ÍÖ´ÐÐÓï¾äÌån+1¡£
+	æ‰§è¡Œæµç¨‹ï¼š
+		é¦–å…ˆåˆ¤æ–­å…³ç³»è¡¨è¾¾å¼1çœ‹å…¶ç»“æžœæ˜¯trueè¿˜æ˜¯false
+		å¦‚æžœæ˜¯trueå°±æ‰§è¡Œè¯­å¥ä½“1
+		å¦‚æžœæ˜¯falseå°±ç»§ç»­åˆ¤æ–­å…³ç³»è¡¨è¾¾å¼2çœ‹å…¶ç»“æžœæ˜¯trueè¿˜æ˜¯false
+		å¦‚æžœæ˜¯trueå°±æ‰§è¡Œè¯­å¥ä½“2
+		å¦‚æžœæ˜¯falseå°±ç»§ç»­åˆ¤æ–­å…³ç³»è¡¨è¾¾å¼â€¦çœ‹å…¶ç»“æžœæ˜¯trueè¿˜æ˜¯false
+		â€¦
+		å¦‚æžœæ²¡æœ‰ä»»ä½•å…³ç³»è¡¨è¾¾å¼ä¸ºtrueï¼Œå°±æ‰§è¡Œè¯­å¥ä½“n+1ã€‚
 
-	ÐèÇó£º
-		¼üÅÌÂ¼ÈëÑ§Éú³É¼¨£¬¸ù¾Ý³É¼¨Êä³ö¶ÔÓÚµÄÆÀ¼Û¡£
-			90-100	ÓÅÐã
-			80-90	ºÃ
-			70-80	Á¼
-			60-70	¼°¸ñ
-			60ÒÔÏÂ	²»¼°¸ñ
+	éœ€æ±‚ï¼š
+		é”®ç›˜å½•å…¥å­¦ç”Ÿæˆç»©ï¼Œæ ¹æ®æˆç»©è¾“å‡ºå¯¹äºŽçš„è¯„ä»·ã€‚
+			90-100	ä¼˜ç§€
+			80-90	å¥½
+			70-80	è‰¯
+			60-70	åŠæ ¼
+			60ä»¥ä¸‹	ä¸åŠæ ¼
 */
 import java.util.Scanner;
 
 class IfDemo5 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÑ§Éú³É¼¨
-		System.out.println("ÇëÊäÈë³É¼¨£º");
+		//é”®ç›˜å½•å…¥å­¦ç”Ÿæˆç»©
+		System.out.println("è¯·è¾“å…¥æˆç»©ï¼š");
 		int score = sc.nextInt();
 
-		//Ð£ÑéÊý¾ÝµÄÊ±ºò£¬Ò»¶¨Òª×¢Òâ£º
-		//ÕýÈ·Êý¾Ý
-		//´íÎóÊý¾Ý
-		//±ß½çÊý¾Ý
+		//æ ¡éªŒæ•°æ®çš„æ—¶å€™ï¼Œä¸€å®šè¦æ³¨æ„ï¼š
+		//æ­£ç¡®æ•°æ®
+		//é”™è¯¯æ•°æ®
+		//è¾¹ç•Œæ•°æ®
 
 		/*
 		if(score>=90 && score<=100) {
-			System.out.println("ÓÅÐã");
+			System.out.println("ä¼˜ç§€");
 		}else if(score>=80 && score<90) {
-			System.out.println("ºÃ");
+			System.out.println("å¥½");
 		}else if(score>=70 && score<80) {
-			System.out.println("Á¼");
+			System.out.println("è‰¯");
 		}else if(score>=60 && score<70) {
-			System.out.println("¼°¸ñ");
+			System.out.println("åŠæ ¼");
 		}else {
-			System.out.println("²»¼°¸ñ");
+			System.out.println("ä¸åŠæ ¼");
 		}
 		*/
 
-		//Õâ¸öÊ±ºò£¬ËäÈ»¿ÉÒÔÂú×ãÒªÇóÁË¡£µ«ÊÇÃ»ÓÐ¿¼ÂÇµ½´íÎóÊý¾ÝµÄÇé¿ö¡£
-		//ËùÒÔ£¬ÎÒÃÇÐèÒª¼ÓÒ»¸öÅÐ¶Ï
+		//è¿™ä¸ªæ—¶å€™ï¼Œè™½ç„¶å¯ä»¥æ»¡è¶³è¦æ±‚äº†ã€‚ä½†æ˜¯æ²¡æœ‰è€ƒè™‘åˆ°é”™è¯¯æ•°æ®çš„æƒ…å†µã€‚
+		//æ‰€ä»¥ï¼Œæˆ‘ä»¬éœ€è¦åŠ ä¸€ä¸ªåˆ¤æ–­
 		/*
 		if(score>=90 && score<=100) {
-			System.out.println("ÓÅÐã");
+			System.out.println("ä¼˜ç§€");
 		}else if(score>=80 && score<90) {
-			System.out.println("ºÃ");
+			System.out.println("å¥½");
 		}else if(score>=70 && score<80) {
-			System.out.println("Á¼");
+			System.out.println("è‰¯");
 		}else if(score>=60 && score<70) {
-			System.out.println("¼°¸ñ");
+			System.out.println("åŠæ ¼");
 		}else if(score>=0 && score<60) {
-			System.out.println("²»¼°¸ñ");
+			System.out.println("ä¸åŠæ ¼");
 		}else {
-			System.out.println("ÊäÈëµÄ³É¼¨ÓÐÎó");
+			System.out.println("è¾“å…¥çš„æˆç»©æœ‰è¯¯");
 		}
 		*/
 
-		//ÎÒÃÇÒ²¿ÉÒÔÏÈÅÐ¶Ï³É¼¨ÊÇ·ñÓÐÎó
+		//æˆ‘ä»¬ä¹Ÿå¯ä»¥å…ˆåˆ¤æ–­æˆç»©æ˜¯å¦æœ‰è¯¯
 		if(score<0 || score>100) {
-			System.out.println("ÊäÈëµÄ³É¼¨ÓÐÎó");
+			System.out.println("è¾“å…¥çš„æˆç»©æœ‰è¯¯");
 		}else if(score>=90 && score<=100) {
-			System.out.println("ÓÅÐã");
+			System.out.println("ä¼˜ç§€");
 		}else if(score>=80 && score<90) {
-			System.out.println("ºÃ");
+			System.out.println("å¥½");
 		}else if(score>=70 && score<80) {
-			System.out.println("Á¼");
+			System.out.println("è‰¯");
 		}else if(score>=60 && score<70) {
-			System.out.println("¼°¸ñ");
+			System.out.println("åŠæ ¼");
 		}else {
-			System.out.println("²»¼°¸ñ");
+			System.out.println("ä¸åŠæ ¼");
 		}
 	}
 }

@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * FileOutputStremaĞ´Êı¾İµÄÒì³£´¦Àí
+ * FileOutputStremaå†™æ•°æ®çš„å¼‚å¸¸å¤„ç†
  */
 public class FileOutputStreamDemo3 {
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class FileOutputStreamDemo3 {
 	}
 
 	public static void method2() {
-		// ¶¨ÒåÔÚÍâ£¬¿ÉÒÔÈÃfinallyÀïÃæ¿´µ½£¬
+		// å®šä¹‰åœ¨å¤–ï¼Œå¯ä»¥è®©finallyé‡Œé¢çœ‹åˆ°ï¼Œ
 		FileOutputStream fos = null;
 		try {
 			fos = new FileOutputStream("fos.txt");
@@ -24,7 +24,7 @@ public class FileOutputStreamDemo3 {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
-			// ÏÈÅĞ¶Ï²»Îªnull£¬²ÅÈ¥¹Ø±Õ
+			// å…ˆåˆ¤æ–­ä¸ä¸ºnullï¼Œæ‰å»å…³é—­
 			if (fos != null) {
 				try {
 					fos.close();
@@ -42,21 +42,21 @@ public class FileOutputStreamDemo3 {
 			fos = new FileOutputStream("fos.txt");
 		} catch (FileNotFoundException e) {
 			// e.printStackTrace();
-			System.out.println("´´½¨ÎÄ¼şÊ§°Ü");
+			System.out.println("åˆ›å»ºæ–‡ä»¶å¤±è´¥");
 		}
 
 		try {
 			fos.write("hello".getBytes());
 		} catch (IOException e) {
 			// e.printStackTrace();
-			System.out.println("Ğ´ÈëÊı¾İÊ§°Ü");
+			System.out.println("å†™å…¥æ•°æ®å¤±è´¥");
 		}
 
 		try {
 			fos.close();
 		} catch (IOException e) {
 			// e.printStackTrace();
-			System.out.println("ÊÍ·Å×ÊÔ´Ê§°Ü");
+			System.out.println("é‡Šæ”¾èµ„æºå¤±è´¥");
 		}
 	}
 }

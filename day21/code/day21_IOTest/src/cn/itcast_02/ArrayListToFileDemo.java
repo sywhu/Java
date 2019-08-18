@@ -6,23 +6,23 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /*
- * °ÑArrayList¼¯ºÏÖĞµÄ×Ö·û´®Êı¾İ´æ´¢µ½ÎÄ±¾ÎÄ¼ş
+ * æŠŠArrayListé›†åˆä¸­çš„å­—ç¬¦ä¸²æ•°æ®å­˜å‚¨åˆ°æ–‡æœ¬æ–‡ä»¶
  * 
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		ArrayList
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		array.txt
  */
 public class ArrayListToFileDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		// ·â×°Êı¾İÔ´
+		// åˆ›å»ºé›†åˆå¯¹è±¡
+		// å°è£…æ•°æ®æº
 		ArrayList<String> array = new ArrayList<String>();
 		array.add("hello");
 		array.add("world");
 		array.add("java");
 
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		BufferedWriter bw = new BufferedWriter(new FileWriter("array.txt"));
 
 		for (String line : array) {
@@ -31,7 +31,7 @@ public class ArrayListToFileDemo {
 			bw.flush();
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		bw.close();
 	}
 }

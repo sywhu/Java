@@ -1,19 +1,19 @@
 package cn.itcast_04;
 
 /*
- * ³£ÓÃµÄ»ù±¾½øÖÆ×ª»»
+ * å¸¸ç”¨çš„åŸºæœ¬è¿›åˆ¶è½¬æ¢
  *		public static String toBinaryString(int i)
  *		public static String toOctalString(int i)
  *		public static String toHexString(int i)
- * Ê®½øÖÆµ½ÆäËû½øÖÆ
+ * åè¿›åˆ¶åˆ°å…¶ä»–è¿›åˆ¶
  *		public static String toString(int i,int radix)
- *ÆäËû½øÖÆµ½Ê®½øÖÆ
+ *å…¶ä»–è¿›åˆ¶åˆ°åè¿›åˆ¶
  *		public static int parseInt(String s,int radix)
  */
 public class IntegerDemo {
 	public static void main(String[] args) {
 		// public static String toString(int i,int radix):
-		// Í¨¹ı¼òµ¥µÄ²âÊÔ£¬ÎÒÃÇÖªµÀÁË½øÖÆµÄ·¶Î§ÊÇ2-36
+		// é€šè¿‡ç®€å•çš„æµ‹è¯•ï¼Œæˆ‘ä»¬çŸ¥é“äº†è¿›åˆ¶çš„èŒƒå›´æ˜¯2-36
 		System.out.println(Integer.toString(100, 2));
 		System.out.println(Integer.toString(100, 8));
 		System.out.println(Integer.toString(100, 16));
@@ -28,7 +28,7 @@ public class IntegerDemo {
 		System.out.println(Integer.toString(100, 7));
 		System.out.println("----------------------");
 
-		// ÆäËû½øÖÆµ½Ê®½øÖÆ
+		// å…¶ä»–è¿›åˆ¶åˆ°åè¿›åˆ¶
 		// public static int parseInt(String s,int radix)
 		System.out.println(Integer.parseInt("100", 2));
 		System.out.println(Integer.parseInt("100", 8));

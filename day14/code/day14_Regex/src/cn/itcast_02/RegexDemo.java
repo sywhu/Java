@@ -3,32 +3,32 @@ package cn.itcast_02;
 import java.util.Scanner;
 
 /*
- * ÅĞ¶Ï¹¦ÄÜ
- * StringÀàµÄ·½·¨£º
+ * åˆ¤æ–­åŠŸèƒ½
+ * Stringç±»çš„æ–¹æ³•ï¼š
  * 		public boolean matches(String regex)
  */
 public class RegexDemo {
 	public static void main(String[] args) {
 		/*
-		 * ĞèÇó£ºĞ£Ñéµç»°ºÅÂë
+		 * éœ€æ±‚ï¼šæ ¡éªŒç”µè¯å·ç 
 		 * 		
-		 * ·ÖÎö£º
-		 * 		µç»°ºÅÂëµÄ×é³É
+		 * åˆ†æï¼š
+		 * 		ç”µè¯å·ç çš„ç»„æˆ
 		 *		13812345678
 		 *		13999998888
 		 *		13123456789
 		 *		18912345678
 		 *		18811112222
 		 */
-		//¶¨Òå¹æÔò
+		//å®šä¹‰è§„åˆ™
 		String regex = "1[38][0-9]{9}";
 		
-		//¼üÅÌÂ¼ÈëÊÖ»úºÅÂë
+		//é”®ç›˜å½•å…¥æ‰‹æœºå·ç 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÊÖ»úºÅÂë£º");
+		System.out.println("è¯·è¾“å…¥æ‰‹æœºå·ç ï¼š");
 		String phone = sc.nextLine();
 		
-		//µ÷ÓÃÅĞ¶Ï¹¦ÄÜ
+		//è°ƒç”¨åˆ¤æ–­åŠŸèƒ½
 		boolean flag = phone.matches(regex);
 		System.out.println(flag);
 	}

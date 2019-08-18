@@ -36,20 +36,20 @@ class Phone {
 	}
 
 	public void show() {
-		System.out.println("我的手机是："+brand+",价格是："+price+",颜色是："+color);
+		System.out.println("鎴戠殑鎵嬫満鏄細"+brand+",浠锋牸鏄細"+price+",棰滆壊鏄細"+color);
 	}
 }
 class PhoneTest {
 	public static void main(String[] args) {
-		//无参+setXxx()
+		//鏃犲弬+setXxx()
 		Phone p = new Phone();
-		p.setBrand("三星");
+		p.setBrand("涓夋槦");
 		p.setPrice(1000);
-		p.setColor("黑色");
+		p.setColor("榛戣壊");
 		p.show();
 
-		//带参
-		Phone pp = new Phone("华为",799,"白色");
+		//甯﹀弬
+		Phone pp = new Phone("鍗庝负",799,"鐧借壊");
 		pp.show();
 	}
 }

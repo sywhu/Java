@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /*
- * public static <T> List<T> asList(T... a):返回一个受指定数组支持的固定大小的列表
+ * public static <T> List<T> asList(T... a):杩斿洖涓�涓彈鎸囧畾鏁扮粍鏀寔鐨勫浐瀹氬ぇ灏忕殑鍒楄〃
  */
 public class ArraysDemo {
 	public static void main(String[] args) {

@@ -53,7 +53,7 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public void regist(User user) {
-		// 我们最好能够有一个格式：
+		// 鎴戜滑鏈�濂借兘澶熸湁涓�涓牸寮忥細
 		// username=password
 		BufferedWriter bw = null;
 		try {

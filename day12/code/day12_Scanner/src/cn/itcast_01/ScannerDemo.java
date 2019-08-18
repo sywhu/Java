@@ -4,29 +4,29 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 /*
- * Scanner:JDK5ÒÔºó£¬ÓÃÓÚ°ïÖúÎÒÃÇÊµÏÖ¼üÅÌÂ¼ÈëÊı¾İµÄ¡£
+ * Scanner:JDK5ä»¥åï¼Œç”¨äºå¸®åŠ©æˆ‘ä»¬å®ç°é”®ç›˜å½•å…¥æ•°æ®çš„ã€‚
  * 
- * ¹¹Ôì·½·¨£º
+ * æ„é€ æ–¹æ³•ï¼š
  * 		public Scanner(InputStream source)
  */
 public class ScannerDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		// åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		// Scanner sc = new Scanner(System.in);
 
 		// public Scanner(InputStream source)
 
-		// SystemÀàÏÂÓĞÕâÑùµÄÒ»¸ö³ÉÔ±±äÁ¿
+		// Systemç±»ä¸‹æœ‰è¿™æ ·çš„ä¸€ä¸ªæˆå‘˜å˜é‡
 		// public static final InputStream in;
 		// InputStream is = System.in;
 
-		// ¼ÙÈçDemoÀàÏÂÓĞÒ»¸ö±äÁ¿
+		// å‡å¦‚Demoç±»ä¸‹æœ‰ä¸€ä¸ªå˜é‡
 		// public static final int x;
 		// public static final Student s;
 		// int y = Demo.x;
 		// Student student = Demo.s;
 
-		// InputStream is = System.in; //×ÓÀà¶ÔÏó
+		// InputStream is = System.in; //å­ç±»å¯¹è±¡
 		// Scanner sc = new Scanner(is);
 
 		Scanner sc = new Scanner(System.in);

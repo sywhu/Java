@@ -6,19 +6,19 @@ import java.util.ListIterator;
 
 /*
  * ListIterator listIterator()
- * ËäÈ»ÓĞÄæÏò±éÀú¹¦ÄÜÕâÑùµÄÌØÓĞ¹¦ÄÜ£¬µ«ÊÇÃ»Ê²Ã´ÒâÒå£¬ÒòÎª£¬ËüĞèÒªÏÈÕıÏò±éÀú£¬²ÅÄÜÄæÏò±éÀú¡£
+ * è™½ç„¶æœ‰é€†å‘éå†åŠŸèƒ½è¿™æ ·çš„ç‰¹æœ‰åŠŸèƒ½ï¼Œä½†æ˜¯æ²¡ä»€ä¹ˆæ„ä¹‰ï¼Œå› ä¸ºï¼Œå®ƒéœ€è¦å…ˆæ­£å‘éå†ï¼Œæ‰èƒ½é€†å‘éå†ã€‚
  */
 public class ListIteratorDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		List list = new ArrayList();
 
-		// ²âÊÔ¹¦ÄÜ
+		// æµ‹è¯•åŠŸèƒ½
 		list.add("hello");
 		list.add("world");
 		list.add("java");
 
-		// ÕıÏò±éÀú
+		// æ­£å‘éå†
 		ListIterator lit = list.listIterator();
 		// while (lit.hasNext()) {
 		// String s = (String) lit.next();
@@ -26,7 +26,7 @@ public class ListIteratorDemo2 {
 		// }
 		System.out.println("---------------");
 
-		// ÄæÏò±éÀú
+		// é€†å‘éå†
 		while (lit.hasPrevious()) {
 			String s = (String) lit.previous();
 			System.out.println(s);

@@ -4,56 +4,56 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
- * ÎªÁËÌá¸ß¶ÁÈ¡Êı¾İµÄĞ§ÂÊ£¬¾ÍÓĞÁËµÚ¶şÖÖ·½°¸¡£
- * Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½ÚÊı×é£ºpublic int read(byte[] b):·µ»ØµÄÊÇÊµ¼ÊµÄ¶ÁÈ¡³¤¶È£¬°ÑÊı¾İ¶ÁÈ¡µ½×Ö½ÚÊı×éÖĞ
+ * ä¸ºäº†æé«˜è¯»å–æ•°æ®çš„æ•ˆç‡ï¼Œå°±æœ‰äº†ç¬¬äºŒç§æ–¹æ¡ˆã€‚
+ * ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—èŠ‚æ•°ç»„ï¼špublic int read(byte[] b):è¿”å›çš„æ˜¯å®é™…çš„è¯»å–é•¿åº¦ï¼ŒæŠŠæ•°æ®è¯»å–åˆ°å­—èŠ‚æ•°ç»„ä¸­
  */
 public class FileInputStreamDemo2 {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
+		// åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
 		FileInputStream fis = new FileInputStream("a.txt");
 
-		// ¶ÁÈ¡Êı¾İ
+		// è¯»å–æ•°æ®
 		// public int read(byte[] b)
 		// byte[] bys = new byte[5];
 
-		// // µÚÒ»´Î¶ÁÈ¡
+		// // ç¬¬ä¸€æ¬¡è¯»å–
 		// int len = fis.read(bys);
 		// System.out.println(len);
 		// // System.out.println(new String(bys));
 		// System.out.println(new String(bys, 0, len));
 		//
-		// // µÚ¶ş´Î¶ÁÈ¡
+		// // ç¬¬äºŒæ¬¡è¯»å–
 		// len = fis.read(bys);
 		// System.out.println(len);
 		// // System.out.println(new String(bys));
 		// System.out.println(new String(bys, 0, len));
 		//
-		// // µÚÈı´Î¶ÁÈ¡
+		// // ç¬¬ä¸‰æ¬¡è¯»å–
 		// len = fis.read(bys);
 		// System.out.println(len);
 		// // System.out.println(new String(bys));
 		// System.out.println(new String(bys, 0, len));
 		//
-		// // µÚËÄ´Î¶ÁÈ¡
+		// // ç¬¬å››æ¬¡è¯»å–
 		// len = fis.read(bys);
 		// System.out.println(len);
 		// // System.out.println(new String(bys));
 		// System.out.println(new String(bys, 0, len));
 		//
-		// // ÓÃÑ­»·¸Ä£¬¾ÍÓ¦¸ÃÖªµÀÅĞ¶Ï½áÊøµÄÌõ¼ş
+		// // ç”¨å¾ªç¯æ”¹ï¼Œå°±åº”è¯¥çŸ¥é“åˆ¤æ–­ç»“æŸçš„æ¡ä»¶
 		// len = fis.read(bys);
 		// len = fis.read(bys);
 		// System.out.println(len);
 		// System.out.println(len);
 
 		// byte[] bys = new byte[5];
-		byte[] bys = new byte[1024 * 1024]; // ÕâÀïµÄÊı¾İÒ»°ãÊÇ1024»òÕßÆäÕûÊı±¶
+		byte[] bys = new byte[1024 * 1024]; // è¿™é‡Œçš„æ•°æ®ä¸€èˆ¬æ˜¯1024æˆ–è€…å…¶æ•´æ•°å€
 		int len = 0;
 		while ((len = fis.read(bys)) != -1) {
 			System.out.print(new String(bys, 0, len));
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		fis.close();
 	}
 }

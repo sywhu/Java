@@ -3,18 +3,18 @@ package cn.itcast_05;
 import java.util.TreeSet;
 
 /*
- * TreeSetÊÇÈçºÎ±£Ö¤ÔªËØÅÅĞòµÄÄØ?ÓÖÊÇÈçºÎ±£Ö¤ÔªËØÎ¨Ò»µÄÄØ?
+ * TreeSetæ˜¯å¦‚ä½•ä¿è¯å…ƒç´ æ’åºçš„å‘¢?åˆæ˜¯å¦‚ä½•ä¿è¯å…ƒç´ å”¯ä¸€çš„å‘¢?
  * 
- * ĞèÇó£ºÓÃTreeSet´æ´¢×Ô¶¨Òå¶ÔÏó£¬²¢°´ÕÕÒªÇóÅÅĞòºÍÈ¥µôÖØ¸´Öµ¡£
- * a:Èç¹û³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬£¬ÎÒ¾ÍÈÏÎªÊÇÖØ¸´ÔªËØ
- * b:Çë°´ÕÕĞÕÃûµÄ³¤¶È½øĞĞÅÅĞò¡£
+ * éœ€æ±‚ï¼šç”¨TreeSetå­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡ï¼Œå¹¶æŒ‰ç…§è¦æ±‚æ’åºå’Œå»æ‰é‡å¤å€¼ã€‚
+ * a:å¦‚æœæˆå‘˜å˜é‡å€¼éƒ½ç›¸åŒï¼Œæˆ‘å°±è®¤ä¸ºæ˜¯é‡å¤å…ƒç´ 
+ * b:è¯·æŒ‰ç…§å§“åçš„é•¿åº¦è¿›è¡Œæ’åºã€‚
  */
 public class TreeSetDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		TreeSet<Person> ts = new TreeSet<Person>();
 
-		// ´´½¨ÈË¶ÔÏó
+		// åˆ›å»ºäººå¯¹è±¡
 		Person p1 = new Person("tangseng", 30);
 		Person p2 = new Person("jiapingwa", 25);
 		Person p3 = new Person("zhangyimou", 25);
@@ -25,7 +25,7 @@ public class TreeSetDemo {
 		Person p8 = new Person("xijinping", 26);
 		Person p9 = new Person("tianliang", 24);
 
-		// Ìí¼ÓÔªËØ
+		// æ·»åŠ å…ƒç´ 
 		ts.add(p1);
 		ts.add(p2);
 		ts.add(p3);
@@ -36,7 +36,7 @@ public class TreeSetDemo {
 		ts.add(p8);
 		ts.add(p9);
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		for (Person p : ts) {
 			System.out.println(p.getName() + "---" + p.getAge());
 		}

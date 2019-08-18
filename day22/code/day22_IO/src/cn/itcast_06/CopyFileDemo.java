@@ -8,30 +8,30 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /*
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		MyBufferedReader.java	--	Reader	--	FileReader --	BufferedReader
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		Copy.java	--	Writer -- FileWriter -- BufferedWriter -- PrintWriter
  */
 public class CopyFileDemo {
 	public static void main(String[] args) throws IOException {
-		// // ·â×°Êı¾İÔ´
+		// // å°è£…æ•°æ®æº
 		// BufferedReader br = new BufferedReader(new FileReader(
 		// "MyBufferedReader.java"));
-		// // ·â×°Ä¿µÄµØ
+		// // å°è£…ç›®çš„åœ°
 		// BufferedWriter bw = new BufferedWriter(new FileWriter("Copy.java"));
-		// // ¶ÁĞ´Êı¾İ
+		// // è¯»å†™æ•°æ®
 		// String line = null;
 		// while ((line = br.readLine()) != null) {
 		// bw.write(line);
 		// bw.newLine();
 		// bw.flush();
 		// }
-		// // ÊÍ·Å×ÊÔ´
+		// // é‡Šæ”¾èµ„æº
 		// bw.close();
 		// br.close();
 
-		// ÓÃPrintWriter¸Ä½ø°æ
+		// ç”¨PrintWriteræ”¹è¿›ç‰ˆ
 		BufferedReader br = new BufferedReader(new FileReader(
 				"MyBufferedReader.java"));
 		PrintWriter pw = new PrintWriter(new FileWriter("Copy.java"), true);

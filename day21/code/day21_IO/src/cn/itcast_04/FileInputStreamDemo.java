@@ -4,9 +4,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
- * ×Ö½ÚÁ÷²Ù×÷ÖÐÎÄ£¬²»ÊÇÌØ±ðµÄ·½±ã£¬ËùÒÔÎÒÃÇÒªÏë°ì·¨¸Ä½ø¡£Õâ¸öÊ±ºò¾ÍÒý³öÁË×ª»»Á÷¡£
- * ¿ÉÒÔ°Ñ×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷¡£
- * ×Ö·ûÁ÷ = ×Ö½ÚÁ÷+±àÂë±í
+ * å­—èŠ‚æµæ“ä½œä¸­æ–‡ï¼Œä¸æ˜¯ç‰¹åˆ«çš„æ–¹ä¾¿ï¼Œæ‰€ä»¥æˆ‘ä»¬è¦æƒ³åŠžæ³•æ”¹è¿›ã€‚è¿™ä¸ªæ—¶å€™å°±å¼•å‡ºäº†è½¬æ¢æµã€‚
+ * å¯ä»¥æŠŠå­—èŠ‚æµè½¬æ¢ä¸ºå­—ç¬¦æµã€‚
+ * å­—ç¬¦æµ = å­—èŠ‚æµ+ç¼–ç è¡¨
  */
 public class FileInputStreamDemo {
 	public static void main(String[] args) throws IOException {

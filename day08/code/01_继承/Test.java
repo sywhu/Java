@@ -1,7 +1,7 @@
 /*
-	Ñ§ÉúÀàºÍÀÏÊ¦¡£¶¨ÒåÁ½¸ö¹¦ÄÜ(³Ô·¹£¬Ë¯¾õ)
+	å­¦ç”Ÿç±»å’Œè€å¸ˆã€‚å®šä¹‰ä¸¤ä¸ªåŠŸèƒ½(åƒé¥­ï¼Œç¡è§‰)
 */
-//Ñ§ÉúÀà
+//å­¦ç”Ÿç±»
 class Student {
 	private String name;
 	private int age;
@@ -30,14 +30,14 @@ class Student {
 	}
 
 	public void eat() {
-		System.out.println("³Ô·¹");
+		System.out.println("åƒé¥­");
 	}
 
 	public void sleep() {
-		System.out.println("Ë¯¾õ");
+		System.out.println("ç¡è§‰");
 	}
 }
-//ÀÏÊ¦Àà
+//è€å¸ˆç±»
 class Teacher {
 	private String name;
 	private int age;
@@ -66,41 +66,41 @@ class Teacher {
 	}
 
 	public void eat() {
-		System.out.println("³Ô·¹");
+		System.out.println("åƒé¥­");
 	}
 
 	public void sleep() {
-		System.out.println("Ë¯¾õ");
+		System.out.println("ç¡è§‰");
 	}
 }
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 class Test {
 	public static void main(String[] args) {
-		//²âÊÔÑ§Éú
+		//æµ‹è¯•å­¦ç”Ÿ
 		Student s = new Student();
-		s.setName("ÁÖÇàÏ¼");
+		s.setName("æ—é’éœ");
 		s.setAge(28);
 		System.out.println(s.getName()+"---"+s.getAge());
 		s.eat();
 		s.sleep();
 		System.out.println("-------------------------");
 
-		Student s2 = new Student("ÕÅÂüÓñ",18);
+		Student s2 = new Student("å¼ æ›¼ç‰",18);
 		System.out.println(s2.getName()+"---"+s2.getAge());
 		s2.eat();
 		s2.sleep();
 		System.out.println("-------------------------");
 
-		//²âÊÔÀÏÊ¦
+		//æµ‹è¯•è€å¸ˆ
 		Teacher t = new Teacher();
-		t.setName("·çÇåÑï");
+		t.setName("é£æ¸…æ‰¬");
 		t.setAge(31);
 		System.out.println(t.getName()+"---"+t.getAge());
 		t.eat();
 		t.sleep();
 		System.out.println("-------------------------");
 
-		Teacher t2 = new Teacher("Áîºü³å",21);
+		Teacher t2 = new Teacher("ä»¤ç‹å†²",21);
 		System.out.println(t2.getName()+"---"+t2.getAge());
 		t2.eat();
 		t2.sleep();

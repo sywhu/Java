@@ -1,12 +1,12 @@
-1:ÐÞ¸ÄÆ¤·ô
+1:ä¿®æ”¹çš®è‚¤
 	UIManager.setLookAndFeel(MyLookAndFeel.LIQUIDINF);
 
-2:ÐÞ¸Ä´°ÌåµÄÍ¼±ê
+2:ä¿®æ”¹çª—ä½“çš„å›¾æ ‡
         Toolkit tk = Toolkit.getDefaultToolkit();
         Image i = tk.getImage("src\\cn\\itcast\\resource\\jjcc.jpg");
         jf.setIconImage(i);
 
-3:ÉèÖÃ´°Ìå¾ÓÖÐ
+3:è®¾ç½®çª—ä½“å±…ä¸­
         Toolkit tk = Toolkit.getDefaultToolkit();
 
         Dimension d = tk.getScreenSize();

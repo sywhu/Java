@@ -1,71 +1,71 @@
 package cn.itcast_01;
 
 /*
- * ×Ö·û´®£ºÓÉ¶à¸ö×Ö·û×é³ÉµÄÒ»´®Êı¾İ¡£
+ * å­—ç¬¦ä¸²ï¼šç”±å¤šä¸ªå­—ç¬¦ç»„æˆçš„ä¸€ä¸²æ•°æ®ã€‚
  * 
- * ¹¹Ôì·½·¨£º
- * 		public String():´´½¨String¶ÔÏó
- *		public String(byte[] bytes):°Ñ×Ö½ÚÊı×é×ª³É×Ö·û´®¡£
- *		public String(byte[] bytes,int index,int length):°Ñ×Ö½ÚÊı×éÖĞµÄÒ»²¿·Ö×ª³É×Ö·û´®
- *		public String(char[] value):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®
- *		public String(char[] value,int index,int count):°Ñ×Ö·ûÊı×éµÄÒ»²¿·Ö×ª³É×Ö·û´®
- * 		public String(String original):°Ñ×Ö·û´®×ª³É×Ö·û´®
+ * æ„é€ æ–¹æ³•ï¼š
+ * 		public String():åˆ›å»ºStringå¯¹è±¡
+ *		public String(byte[] bytes):æŠŠå­—èŠ‚æ•°ç»„è½¬æˆå­—ç¬¦ä¸²ã€‚
+ *		public String(byte[] bytes,int index,int length):æŠŠå­—èŠ‚æ•°ç»„ä¸­çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
+ *		public String(char[] value):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+ *		public String(char[] value,int index,int count):æŠŠå­—ç¬¦æ•°ç»„çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
+ * 		public String(String original):æŠŠå­—ç¬¦ä¸²è½¬æˆå­—ç¬¦ä¸²
  * 
- * ÎÊÌâ£º
- * 		1:Êä³öÓï¾äÊä³öÈÎºÎ¶ÔÏóÃû³ÆµÄÊ±ºò£¬Ä¬ÈÏµ÷ÓÃµÄÊÇ¸Ã¶ÔÏóµÄtoString()·½·¨¡£
- * 		  ¶øtoString()·½·¨Ä¬ÈÏÊä³öµÄÊÇ°üÃû...ÀàÃû@¹şÏ£ÖµµÄÊ®Áù½øÖÆ¡£
- * 		 Èç¹û£¬ÄãÓÃÊä³öÓï¾äÊä³öÒ»¸ö¶ÔÏóÃû³ÆµÄÊ±ºò£¬·¢ÏÖ²»ÊÇÕâ¸ö¸ñÊ½£¬ËµÃ÷ÁË¸ÃÀàÖØĞ´ÁËtoString()·½·¨¡£
- * 		2:·µ»Ø´Ë×Ö·û´®µÄ³¤¶È
+ * é—®é¢˜ï¼š
+ * 		1:è¾“å‡ºè¯­å¥è¾“å‡ºä»»ä½•å¯¹è±¡åç§°çš„æ—¶å€™ï¼Œé»˜è®¤è°ƒç”¨çš„æ˜¯è¯¥å¯¹è±¡çš„toString()æ–¹æ³•ã€‚
+ * 		  è€ŒtoString()æ–¹æ³•é»˜è®¤è¾“å‡ºçš„æ˜¯åŒ…å...ç±»å@å“ˆå¸Œå€¼çš„åå…­è¿›åˆ¶ã€‚
+ * 		 å¦‚æœï¼Œä½ ç”¨è¾“å‡ºè¯­å¥è¾“å‡ºä¸€ä¸ªå¯¹è±¡åç§°çš„æ—¶å€™ï¼Œå‘ç°ä¸æ˜¯è¿™ä¸ªæ ¼å¼ï¼Œè¯´æ˜äº†è¯¥ç±»é‡å†™äº†toString()æ–¹æ³•ã€‚
+ * 		2:è¿”å›æ­¤å­—ç¬¦ä¸²çš„é•¿åº¦
  * 		public int length()
  * 	
- * ÃæÊÔÌâ£º
- * 		Êı×éÓĞlength()Âğ?StringÓĞlength()Âğ£¿
- * 		Ã»ÓĞ¡£
- * 		ÓĞ¡£
+ * é¢è¯•é¢˜ï¼š
+ * 		æ•°ç»„æœ‰length()å—?Stringæœ‰length()å—ï¼Ÿ
+ * 		æ²¡æœ‰ã€‚
+ * 		æœ‰ã€‚
  */
 public class StringDemo {
 	public static void main(String[] args) {
-		// public String():´´½¨String¶ÔÏó
+		// public String():åˆ›å»ºStringå¯¹è±¡
 		String s1 = new String();
 		System.out.println("s1:" + s1);
 		System.out.println("s1.length():" + s1.length());
 		System.out.println("--------------------------");
 
-		// public String(byte[] bytes):°Ñ×Ö½ÚÊı×é×ª³É×Ö·û´®¡£
+		// public String(byte[] bytes):æŠŠå­—èŠ‚æ•°ç»„è½¬æˆå­—ç¬¦ä¸²ã€‚
 		byte[] bytes = { 97, 98, 99, 100, 101 };
-		String s2 = new String(bytes); // °ÑÊıÖµ×ª³É¶ÔÓ¦µÄ×Ö·ûÖµ
+		String s2 = new String(bytes); // æŠŠæ•°å€¼è½¬æˆå¯¹åº”çš„å­—ç¬¦å€¼
 		System.out.println("s2:" + s2);
 		System.out.println("s2.length():" + s2.length());
 		System.out.println("--------------------------");
 
-		// public String(byte[] bytes,int index,int length):°Ñ×Ö½ÚÊı×éÖĞµÄÒ»²¿·Ö×ª³É×Ö·û´®
+		// public String(byte[] bytes,int index,int length):æŠŠå­—èŠ‚æ•°ç»„ä¸­çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
 		// String s3 = new String(bytes, 1, 2);
 		String s3 = new String(bytes, 0, bytes.length);
 		System.out.println("s3:" + s3);
 		System.out.println("s3.length():" + s3.length());
 		System.out.println("--------------------------");
 
-		// public String(char[] value):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®
-		char[] chs = { 'a', 'b', 'c', 'd', 'e', 'ÁÖ', 'Çà', 'Ï¼' };
+		// public String(char[] value):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+		char[] chs = { 'a', 'b', 'c', 'd', 'e', 'æ—', 'é’', 'éœ' };
 		String s4 = new String(chs);
 		System.out.println("s4:" + s4);
 		System.out.println("s4.length():" + s4.length());
 		System.out.println("--------------------------");
 
-		// public String(char[] value,int index,int count):°Ñ×Ö·ûÊı×éµÄÒ»²¿·Ö×ª³É×Ö·û´®
-		// ĞèÇó£ºÎÒÒªÊä³öµÄ×Ö·û´®ÊÇ:deÁÖÇà
+		// public String(char[] value,int index,int count):æŠŠå­—ç¬¦æ•°ç»„çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
+		// éœ€æ±‚ï¼šæˆ‘è¦è¾“å‡ºçš„å­—ç¬¦ä¸²æ˜¯:deæ—é’
 		String s5 = new String(chs, 3, 4);
 		System.out.println("s5:" + s5);
 		System.out.println("s5.length():" + s5.length());
 		System.out.println("--------------------------");
 
-		// public String(String original):°Ñ×Ö·û´®×ª³É×Ö·û´®
+		// public String(String original):æŠŠå­—ç¬¦ä¸²è½¬æˆå­—ç¬¦ä¸²
 		String s6 = new String("helloworld");
 		System.out.println("s6:" + s6);
 		System.out.println("s6.length():" + s6.length());
 		System.out.println("--------------------------");
 
-		// Java ³ÌĞòÖĞµÄËùÓĞ×Ö·û´®×ÖÃæÖµ£¨Èç "abc" £©¶¼×÷Îª´ËÀàµÄÊµÀıÊµÏÖ¡£
+		// Java ç¨‹åºä¸­çš„æ‰€æœ‰å­—ç¬¦ä¸²å­—é¢å€¼ï¼ˆå¦‚ "abc" ï¼‰éƒ½ä½œä¸ºæ­¤ç±»çš„å®ä¾‹å®ç°ã€‚
 		String s7 = "helloworld";
 		System.out.println("s7:" + s7);
 		System.out.println("s7.length():" + s7.length());

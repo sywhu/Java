@@ -5,27 +5,27 @@ import java.util.Iterator;
 import java.util.List;
 
 /*
- * Á·Ï°£ºÓÃList¼¯ºÏ´æ´¢×Ô¶¨Òå²¢±éÀú¡£
+ * ç»ƒä¹ ï¼šç”¨Listé›†åˆå­˜å‚¨è‡ªå®šä¹‰å¹¶éå†ã€‚
  * Student:name,age
  */
 public class ListDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		List list = new ArrayList();
 
-		// ´´½¨Ñ§Éú¶ÔÏó
-		Student s1 = new Student("ÅË½ğÁ«", 18);
-		Student s2 = new Student("Ëï¶şÄï", 19);
-		Student s3 = new Student("ìèÈıÄï", 20);
-		Student s4 = new Student("ÀîÊ¦Ê¦", 21);
+		// åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
+		Student s1 = new Student("æ½˜é‡‘è²", 18);
+		Student s2 = new Student("å­™äºŒå¨˜", 19);
+		Student s3 = new Student("æ‰ˆä¸‰å¨˜", 20);
+		Student s4 = new Student("æå¸ˆå¸ˆ", 21);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
+		// æŠŠå…ƒç´ æ·»åŠ åˆ°é›†åˆ
 		list.add(s1);
 		list.add(s2);
 		list.add(s3);
 		list.add(s4);
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		Iterator it = list.iterator();
 		while (it.hasNext()) {
 			Student s = (Student) it.next();

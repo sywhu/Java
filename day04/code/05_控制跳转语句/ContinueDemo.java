@@ -1,13 +1,13 @@
 /*
-	continueµÄÊ¹ÓÃ³¡¾°£º
-		ÔÚÑ­»·Óï¾äÖÐ
-		Àë¿ªÊ¹ÓÃ³¡¾°µÄ´æÔÚÊÇÃ»ÓÐÒâÒåµÄ
+	continueçš„ä½¿ç”¨åœºæ™¯ï¼š
+		åœ¨å¾ªçŽ¯è¯­å¥ä¸­
+		ç¦»å¼€ä½¿ç”¨åœºæ™¯çš„å­˜åœ¨æ˜¯æ²¡æœ‰æ„ä¹‰çš„
 	
-	continueµÄ×÷ÓÃ£º
-		A:µ¥²ãÑ­»·¶Ô±Èbreak£¬È»ºó×Ü½áÁ½¸öµÄÇø±ð
-			break  ÍË³öµ±Ç°Ñ­»·
-			continue  ÍË³ö±¾´ÎÑ­»·
-		B:Ò²¿ÉÒÔ´ø±êÇ©µÄÊ¹ÓÃ
+	continueçš„ä½œç”¨ï¼š
+		A:å•å±‚å¾ªçŽ¯å¯¹æ¯”breakï¼Œç„¶åŽæ€»ç»“ä¸¤ä¸ªçš„åŒºåˆ«
+			break  é€€å‡ºå½“å‰å¾ªçŽ¯
+			continue  é€€å‡ºæœ¬æ¬¡å¾ªçŽ¯
+		B:ä¹Ÿå¯ä»¥å¸¦æ ‡ç­¾çš„ä½¿ç”¨
 
 */
 class ContinueDemo {
@@ -16,8 +16,8 @@ class ContinueDemo {
 
 		for(int x=0; x<10; x++) {
 			if(x%2==0) {
-				//break;  //½áÊøµ±Ç°Ñ­»·
-				continue; //½áÊø±¾´ÎÑ­»·²Ù×÷£¬½øÈëÏÂÒ»´Î²Ù×÷
+				//break;  //ç»“æŸå½“å‰å¾ªçŽ¯
+				continue; //ç»“æŸæœ¬æ¬¡å¾ªçŽ¯æ“ä½œï¼Œè¿›å…¥ä¸‹ä¸€æ¬¡æ“ä½œ
 			}
 			System.out.println(x);
 		}

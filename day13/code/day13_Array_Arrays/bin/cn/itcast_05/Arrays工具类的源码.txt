@@ -8,7 +8,7 @@
             
         int iMax = a.length - 1; //4
         
-        if (iMax == -1)	//Èç¹ûÊý×éÖÐÃ»ÓÐÔªËØ
+        if (iMax == -1)	//å¦‚æžœæ•°ç»„ä¸­æ²¡æœ‰å…ƒç´ 
             return "[]";
 
         StringBuilder b = new StringBuilder();
@@ -35,7 +35,7 @@
     
     private static int binarySearch0(int[] a, int fromIndex, int toIndex,
                                      int key) {
-        //a -- { 13, 24, 57£¬69£¬ 80}
+        //a -- { 13, 24, 57ï¼Œ69ï¼Œ 80}
         //fromIndex = 0
         //toIndex = 5
         //key = 244;                  
@@ -48,7 +48,7 @@
             int midVal = a[mid];  //57,69,80
 
             if (midVal < key)
-                low = mid + 1; //3£¬4£¬5
+                low = mid + 1; //3ï¼Œ4ï¼Œ5
             else if (midVal > key)
                 high = mid - 1;
             else

@@ -1,4 +1,4 @@
-//ĞÎÊ½²ÎÊıÈç¹ûÊÇ»ù±¾ÀàĞÍ£¬Ö»ĞèÒª´«µİ¸Ã»ù±¾ÀàĞÍµÄÖµ¼´¿É¡£
+//å½¢å¼å‚æ•°å¦‚æœæ˜¯åŸºæœ¬ç±»å‹ï¼Œåªéœ€è¦ä¼ é€’è¯¥åŸºæœ¬ç±»å‹çš„å€¼å³å¯ã€‚
 class Demo {
 	public int sum(int a,int b) {
 		return a + b;
@@ -9,12 +9,12 @@ class ArgsDemo {
 	public static void main(String[] args) {
 		Demo d = new Demo();
 
-		//±äÁ¿
+		//å˜é‡
 		int x = 10;
 		int y = 20;
 		int z = d.sum(x,y);
 
-		//³£Á¿
+		//å¸¸é‡
 		int a = d.sum(10,20);
 
 		System.out.println(z);

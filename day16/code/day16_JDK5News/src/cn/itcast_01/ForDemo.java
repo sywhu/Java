@@ -3,32 +3,32 @@ package cn.itcast_01;
 import java.util.ArrayList;
 
 /*
- * ÔöÇ¿for£ºÊÇforÑ­»·µÄÒ»ÖÖ¸ñÊ½¡£
- * ¸ñÊ½£º
- * 		for(ÔªËØÊı¾İÀàĞÍ ±äÁ¿Ãû : Êı×éÃû»òÕßCollection¼¯ºÏ) {
- * 			Ö±½ÓÊ¹ÓÃ±äÁ¿Ãû¾Í¿ÉÒÔÁË£¬ÕâÀïµÄ±äÁ¿ÃûÆäÊµ¾ÍÊÇÊı×é»òÕß¼¯ºÏÖĞµÄÔªËØ¡£
+ * å¢å¼ºforï¼šæ˜¯forå¾ªç¯çš„ä¸€ç§æ ¼å¼ã€‚
+ * æ ¼å¼ï¼š
+ * 		for(å…ƒç´ æ•°æ®ç±»å‹ å˜é‡å : æ•°ç»„åæˆ–è€…Collectioné›†åˆ) {
+ * 			ç›´æ¥ä½¿ç”¨å˜é‡åå°±å¯ä»¥äº†ï¼Œè¿™é‡Œçš„å˜é‡åå…¶å®å°±æ˜¯æ•°ç»„æˆ–è€…é›†åˆä¸­çš„å…ƒç´ ã€‚
  * 		}
- * ºÃ´¦£º
- * 		¼ò»¯ÁËÊı×éºÍCollection¼¯ºÏµÄ±éÀú¡£
+ * å¥½å¤„ï¼š
+ * 		ç®€åŒ–äº†æ•°ç»„å’ŒCollectioné›†åˆçš„éå†ã€‚
  * 
- * ×¢ÒâÊÂÏî£ºÔöÇ¿forµÄÄ¿±êÒªÅĞ¶ÏÊÇ·ñÎªnull
- * ÔöÇ¿for±éÀú¼¯ºÏ£¬ÆäÊµÊÇÓÃÀ´Ìæ´úµü´úÆ÷¡£
+ * æ³¨æ„äº‹é¡¹ï¼šå¢å¼ºforçš„ç›®æ ‡è¦åˆ¤æ–­æ˜¯å¦ä¸ºnull
+ * å¢å¼ºforéå†é›†åˆï¼Œå…¶å®æ˜¯ç”¨æ¥æ›¿ä»£è¿­ä»£å™¨ã€‚
  * 
- * Collection£ºµü´úÆ÷£¬ÔöÇ¿for
- * List¼°Æä×ÓÀà£ºµü´úÆ÷£¬ÔöÇ¿for£¬ÆÕÍ¨for
+ * Collectionï¼šè¿­ä»£å™¨ï¼Œå¢å¼ºfor
+ * ListåŠå…¶å­ç±»ï¼šè¿­ä»£å™¨ï¼Œå¢å¼ºforï¼Œæ™®é€šfor
  */
 public class ForDemo {
 	public static void main(String[] args) {
-		// intÊı×é
+		// intæ•°ç»„
 		int[] arr = { 1, 2, 3, 4, 5 };
-		// ÔöÇ¿for
+		// å¢å¼ºfor
 		for (int x : arr) {
 			System.out.println(x);
 		}
 		System.out.println("-----------------");
 
 		String[] strArray = { "hello", "world", "java" };
-		// ÔöÇ¿for
+		// å¢å¼ºfor
 		for (String str : strArray) {
 			System.out.println(str);
 		}
@@ -38,7 +38,7 @@ public class ForDemo {
 		array.add("hello");
 		array.add("world");
 		array.add("java");
-		// ÔöÇ¿for
+		// å¢å¼ºfor
 		for (String s : array) {
 			System.out.println(s);
 		}

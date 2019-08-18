@@ -3,30 +3,30 @@ package cn.itcast_01;
 import java.util.ArrayList;
 
 /*
- * ÐèÇó£º»ñÈ¡10¸ö1-20Ö®¼äµÄËæ»úÊý£¬ÒªÇó²»ÄÜÖØ¸´
+ * éœ€æ±‚ï¼šèŽ·å–10ä¸ª1-20ä¹‹é—´çš„éšæœºæ•°ï¼Œè¦æ±‚ä¸èƒ½é‡å¤
  * 
- * ·ÖÎö£º
- * 		A:¶¨ÒåÒ»¸ö¼¯ºÏ£¬ÓÃÓÚ´æ´¢²úÉúµÄËæ»úÊý
- * 		B:¶¨ÒåÒ»¸öÍ³¼Æ±äÁ¿£¬³õÊ¼ÖµÊÇ0
- * 		C:ÅÐ¶ÏÍ³¼Æ±äÁ¿ÊÇ·ñÐ¡ÓÚ10
- * 			ÊÇ£º
- * 				²úÉúÒ»¸öËæ»ú£¬È»ºóÅÐ¶ÏÊÇÔÚ¼¯ºÏÖÐ
- * 					ÊÇ£º²»Ìí¼Ó
- * 					·ñ£ºÌí¼Óµ½¼¯ºÏ
- * 			·ñ£º½áÊø
- * 		D:±éÀú¼¯ºÏ
+ * åˆ†æžï¼š
+ * 		A:å®šä¹‰ä¸€ä¸ªé›†åˆï¼Œç”¨äºŽå­˜å‚¨äº§ç”Ÿçš„éšæœºæ•°
+ * 		B:å®šä¹‰ä¸€ä¸ªç»Ÿè®¡å˜é‡ï¼Œåˆå§‹å€¼æ˜¯0
+ * 		C:åˆ¤æ–­ç»Ÿè®¡å˜é‡æ˜¯å¦å°äºŽ10
+ * 			æ˜¯ï¼š
+ * 				äº§ç”Ÿä¸€ä¸ªéšæœºï¼Œç„¶åŽåˆ¤æ–­æ˜¯åœ¨é›†åˆä¸­
+ * 					æ˜¯ï¼šä¸æ·»åŠ 
+ * 					å¦ï¼šæ·»åŠ åˆ°é›†åˆ
+ * 			å¦ï¼šç»“æŸ
+ * 		D:éåŽ†é›†åˆ
  */
 public class RandomNumberDemo {
 	public static void main(String[] args) {
-		// ¶¨ÒåÒ»¸ö¼¯ºÏ£¬ÓÃÓÚ´æ´¢²úÉúµÄËæ»úÊý
+		// å®šä¹‰ä¸€ä¸ªé›†åˆï¼Œç”¨äºŽå­˜å‚¨äº§ç”Ÿçš„éšæœºæ•°
 		ArrayList<Integer> array = new ArrayList<Integer>();
 
-		// ¶¨ÒåÒ»¸öÍ³¼Æ±äÁ¿£¬³õÊ¼ÖµÊÇ0
+		// å®šä¹‰ä¸€ä¸ªç»Ÿè®¡å˜é‡ï¼Œåˆå§‹å€¼æ˜¯0
 		int count = 0;
 
-		// ÅÐ¶ÏÍ³¼Æ±éÀúÊÇ·ñÐ¡ÓÚ10
+		// åˆ¤æ–­ç»Ÿè®¡éåŽ†æ˜¯å¦å°äºŽ10
 		while (count < 10) {
-			// ²úÉúÒ»¸öËæ»ú£¬È»ºóÅÐ¶ÏÊÇÔÚ¼¯ºÏÖÐ
+			// äº§ç”Ÿä¸€ä¸ªéšæœºï¼Œç„¶åŽåˆ¤æ–­æ˜¯åœ¨é›†åˆä¸­
 			int randomNumber = (int) (Math.random() * 20) + 1;
 
 			if (!array.contains(randomNumber)) {
@@ -35,7 +35,7 @@ public class RandomNumberDemo {
 			}
 		}
 
-		// ±éÀú¼¯ºÏ
+		// éåŽ†é›†åˆ
 		for (Integer i : array) {
 			System.out.println(i);
 		}

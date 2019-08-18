@@ -1,88 +1,88 @@
-1£ºScanner(Àí½â)
-	(1)JDK5ÒÔºó£¬°ïÖúÎÒÃÇÊµÏÖ¼üÅÌÂ¼ÈëÊı¾İµÄ¡£
-	(2)¹¹Ôì·½·¨£º
+1ï¼šScanner(ç†è§£)
+	(1)JDK5ä»¥åï¼Œå¸®åŠ©æˆ‘ä»¬å®ç°é”®ç›˜å½•å…¥æ•°æ®çš„ã€‚
+	(2)æ„é€ æ–¹æ³•ï¼š
 		public Scanner(InputStream is)
 
 		Scanner sc = new Scanner(System.in);
-	(3)³ÉÔ±·½·¨£º
-		A:hasNextXxx() ÅĞ¶ÏÊÇ·ñÊÇxxxÀàĞÍµÄÔªËØ
-		B:nextXxx() »ñÈ¡xxxÀàĞÍµÄÔªËØ
-	(4)³£ÓÃµÄÁ½¸ö·½·¨
-		nextInt():»ñÈ¡Ò»¸öintÀàĞÍµÄÊı¾İ
-		nextLine():»ñÈ¡Ò»¸öStringÀàĞÍµÄÊı¾İ
-	(5)×¢ÒâµÄĞ¡ÎÊÌâ£º
+	(3)æˆå‘˜æ–¹æ³•ï¼š
+		A:hasNextXxx() åˆ¤æ–­æ˜¯å¦æ˜¯xxxç±»å‹çš„å…ƒç´ 
+		B:nextXxx() è·å–xxxç±»å‹çš„å…ƒç´ 
+	(4)å¸¸ç”¨çš„ä¸¤ä¸ªæ–¹æ³•
+		nextInt():è·å–ä¸€ä¸ªintç±»å‹çš„æ•°æ®
+		nextLine():è·å–ä¸€ä¸ªStringç±»å‹çš„æ•°æ®
+	(5)æ³¨æ„çš„å°é—®é¢˜ï¼š
 		int--int
 		String--String
 		String--int
 
-		int--String ÓĞÎÊÌâ
+		int--String æœ‰é—®é¢˜
 
-		ÈçºÎ½â¾öÄØ?
-			A:ËùÓĞÊı¾İ¶¼×÷ÎªString,½«À´ÒªÊ²Ã´£¬¾Í×ª»»ÎªÊ²Ã´¡£
-			B:ÖØĞÂ´´½¨Ò»¸öĞÂµÄScanner¶ÔÏó
+		å¦‚ä½•è§£å†³å‘¢?
+			A:æ‰€æœ‰æ•°æ®éƒ½ä½œä¸ºString,å°†æ¥è¦ä»€ä¹ˆï¼Œå°±è½¬æ¢ä¸ºä»€ä¹ˆã€‚
+			B:é‡æ–°åˆ›å»ºä¸€ä¸ªæ–°çš„Scannerå¯¹è±¡
 
-2£ºString(ÕÆÎÕ)
-	(1)×Ö·û´®£ºÓÉ¶à¸ö×Ö·û×é³ÉµÄÒ»´®Êı¾İ
-	(2)¹¹Ôì·½·¨£º
-		public String():´´½¨String¶ÔÏó
-		public String(byte[] bytes):°Ñ×Ö½ÚÊı×é×ª³É×Ö·û´®¡£
-		public String(byte[] bytes,int index,int length):°Ñ×Ö½ÚÊı×éÖĞµÄÒ»²¿·Ö×ª³É×Ö·û´®
-		public String(char[] value):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®
-		public String(char[] value,int index,int count):°Ñ×Ö·ûÊı×éµÄÒ»²¿·Ö×ª³É×Ö·û´®
-		public String(String original):°Ñ×Ö·û´®×ª³É×Ö·û´®
+2ï¼šString(æŒæ¡)
+	(1)å­—ç¬¦ä¸²ï¼šç”±å¤šä¸ªå­—ç¬¦ç»„æˆçš„ä¸€ä¸²æ•°æ®
+	(2)æ„é€ æ–¹æ³•ï¼š
+		public String():åˆ›å»ºStringå¯¹è±¡
+		public String(byte[] bytes):æŠŠå­—èŠ‚æ•°ç»„è½¬æˆå­—ç¬¦ä¸²ã€‚
+		public String(byte[] bytes,int index,int length):æŠŠå­—èŠ‚æ•°ç»„ä¸­çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
+		public String(char[] value):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+		public String(char[] value,int index,int count):æŠŠå­—ç¬¦æ•°ç»„çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
+		public String(String original):æŠŠå­—ç¬¦ä¸²è½¬æˆå­—ç¬¦ä¸²
 
 		String s = "hello";
-	(3)×Ö·û´®µÄÌØµãºÍÃæÊÔÌâ
-		A:Ò»µ©±»´´½¨£¬Öµ¾Í²»ÄÜ·¢Éú¸Ä±ä
-		B:String s = new String("hello")ºÍString s = "hello"µÄÇø±ğ
-		C:¿´³ÌĞòĞ´½á¹û ==ºÍequals()µÄÇø±ğ
-		D:¿´³ÌĞòĞ´½á¹û ×Ö·û´®±äÁ¿Ïà¼ÓºÍ³£Á¿Ïà¼ÓµÄÇø±ğ
-	(4)³£¼û¹¦ÄÜ
-		A:ÅĞ¶Ï¹¦ÄÜ
-			boolean equals(Object obj):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬£¬ÑÏ¸ñÇø·Ö´óĞ¡Ğ´
-			boolean equalsIgnoreCase(String str):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬£¬²»¿¼ÂÇ´óĞ¡Ğ´
-			boolean contains(String str):ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄĞ¡´®
-			boolean startsWith(String str):ÅĞ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄ×Ö·û´®¿ªÍ·
-			boolean endsWith(String str):ÅĞ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄ×Ö·û´®½áÎ²
-			boolean isEmpty():ÅĞ¶Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÎª¿Õ
-		B:»ñÈ¡¹¦ÄÜ
-			int length():·µ»Ø×Ö·û´®µÄ³¤¶È¡£×Ö·ûµÄ¸öÊı¡£
-			char charAt(int index):·µ»Ø×Ö·û´®ÖĞÖ¸¶¨Î»ÖÃµÄ×Ö·û¡£
-			int indexOf(int ch):·µ»ØÖ¸¶¨×Ö·ûÔÚ×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
+	(3)å­—ç¬¦ä¸²çš„ç‰¹ç‚¹å’Œé¢è¯•é¢˜
+		A:ä¸€æ—¦è¢«åˆ›å»ºï¼Œå€¼å°±ä¸èƒ½å‘ç”Ÿæ”¹å˜
+		B:String s = new String("hello")å’ŒString s = "hello"çš„åŒºåˆ«
+		C:çœ‹ç¨‹åºå†™ç»“æœ ==å’Œequals()çš„åŒºåˆ«
+		D:çœ‹ç¨‹åºå†™ç»“æœ å­—ç¬¦ä¸²å˜é‡ç›¸åŠ å’Œå¸¸é‡ç›¸åŠ çš„åŒºåˆ«
+	(4)å¸¸è§åŠŸèƒ½
+		A:åˆ¤æ–­åŠŸèƒ½
+			boolean equals(Object obj):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒï¼Œä¸¥æ ¼åŒºåˆ†å¤§å°å†™
+			boolean equalsIgnoreCase(String str):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒï¼Œä¸è€ƒè™‘å¤§å°å†™
+			boolean contains(String str):åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„å°ä¸²
+			boolean startsWith(String str):åˆ¤æ–­æ˜¯å¦ä»¥æŒ‡å®šçš„å­—ç¬¦ä¸²å¼€å¤´
+			boolean endsWith(String str):åˆ¤æ–­æ˜¯å¦ä»¥æŒ‡å®šçš„å­—ç¬¦ä¸²ç»“å°¾
+			boolean isEmpty():åˆ¤æ–­å­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ä¸ºç©º
+		B:è·å–åŠŸèƒ½
+			int length():è¿”å›å­—ç¬¦ä¸²çš„é•¿åº¦ã€‚å­—ç¬¦çš„ä¸ªæ•°ã€‚
+			char charAt(int index):è¿”å›å­—ç¬¦ä¸²ä¸­æŒ‡å®šä½ç½®çš„å­—ç¬¦ã€‚
+			int indexOf(int ch):è¿”å›æŒ‡å®šå­—ç¬¦åœ¨å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
 					97,'a'
-			int indexOf(String str):·µ»ØÖ¸¶¨×Ö·û´®ÔÚ×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
-			int indexOf(int ch,int fromIndex):·µ»ØÖ¸¶¨×Ö·û´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼ÔÚ×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
-			int indexOf(String str,int fromIndex):·µ»ØÖ¸¶¨×Ö·û´®´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼ÔÚ×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
-			String substring(int start):·µ»Ø´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ä©Î²µÄ×Ó´®
-			String substring(int start,int end):·µ»Ø´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄ×Ó´®
-		C:×ª»»¹¦ÄÜ
-			byte[] getBytes():°Ñ×Ö·û´®×ª»»Îª×Ö½ÚÊı×é
-			char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é
-			static String valueOf(char[] chs):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®
-			static String valueOf(int i):°ÑintÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®
-					°ÑÈÎÒâÀàĞÍ×ª»»Îª×Ö·û´®µÄ·½·¨¡£
-			String toLowerCase():°Ñ×Ö·û´®×ªĞ¡Ğ´
-			String toUpperCase():°Ñ×Ö·û´®×ª´óĞ´
-			String concat(String str):×Ö·û´®µÄÁ¬½Ó
-		D:ÆäËû¹¦ÄÜ
-			a:Ìæ»»¹¦ÄÜ
+			int indexOf(String str):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²åœ¨å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
+			int indexOf(int ch,int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦ä»æŒ‡å®šä½ç½®å¼€å§‹åœ¨å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
+			int indexOf(String str,int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²ä»æŒ‡å®šä½ç½®å¼€å§‹åœ¨å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
+			String substring(int start):è¿”å›ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æœ«å°¾çš„å­ä¸²
+			String substring(int start,int end):è¿”å›ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸçš„å­ä¸²
+		C:è½¬æ¢åŠŸèƒ½
+			byte[] getBytes():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„
+			char[] toCharArray():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
+			static String valueOf(char[] chs):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+			static String valueOf(int i):æŠŠintç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²
+					æŠŠä»»æ„ç±»å‹è½¬æ¢ä¸ºå­—ç¬¦ä¸²çš„æ–¹æ³•ã€‚
+			String toLowerCase():æŠŠå­—ç¬¦ä¸²è½¬å°å†™
+			String toUpperCase():æŠŠå­—ç¬¦ä¸²è½¬å¤§å†™
+			String concat(String str):å­—ç¬¦ä¸²çš„è¿æ¥
+		D:å…¶ä»–åŠŸèƒ½
+			a:æ›¿æ¢åŠŸèƒ½
 				String replace(char old,char new)
 				String replace(String old,String new)
-			b:È¥³ı×Ö·û´®Á½¿Õ¸ñ	
+			b:å»é™¤å­—ç¬¦ä¸²ä¸¤ç©ºæ ¼	
 				String trim()
-			c:°´×ÖµäË³Ğò±È½ÏÁ½¸ö×Ö·û´®
+			c:æŒ‰å­—å…¸é¡ºåºæ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²
 				int compareTo(String str)
 				int compareToIgnoreCase(String str)
-	(5)°¸Àı£º
-		A:Ä£ÄâÓÃ»§µÇÂ¼
-		B:±éÀú×Ö·û´®
-			a:charAt()ºÍlength()½áºÏ
-			b:×ªÊı×é
-		C:Í³¼ÆÃ¿ÖÖÀàĞÍµÄ×Ö·û¸öÊı
-		D:°Ñ×Ö·û´®Ê××ÖÄ¸×ª´óĞ´£¬ÆäËûĞ¡Ğ´
-		E:°ÑÊı×é×ª³ÉÖ¸¶¨¸ñÊ½µÄ×Ö·û´®
-		F:×Ö·û´®·´×ª
-		G:Í³¼Æ´ó´®ÖĞĞ¡´®³öÏÖµÄ´ÎÊı
-			a:´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼²é
-			b:°Ñ²é¹ıµÄ½ØÈ¡µô
-		H:×Ô¼ºÊµÏÖÁ½¸ö×Ö·û´®µÄ±È½ÏÒÔ¼°StringÀàµÄequals()·½·¨Ô´Âë
+	(5)æ¡ˆä¾‹ï¼š
+		A:æ¨¡æ‹Ÿç”¨æˆ·ç™»å½•
+		B:éå†å­—ç¬¦ä¸²
+			a:charAt()å’Œlength()ç»“åˆ
+			b:è½¬æ•°ç»„
+		C:ç»Ÿè®¡æ¯ç§ç±»å‹çš„å­—ç¬¦ä¸ªæ•°
+		D:æŠŠå­—ç¬¦ä¸²é¦–å­—æ¯è½¬å¤§å†™ï¼Œå…¶ä»–å°å†™
+		E:æŠŠæ•°ç»„è½¬æˆæŒ‡å®šæ ¼å¼çš„å­—ç¬¦ä¸²
+		F:å­—ç¬¦ä¸²åè½¬
+		G:ç»Ÿè®¡å¤§ä¸²ä¸­å°ä¸²å‡ºç°çš„æ¬¡æ•°
+			a:ä»æŒ‡å®šä½ç½®å¼€å§‹æŸ¥
+			b:æŠŠæŸ¥è¿‡çš„æˆªå–æ‰
+		H:è‡ªå·±å®ç°ä¸¤ä¸ªå­—ç¬¦ä¸²çš„æ¯”è¾ƒä»¥åŠStringç±»çš„equals()æ–¹æ³•æºç 

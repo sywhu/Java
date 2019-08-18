@@ -3,58 +3,58 @@ package cn.itcast_05;
 import java.util.ArrayList;
 
 /*
- * ĞèÇó£ºËÄ´óÃûÖø
- * Èı¹úÑİÒå
- * 		ÂÀ²¼£¬µäÎ¤£¬ÕÔÔÆ
- * ºìÂ¥ÃÎ
- * 		¼Ö±¦Óñ£¬ÁÖ÷ìÓñ£¬ÍõÎõ·ï£¬ÇØ¿ÉÇä
- * Ë®ä°´«
- * 		ÎäËÉ£¬Â³ÖÇÉî£¬ÀîåÓ£¬Â¬¿¡Òå£¬Ë÷³¬£¬ÎâÓÃ
- * Î÷ÓÎ¼Ç
- * 		°×¹Ç¾«£¬¹ÛÒô½ã½ã£¬ËïÎò¿Õ£¬Å£Ä§Íõ£¬ºìº¢¶ù
+ * éœ€æ±‚ï¼šå››å¤§åè‘—
+ * ä¸‰å›½æ¼”ä¹‰
+ * 		å•å¸ƒï¼Œå…¸éŸ¦ï¼Œèµµäº‘
+ * çº¢æ¥¼æ¢¦
+ * 		è´¾å®ç‰ï¼Œæ—é»›ç‰ï¼Œç‹ç†™å‡¤ï¼Œç§¦å¯å¿
+ * æ°´æµ’ä¼ 
+ * 		æ­¦æ¾ï¼Œé²æ™ºæ·±ï¼Œæé€µï¼Œå¢ä¿Šä¹‰ï¼Œç´¢è¶…ï¼Œå´ç”¨
+ * è¥¿æ¸¸è®°
+ * 		ç™½éª¨ç²¾ï¼Œè§‚éŸ³å§å§ï¼Œå­™æ‚Ÿç©ºï¼Œç‰›é­”ç‹ï¼Œçº¢å­©å„¿
  * 
- * ÎÒ¹úÓĞËÄ´óÃûÖø£¬Ã¿²¿ÃûÖøÀïÓĞºÜ¶à´ú±íĞÔ½ÇÉ«¡£
+ * æˆ‘å›½æœ‰å››å¤§åè‘—ï¼Œæ¯éƒ¨åè‘—é‡Œæœ‰å¾ˆå¤šä»£è¡¨æ€§è§’è‰²ã€‚
  */
 public class ArrayListDemo {
 	public static void main(String[] args) {
-		// Èı¹úÑİÒåĞ¡¼¯ºÏ
+		// ä¸‰å›½æ¼”ä¹‰å°é›†åˆ
 		ArrayList<String> sgyy = new ArrayList<String>();
-		sgyy.add("ÂÀ²¼");
-		sgyy.add("µäÎ¤");
-		sgyy.add("ÕÔÔÆ");
+		sgyy.add("å•å¸ƒ");
+		sgyy.add("å…¸éŸ¦");
+		sgyy.add("èµµäº‘");
 
-		// ºìÂ¥ÃÎĞ¡¼¯ºÏ
+		// çº¢æ¥¼æ¢¦å°é›†åˆ
 		ArrayList<String> hlm = new ArrayList<String>();
-		hlm.add("¼Ö±¦Óñ");
-		hlm.add("ÁÖ÷ìÓñ");
-		hlm.add("ÍõÎõ·ï");
-		hlm.add("ÇØ¿ÉÇä");
+		hlm.add("è´¾å®ç‰");
+		hlm.add("æ—é»›ç‰");
+		hlm.add("ç‹ç†™å‡¤");
+		hlm.add("ç§¦å¯å¿");
 
-		// Ë®ä°´«Ğ¡¼¯ºÏ
+		// æ°´æµ’ä¼ å°é›†åˆ
 		ArrayList<String> shz = new ArrayList<String>();
-		shz.add("ÎäËÉ");
-		shz.add("Â³ÖÇÉî");
-		shz.add("ÀîåÓ");
-		shz.add("Â¬¿¡Òå");
-		shz.add("Ë÷³¬");
-		shz.add("ÎâÓÃ");
+		shz.add("æ­¦æ¾");
+		shz.add("é²æ™ºæ·±");
+		shz.add("æé€µ");
+		shz.add("å¢ä¿Šä¹‰");
+		shz.add("ç´¢è¶…");
+		shz.add("å´ç”¨");
 
-		// Î÷ÓÎ¼ÇĞ¡¼¯ºÏ
+		// è¥¿æ¸¸è®°å°é›†åˆ
 		ArrayList<String> xyj = new ArrayList<String>();
-		xyj.add("°×¹Ç¾«");
-		xyj.add("¹ÛÒô½ã½ã");
-		xyj.add("ËïÎò¿Õ");
-		xyj.add("Å£Ä§Íõ");
-		xyj.add("ºìº¢¶ù");
+		xyj.add("ç™½éª¨ç²¾");
+		xyj.add("è§‚éŸ³å§å§");
+		xyj.add("å­™æ‚Ÿç©º");
+		xyj.add("ç‰›é­”ç‹");
+		xyj.add("çº¢å­©å„¿");
 
-		// ´ú±íÃûÖøµÄ´ó¼¯ºÏ
+		// ä»£è¡¨åè‘—çš„å¤§é›†åˆ
 		ArrayList<ArrayList<String>> sdmz = new ArrayList<ArrayList<String>>();
 		sdmz.add(sgyy);
 		sdmz.add(hlm);
 		sdmz.add(shz);
 		sdmz.add(xyj);
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		for (ArrayList<String> array : sdmz) {
 			for (String s : array) {
 				System.out.print(s + " ");

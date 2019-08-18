@@ -1,33 +1,33 @@
 package cn.itcast_08;
 
 public class MovieTicket implements Runnable {
-	// ¶¨Òå100ÕÅÆ±
+	// å®šä¹‰100å¼ ç¥¨
 	private int tickets = 100;
 
 	// @Override
 	// public void run() {
 	// while (true) {
-	// // ¼ÙÉètickets = 50; t1,t2,t3·Ö±ğÀ´µ½ÁËÕâÀï
+	// // å‡è®¾tickets = 50; t1,t2,t3åˆ†åˆ«æ¥åˆ°äº†è¿™é‡Œ
 	// if (tickets > 0) {
-	// // ¸ü·ûºÏÏÖÊµÇé¿ö
+	// // æ›´ç¬¦åˆç°å®æƒ…å†µ
 	// try {
-	// Thread.sleep(100); // t1Ë¯ÏÂÁË,t2Ë¯ÏÂÁË
+	// Thread.sleep(100); // t1ç¡ä¸‹äº†,t2ç¡ä¸‹äº†
 	// } catch (InterruptedException e) {
 	// e.printStackTrace();
 	// }
 	//
-	// System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ"
-	// + (tickets--) + "ÕÅÆ±");
-	// // ÀíÏëÇé¿ö
-	// // ´°¿Ú1ÕıÔÚ³öÊÛµÚ50ÕÅÆ±£¬tickets=49
-	// // ´°¿Ú2ÕıÔÚ³öÊÛµÚ49ÕÅÆ±£¬tickets=48
-	// // Ò»¸öCPUµÄÊ±¼äµãÄÜ¹»Ö´ĞĞµÄ¶«Î÷±ØĞëÊÇÒ»¸öÔ­×ÓĞÔµÄ¶«Î÷¡£
+	// System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬"
+	// + (tickets--) + "å¼ ç¥¨");
+	// // ç†æƒ³æƒ…å†µ
+	// // çª—å£1æ­£åœ¨å‡ºå”®ç¬¬50å¼ ç¥¨ï¼Œtickets=49
+	// // çª—å£2æ­£åœ¨å‡ºå”®ç¬¬49å¼ ç¥¨ï¼Œtickets=48
+	// // ä¸€ä¸ªCPUçš„æ—¶é—´ç‚¹èƒ½å¤Ÿæ‰§è¡Œçš„ä¸œè¥¿å¿…é¡»æ˜¯ä¸€ä¸ªåŸå­æ€§çš„ä¸œè¥¿ã€‚
 	// // System.out.println(a+b*c);
-	// // Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ"+ (tickets--) +
-	// // "ÕÅÆ±"
-	// // ÕâÀïÆäÊµÓĞºÜ¶à¸ö²Ù×÷ÔÚÖ´ĞĞ¡£
-	// // ¼ÙÉèµ±Êä³öÓï¾ä¸Õ¸ÕÊä³ö ´°¿Ú1ÕıÔÚ³öÊÛµÚ50ÕÅÆ±,ÔÚÕâ¸öÊ±ºò£¬t1Ã»ÓĞÁËÖ´ĞĞÈ¨£¬t2ÇÀµ½ÁË£¬¼ÌĞøÊä³ö
-	// // ´°¿Ú2ÕıÔÚ³öÊÛµÚ50ÕÅÆ±
+	// // Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬"+ (tickets--) +
+	// // "å¼ ç¥¨"
+	// // è¿™é‡Œå…¶å®æœ‰å¾ˆå¤šä¸ªæ“ä½œåœ¨æ‰§è¡Œã€‚
+	// // å‡è®¾å½“è¾“å‡ºè¯­å¥åˆšåˆšè¾“å‡º çª—å£1æ­£åœ¨å‡ºå”®ç¬¬50å¼ ç¥¨,åœ¨è¿™ä¸ªæ—¶å€™ï¼Œt1æ²¡æœ‰äº†æ‰§è¡Œæƒï¼Œt2æŠ¢åˆ°äº†ï¼Œç»§ç»­è¾“å‡º
+	// // çª—å£2æ­£åœ¨å‡ºå”®ç¬¬50å¼ ç¥¨
 	//
 	// }
 	// }
@@ -36,21 +36,21 @@ public class MovieTicket implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			// ¼ÙÉètickets = 1; t1,t2,t3·Ö±ğÀ´µ½ÁËÕâÀï
+			// å‡è®¾tickets = 1; t1,t2,t3åˆ†åˆ«æ¥åˆ°äº†è¿™é‡Œ
 			if (tickets > 0) {
-				// ¸ü·ûºÏÏÖÊµÇé¿ö
+				// æ›´ç¬¦åˆç°å®æƒ…å†µ
 				try {
-					Thread.sleep(100);// t1½øÀ´ÁË,t2½øÀ´ÁË,t3½øÀ´ÁË
+					Thread.sleep(100);// t1è¿›æ¥äº†,t2è¿›æ¥äº†,t3è¿›æ¥äº†
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 
-				// ÒÀ´ÎĞÑ¹ıÀ´
-				System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ"
-						+ (tickets--) + "ÕÅÆ±");
-				// ´°¿Ú1ÕıÔÚ³öÊÛµÚ1ÕÅÆ±£¬tickets=0
-				// ´°¿Ú2ÕıÔÚ³öÊÛµÚ0ÕÅÆ±£¬tickets=-1
-				// ´°¿Ú3ÕıÔÚ³öÊÛµÚ-1ÕÅÆ±£¬tickets=-2
+				// ä¾æ¬¡é†’è¿‡æ¥
+				System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬"
+						+ (tickets--) + "å¼ ç¥¨");
+				// çª—å£1æ­£åœ¨å‡ºå”®ç¬¬1å¼ ç¥¨ï¼Œtickets=0
+				// çª—å£2æ­£åœ¨å‡ºå”®ç¬¬0å¼ ç¥¨ï¼Œtickets=-1
+				// çª—å£3æ­£åœ¨å‡ºå”®ç¬¬-1å¼ ç¥¨ï¼Œtickets=-2
 			}
 		}
 	}

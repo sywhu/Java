@@ -11,7 +11,7 @@ public class DieLock extends Thread {
 	public void run() {
 		if (flag) {
 			synchronized (MyLock.objA) {
-				System.out.println("if objA"); // CPUµÄÖ´ĞĞÈ¨Ã»ÓĞÁË
+				System.out.println("if objA"); // CPUçš„æ‰§è¡Œæƒæ²¡æœ‰äº†
 				synchronized (MyLock.objB) {
 					System.out.println("if objB");
 				}

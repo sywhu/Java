@@ -10,24 +10,24 @@ import java.io.InputStreamReader;
  */
 public class InputStreamReaderDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		InputStreamReader isr = new InputStreamReader(new FileInputStream(
 				"isr.txt"));
 
-		// Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·û
+		// ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—ç¬¦
 		// int ch = 0;
 		// while ((ch = isr.read()) != -1) {
 		// System.out.print((char) ch);
 		// }
 
-		// Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·ûÊı×é
+		// ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—ç¬¦æ•°ç»„
 		char[] chs = new char[1024];
 		int len = 0;
 		while ((len = isr.read(chs)) != -1) {
 			System.out.print(new String(chs, 0, len));
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		isr.close();
 	}
 }

@@ -5,24 +5,24 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /*
- * ÓÃArrayList´æ´¢×Ô¶¨Òå¶ÔÏó£¬²¢°´ÕÕÄêÁä½øĞĞÅÅĞò
+ * ç”¨ArrayListå­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡ï¼Œå¹¶æŒ‰ç…§å¹´é¾„è¿›è¡Œæ’åº
  */
 public class ArrayListDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		ArrayList<Person> array = new ArrayList<Person>();
 
-		// ´´½¨ÔªËØ¶ÔÏó(½¯¸ÉµÁÊé)
-		Person p1 = new Person("²Ü²Ù", 35);// ºóÖªºó¾õ
-		Person p2 = new Person("½¯¸É", 33);// ²»Öª²»¾õ
-		Person p3 = new Person("Öî¸ğÁÁ", 34); // ÏÈÖªÏÈ¾õ
+		// åˆ›å»ºå…ƒç´ å¯¹è±¡(è’‹å¹²ç›—ä¹¦)
+		Person p1 = new Person("æ›¹æ“", 35);// åçŸ¥åè§‰
+		Person p2 = new Person("è’‹å¹²", 33);// ä¸çŸ¥ä¸è§‰
+		Person p3 = new Person("è¯¸è‘›äº®", 34); // å…ˆçŸ¥å…ˆè§‰
 
-		// Ìí¼ÓÔªËØ
+		// æ·»åŠ å…ƒç´ 
 		array.add(p1);
 		array.add(p2);
 		array.add(p3);
 
-		// ÅÅĞò
+		// æ’åº
 		// Collections.sort(array);
 		Collections.sort(array, new Comparator<Person>() {
 			@Override
@@ -32,7 +32,7 @@ public class ArrayListDemo {
 
 		});
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		for (Person p : array) {
 			System.out.println(p.getName() + "---" + p.getAge());
 		}

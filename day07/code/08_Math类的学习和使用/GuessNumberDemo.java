@@ -1,36 +1,36 @@
 /*
-	ĞèÇó£º²ÂÊı×ÖĞ¡ÓÎÏ·
+	éœ€æ±‚ï¼šçŒœæ•°å­—å°æ¸¸æˆ
 	
-	·ÖÎö£º
-		A:ÏµÍ³²úÉúÒ»¸ö1-100Ö®¼äµÄËæ»úÊı¡£
+	åˆ†æï¼š
+		A:ç³»ç»Ÿäº§ç”Ÿä¸€ä¸ª1-100ä¹‹é—´çš„éšæœºæ•°ã€‚
 			int number = (int)(Math.random()*100)+1;
-		B:¼üÅÌÂ¼ÈëÊı¾İ,ÓÃScannerÊµÏÖ
-		C:ÓÃÕâÁ½¸öÊı¾İ½øĞĞ±È½Ï
-			´ó	ÌáÊ¾´óÁË
-			Ğ¡	ÌáÊ¾Ğ¡ÁË
-			µÈ	¹§Ï²Äã£¬²ÂÖĞÁË
-		D:ÎªÁË±£Ö¤ÎÒÃÇÄÜ¹»²ÂÖĞ£¬ÎÒÃÇ¾Í¼ÓÈëÑ­»·£¬ÊµÏÖ¶à´Î²Â¡£Ö±µ½²ÂÖĞ¡£
+		B:é”®ç›˜å½•å…¥æ•°æ®,ç”¨Scannerå®ç°
+		C:ç”¨è¿™ä¸¤ä¸ªæ•°æ®è¿›è¡Œæ¯”è¾ƒ
+			å¤§	æç¤ºå¤§äº†
+			å°	æç¤ºå°äº†
+			ç­‰	æ­å–œä½ ï¼ŒçŒœä¸­äº†
+		D:ä¸ºäº†ä¿è¯æˆ‘ä»¬èƒ½å¤ŸçŒœä¸­ï¼Œæˆ‘ä»¬å°±åŠ å…¥å¾ªç¯ï¼Œå®ç°å¤šæ¬¡çŒœã€‚ç›´åˆ°çŒœä¸­ã€‚
 */
 import java.util.Scanner;
 
 class GuessNumberDemo {
 	public static void main(String[] args) {
-		//ÏµÍ³²úÉúÒ»¸ö1-100Ö®¼äµÄËæ»úÊı¡£
+		//ç³»ç»Ÿäº§ç”Ÿä¸€ä¸ª1-100ä¹‹é—´çš„éšæœºæ•°ã€‚
 		int number = (int)(Math.random()*100)+1;
 
 		while(true) {
-			//¼üÅÌÂ¼ÈëÊı¾İ,ÓÃScannerÊµÏÖ
+			//é”®ç›˜å½•å…¥æ•°æ®,ç”¨Scannerå®ç°
 			Scanner sc = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëÒ»¸öÊı¾İ£º(1-100)");
+			System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•°æ®ï¼š(1-100)");
 			int guessNumber = sc.nextInt();
 
-			//ÓÃÕâÁ½¸öÊı¾İ½øĞĞ±È½Ï
+			//ç”¨è¿™ä¸¤ä¸ªæ•°æ®è¿›è¡Œæ¯”è¾ƒ
 			if(guessNumber > number) {
-				System.out.println("Äã²ÂµÄÊı¾İ"+guessNumber+"´óÁË");
+				System.out.println("ä½ çŒœçš„æ•°æ®"+guessNumber+"å¤§äº†");
 			}else if(guessNumber < number) {
-				System.out.println("Äã²ÂµÄÊı¾İ"+guessNumber+"Ğ¡ÁË");
+				System.out.println("ä½ çŒœçš„æ•°æ®"+guessNumber+"å°äº†");
 			}else {
-				System.out.println("¹§Ï²Äã£¬²ÂÖĞÁË");
+				System.out.println("æ­å–œä½ ï¼ŒçŒœä¸­äº†");
 				break;
 			}
 		}

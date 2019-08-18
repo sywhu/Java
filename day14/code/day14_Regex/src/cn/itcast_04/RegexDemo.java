@@ -1,13 +1,13 @@
 package cn.itcast_04;
 
 /*
- * Ìæ»»¹¦ÄÜ
- *		StringÀàµÄ¹¦ÄÜ£º
+ * æ›¿æ¢åŠŸèƒ½
+ *		Stringç±»çš„åŠŸèƒ½ï¼š
  *			public String replaceAll(String regex,String replacement)
  */
 public class RegexDemo {
 	public static void main(String[] args) {
-		// ĞèÇó£ºÂÛÌ³ÖĞ²»ÄÜ³öÏÖÊı×Ö×Ö·û£¬ÓÃ*Ìæ»»
+		// éœ€æ±‚ï¼šè®ºå›ä¸­ä¸èƒ½å‡ºç°æ•°å­—å­—ç¬¦ï¼Œç”¨*æ›¿æ¢
 		String s = "hellowodekahaoshi62212934564347892nikyidaqiangeiwoxiexie13212345678gaowoyishen";
 
 		// String ss = s.replaceAll("\\d", "*");

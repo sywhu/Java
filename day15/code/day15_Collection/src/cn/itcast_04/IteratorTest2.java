@@ -5,21 +5,21 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /*
- * ×¢Òâ£ºnext()Ã»Ò»´Îµ÷ÓÃ£¬¶¼»á»ñÈ¡Ò»¸ö¶ÔÏó£¬²¢ÒÆ¶¯µ½ÏÂÒ»¸öÎ»ÖÃµÈ´ı¡£
+ * æ³¨æ„ï¼šnext()æ²¡ä¸€æ¬¡è°ƒç”¨ï¼Œéƒ½ä¼šè·å–ä¸€ä¸ªå¯¹è±¡ï¼Œå¹¶ç§»åŠ¨åˆ°ä¸‹ä¸€ä¸ªä½ç½®ç­‰å¾…ã€‚
  */
 public class IteratorTest2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ¶ÔÏó
-		Student s1 = new Student("ËïÎò¿Õ", 30);
-		Student s2 = new Student("×ÏÏ¼ÏÉ×Ó", 26);
-		Student s3 = new Student("æÏ¶ğ", 22);
-		Student s4 = new Student("Öí°Ë½ä", 18);
+		// åˆ›å»ºå…ƒç´ å¯¹è±¡
+		Student s1 = new Student("å­™æ‚Ÿç©º", 30);
+		Student s2 = new Student("ç´«éœä»™å­", 26);
+		Student s3 = new Student("å«¦å¨¥", 22);
+		Student s4 = new Student("çŒªå…«æˆ’", 18);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		c.add(s1); // Object obj = s1; ÏòÉÏ×ªĞÍ
+		// æŠŠå…ƒç´ æ·»åŠ åˆ°é›†åˆ
+		c.add(s1); // Object obj = s1; å‘ä¸Šè½¬å‹
 		c.add(s2);
 		c.add(s3);
 		c.add(s4);

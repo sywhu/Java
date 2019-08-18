@@ -1,30 +1,30 @@
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 class StudentDemo {
 	public static void main(String[] args) {
-		//´´½¨Ñ§Éú¶ÔÏó
+		//åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
 		Student s = new Student();
 
-		//Êä³ö¶ÔÏóÃû
+		//è¾“å‡ºå¯¹è±¡å
 		System.out.println(s); //Student@1afb7ac7
 
-		//Êä³ö³ÉÔ±±äÁ¿
-		System.out.println("Ñ§ºÅÊÇ£º"+s.sid); //null
-		System.out.println("ĞÕÃûÊÇ£º"+s.name);//null
-		System.out.println("ÄêÁäÊÇ£º"+s.age); //0
+		//è¾“å‡ºæˆå‘˜å˜é‡
+		System.out.println("å­¦å·æ˜¯ï¼š"+s.sid); //null
+		System.out.println("å§“åæ˜¯ï¼š"+s.name);//null
+		System.out.println("å¹´é¾„æ˜¯ï¼š"+s.age); //0
 		System.out.println("--------------");
 
-		//¸ø³ÉÔ±±äÁ¿¸³Öµ
+		//ç»™æˆå‘˜å˜é‡èµ‹å€¼
 		s.sid = "itcast001";
-		s.name = "ÁÖÇàÏ¼";
+		s.name = "æ—é’éœ";
 		s.age = 28;
 
-		//ÔÙ´ÎÊä³ö³ÉÔ±±äÁ¿
-		System.out.println("Ñ§ºÅÊÇ£º"+s.sid); //itcast001
-		System.out.println("ĞÕÃûÊÇ£º"+s.name);//ÁÖÇàÏ¼
-		System.out.println("ÄêÁäÊÇ£º"+s.age); //28
+		//å†æ¬¡è¾“å‡ºæˆå‘˜å˜é‡
+		System.out.println("å­¦å·æ˜¯ï¼š"+s.sid); //itcast001
+		System.out.println("å§“åæ˜¯ï¼š"+s.name);//æ—é’éœ
+		System.out.println("å¹´é¾„æ˜¯ï¼š"+s.age); //28
 		System.out.println("--------------");
 
-		//Ê¹ÓÃ³ÉÔ±·½·¨
+		//ä½¿ç”¨æˆå‘˜æ–¹æ³•
 		s.study();
 		s.eat();
 		s.sleep();

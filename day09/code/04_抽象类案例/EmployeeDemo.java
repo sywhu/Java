@@ -1,13 +1,13 @@
 /*
-	¼ÙÈçÎÒÃÇÔÚ¿ª·¢Ò»¸öÏµÍ³Ê±ĞèÒª¶ÔÔ±¹¤Àà½øĞĞÉè¼Æ£¬Ô±¹¤°üº¬3¸öÊôĞÔ£ºĞÕÃû¡¢¹¤ºÅÒÔ¼°¹¤×Ê¡£
-	¾­ÀíÒ²ÊÇÔ±¹¤£¬³ıÁËº¬ÓĞÔ±¹¤µÄÊôĞÔÍâ£¬ÁíÎª»¹ÓĞÒ»¸ö½±½ğÊôĞÔ¡£
-	ÇëÊ¹ÓÃ¼Ì³ĞµÄË¼ÏëÉè¼Æ³öÔ±¹¤ÀàºÍ¾­ÀíÀà¡£ÒªÇóÀàÖĞÌá¹©±ØÒªµÄ·½·¨½øĞĞÊôĞÔ·ÃÎÊ¡£
+	å‡å¦‚æˆ‘ä»¬åœ¨å¼€å‘ä¸€ä¸ªç³»ç»Ÿæ—¶éœ€è¦å¯¹å‘˜å·¥ç±»è¿›è¡Œè®¾è®¡ï¼Œå‘˜å·¥åŒ…å«3ä¸ªå±æ€§ï¼šå§“åã€å·¥å·ä»¥åŠå·¥èµ„ã€‚
+	ç»ç†ä¹Ÿæ˜¯å‘˜å·¥ï¼Œé™¤äº†å«æœ‰å‘˜å·¥çš„å±æ€§å¤–ï¼Œå¦ä¸ºè¿˜æœ‰ä¸€ä¸ªå¥–é‡‘å±æ€§ã€‚
+	è¯·ä½¿ç”¨ç»§æ‰¿çš„æ€æƒ³è®¾è®¡å‡ºå‘˜å·¥ç±»å’Œç»ç†ç±»ã€‚è¦æ±‚ç±»ä¸­æä¾›å¿…è¦çš„æ–¹æ³•è¿›è¡Œå±æ€§è®¿é—®ã€‚
 	
-	Ô±¹¤Àà£º
-		ÆÕÍ¨Ô±¹¤£º
-			ĞÕÃû¡¢¹¤ºÅÒÔ¼°¹¤×Ê
-		¾­Àí£º
-			ĞÕÃû¡¢¹¤ºÅÒÔ¼°¹¤×Ê£¬½±½ğ
+	å‘˜å·¥ç±»ï¼š
+		æ™®é€šå‘˜å·¥ï¼š
+			å§“åã€å·¥å·ä»¥åŠå·¥èµ„
+		ç»ç†ï¼š
+			å§“åã€å·¥å·ä»¥åŠå·¥èµ„ï¼Œå¥–é‡‘
 */
 abstract class Employee {
 	private String name;
@@ -16,7 +16,7 @@ abstract class Employee {
 
 	public Employee() {}
 
-	public Employee(String name,String eid,int salary) { //"°×Ò»í®","10000",500
+	public Employee(String name,String eid,int salary) { //"ç™½ä¸€æ‡‹","10000",500
 		this.name = name; 
 		this.eid = eid;
 		this.salary = salary;
@@ -61,7 +61,7 @@ class Programmer extends Employee {
 	}
 
 	public void work() {
-		System.out.println("¹¥³ÇÊ¨ĞÁĞÁ¿à¿àĞ´´úÂë");
+		System.out.println("æ”»åŸç‹®è¾›è¾›è‹¦è‹¦å†™ä»£ç ");
 	}
 }
 
@@ -70,8 +70,8 @@ class Manager extends Employee {
 
 	public Manager() {}
 
-	public Manager(String name,String eid,int salary,int bonus) { //"°×Ò»í®","10000",500,10000
-		super(name,eid,salary); //"°×Ò»í®","10000",500
+	public Manager(String name,String eid,int salary,int bonus) { //"ç™½ä¸€æ‡‹","10000",500,10000
+		super(name,eid,salary); //"ç™½ä¸€æ‡‹","10000",500
 		this.bonus = bonus;
 	}
 
@@ -84,33 +84,33 @@ class Manager extends Employee {
 	}
 
 	public void work() {
-		System.out.println("¾­ÀíĞÁĞÁ¿à¿àºÍ¿Í»§Ì¸ĞèÇó");
+		System.out.println("ç»ç†è¾›è¾›è‹¦è‹¦å’Œå®¢æˆ·è°ˆéœ€æ±‚");
 	}
 
 	public void show() {
 		//System.out.println(getName()+"---"+getEid()+"---"+getSalary()+"---"+bonus);
 
 		super.show();
-		System.out.println("¾­Àí¶îÍâµÄ½±½ğÊÇ£º"+bonus);
+		System.out.println("ç»ç†é¢å¤–çš„å¥–é‡‘æ˜¯ï¼š"+bonus);
 	}
 }
 
 class EmployeeDemo {
 	public static void main(String[] args) {
-		//³ÌĞòÔ±
+		//ç¨‹åºå‘˜
 		Programmer p = new Programmer();
-		p.setName("Ğ»¼Ò½ø");
+		p.setName("è°¢å®¶è¿›");
 		p.setEid("10010");
 		p.setSalary(7700);
 		p.show();
 		p.work();
-		//ÁíÍâÈıÖÖ²»Ğ´ÁË¡£
+		//å¦å¤–ä¸‰ç§ä¸å†™äº†ã€‚
 		System.out.println("---------------------");
 
-		//¾­ÀíµÄ²âÊÔ
+		//ç»ç†çš„æµ‹è¯•
 		/*
 		Employee e = new Manager();
-		e.setName("ÍõÄİ");
+		e.setName("ç‹å¦®");
 		e.setEid("10086");
 		e.setSalary(6000);
 		//e.setBonus(2000);
@@ -118,7 +118,7 @@ class EmployeeDemo {
 		e.work();
 		*/
 
-		Employee e = new Manager("°×Ò»í®","10000",500,10000);
+		Employee e = new Manager("ç™½ä¸€æ‡‹","10000",500,10000);
 		e.show();
 		e.work();
 	}

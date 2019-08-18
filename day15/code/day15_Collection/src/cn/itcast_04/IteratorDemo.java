@@ -6,30 +6,30 @@ import java.util.Iterator;
 
 /*
  * Iterator iterator()
- * 		boolean hasNext():ÊÇ·ñÓĞÏÂÒ»¸öÔªËØ
- * 		Object next():»ñÈ¡ÏÂÒ»¸öÔªËØ,²¢×Ô¶¯ÒÆ¶¯µ½ÏÂÒ»¸öÎ»ÖÃµÈ´ı
+ * 		boolean hasNext():æ˜¯å¦æœ‰ä¸‹ä¸€ä¸ªå…ƒç´ 
+ * 		Object next():è·å–ä¸‹ä¸€ä¸ªå…ƒç´ ,å¹¶è‡ªåŠ¨ç§»åŠ¨åˆ°ä¸‹ä¸€ä¸ªä½ç½®ç­‰å¾…
  * 
- * 		NoSuchElementException:Ã»ÓĞÕâÑùµÄÔªËØÒì³£¡£
- * 		Ô­ÒòÊÇ£ºÄãÒÑ¾­»ñÈ¡µ½ÔªËØµÄÄ©Î²ÁË£¬Äã»¹Òª»ñÈ¡ÔªËØ£¬ÒÑ¾­Ã»ÓĞÔªËØÁË£¬ËùÒÔ±¨´í¡£
+ * 		NoSuchElementException:æ²¡æœ‰è¿™æ ·çš„å…ƒç´ å¼‚å¸¸ã€‚
+ * 		åŸå› æ˜¯ï¼šä½ å·²ç»è·å–åˆ°å…ƒç´ çš„æœ«å°¾äº†ï¼Œä½ è¿˜è¦è·å–å…ƒç´ ï¼Œå·²ç»æ²¡æœ‰å…ƒç´ äº†ï¼Œæ‰€ä»¥æŠ¥é”™ã€‚
  */
 public class IteratorDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ²¢Ìí¼ÓÔªËØ
+		// åˆ›å»ºå…ƒç´ å¹¶æ·»åŠ å…ƒç´ 
 		c.add("hello");
 		c.add("world");
 		c.add("java");
 
-		// ¼¯ºÏÖĞµÄ·½·¨£ºIterator iterator()
-		Iterator it = c.iterator();// ÓÒ±ßÆäÊµÊÇ½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó£¬ÕâÊÇ¶àÌ¬µÄÓ¦ÓÃ
+		// é›†åˆä¸­çš„æ–¹æ³•ï¼šIterator iterator()
+		Iterator it = c.iterator();// å³è¾¹å…¶å®æ˜¯æ¥å£çš„å®ç°ç±»å¯¹è±¡ï¼Œè¿™æ˜¯å¤šæ€çš„åº”ç”¨
 
 		// System.out.println(it.next());
 		// System.out.println(it.next());
 		// System.out.println(it.next());
 		// System.out.println(it.next());
-		// ´úÂëÒ»Ñù£¬ÓÃÑ­»·ÊµÏÖ
+		// ä»£ç ä¸€æ ·ï¼Œç”¨å¾ªç¯å®ç°
 		while (it.hasNext()) {
 			// System.out.println(it.next());
 			String s = (String) it.next();

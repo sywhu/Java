@@ -32,13 +32,13 @@ public class Person implements Comparable<Person> {
 
 	@Override
 	public int compareTo(Person p) {
-		// Ö÷ÒªÌõ¼ş
-		// ĞÕÃûµÄ³¤¶È½øĞĞÅÅĞò
+		// ä¸»è¦æ¡ä»¶
+		// å§“åçš„é•¿åº¦è¿›è¡Œæ’åº
 		int num = this.name.length() - p.name.length();
-		// ´ÎÒªÌõ¼ş
-		// ³¤¶ÈÒ»Ñù£¬²»´ú±íÄÚÈİÒ»Ñù£¬ËùÒÔ£¬»¹Òª¼ÌĞø±ÈÄÚÈİ
+		// æ¬¡è¦æ¡ä»¶
+		// é•¿åº¦ä¸€æ ·ï¼Œä¸ä»£è¡¨å†…å®¹ä¸€æ ·ï¼Œæ‰€ä»¥ï¼Œè¿˜è¦ç»§ç»­æ¯”å†…å®¹
 		int num2 = num == 0 ? this.name.compareTo(p.name) : num;
-		// ³¤¶ÈÒ»Ñù£¬ÄÚÈİÒ»Ñù£¬»¹Ó¦¸Ã±È½ÏÄêÁä
+		// é•¿åº¦ä¸€æ ·ï¼Œå†…å®¹ä¸€æ ·ï¼Œè¿˜åº”è¯¥æ¯”è¾ƒå¹´é¾„
 		int num3 = num2 == 0 ? this.age - p.age : num2;
 		return num3;
 	}

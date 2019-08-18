@@ -1,10 +1,10 @@
 package cn.itcast_02;
 
 /*
- * String s = new String(¡°hello¡±)ºÍString s = ¡°hello¡±;µÄÇø±ğ
+ * String s = new String(â€œhelloâ€)å’ŒString s = â€œhelloâ€;çš„åŒºåˆ«
  * 
- * ==:±È½ÏÒıÓÃÀàĞÍ£¬±È½ÏµÄÊÇµØÖ·Öµ
- * equal():Ä¬ÈÏ±È½ÏµÄÊÇµØÖ·Öµ¡£StringÀàÖØĞ´ÁËequals()·½·¨£¬¸Ã·½·¨µÄ×÷ÓÃÊÇ±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬
+ * ==:æ¯”è¾ƒå¼•ç”¨ç±»å‹ï¼Œæ¯”è¾ƒçš„æ˜¯åœ°å€å€¼
+ * equal():é»˜è®¤æ¯”è¾ƒçš„æ˜¯åœ°å€å€¼ã€‚Stringç±»é‡å†™äº†equals()æ–¹æ³•ï¼Œè¯¥æ–¹æ³•çš„ä½œç”¨æ˜¯æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒ
  */
 public class StringDemo2 {
 	public static void main(String[] args) {

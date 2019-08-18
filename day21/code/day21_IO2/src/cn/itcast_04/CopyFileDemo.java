@@ -7,24 +7,24 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		InputStreamReaderDemo.java
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		Deom.java
  */
 public class CopyFileDemo {
 	public static void main(String[] args) throws IOException {
-		// ÓÃ×Ö·û»º³åÁ÷µÄÌØÓĞ¹¦ÄÜÊµÏÖ
+		// ç”¨å­—ç¬¦ç¼“å†²æµçš„ç‰¹æœ‰åŠŸèƒ½å®ç°
 
-		// Ò»´Î¶ÁÈ¡Ò»ĞĞ
+		// ä¸€æ¬¡è¯»å–ä¸€è¡Œ
 
-		// ·â×°Êı¾İÔ´
+		// å°è£…æ•°æ®æº
 		BufferedReader br = new BufferedReader(new FileReader(
 				"InputStreamReaderDemo.java"));
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		BufferedWriter bw = new BufferedWriter(new FileWriter("Demo.java"));
 
-		// ¶ÁĞ´Ò»ĞĞ
+		// è¯»å†™ä¸€è¡Œ
 		String line = null;
 		while ((line = br.readLine()) != null) {
 			bw.write(line);
@@ -32,7 +32,7 @@ public class CopyFileDemo {
 			bw.flush();
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		bw.close();
 		br.close();
 	}

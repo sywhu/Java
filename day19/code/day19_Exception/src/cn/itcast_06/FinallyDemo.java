@@ -1,10 +1,10 @@
 package cn.itcast_06;
 
 /*
- * finally:±»finally¿ØÖÆµÄÓï¾äÌåÒ»¶¨»áÖ´ĞĞ¡£
- * Ó¦ÓÃ£ºÊı¾İ¿âµÄÁ¬½Ó£¬IO²Ù×÷µÄÊ±ºò¡£
- * ×¢ÒâÊÂÏî£º
- * 		ÔÚÖ´ĞĞµ½finallyÖ®Ç°jvmÍË³öÁË
+ * finally:è¢«finallyæ§åˆ¶çš„è¯­å¥ä½“ä¸€å®šä¼šæ‰§è¡Œã€‚
+ * åº”ç”¨ï¼šæ•°æ®åº“çš„è¿æ¥ï¼ŒIOæ“ä½œçš„æ—¶å€™ã€‚
+ * æ³¨æ„äº‹é¡¹ï¼š
+ * 		åœ¨æ‰§è¡Œåˆ°finallyä¹‹å‰jvmé€€å‡ºäº†
  */
 public class FinallyDemo {
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class FinallyDemo {
 			e.printStackTrace();
 			System.exit(0);
 		} finally {
-			// ÊÍ·Å×ÊÔ´µÄ²Ù×÷
+			// é‡Šæ”¾èµ„æºçš„æ“ä½œ
 			System.out.println("over");
 		}
 	}

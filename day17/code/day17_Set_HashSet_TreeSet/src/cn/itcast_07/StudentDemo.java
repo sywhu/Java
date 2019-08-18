@@ -5,58 +5,58 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 /*
- * ¼üÅÌÂ¼Èë5¸öÑ§ÉúĞÅÏ¢(ĞÕÃû,ÓïÎÄ³É¼¨,ÊıÑ§³É¼¨,Ó¢Óï³É¼¨),°´ÕÕ×Ü·Ö´Ó¸ßµ½µÍÊä³öµ½¿ØÖÆÌ¨
+ * é”®ç›˜å½•å…¥5ä¸ªå­¦ç”Ÿä¿¡æ¯(å§“å,è¯­æ–‡æˆç»©,æ•°å­¦æˆç»©,è‹±è¯­æˆç»©),æŒ‰ç…§æ€»åˆ†ä»é«˜åˆ°ä½è¾“å‡ºåˆ°æ§åˆ¶å°
  * 
- * ·ÖÎö£º
- * 		A:¶¨ÒåÒ»¸öÑ§ÉúÀà£¬ÀïÃæÓĞ³ÉÔ±±äÁ¿£ºĞÕÃû,ÓïÎÄ³É¼¨,ÊıÑ§³É¼¨,Ó¢Óï³É¼¨
- * 		B:ÒòÎªÎÒÃÇ×îÖÕÒª°´ÕÕ×Ü·Ö½øĞĞÅÅĞò£¬ËµÃ÷ÎÒÃÇÒªÅÅĞò£¬ËùÒÔ£¬Ñ¡ÔñTreeSet¼¯ºÏ
- * 		C:Á½ÖÖ·½Ê½ÊµÏÖ£¬ÎÒÃÇÑ¡ÔñÒ»ÖÖ£¬ÓÃ±È½ÏÆ÷ÊµÏÖ
- * 		D:¼üÅÌÂ¼ÈëÑ§Éú£¬´æ´¢µ½TreeSet¼¯ºÏ
- * 		E:±éÀú¼¯ºÏ
+ * åˆ†æï¼š
+ * 		A:å®šä¹‰ä¸€ä¸ªå­¦ç”Ÿç±»ï¼Œé‡Œé¢æœ‰æˆå‘˜å˜é‡ï¼šå§“å,è¯­æ–‡æˆç»©,æ•°å­¦æˆç»©,è‹±è¯­æˆç»©
+ * 		B:å› ä¸ºæˆ‘ä»¬æœ€ç»ˆè¦æŒ‰ç…§æ€»åˆ†è¿›è¡Œæ’åºï¼Œè¯´æ˜æˆ‘ä»¬è¦æ’åºï¼Œæ‰€ä»¥ï¼Œé€‰æ‹©TreeSeté›†åˆ
+ * 		C:ä¸¤ç§æ–¹å¼å®ç°ï¼Œæˆ‘ä»¬é€‰æ‹©ä¸€ç§ï¼Œç”¨æ¯”è¾ƒå™¨å®ç°
+ * 		D:é”®ç›˜å½•å…¥å­¦ç”Ÿï¼Œå­˜å‚¨åˆ°TreeSeté›†åˆ
+ * 		E:éå†é›†åˆ
  */
 public class StudentDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
+		// åˆ›å»ºé›†åˆ
 		TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() {
 			@Override
 			public int compare(Student s1, Student s2) {
-				// Ö÷ÒªÌõ¼ş
+				// ä¸»è¦æ¡ä»¶
 				int num = s2.getSum() - s1.getSum();
-				// ´ÎÒªÌõ¼ş£¬Ò»´Î±È½ÏÓïÎÄ³É¼¨£¬ÊıÑ§³É¼¨£¬Ó¢Óï³É¼¨£¬ĞÕÃû
+				// æ¬¡è¦æ¡ä»¶ï¼Œä¸€æ¬¡æ¯”è¾ƒè¯­æ–‡æˆç»©ï¼Œæ•°å­¦æˆç»©ï¼Œè‹±è¯­æˆç»©ï¼Œå§“å
 				int num2 = num == 0 ? s1.getName().compareTo(s2.getName())
 						: num;
 				return num2;
 			}
 		});
-		System.out.println("Ñ§ÉúÂ¼Èë¿ªÊ¼");
+		System.out.println("å­¦ç”Ÿå½•å…¥å¼€å§‹");
 		Scanner sc = new Scanner(System.in);
-		// 5´Î
+		// 5æ¬¡
 		for (int x = 1; x <= 5; x++) {
-			// Â¼ÈëÑ§ÉúĞÅÏ¢
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄĞÕÃû£º");
+			// å½•å…¥å­¦ç”Ÿä¿¡æ¯
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„å§“åï¼š");
 			String name = sc.nextLine();
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÓïÎÄ³É¼¨£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„è¯­æ–‡æˆç»©ï¼š");
 			int chinese = Integer.parseInt(sc.nextLine());
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÊıÑ§³É¼¨£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„æ•°å­¦æˆç»©ï¼š");
 			int math = Integer.parseInt(sc.nextLine());
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÓ¢Óï³É¼¨£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„è‹±è¯­æˆç»©ï¼š");
 			int english = Integer.parseInt(sc.nextLine());
 
-			// ´´½¨Ñ§Éú¶ÔÏó
+			// åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
 			Student s = new Student();
 			s.setName(name);
 			s.setChinese(chinese);
 			s.setMath(math);
 			s.setEnglish(english);
 
-			// Ìí¼Óµ½¼¯ºÏ
+			// æ·»åŠ åˆ°é›†åˆ
 			ts.add(s);
 		}
 
-		// Êä³öÒ»¾ä»°
-		System.out.println("Ñ§ÉúÂ¼ÈëÍê±Ï");
+		// è¾“å‡ºä¸€å¥è¯
+		System.out.println("å­¦ç”Ÿå½•å…¥å®Œæ¯•");
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		for (Student s : ts) {
 			System.out.println(s.getName() + "---" + s.getChinese() + "---"
 					+ s.getMath() + "---" + s.getEnglish());

@@ -1,26 +1,26 @@
 package cn.itcast_04;
 
 /*
- * °Ñ×Ö·û´®·´×ª
+ * æŠŠå­—ç¬¦ä¸²åè½¬
  */
 public class StringBufferTest2 {
 	public static void main(String[] args) {
-		String s = "Ï¼ÇàÁÖ°®ÎÒ";
+		String s = "éœé’æ—çˆ±æˆ‘";
 
-		// ²âÊÔ·½Ê½1
+		// æµ‹è¯•æ–¹å¼1
 		// String s2 = reverse(s);
 		// System.out.println(s2);
 
-		// ²âÊÔ·½Ê½2
+		// æµ‹è¯•æ–¹å¼2
 		// String s3 = reverse(s);
 		// System.out.println(s3);
 
-		// ²âÊÔ·½Ê½3
+		// æµ‹è¯•æ–¹å¼3
 		String s4 = reverse(s);
 		System.out.println(s4);
 	}
 
-	// ·½Ê½1
+	// æ–¹å¼1
 	// public static String reverse(String str) {
 	// String s = "";
 	//
@@ -32,21 +32,21 @@ public class StringBufferTest2 {
 	// return s;
 	// }
 
-	// ·½Ê½2
+	// æ–¹å¼2
 	// public static String reverse(String str) {
-	// // °Ñ×Ö·û´®×ª³ÉÊı×é
+	// // æŠŠå­—ç¬¦ä¸²è½¬æˆæ•°ç»„
 	// char[] chs = str.toCharArray();
-	// // °ÑÊı×éµÄÔªËØ·´×ª
+	// // æŠŠæ•°ç»„çš„å…ƒç´ åè½¬
 	// for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
 	// char temp = chs[start];
 	// chs[start] = chs[end];
 	// chs[end] = temp;
 	// }
-	// // °ÑÊı×é×ª³É×Ö·û´®·µ»Ø
+	// // æŠŠæ•°ç»„è½¬æˆå­—ç¬¦ä¸²è¿”å›
 	// return String.valueOf(chs);
 	// }
 
-	// ·½Ê½3
+	// æ–¹å¼3
 	public static String reverse(String str) {
 		StringBuffer sb = new StringBuffer(str);
 		sb.reverse();

@@ -1,10 +1,10 @@
 package cn.itcast_02;
 
 /*
- * ÓÃObject¿ÉÒÔÈÃÎÒÃÇµÄ³ÌĞòÌá¸ßÀ©Õ¹ĞÔ¡£
- * µ«ÊÇÎÊÌâÊÇ£¬Òşº¬ÁËÀàĞÍ×ª»»Òì³£¡£
- * ËùÒÔ£¬ÕâÖÖ½â¾ö·½°¸²»ÊÇÌØ±ğµÄºÃ¡£
- * Õâ¸öÊ±ºò£¬java¾ÍÌá¹©ÁË·ºĞÍ¼¼Êõ¡£
+ * ç”¨Objectå¯ä»¥è®©æˆ‘ä»¬çš„ç¨‹åºæé«˜æ‰©å±•æ€§ã€‚
+ * ä½†æ˜¯é—®é¢˜æ˜¯ï¼Œéšå«äº†ç±»å‹è½¬æ¢å¼‚å¸¸ã€‚
+ * æ‰€ä»¥ï¼Œè¿™ç§è§£å†³æ–¹æ¡ˆä¸æ˜¯ç‰¹åˆ«çš„å¥½ã€‚
+ * è¿™ä¸ªæ—¶å€™ï¼Œjavaå°±æä¾›äº†æ³›å‹æŠ€æœ¯ã€‚
  */
 public class ToolTest {
 	public static void main(String[] args) {
@@ -17,12 +17,12 @@ public class ToolTest {
 		// ss.love();
 
 		Tool tool = new Tool();
-		// ÉèÖÃÎªStudent
+		// è®¾ç½®ä¸ºStudent
 		tool.setObj(s);
 		Student ss = (Student) tool.getObj();
 		ss.love();
 
-		// ÉèÖÃÎªTeacher
+		// è®¾ç½®ä¸ºTeacher
 		tool.setObj(t);
 		Teacher tt = (Teacher) tool.getObj();
 		tt.love();

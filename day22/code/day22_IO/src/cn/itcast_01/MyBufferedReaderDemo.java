@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /*
- * ÓÃReaderÄ£ÄâBufferedReaderµÄreadLine()¹¦ÄÜ
+ * é¢â‰§eaderå¦¯â„ƒå«™BufferedReaderé¨å‰…eadLine()é”ç†»å…˜
  */
 public class MyBufferedReaderDemo {
 	public static void main(String[] args) throws IOException {

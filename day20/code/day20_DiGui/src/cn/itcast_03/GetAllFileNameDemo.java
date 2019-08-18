@@ -3,45 +3,45 @@ package cn.itcast_03;
 import java.io.File;
 
 /*
- * µİ¹éÊä³öÄ¿Â¼ÏÂÖ¸¶¨ºó×ºÃû½áÎ²µÄÎÄ¼ş¾ø¶ÔÂ·¾¶ .java
+ * é€’å½’è¾“å‡ºç›®å½•ä¸‹æŒ‡å®šåç¼€åç»“å°¾çš„æ–‡ä»¶ç»å¯¹è·¯å¾„ .java
  * D:\itcast\20150306
  * 
- * ·ÖÎö£º
- * 		A:·â×°Ö¸¶¨Ä¿Â¼
- * 		B:»ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄFileÊı×é
- * 		C:±éÀú¸ÃFileÊı×é£¬»ñÈ¡µÃµ½Ã¿Ò»¸öFile¶ÔÏó
- * 		D:ÅĞ¶Ï¸ÃFile¶ÔÏó
- * 			ÊÇÎÄ¼ş¼Ğ£º»Øµ½B(µİ¹é)
- * 			ÊÇÎÄ¼ş£º
- * 				ÅĞ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄºó×º½áÎ²
- * 					ÊÇ£º¾ÍÊä³ö¸ÃÎÄ¼şµÄ¾ø¶ÔÂ·¾¶
+ * åˆ†æï¼š
+ * 		A:å°è£…æŒ‡å®šç›®å½•
+ * 		B:è·å–æŒ‡å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„Fileæ•°ç»„
+ * 		C:éå†è¯¥Fileæ•°ç»„ï¼Œè·å–å¾—åˆ°æ¯ä¸€ä¸ªFileå¯¹è±¡
+ * 		D:åˆ¤æ–­è¯¥Fileå¯¹è±¡
+ * 			æ˜¯æ–‡ä»¶å¤¹ï¼šå›åˆ°B(é€’å½’)
+ * 			æ˜¯æ–‡ä»¶ï¼š
+ * 				åˆ¤æ–­æ˜¯å¦ä»¥æŒ‡å®šçš„åç¼€ç»“å°¾
+ * 					æ˜¯ï¼šå°±è¾“å‡ºè¯¥æ–‡ä»¶çš„ç»å¯¹è·¯å¾„
  */
 public class GetAllFileNameDemo {
 	public static int count1 = 0;
 	public static int count2 = 0;
 
 	public static void main(String[] args) {
-		// ·â×°Ö¸¶¨Ä¿Â¼
+		// å°è£…æŒ‡å®šç›®å½•
 		File srcFolder = new File("D:\\itcast\\20150306");
-		// µİ¹éÊµÏÖ
+		// é€’å½’å®ç°
 		getAllJavaFilePath(srcFolder);
-		System.out.println("¹²Ñ§Ï°ÁË" + count1 + "¸öjavaÎÄ¼ş");
-		System.out.println("¹²Ñ§Ï°ÁË" + count2 + "¸öaviÎÄ¼ş");
+		System.out.println("å…±å­¦ä¹ äº†" + count1 + "ä¸ªjavaæ–‡ä»¶");
+		System.out.println("å…±å­¦ä¹ äº†" + count2 + "ä¸ªaviæ–‡ä»¶");
 	}
 
 	public static void getAllJavaFilePath(File srcFolder) {
-		// »ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄFileÊı×é
+		// è·å–æŒ‡å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„Fileæ•°ç»„
 		File[] fileArray = srcFolder.listFiles();
-		// ±éÀú¸ÃFileÊı×é£¬»ñÈ¡µÃµ½Ã¿Ò»¸öFile¶ÔÏó
+		// éå†è¯¥Fileæ•°ç»„ï¼Œè·å–å¾—åˆ°æ¯ä¸€ä¸ªFileå¯¹è±¡
 		for (File file : fileArray) {
 			if (file.isDirectory()) {
-				// ÊÇÎÄ¼ş¼Ğ£º»Øµ½B(µİ¹é)
+				// æ˜¯æ–‡ä»¶å¤¹ï¼šå›åˆ°B(é€’å½’)
 				getAllJavaFilePath(file);
 			} else {
-				// ÅĞ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄºó×º½áÎ²
+				// åˆ¤æ–­æ˜¯å¦ä»¥æŒ‡å®šçš„åç¼€ç»“å°¾
 				if (file.getName().endsWith(".java")) {
 					count1++;
-					// ¾ÍÊä³ö¸ÃÎÄ¼şµÄ¾ø¶ÔÂ·¾¶
+					// å°±è¾“å‡ºè¯¥æ–‡ä»¶çš„ç»å¯¹è·¯å¾„
 					System.out.println(file.getAbsolutePath());
 				}else if(file.getName().endsWith(".avi")){
 					count2++;

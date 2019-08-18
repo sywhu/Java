@@ -13,9 +13,9 @@ public class SetThread implements Runnable {
 	public void run() {
 		while (true) {
 			if (x % 2 == 0) {
-				s.set("ÁÖÇàÏ¼", 28);
+				s.set("æ—é’éœ", 28);
 			} else {
-				s.set("ÁõÒâ", 31);
+				s.set("åˆ˜æ„", 31);
 			}
 			x++;
 		}

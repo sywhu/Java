@@ -3,24 +3,24 @@ package cn.itcast_01;
 import java.io.File;
 
 /*
- * File:ÎÄ¼şºÍÄ¿Â¼Â·¾¶ÃûµÄ³éÏó±íÊ¾ĞÎÊ½
- * Àí½â£º²»´ú±íÕâ¸öÎÄ¼ş»òÕßÄ¿Â¼Ò»¶¨´æÔÚ¡£
+ * File:æ–‡ä»¶å’Œç›®å½•è·¯å¾„åçš„æŠ½è±¡è¡¨ç¤ºå½¢å¼
+ * ç†è§£ï¼šä¸ä»£è¡¨è¿™ä¸ªæ–‡ä»¶æˆ–è€…ç›®å½•ä¸€å®šå­˜åœ¨ã€‚
  * 
- * ¹¹Ôì·½·¨£º
- * 		File(String pathname)£ºÍ¨¹ıÒ»¸öÂ·¾¶Ãû´´½¨File¶ÔÏó
- * 		File(String parent, String child)£º Í¨¹ı¸¸Â·¾¶ºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
- * 		File(File parent, String child)£ºÍ¨¹ı¸¸Â·¾¶File¶ÔÏóºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
+ * æ„é€ æ–¹æ³•ï¼š
+ * 		File(String pathname)ï¼šé€šè¿‡ä¸€ä¸ªè·¯å¾„ååˆ›å»ºFileå¯¹è±¡
+ * 		File(String parent, String child)ï¼š é€šè¿‡çˆ¶è·¯å¾„å’Œå­è·¯å¾„ååˆ›å»ºFileå¯¹è±¡
+ * 		File(File parent, String child)ï¼šé€šè¿‡çˆ¶è·¯å¾„Fileå¯¹è±¡å’Œå­è·¯å¾„ååˆ›å»ºFileå¯¹è±¡
  */
 public class FileDemo {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		// File(String pathname)£ºÍ¨¹ıÒ»¸öÂ·¾¶Ãû´´½¨File¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
+		// File(String pathname)ï¼šé€šè¿‡ä¸€ä¸ªè·¯å¾„ååˆ›å»ºFileå¯¹è±¡
 		File file = new File("d:\\demo\\a.txt");
 
-		// File(String parent, String child)£º Í¨¹ı¸¸Â·¾¶ºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
+		// File(String parent, String child)ï¼š é€šè¿‡çˆ¶è·¯å¾„å’Œå­è·¯å¾„ååˆ›å»ºFileå¯¹è±¡
 		File file2 = new File("d:\\demo", "a.txt");
 
-		// File(File parent, String child)£ºÍ¨¹ı¸¸Â·¾¶File¶ÔÏóºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
+		// File(File parent, String child)ï¼šé€šè¿‡çˆ¶è·¯å¾„Fileå¯¹è±¡å’Œå­è·¯å¾„ååˆ›å»ºFileå¯¹è±¡
 		File file3 = new File("d:\\demo");
 		File file4 = new File(file3, "a.txt");
 	}

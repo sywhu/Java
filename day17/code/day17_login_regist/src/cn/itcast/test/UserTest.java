@@ -8,72 +8,72 @@ import cn.itcast.game.GuessNumber;
 import cn.itcast.pojo.User;
 
 /*
- * ÕâÊÇ²âÊÔÀà
+ * è¿™æ˜¯æµ‹è¯•ç±»
  */
 public class UserTest {
 	public static void main(String[] args) {
 		wc: while (true) {
-			// »¶Ó­½çÃæ
-			System.out.println("-----------»¶Ó­¹âÁÙ------------");
-			System.out.println("1 µÇÂ¼");
-			System.out.println("2 ×¢²á");
-			System.out.println("3 ÍË³ö");
-			System.out.println("ÇëÑ¡Ôñ£º");
-			// ¼üÅÌÂ¼ÈëÊı¾İ
+			// æ¬¢è¿ç•Œé¢
+			System.out.println("-----------æ¬¢è¿å…‰ä¸´------------");
+			System.out.println("1 ç™»å½•");
+			System.out.println("2 æ³¨å†Œ");
+			System.out.println("3 é€€å‡º");
+			System.out.println("è¯·é€‰æ‹©ï¼š");
+			// é”®ç›˜å½•å…¥æ•°æ®
 			Scanner sc = new Scanner(System.in);
 			String choiceString = sc.nextLine();
 
-			// ¶à´¦Ê¹ÓÃ
+			// å¤šå¤„ä½¿ç”¨
 			UserDao ud = new UserDaoImpl();
 
 			switch (choiceString) {
 			case "1":
-				System.out.println("-----------µÇÂ¼½çÃæ------------");
-				// ¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
-				System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+				System.out.println("-----------ç™»å½•ç•Œé¢------------");
+				// é”®ç›˜å½•å…¥ç”¨æˆ·åå’Œå¯†ç 
+				System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 				String username = sc.nextLine();
-				System.out.println("ÇëÊäÈëÃÜÂë£º");
+				System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 				String password = sc.nextLine();
-				// µ÷ÓÃ¹¦ÄÜ
+				// è°ƒç”¨åŠŸèƒ½
 				// UserDao ud = new UserDaoImpl();
 				boolean flag = ud.isLogin(username, password);
 				if (flag) {
-					System.out.println("µÇÂ¼³É¹¦");
+					System.out.println("ç™»å½•æˆåŠŸ");
 
 					String yn;
 					do {
-						// Æô¶¯ÓÎÏ·
+						// å¯åŠ¨æ¸¸æˆ
 						GuessNumber.start();
-						System.out.println("Äã»¹ÒªÍæÂğ?ÊÇÇëÊäÈëy:");
+						System.out.println("ä½ è¿˜è¦ç©å—?æ˜¯è¯·è¾“å…¥y:");
 						yn = sc.nextLine();
 					} while ("y".equals(yn));
 
 					// break wc;
 				} else {
-					System.out.println("µÇÂ¼Ê§°Ü,»Øµ½Ñ¡Ôñ½çÃæ");
+					System.out.println("ç™»å½•å¤±è´¥,å›åˆ°é€‰æ‹©ç•Œé¢");
 				}
 				break;
 			case "2":
-				System.out.println("-----------×¢²á½çÃæ------------");
-				// ¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
-				System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+				System.out.println("-----------æ³¨å†Œç•Œé¢------------");
+				// é”®ç›˜å½•å…¥ç”¨æˆ·åå’Œå¯†ç 
+				System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 				String newUsername = sc.nextLine();
-				System.out.println("ÇëÊäÈëÃÜÂë£º");
+				System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 				String newPassword = sc.nextLine();
-				// µ÷ÓÃ¹¦ÄÜ
+				// è°ƒç”¨åŠŸèƒ½
 				// UserDao ud = new UserDaoImpl();
-				// °ÑÊı¾İ·â×°µ½¶ÔÏóÖĞ
+				// æŠŠæ•°æ®å°è£…åˆ°å¯¹è±¡ä¸­
 				// User user = new User(newUsername, newPassword);
 				User user = new User();
 				user.setUsername(newUsername);
 				user.setPassword(newPassword);
 
 				ud.regist(user);
-				System.out.println("×¢²á³É¹¦,»Øµ½Ñ¡Ôñ½çÃæ");
+				System.out.println("æ³¨å†ŒæˆåŠŸ,å›åˆ°é€‰æ‹©ç•Œé¢");
 				break;
 			case "3":
 			default:
-				System.out.println("Ğ»Ğ»¹âÁÙ£¬»¶Ó­ÔÙÀ´");
+				System.out.println("è°¢è°¢å…‰ä¸´ï¼Œæ¬¢è¿å†æ¥");
 				System.exit(0);
 				break;
 			}

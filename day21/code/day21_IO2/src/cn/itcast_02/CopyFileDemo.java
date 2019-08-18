@@ -7,35 +7,35 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 /*
- * ÓÃOutputStreamWriterºÍInputStreamReader¸´ÖÆjavaÎÄ¼ş
- * Êı¾İÔ´£º
+ * ç”¨OutputStreamWriterå’ŒInputStreamReaderå¤åˆ¶javaæ–‡ä»¶
+ * æ•°æ®æºï¼š
  * 		InputStreamReaderDemo.java
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		Copy.java
  */
 public class CopyFileDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´
+		// å°è£…æ•°æ®æº
 		InputStreamReader isr = new InputStreamReader(new FileInputStream(
 				"InputStreamReaderDemo.java"));
-		// ·â×°Ä¿µÄµØ
+		// å°è£…ç›®çš„åœ°
 		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
 				"Copy.java"));
 
-		// ·½Ê½1
+		// æ–¹å¼1
 		// int ch = 0;
 		// while ((ch = isr.read()) != -1) {
 		// osw.write(ch);
 		// }
 
-		// ·½Ê½2
+		// æ–¹å¼2
 		char[] chs = new char[1024];
 		int len = 0;
 		while ((len = isr.read(chs)) != -1) {
 			osw.write(chs, 0, len);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		osw.close();
 		isr.close();
 	}

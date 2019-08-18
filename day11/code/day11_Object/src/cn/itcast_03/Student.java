@@ -1,7 +1,7 @@
 package cn.itcast_03;
 
-//在使用克隆的时候，报错CloneNotSupportedException
-//原因是因为我们要实现一个接口Cloneable
+//鍦ㄤ娇鐢ㄥ厠闅嗙殑鏃跺�欙紝鎶ラ敊CloneNotSupportedException
+//鍘熷洜鏄洜涓烘垜浠瀹炵幇涓�涓帴鍙loneable
 public class Student implements Cloneable {
 	private String name;
 	private int age;

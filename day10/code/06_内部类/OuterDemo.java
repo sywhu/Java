@@ -1,18 +1,18 @@
 /*
-°´ÕÕÒªÇó£¬²¹Æë´úÂë
+æŒ‰ç…§è¦æ±‚ï¼Œè¡¥é½ä»£ç 
 	interface Inter { void show(); }
-	class Outer { //²¹Æë´úÂë }
+	class Outer { //è¡¥é½ä»£ç  }
 	class OuterDemo {
 	    public static void main(String[] args) {
 		      Outer.method().show();
 		  }
 	}
-ÒªÇóÔÚ¿ØÖÆÌ¨Êä³ö¡±HelloWorld¡±
+è¦æ±‚åœ¨æ§åˆ¶å°è¾“å‡ºâ€HelloWorldâ€
 */
 interface Inter { void show(); }
 
 class Outer { 
-	//²¹Æë´úÂë
+	//è¡¥é½ä»£ç 
 	public static Inter method() {
 		return new Inter() {
 			public void show() {
@@ -26,8 +26,8 @@ class OuterDemo {
 	public static void main(String[] args) {
 		Outer.method().show();
 		/*
-			Outer.method():ÀàÃûÄÜ¹»Ö±½Óµ÷ÓÃ·½·¨£¬ËµÃ÷¸Ã·½·¨ÊÇ¾²Ì¬µÄ¡£
-			Outer.method().show():ÕâÖÖÓÃ·¨½ĞÁ´Ê½±à³Ì£¬µ÷ÓÃshow()·½·¨Ö®Ç°µÄÄÚÈİÓ¦¸ÃÊÇÒ»¸ö¶ÔÏó
+			Outer.method():ç±»åèƒ½å¤Ÿç›´æ¥è°ƒç”¨æ–¹æ³•ï¼Œè¯´æ˜è¯¥æ–¹æ³•æ˜¯é™æ€çš„ã€‚
+			Outer.method().show():è¿™ç§ç”¨æ³•å«é“¾å¼ç¼–ç¨‹ï¼Œè°ƒç”¨show()æ–¹æ³•ä¹‹å‰çš„å†…å®¹åº”è¯¥æ˜¯ä¸€ä¸ªå¯¹è±¡
 		*/
 	}
 }

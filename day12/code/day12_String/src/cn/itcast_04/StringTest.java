@@ -1,24 +1,24 @@
 package cn.itcast_04;
 
 /*
- * ×Ö·û´®µÄ±éÀú:±éÀú»ñÈ¡×Ö·û´®ÖĞµÄÃ¿Ò»¸ö×Ö·û
+ * å­—ç¬¦ä¸²çš„éå†:éå†è·å–å­—ç¬¦ä¸²ä¸­çš„æ¯ä¸€ä¸ªå­—ç¬¦
  */
 public class StringTest {
 	public static void main(String[] args) {
 		String s = "java";
 
-		// Í¨¹ıcharAt()·½·¨ÒÀ´Î»ñÈ¡×Ö·û
+		// é€šè¿‡charAt()æ–¹æ³•ä¾æ¬¡è·å–å­—ç¬¦
 		// System.out.println(s.charAt(0));
 		// System.out.println(s.charAt(1));
 		// System.out.println(s.charAt(2));
 		// System.out.println(s.charAt(3));
 
-		// µ«ÊÇ£¬Èç¹û×Ö·û´®µÄ¸öÊı±È½Ï¶à£¬´úÂë¾Í»áºÜÂé·³£¬¶øÇÒÖØ¸´¶ÈºÜ¸ß
+		// ä½†æ˜¯ï¼Œå¦‚æœå­—ç¬¦ä¸²çš„ä¸ªæ•°æ¯”è¾ƒå¤šï¼Œä»£ç å°±ä¼šå¾ˆéº»çƒ¦ï¼Œè€Œä¸”é‡å¤åº¦å¾ˆé«˜
 		// for (int x = 0; x < 4; x++) {
 		// System.out.println(s.charAt(x));
 		// }
 
-		// Èç¹û×Ö·ûÊı¾İ½Ï¶à£¬²»¿ÉÄÜÊı£¬ËùÒÔ£¬ÎÒÃÇÒªÓÃÒ»¸ö»ñÈ¡×Ö·û¸öÊıµÄ·½·¨
+		// å¦‚æœå­—ç¬¦æ•°æ®è¾ƒå¤šï¼Œä¸å¯èƒ½æ•°ï¼Œæ‰€ä»¥ï¼Œæˆ‘ä»¬è¦ç”¨ä¸€ä¸ªè·å–å­—ç¬¦ä¸ªæ•°çš„æ–¹æ³•
 		// length();
 		for (int x = 0; x < s.length(); x++) {
 			// System.out.println(s.charAt(x));

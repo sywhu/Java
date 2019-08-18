@@ -4,28 +4,28 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * ÓÃArrayList´æ´¢×Ô¶¨Òå¶ÔÏó²¢±éÀú¡£ÒªÇó¼ÓÈë·ºĞÍ
+ * ç”¨ArrayListå­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡å¹¶éå†ã€‚è¦æ±‚åŠ å…¥æ³›å‹
  */
 public class ArrayListTest {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		ArrayList<Student> array = new ArrayList<Student>();
-		// JDK7·ºĞÍĞÂÌØĞÔ£¬ÁâĞÎ·ºĞÍ£¬·ºĞÍÍÆ¶Ï
+		// JDK7æ³›å‹æ–°ç‰¹æ€§ï¼Œè±å½¢æ³›å‹ï¼Œæ³›å‹æ¨æ–­
 		// ArrayList<Student> array = new ArrayList<>();
 
-		// ´´½¨ÔªËØ
-		Student s1 = new Student("ÂíËÕ", 18);
-		Student s2 = new Student("Ù¡Àöæ«", 20);
-		Student s3 = new Student("Íõ´ó´¸", 19);
-		Student s4 = new Student("ÂŞÈıÅÚ", 21);
+		// åˆ›å»ºå…ƒç´ 
+		Student s1 = new Student("é©¬è‹", 18);
+		Student s2 = new Student("ä½Ÿä¸½å¨…", 20);
+		Student s3 = new Student("ç‹å¤§é”¤", 19);
+		Student s4 = new Student("ç½—ä¸‰ç‚®", 21);
 
-		// Ìí¼ÓÔªËØ
+		// æ·»åŠ å…ƒç´ 
 		array.add(s1);
 		array.add(s2);
 		array.add(s3);
 		array.add(s4);
 
-		// ±éÀú
+		// éå†
 		Iterator<Student> it = array.iterator();
 		while (it.hasNext()) {
 			Student s = it.next();

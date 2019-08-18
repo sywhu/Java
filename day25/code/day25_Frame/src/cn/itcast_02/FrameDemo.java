@@ -6,15 +6,15 @@ import java.awt.event.WindowListener;
 
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå
+		// åˆ›å»ºçª—ä½“
 		Frame f = new Frame();
 
-		// ÉèÖÃ´°ÌåÊôĞÔ
-		f.setTitle("´°Ìå¹Ø±Õ");
+		// è®¾ç½®çª—ä½“å±æ€§
+		f.setTitle("çª—ä½“å…³é—­");
 		f.setSize(400, 200);
 		f.setLocation(500, 250);
 
-		// ×¢²áÊÂ¼ş
+		// æ³¨å†Œäº‹ä»¶
 		f.addWindowListener(new WindowListener() {
 			@Override
 			public void windowOpened(WindowEvent e) {
@@ -46,7 +46,7 @@ public class FrameDemo {
 			}
 		});
 
-		// ÉèÖÃ´°Ìå¿É¼û
+		// è®¾ç½®çª—ä½“å¯è§
 		f.setVisible(true);
 	}
 }

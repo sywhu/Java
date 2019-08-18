@@ -1,7 +1,7 @@
 class Student {
-	//ĞÕÃû
+	//å§“å
 	private String name;
-	//ÄêÁä
+	//å¹´é¾„
 	private int age;
 
 	public void setName(String name) {
@@ -20,26 +20,26 @@ class Student {
 		return age;
 	}
 
-	//ÏÔÊ¾ÀàµÄËùÓĞ³ÉÔ±±äÁ¿µÄ·½·¨
+	//æ˜¾ç¤ºç±»çš„æ‰€æœ‰æˆå‘˜å˜é‡çš„æ–¹æ³•
 	public void show() {
-		System.out.println("ĞÕÃûÊÇ£º"+name+",ÄêÁäÊÇ£º"+age);
+		System.out.println("å§“åæ˜¯ï¼š"+name+",å¹´é¾„æ˜¯ï¼š"+age);
 	}
 }
 class StudentDemo2 {
 	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
+		//åˆ›å»ºå¯¹è±¡
 		Student s = new Student();
 
-		//Ê¹ÓÃ³ÉÔ±±äÁ¿
+		//ä½¿ç”¨æˆå‘˜å˜é‡
 		s.show();
 
-		//¸ø³ÉÔ±±äÁ¿¸³Öµ
-		s.setName("ÁÖÇàÏ¼");
+		//ç»™æˆå‘˜å˜é‡èµ‹å€¼
+		s.setName("æ—é’éœ");
 		s.setAge(28);
 
-		//ÔÙ´ÎÊ¹ÓÃ³ÉÔ±±äÁ¿
+		//å†æ¬¡ä½¿ç”¨æˆå‘˜å˜é‡
 		s.show();
 
-		System.out.println("ĞÕÃûÊÇ£º"+s.getName()+",ÄêÁäÊÇ£º"+s.getAge());
+		System.out.println("å§“åæ˜¯ï¼š"+s.getName()+",å¹´é¾„æ˜¯ï¼š"+s.getAge());
 	}
 }

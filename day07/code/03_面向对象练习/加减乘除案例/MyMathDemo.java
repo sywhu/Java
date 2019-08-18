@@ -1,5 +1,5 @@
 /*
-	¶¨ÒåÒ»¸öÀàMyMath,Ìá¹©»ù±¾µÄ¼Ó¼õ³Ë³ı¹¦ÄÜ£¬È»ºó½øĞĞ²âÊÔ¡£
+	å®šä¹‰ä¸€ä¸ªç±»MyMath,æä¾›åŸºæœ¬çš„åŠ å‡ä¹˜é™¤åŠŸèƒ½ï¼Œç„¶åè¿›è¡Œæµ‹è¯•ã€‚
 */
 class MyMath {
 	public int add(int a,int b) {
@@ -20,12 +20,12 @@ class MyMath {
 }
 class MyMathDemo {
 	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
+		//åˆ›å»ºå¯¹è±¡
 		MyMath my = new MyMath();
 
-		System.out.println("¼Ó·¨£º"+my.add(23,34));
-		System.out.println("¼õ·¨£º"+my.subtract(23,34));
-		System.out.println("³Ë·¨£º"+my.multiply(2,4));
-		System.out.println("³ı·¨£º"+my.divide(10,4));
+		System.out.println("åŠ æ³•ï¼š"+my.add(23,34));
+		System.out.println("å‡æ³•ï¼š"+my.subtract(23,34));
+		System.out.println("ä¹˜æ³•ï¼š"+my.multiply(2,4));
+		System.out.println("é™¤æ³•ï¼š"+my.divide(10,4));
 	}
 }

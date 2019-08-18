@@ -4,21 +4,21 @@ import java.util.Properties;
 import java.util.Set;
 
 /*
- * Properties Àà±íÊ¾ÁËÒ»¸ö³Ö¾ÃµÄÊôĞÔ¼¯¡£Properties ¿É±£´æÔÚÁ÷ÖĞ»ò´ÓÁ÷ÖĞ¼ÓÔØ¡£ÊôĞÔÁĞ±íÖĞÃ¿¸ö¼ü¼°Æä¶ÔÓ¦Öµ¶¼ÊÇÒ»¸ö×Ö·û´®¡£ 
+ * Properties ç±»è¡¨ç¤ºäº†ä¸€ä¸ªæŒä¹…çš„å±æ€§é›†ã€‚Properties å¯ä¿å­˜åœ¨æµä¸­æˆ–ä»æµä¸­åŠ è½½ã€‚å±æ€§åˆ—è¡¨ä¸­æ¯ä¸ªé”®åŠå…¶å¯¹åº”å€¼éƒ½æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²ã€‚ 
  * 
- * Properties×÷ÎªMap¼¯ºÏµÄÊ¹ÓÃ
+ * Propertiesä½œä¸ºMapé›†åˆçš„ä½¿ç”¨
  */
 public class PropertiesDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Properties prop = new Properties();
 
-		// Ìí¼ÓÊı¾İ
+		// æ·»åŠ æ•°æ®
 		prop.put(1, "java");
 		prop.put(2, "c#");
 		prop.put(3, "php");
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		Set<Object> set = prop.keySet();
 		for (Object key : set) {
 			Object value = prop.get(key);

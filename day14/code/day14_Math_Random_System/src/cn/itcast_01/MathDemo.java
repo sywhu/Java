@@ -1,28 +1,28 @@
 package cn.itcast_01;
 
 /*
- * MathÊÇÓÃÓÚÊıÑ§²Ù×÷µÄÀà¡£·½·¨¶¼ÊÇ¾²Ì¬µÄ
+ * Mathæ˜¯ç”¨äºæ•°å­¦æ“ä½œçš„ç±»ã€‚æ–¹æ³•éƒ½æ˜¯é™æ€çš„
  */
 public class MathDemo {
 	public static void main(String[] args) {
-		// public static int abs(int a):¾ø¶ÔÖµ
+		// public static int abs(int a):ç»å¯¹å€¼
 		System.out.println("abs:" + Math.abs(12));
 		System.out.println("abs:" + Math.abs(-12));
 		System.out.println("--------------------");
 
-		// public static double ceil(double a):´óÓÚµÈÓÚ²ÎÊıµÄ×îĞ¡ÕûÊıÖµ
+		// public static double ceil(double a):å¤§äºç­‰äºå‚æ•°çš„æœ€å°æ•´æ•°å€¼
 		System.out.println("ceil:" + Math.ceil(12.34));
 		System.out.println("ceil:" + Math.ceil(12.56));
 		System.out.println("--------------------");
 
-		// public static double floor(double a):Ğ¡ÓÚµÈÓÚ²ÎÊıµÄ×î´óÕûÊıÖµ
+		// public static double floor(double a):å°äºç­‰äºå‚æ•°çš„æœ€å¤§æ•´æ•°å€¼
 		System.out.println("floor:" + Math.floor(12.34));
 		System.out.println("floor:" + Math.floor(12.56));
 		System.out.println("--------------------");
 
-		// public static int max(int a,int b) min×ÔÑ§
+		// public static int max(int a,int b) minè‡ªå­¦
 		System.out.println("max:" + Math.max(12, 23));
-		// ·½·¨µÄÇ¶Ì×µ÷ÓÃ
+		// æ–¹æ³•çš„åµŒå¥—è°ƒç”¨
 		System.out.println("max:" + Math.max(Math.max(24, 47), 23));
 		System.out.println("--------------------");
 
@@ -31,14 +31,14 @@ public class MathDemo {
 		System.out.println("pow:" + Math.pow(5, 5));
 		System.out.println("--------------------");
 
-		// public static double random():²úÉúËæ»úÊı¡£[0.0,1.0)
+		// public static double random():äº§ç”Ÿéšæœºæ•°ã€‚[0.0,1.0)
 
-		// public static int round(float a) ²ÎÊıÎªdoubleµÄ×ÔÑ§
+		// public static int round(float a) å‚æ•°ä¸ºdoubleçš„è‡ªå­¦
 		System.out.println("round:" + Math.round(12.34f));
 		System.out.println("round:" + Math.round(12.56f));
 		System.out.println("--------------------");
 
-		// public static double sqrt(double a):ÕıÆ½·½¸ù
+		// public static double sqrt(double a):æ­£å¹³æ–¹æ ¹
 		System.out.println("sqrt:" + Math.sqrt(16));
 	}
 }

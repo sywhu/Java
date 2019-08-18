@@ -3,18 +3,18 @@ package cn.itcast_02;
 import java.io.File;
 
 /*
- * ÖØÃüÃû¹¦ÄÜ:public boolean renameTo(File dest)
- * Â·¾¶ÏàÍ¬£º¸ÄÃû
- * Â·¾¶²»Í¬£º¼ôÇĞ²¢¸ÄÃû
+ * é‡å‘½ååŠŸèƒ½:public boolean renameTo(File dest)
+ * è·¯å¾„ç›¸åŒï¼šæ”¹å
+ * è·¯å¾„ä¸åŒï¼šå‰ªåˆ‡å¹¶æ”¹å
  */
 public class FileDemo3 {
 	public static void main(String[] args) {
-		// ĞèÇó£ºÎÒÒª°Ña.txtµÄÎÄ¼şÃû³Æ¸ÄÎªb.txt
-		// ´´½¨¶ÔÏó
+		// éœ€æ±‚ï¼šæˆ‘è¦æŠŠa.txtçš„æ–‡ä»¶åç§°æ”¹ä¸ºb.txt
+		// åˆ›å»ºå¯¹è±¡
 		// File file = new File("a.txt");
-		// // Ä¿±ê
+		// // ç›®æ ‡
 		// File dest = new File("b.txt");
-		// // µ÷ÓÃ·½·¨
+		// // è°ƒç”¨æ–¹æ³•
 		// System.out.println("renameTo:" + file.renameTo(dest));
 
 		File file = new File("b.txt");

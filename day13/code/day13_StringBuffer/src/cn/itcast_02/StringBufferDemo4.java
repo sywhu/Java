@@ -1,13 +1,13 @@
 package cn.itcast_02;
 
 /*
- * ·´×ª¹¦ÄÜ	 public StringBuffer reverse()
+ * åè½¬åŠŸèƒ½	 public StringBuffer reverse()
  */
 public class StringBufferDemo4 {
 	public static void main(String[] args) {
 		StringBuffer buffer = new StringBuffer();
 
-		buffer.append("java").append("Ï¼ÇàÁÖ°®ÎÒ");
+		buffer.append("java").append("éœé’æ—çˆ±æˆ‘");
 
 		buffer.reverse();
 

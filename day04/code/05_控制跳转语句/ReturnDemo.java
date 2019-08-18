@@ -1,5 +1,5 @@
 /*
-	return£º½áÊø·½·¨µÄ¡£
+	returnï¼šç»“æŸæ–¹æ³•çš„ã€‚
 */
 class ReturnDemo {
 	public static void main(String[] args) {

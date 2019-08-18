@@ -7,12 +7,12 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /*
- * ÎªÊ²Ã´ÒªÓĞĞòÁĞ»¯Á÷ÄØ?
- * 		ÎªÁËÈÃ¶ÔÏóÔÚÎÄ¼şÖĞ³Ö¾Ã´æ´¢£¬»òÕßÔÚÍøÂçÖĞ´«Êä¡£
+ * ä¸ºä»€ä¹ˆè¦æœ‰åºåˆ—åŒ–æµå‘¢?
+ * 		ä¸ºäº†è®©å¯¹è±¡åœ¨æ–‡ä»¶ä¸­æŒä¹…å­˜å‚¨ï¼Œæˆ–è€…åœ¨ç½‘ç»œä¸­ä¼ è¾“ã€‚
  * 
- * ĞòÁĞ»¯Á÷£ºObjectOutputStream	
+ * åºåˆ—åŒ–æµï¼šObjectOutputStream	
  * 		public final void writeObject(Object obj)
- * ·´ĞòÁĞ»¯Á÷£ºObjectInputStream	(°ÑÁ÷Êı¾İµÄ¶ÔÏó»¹Ô­)
+ * ååºåˆ—åŒ–æµï¼šObjectInputStream	(æŠŠæµæ•°æ®çš„å¯¹è±¡è¿˜åŸ)
  * 		public final Object readObject()
  */
 public class ObjectStreamDemo {
@@ -36,7 +36,7 @@ public class ObjectStreamDemo {
 		// ObjectOutputStream(OutputStream out)
 		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(
 				"oos.txt"));
-		Person p = new Person("ÁÖÇàÏ¼", 28);
+		Person p = new Person("æ—é’éœ", 28);
 		oos.writeObject(p);
 		oos.close();
 	}

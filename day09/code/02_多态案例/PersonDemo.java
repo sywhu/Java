@@ -1,4 +1,4 @@
-//ÒûÊ³ÎÄ»¯
+//é¥®é£Ÿæ–‡åŒ–
 class Person {
 	public void eat() {
 		System.out.println("person eat");
@@ -7,13 +7,13 @@ class Person {
 
 class SouthPerson extends Person  {
 	public void eat() {
-		System.out.println("ÄÏ·½ÈËÏ²»¶³ÔÃ×·¹");
+		System.out.println("å—æ–¹äººå–œæ¬¢åƒç±³é¥­");
 	}
 }
 
 class NorthPerson extends Person {
 	public void eat() {
-		System.out.println("±±·½ÈËÏ²»¶³ÔÀ­Ìõ×Ó");
+		System.out.println("åŒ—æ–¹äººå–œæ¬¢åƒæ‹‰æ¡å­");
 	}
 }
 

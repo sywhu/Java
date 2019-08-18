@@ -1,7 +1,7 @@
 package cn.itcast_04;
 
 /*
- * 把数组拼接成一个字符串
+ * 鎶婃暟缁勬嫾鎺ユ垚涓�涓瓧绗︿覆
  */
 public class StringBufferTest {
 	public static void main(String[] args) {

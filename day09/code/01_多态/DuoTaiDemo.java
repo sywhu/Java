@@ -1,10 +1,10 @@
 /*
-	��̬�ĺô���
-		A:����˳����ά����(�ɼ̳б�֤)
-		B:����˳������չ��(�ɶ�̬��֤)
+	多态的好处：
+		A:提高了程序的维护性(由继承保证)
+		B:提高了程序的扩展性(由多态保证)
 
-	��̬�ı׶ˣ�
-		���ܷ����������еĹ��ܡ�
+	多态的弊端：
+		不能访问子类特有的功能。
 */
 class Animal {
 	public void eat(){}
@@ -12,72 +12,72 @@ class Animal {
 
 	/*
 	public void sleep() {
-		System.out.println("��˯��");
+		System.out.println("爱睡觉");
 	}
 	*/
 }
 
 class Dog extends Animal {
 	public void eat(){
-		System.out.println("������");
+		System.out.println("狗吃肉");
 	}
 
 	public void sport(){
-		System.out.println("���ܲ�");
+		System.out.println("狗跑步");
 	}
 
 	public void lookDoor() {
-		System.out.println("����");
+		System.out.println("看门");
 	}
 }
 
 class Cat extends Animal {
 	public void eat(){
-		System.out.println("è����");
+		System.out.println("猫吃鱼");
 	}
 
 	public void sport(){
-		System.out.println("è������׽�Բ�");
+		System.out.println("猫和老鼠捉迷藏");
 	}
 }
 
 class Pig extends Animal {
 	public void eat(){
-		System.out.println("��������");
+		System.out.println("猪吃饲料");
 	}
 
 	public void sport(){
-		System.out.println("����˯��");
+		System.out.println("猪爱睡觉");
 	}
 }
 
 class DuoTaiDemo {
 	public static void main(String[] args) {
 		/*
-		//��ϲ����������һֻ��
+		//我喜欢狗，养了一只狗
 		Dog d = new Dog();
 		d.eat();
 		d.sport();
 
-		//�Һ�ϲ������������һֻ��
+		//我很喜欢狗，又养了一只狗
 		Dog d2 = new Dog();
 		d2.eat();
 		d2.sport();
 
-		//���ر�ϲ������������һֻ��
+		//我特别喜欢狗，又养了一只狗
 		Dog d3 = new Dog();
 		d3.eat();
 		d3.sport();
 		*/
 
-		//��...
-		//��Ҫ���ܶ�ֻ�������ң�ÿ��������Ҫ����һЩ���������߻�Ҫ��һЩ������
-		//������Щ������һ���ġ������ǹ�����һ����
-		//���һֱд��ȥ��������÷ǳ��鷳
-		//���ԣ�����Ҫ���Ƕ������������Ż�
-		//����Ż���?��Ϊ���ֲ�����һ���ģ����Ƕ���һ��
-		//���ԣ����Ǿ�׼��ʹ�÷����Ľ����Ѷ�����Ϊ�������ݹ������ɡ�
-		//���˷��������ǾͿ������µ���
+		//我...
+		//我要养很多只狗，而且，每个狗对象都要调用一些方法，或者还要做一些操作。
+		//并且这些操作是一样的。仅仅是狗对象不一样。
+		//如果一直写下去，代码会变得非常麻烦
+		//所以，我们要考虑对这个代码进行优化
+		//如何优化呢?因为发现操作是一样的，就是对象不一样
+		//所以，我们就准备使用方法改进，把对象作为参数传递过来即可。
+		//有了方法后，我们就可以如下调用
 		Dog d = new Dog();
 		Dog d2 = new Dog();
 		Dog d3 = new Dog();
@@ -90,10 +90,10 @@ class DuoTaiDemo {
 		printAnimal(d3);
 		System.out.println("-----------");
 
-		//��ϲ��è����ϲ��è���ر�ϲ��è
+		//我喜欢猫，很喜欢猫，特别喜欢猫
 		//...
-		//дһ������ʵ�ְ�
-		//����
+		//写一个方法实现吧
+		//调用
 		Cat c = new Cat();
 		Cat c2 = new Cat();
 		Cat c3 = new Cat();
@@ -106,10 +106,10 @@ class DuoTaiDemo {
 		printAnimal(c3);
 		System.out.println("-----------");
 
-		//�Һ�������һֻ����������Ҫд��һ���Ĵ��룬�����ʵ����?
-		//A:�ȴ�������̳��Զ�����
-		//B:�ڲ���������д����ʵ��
-		//C:�ڲ������д������󣬵��÷�������
+		//我后来养了一只猪，请问我要写成一样的代码，该如何实现呢?
+		//A:先创建猪类继承自动物类
+		//B:在测试类里面写方法实现
+		//C:在测试类中创建对象，调用方法即可
 		Pig p = new Pig();
 		Pig p2 = new Pig();
 		Pig p3 = new Pig();
@@ -121,16 +121,16 @@ class DuoTaiDemo {
 		printAnimal(p2);
 		printAnimal(p3);
 
-		//�һ�ϲ���ǣ�Ҫ����
-		//�������ղ�һ��,�����Լ�Ҳ�ǿ�����ɵ�
-		//�һ�ϲ�����ӣ�...
-		//����������һ�£�
-		//�������¶���һ���µ�����û���κ�����ģ����Ǽ����ڲ������е�main�����е���Ҳ��û�������
-		//���ǲ�Ӧ��ȥ�ڲ������������µĹ���
-		//�Ժ�������дһ�������ʱ����һ�����������ԭ�򣺶���չ���ţ����޸Ĺرա�
-		//���ǣ������������Ҫ���������򣬻��͵�ȥ�޸Ĳ�����
-		//Ϊ�˲�ȥ�޸Ĳ������г���main�������������
-		//������Ҫ������ļ�����������һ��������
+		//我还喜欢狼，要养狼
+		//步骤会跟刚才一样,我们自己也是可以完成的
+		//我还喜欢猴子，...
+		//我们来分析一下：
+		//我们重新定义一个新的类是没有任何问题的，我们继续在测试类中的main方法中调用也是没有问题的
+		//我们不应该去在测试类中添加新的功能
+		//以后，我们再写一个程序的时候，有一个基本的设计原则：对扩展开放，对修改关闭。
+		//但是，我们现在如果要完成这个程序，还就得去修改测试类
+		//为了不去修改测试类中除了main方法以外的内容
+		//我们需要对下面的几个方法进行一个分析：
 	}
 
 	/*

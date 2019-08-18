@@ -3,20 +3,20 @@ package cn.itcast_02;
 import java.util.Scanner;
 
 /*
- * ³ÉÔ±·½·¨£º
- * 		hasNextXxx():ÅĞ¶ÏÏÂÒ»¸öÊäÈëÏîÊÇ²»ÊÇÖ¸¶¨µÄÊı¾İÀàĞÍ
- * 		nextXxx():»ñÈ¡¸ÃÀàĞÍµÄÊı¾İ
+ * æˆå‘˜æ–¹æ³•ï¼š
+ * 		hasNextXxx():åˆ¤æ–­ä¸‹ä¸€ä¸ªè¾“å…¥é¡¹æ˜¯ä¸æ˜¯æŒ‡å®šçš„æ•°æ®ç±»å‹
+ * 		nextXxx():è·å–è¯¥ç±»å‹çš„æ•°æ®
  * 
- * ×¢Òâ£º
- * 		¼üÅÌÂ¼ÈëÊı¾İ£¬ĞèÒªµÄÊÇintÀàĞÍ£¬ÎÒÈ´¸øÁËÒ»¸ö×Ö·û´®¡£
- * 		ÔÚ¿ØÖÆÌ¨¾ÍÌáÊ¾£ºInputMismatchException	ÊäÈë²»Æ¥ÅäÒì³£¡£
+ * æ³¨æ„ï¼š
+ * 		é”®ç›˜å½•å…¥æ•°æ®ï¼Œéœ€è¦çš„æ˜¯intç±»å‹ï¼Œæˆ‘å´ç»™äº†ä¸€ä¸ªå­—ç¬¦ä¸²ã€‚
+ * 		åœ¨æ§åˆ¶å°å°±æç¤ºï¼šInputMismatchException	è¾“å…¥ä¸åŒ¹é…å¼‚å¸¸ã€‚
  * 		
  */
 public class ScannerDemo {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
 
 		if (sc.hasNextInt()) {
 			int number = sc.nextInt();

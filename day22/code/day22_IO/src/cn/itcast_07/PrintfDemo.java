@@ -1,15 +1,15 @@
 package cn.itcast_07;
 
 /*
- * C语言的输出语句：printf(...)
+ * C璇█鐨勮緭鍑鸿鍙ワ細printf(...)
  */
 public class PrintfDemo {
 	public static void main(String[] args) {
-		// 固定文本
+		// 鍥哄畾鏂囨湰
 		// System.out.printf("hellworld\n");
 		// System.out.printf("hellworld\n");
 
-		// 带指示的文本
+		// 甯︽寚绀虹殑鏂囨湰
 		// System.out.printf("%d\n", 100, 200);
 		// System.out.printf("%d<%d\n", 100, 200);
 		// System.out.printf("%d<%d\n", 100);

@@ -8,23 +8,23 @@ import java.io.Writer;
 import java.util.Properties;
 
 /*
- * PropertiesºÍIOÁ÷µÄ½áºÏÊ¹ÓÃ¡£
- * A:°ÑÎÄ±¾ÎÄ¼şÖĞµÄÊı¾İ¶ÁÈ¡µ½¼¯ºÏÖĞ
- * 		Êı¾İÔ´£ºÎÄ±¾ÎÄ¼ş
- * 		Ä¿µÄµØ£º¼¯ºÏ
+ * Propertieså’ŒIOæµçš„ç»“åˆä½¿ç”¨ã€‚
+ * A:æŠŠæ–‡æœ¬æ–‡ä»¶ä¸­çš„æ•°æ®è¯»å–åˆ°é›†åˆä¸­
+ * 		æ•°æ®æºï¼šæ–‡æœ¬æ–‡ä»¶
+ * 		ç›®çš„åœ°ï¼šé›†åˆ
  * 
  * 		public void load(InputStream inStream)
  *		public void load(Reader reader)
- * B:°Ñ¼¯ºÏÖĞµÄÊı¾İ´æ´¢µ½ÎÄ±¾ÎÄ¼ş
- * 		Êı¾İÔ´£º¼¯ºÏ
- * 		Ä¿µÄµØ£ºÎÄ±¾ÎÄ¼ş
+ * B:æŠŠé›†åˆä¸­çš„æ•°æ®å­˜å‚¨åˆ°æ–‡æœ¬æ–‡ä»¶
+ * 		æ•°æ®æºï¼šé›†åˆ
+ * 		ç›®çš„åœ°ï¼šæ–‡æœ¬æ–‡ä»¶
  * 
  * 		public void store(OutputStream out,String comments)
  * 		public void store(Writer writer,String comments)
  */
 public class PropertiesDemo3 {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Properties prop = new Properties();
 		// public void load(Reader reader)
 		Reader r = new FileReader("prop.txt");
@@ -33,7 +33,7 @@ public class PropertiesDemo3 {
 		System.out.println("prop:" + prop);
 		System.out.println("---------------------");
 
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Properties prop2 = new Properties();
 		prop2.setProperty("001", "hello");
 		prop2.setProperty("002", "world");

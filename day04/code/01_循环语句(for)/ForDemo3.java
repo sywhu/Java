@@ -1,20 +1,20 @@
 /*
-	ĞèÇó£ºÇó5µÄ½×³Ë
+	éœ€æ±‚ï¼šæ±‚5çš„é˜¶ä¹˜
 
-	½×³Ë£º
+	é˜¶ä¹˜ï¼š
 		n! = n*(n-1)*(n-2)*...*3*2*1
 
 		n! = n*(n-1)!
 */
 class ForDemo3 {
 	public static void main(String[] args) {
-		//¶¨ÒåÀÛ³Ë±äÁ¿
+		//å®šä¹‰ç´¯ä¹˜å˜é‡
 		int jc = 1;
 
 		for(int x=1; x<=5; x++) {
 			jc *= x;
 		}
 
-		System.out.println("5µÄ½×³ËÊÇ£º"+jc);
+		System.out.println("5çš„é˜¶ä¹˜æ˜¯ï¼š"+jc);
 	}
 }

@@ -4,26 +4,26 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 /*
- * TreeSetÊÇÈçºÎ±£Ö¤ÔªËØÅÅĞòµÄÄØ?ÓÖÊÇÈçºÎ±£Ö¤ÔªËØÎ¨Ò»µÄÄØ?
+ * TreeSetæ˜¯å¦‚ä½•ä¿è¯å…ƒç´ æ’åºçš„å‘¢?åˆæ˜¯å¦‚ä½•ä¿è¯å…ƒç´ å”¯ä¸€çš„å‘¢?
  * 
- * ĞèÇó£ºÓÃTreeSet´æ´¢×Ô¶¨Òå¶ÔÏó£¬²¢°´ÕÕÒªÇóÅÅĞòºÍÈ¥µôÖØ¸´Öµ¡£
- * a:Èç¹û³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬£¬ÎÒ¾ÍÈÏÎªÊÇÖØ¸´ÔªËØ
- * b:Çë°´ÕÕÄêÁäµÄ´ÓĞ¡µ½´ó½øĞĞÅÅĞò
+ * éœ€æ±‚ï¼šç”¨TreeSetå­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡ï¼Œå¹¶æŒ‰ç…§è¦æ±‚æ’åºå’Œå»æ‰é‡å¤å€¼ã€‚
+ * a:å¦‚æœæˆå‘˜å˜é‡å€¼éƒ½ç›¸åŒï¼Œæˆ‘å°±è®¤ä¸ºæ˜¯é‡å¤å…ƒç´ 
+ * b:è¯·æŒ‰ç…§å¹´é¾„çš„ä»å°åˆ°å¤§è¿›è¡Œæ’åº
  * 
- * ×Ü½á£ºTreeSet±£Ö¤ÔªËØÎ¨Ò»ºÍÅÅĞò 
- * Î¨Ò»ĞÔ£º¸ù¾İ±È½ÏµÄ·µ»ØÖµÊÇ·ñÊÇ0À´ÅĞ¶ÏÔªËØÊÇ·ñÊÇÎ¨Ò»µÄ
- * ÅÅĞò£ºÁ½ÖÖ·½Ê½
- * 		A:×ÔÈ»ÅÅĞò	(ÔªËØ¾ß±¸±È½ÏĞÔ)
- * 			ÈÃ¶ÔÏóËùÊôµÄÀàÊµÏÖComparable½Ó¿Ú
- * 		B:±È½ÏÆ÷ÅÅĞò (¼¯ºÏ¾ß±¸±È½ÏĞÔ)
- * 			´´½¨¼¯ºÏ¶ÔÏóµÄÊ±ºò£¬½ÓÊÜComparator½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó¡£Ò»°ãÎÒÃÇÊ¹ÓÃµÄÊÇÄäÃûÄÚ²¿ÀàÊµÏÖ¡£
+ * æ€»ç»“ï¼šTreeSetä¿è¯å…ƒç´ å”¯ä¸€å’Œæ’åº 
+ * å”¯ä¸€æ€§ï¼šæ ¹æ®æ¯”è¾ƒçš„è¿”å›å€¼æ˜¯å¦æ˜¯0æ¥åˆ¤æ–­å…ƒç´ æ˜¯å¦æ˜¯å”¯ä¸€çš„
+ * æ’åºï¼šä¸¤ç§æ–¹å¼
+ * 		A:è‡ªç„¶æ’åº	(å…ƒç´ å…·å¤‡æ¯”è¾ƒæ€§)
+ * 			è®©å¯¹è±¡æ‰€å±çš„ç±»å®ç°Comparableæ¥å£
+ * 		B:æ¯”è¾ƒå™¨æ’åº (é›†åˆå…·å¤‡æ¯”è¾ƒæ€§)
+ * 			åˆ›å»ºé›†åˆå¯¹è±¡çš„æ—¶å€™ï¼Œæ¥å—Comparatoræ¥å£çš„å®ç°ç±»å¯¹è±¡ã€‚ä¸€èˆ¬æˆ‘ä»¬ä½¿ç”¨çš„æ˜¯åŒ¿åå†…éƒ¨ç±»å®ç°ã€‚
  */
 public class TreeSetDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		// TreeSet<Person> ts = new TreeSet<Person>();
 		// TreeSet(Comparator comparator)
-		// ¹¹ÔìÒ»¸öĞÂµÄ¿Õ TreeSet£¬Ëü¸ù¾İÖ¸¶¨±È½ÏÆ÷½øĞĞÅÅĞò¡£
+		// æ„é€ ä¸€ä¸ªæ–°çš„ç©º TreeSetï¼Œå®ƒæ ¹æ®æŒ‡å®šæ¯”è¾ƒå™¨è¿›è¡Œæ’åºã€‚
 		TreeSet<Person> ts = new TreeSet<Person>(new Comparator<Person>() {
 			@Override
 			public int compare(Person p1, Person p2) {
@@ -36,7 +36,7 @@ public class TreeSetDemo {
 			}
 		});
 
-		// ´´½¨ÈË¶ÔÏó
+		// åˆ›å»ºäººå¯¹è±¡
 		Person p1 = new Person("tangseng", 30);
 		Person p2 = new Person("jiapingwa", 25);
 		Person p3 = new Person("zhangyimou", 25);
@@ -46,7 +46,7 @@ public class TreeSetDemo {
 		Person p7 = new Person("tianliang", 28);
 		Person p8 = new Person("xijinping", 26);
 
-		// Ìí¼ÓÔªËØ
+		// æ·»åŠ å…ƒç´ 
 		ts.add(p1);
 		ts.add(p2);
 		ts.add(p3);
@@ -56,7 +56,7 @@ public class TreeSetDemo {
 		ts.add(p7);
 		ts.add(p8);
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		for (Person p : ts) {
 			System.out.println(p.getName() + "---" + p.getAge());
 		}

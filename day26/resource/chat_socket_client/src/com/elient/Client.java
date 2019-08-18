@@ -28,7 +28,7 @@ public class Client extends Thread{
 	public  List<Integer> clientuserid;
 	public String username = null;
 	public String chat_re;
-	//getter, setter·½·¨
+	//getter, setteræ–¹æ³•
 	public Client_chatFrame getC_chatFrame() {
 		return c_chatFrame;
 	}
@@ -74,13 +74,13 @@ public class Client extends Thread{
 		try {
 			c_socket = new Socket(hostIp, Integer.parseInt(hostPort));
 		} catch (NumberFormatException e) {
-			login_mess = "Á¬½ÓµÄ·şÎñÆ÷¶Ë¿ÚºÅportÎªÕûÊı,È¡Öµ·¶Î§Îª£º1024<port<65535";
+			login_mess = "è¿æ¥çš„æœåŠ¡å™¨ç«¯å£å·portä¸ºæ•´æ•°,å–å€¼èŒƒå›´ä¸ºï¼š1024<port<65535";
 			return login_mess;
 		} catch (UnknownHostException e) {
-			login_mess = "Ö÷»úµØÖ·´íÎó";
+			login_mess = "ä¸»æœºåœ°å€é”™è¯¯";
 			return login_mess;
 		} catch (IOException e) {
-			login_mess = "Á¬½Ó·şÎñÆäÊ§°Ü£¬ÇëÉÔºóÔÙÊÔ";
+			login_mess = "è¿æ¥æœåŠ¡å…¶å¤±è´¥ï¼Œè¯·ç¨åå†è¯•";
 			return login_mess;
 		}
 		return "true";

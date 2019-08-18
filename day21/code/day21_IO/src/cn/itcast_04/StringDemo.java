@@ -3,18 +3,18 @@ package cn.itcast_04;
 import java.util.Arrays;
 
 /*
- * Ëü¿ÉÒÔ×Ô¼º°ÑÁ½¸ö×Ö½ÚÆ´³ÉÒ»¸öºº×Ö
- * µÚÒ»¸ö×Ö½Ú¿Ï¶¨ÊÇ¸ºÊı¡£µÚ¶ş¸ö¿ÉÄÜÊÇÕıÊı£¬´ó²¿·ÖÊÇ¸ºÊı¡£
+ * å®ƒå¯ä»¥è‡ªå·±æŠŠä¸¤ä¸ªå­—èŠ‚æ‹¼æˆä¸€ä¸ªæ±‰å­—
+ * ç¬¬ä¸€ä¸ªå­—èŠ‚è‚¯å®šæ˜¯è´Ÿæ•°ã€‚ç¬¬äºŒä¸ªå¯èƒ½æ˜¯æ­£æ•°ï¼Œå¤§éƒ¨åˆ†æ˜¯è´Ÿæ•°ã€‚
  */
 public class StringDemo {
 	public static void main(String[] args) {
-		// helloÄãºÃ
+		// helloä½ å¥½
 		// String s = "hello";
 		// byte[] bys = s.getBytes();
 		// // [104, 101, 108, 108, 111]
 		// System.out.println(Arrays.toString(bys));
 
-		String ss = "ÎÒ°®ÄãÁÖÇàÏ¼";
+		String ss = "æˆ‘çˆ±ä½ æ—é’éœ";
 		byte[] bys = ss.getBytes();
 		// [-50, -46, -80, -82, -60, -29, -63, -42, -57, -32, -49, -68]
 		System.out.println(Arrays.toString(bys));

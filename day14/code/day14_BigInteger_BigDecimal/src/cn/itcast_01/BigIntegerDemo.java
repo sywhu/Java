@@ -3,8 +3,8 @@ package cn.itcast_01;
 import java.math.BigInteger;
 
 /*
- * BigInteger:可以实现大整数的计算
- * 构造方法：BigInteger(String val)
+ * BigInteger:鍙互瀹炵幇澶ф暣鏁扮殑璁＄畻
+ * 鏋勯�犳柟娉曪細BigInteger(String val)
  */
 public class BigIntegerDemo {
 	public static void main(String[] args) {

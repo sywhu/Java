@@ -3,16 +3,16 @@ package cn.itcast_04;
 
 /*
  * LinkedList
- *		ÇëÓÃLinkedListÄ£ÄâÕ»Êı¾İ½á¹¹µÄ¼¯ºÏ£¬²¢²âÊÔ
- *		ÌâÄ¿µÄÒâË¼ÊÇ£ºÄãÒª×Ô¼º×öÒ»¸ö¼¯ºÏÀà£¬Õâ¸ö¼¯ºÏÌá¹©Ìí¼ÓÔªËØºÍ»ñÈ¡ÔªËØµÄ¹¦ÄÜ£¬È»ºó²âÊÔÄãµÄ¼¯ºÏÀà¡£Ìá¹©ÁËLinkedList¹©ÄãÊ¹ÓÃ¡£
- * Õ»£ºÏÈ½øºó³ö
+ *		è¯·ç”¨LinkedListæ¨¡æ‹Ÿæ ˆæ•°æ®ç»“æ„çš„é›†åˆï¼Œå¹¶æµ‹è¯•
+ *		é¢˜ç›®çš„æ„æ€æ˜¯ï¼šä½ è¦è‡ªå·±åšä¸€ä¸ªé›†åˆç±»ï¼Œè¿™ä¸ªé›†åˆæä¾›æ·»åŠ å…ƒç´ å’Œè·å–å…ƒç´ çš„åŠŸèƒ½ï¼Œç„¶åæµ‹è¯•ä½ çš„é›†åˆç±»ã€‚æä¾›äº†LinkedListä¾›ä½ ä½¿ç”¨ã€‚
+ * æ ˆï¼šå…ˆè¿›åå‡º
  */
 public class LinkedListDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		// LinkedList link = new LinkedList();
 		//
-		// // Ìí¼ÓÔªËØ
+		// // æ·»åŠ å…ƒç´ 
 		// link.addFirst("hello");
 		// link.addFirst("world");
 		// link.addFirst("java");
@@ -23,15 +23,15 @@ public class LinkedListDemo {
 		// System.out.println(s);
 		// }
 		
-		//´´½¨¼¯ºÏ
+		//åˆ›å»ºé›†åˆ
 		MyStack my = new MyStack();
 		
-		//Ìí¼ÓÔªËØ
+		//æ·»åŠ å…ƒç´ 
 		my.add("hello");
 		my.add("world");
 		my.add("java");
 		
-		//»ñÈ¡
+		//è·å–
 		// System.out.println(my.get());
 		// System.out.println(my.get());
 		// System.out.println(my.get());

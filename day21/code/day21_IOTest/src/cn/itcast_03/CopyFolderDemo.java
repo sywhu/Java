@@ -8,37 +8,37 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * ¸´ÖÆµ¥¼¶ÎÄ¼ş¼Ğ
+ * å¤åˆ¶å•çº§æ–‡ä»¶å¤¹
  * 
- * Êı¾İÔ´£º
+ * æ•°æ®æºï¼š
  * 		d:\\demo
- * Ä¿µÄµØ£º
+ * ç›®çš„åœ°ï¼š
  * 		demo
  * 
- * ·ÖÎö£º
- * 		A:ÔÚÄ¿µÄµØ´´½¨ÎÄ¼ş¼Ğ
- * 		B:»ñÈ¡Êı¾İÔ´ÎÄ¼ş¼ĞÏÂµÄËùÓĞÎÄ¼şµÄFileÊı×é
- * 		C:±éÀúFileÊı×é£¬µÃµ½Ã¿Ò»¸öFile¶ÔÏó
- * 		D:¸´ÖÆ¸ÃFile
- * 			Êı¾İÔ´£ºd:\\demo\\a.txt
- * 			Ä¿µÄµØ£ºdemo\\a.txt
+ * åˆ†æï¼š
+ * 		A:åœ¨ç›®çš„åœ°åˆ›å»ºæ–‡ä»¶å¤¹
+ * 		B:è·å–æ•°æ®æºæ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰æ–‡ä»¶çš„Fileæ•°ç»„
+ * 		C:éå†Fileæ•°ç»„ï¼Œå¾—åˆ°æ¯ä¸€ä¸ªFileå¯¹è±¡
+ * 		D:å¤åˆ¶è¯¥File
+ * 			æ•°æ®æºï¼šd:\\demo\\a.txt
+ * 			ç›®çš„åœ°ï¼šdemo\\a.txt
  */
 public class CopyFolderDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´ÎÄ¼ş¼Ğ
+		// å°è£…æ•°æ®æºæ–‡ä»¶å¤¹
 		File srcFolder = new File("d:\\demo");
 
-		// ÔÚÄ¿µÄµØ´´½¨ÎÄ¼ş¼Ğ
-		// ·â×°ºÍÊı¾İÔ´Ò»ÑùµÄÎÄ¼ş¼Ğ£¬²¢ÅĞ¶ÏÊÇ·ñ´æÔÚ£¬Èç¹û²»´æÔÚ£¬¾Í´´½¨
+		// åœ¨ç›®çš„åœ°åˆ›å»ºæ–‡ä»¶å¤¹
+		// å°è£…å’Œæ•°æ®æºä¸€æ ·çš„æ–‡ä»¶å¤¹ï¼Œå¹¶åˆ¤æ–­æ˜¯å¦å­˜åœ¨ï¼Œå¦‚æœä¸å­˜åœ¨ï¼Œå°±åˆ›å»º
 		File destFolder = new File(srcFolder.getName());
 		if (!destFolder.exists()) {
 			destFolder.mkdir();
 		}
 
-		// »ñÈ¡Êı¾İÔ´ÎÄ¼ş¼ĞÏÂµÄËùÓĞÎÄ¼şµÄFileÊı×é
+		// è·å–æ•°æ®æºæ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰æ–‡ä»¶çš„Fileæ•°ç»„
 		File[] fileArray = srcFolder.listFiles();
 
-		// ±éÀúFileÊı×é£¬µÃµ½Ã¿Ò»¸öFile¶ÔÏó
+		// éå†Fileæ•°ç»„ï¼Œå¾—åˆ°æ¯ä¸€ä¸ªFileå¯¹è±¡
 		for (File file : fileArray) {
 			String name = file.getName(); // a.txt
 			File newFile = new File(destFolder, name); // demo\\a.txt

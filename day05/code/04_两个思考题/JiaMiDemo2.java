@@ -1,16 +1,16 @@
 /*
-	A:°ÑÊµÏÖµÄ´úÂë¸Ä½øÎª¹¦ÄÜÊµÏÖ
-	B:¼üÅÌÂ¼Èë°æ
+	A:æŠŠå®žçŽ°çš„ä»£ç æ”¹è¿›ä¸ºåŠŸèƒ½å®žçŽ°
+	B:é”®ç›˜å½•å…¥ç‰ˆ
 */
 import java.util.Scanner;
 
 class JiaMiDemo2 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëÊý¾Ý(Ð¡ÓÚ8Î»µÄÕûÊý)£º");
+		//é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥æ•°æ®(å°äºŽ8ä½çš„æ•´æ•°)ï¼š");
 		int number = sc.nextInt();
 
 		jiaMi(number);
@@ -19,7 +19,7 @@ class JiaMiDemo2 {
 	public static void jiaMi(int number) {
 		int[] arr = new int[8];
 
-		//µÚÒ»²½
+		//ç¬¬ä¸€æ­¥
 		int index = 0;
 
 		while(number>0) {
@@ -27,18 +27,18 @@ class JiaMiDemo2 {
 			number /= 10;
 		}
 
-		//µÚ¶þ²½
+		//ç¬¬äºŒæ­¥
 		for(int x=0; x<index; x++) {
 			arr[x] += 5;
 			arr[x] %= 10;
 		}
 
-		//µÚÈý²½
+		//ç¬¬ä¸‰æ­¥
 		int temp = arr[0];
 		arr[0] = arr[index-1];
 		arr[index-1] = temp;
 
-		//Êä³ö
+		//è¾“å‡º
 		for(int x=0; x<index; x++) {
 			System.out.print(arr[x]);
 		}

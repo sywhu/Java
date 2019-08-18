@@ -4,20 +4,20 @@ import java.util.LinkedHashMap;
 import java.util.Set;
 
 /*
- * Map ½Ó¿ÚµÄ¹şÏ£±íºÍÁ´½ÓÁĞ±íÊµÏÖ£¬¾ßÓĞ¿ÉÔ¤ÖªµÄµü´úË³Ğò¡£
+ * Map æ¥å£çš„å“ˆå¸Œè¡¨å’Œé“¾æ¥åˆ—è¡¨å®ç°ï¼Œå…·æœ‰å¯é¢„çŸ¥çš„è¿­ä»£é¡ºåºã€‚
  */
 public class LinkedHashMapDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 
-		// Ìí¼ÓÔªËØ
-		map.put("ÎÄÕÂ", "ÂíÒÁÀş");
-		map.put("Ğ»öª·æ", "ÕÅ°ØÖ¥");
-		map.put("ÌïÁÁ", "Ò¶Ò»Üç");
-		map.put("Íô·å", "ÕÂ×Óâù");
+		// æ·»åŠ å…ƒç´ 
+		map.put("æ–‡ç« ", "é©¬ä¼Šä¿");
+		map.put("è°¢éœ†é”‹", "å¼ æŸèŠ");
+		map.put("ç”°äº®", "å¶ä¸€èŒœ");
+		map.put("æ±ªå³°", "ç« å­æ€¡");
 
-		// ±éÀú
+		// éå†
 		Set<String> set = map.keySet();
 		for (String key : set) {
 			String value = map.get(key);

@@ -5,50 +5,50 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
- * ±ê×¼ÊäÈëÊä³öÁ÷£º
+ * æ ‡å‡†è¾“å…¥è¾“å‡ºæµï¼š
  * System:
- * 		public static final InputStream in:±ê×¼ÊäÈëÁ÷	¼üÅÌÊäÈë
- * 		public static final PrintStream out:±ê×¼Êä³öÁ÷	¿ØÖÆÌ¨Êä³ö
+ * 		public static final InputStream in:æ ‡å‡†è¾“å…¥æµ	é”®ç›˜è¾“å…¥
+ * 		public static final PrintStream out:æ ‡å‡†è¾“å‡ºæµ	æ§åˆ¶å°è¾“å‡º
  * 
- * ¼üÅÌÂ¼ÈëÊı¾İ£º
- * 		A:main½ÓÊÜ¼üÅÌÂ¼ÈëÊı¾İ
- * 		B:IOÁ÷ÊµÏÖ¼üÅÌÂ¼ÈëÊı¾İ
- * 		C:ScannerÊµÏÖ¼üÅÌÂ¼ÈëÊı¾İ
+ * é”®ç›˜å½•å…¥æ•°æ®ï¼š
+ * 		A:mainæ¥å—é”®ç›˜å½•å…¥æ•°æ®
+ * 		B:IOæµå®ç°é”®ç›˜å½•å…¥æ•°æ®
+ * 		C:Scannerå®ç°é”®ç›˜å½•å…¥æ•°æ®
  */
 public class SystemInDemo {
 	public static void main(String[] args) throws IOException {
-		// // ¼üÅÌÂ¼Èë
-		// InputStream is = System.in; // BufferedInputStream,¶àÌ¬
+		// // é”®ç›˜å½•å…¥
+		// InputStream is = System.in; // BufferedInputStream,å¤šæ€
 		// // System.out.println(is);
 		//
-		// // ĞèÇó£ºÎÒÏëÒ»´Î¶ÁÈ¡Ò»ĞĞÊı¾İ,µ«ÊÇÏÖÔÚÎÒÃÇÊÇ¿ÉÒÔÊµÏÖµÄ£¬ËüµÄÔ­ÀíºÍBufferedReaderÊÇÒ»ÑùµÄ,Ö»²»¹ıÉÔÎ¢Âé·³ÁË
-		// // ÈçºÎ¸Ä½øÄØ?
-		// // ÎÒÊÇÕâÑùÏëµÄ£¬ÎÒÄÜ²»ÄÜÖ±½ÓÊ¹ÓÃreadLine()ÄØ?
-		// // Èç¹ûÄÜ£¬ÎÒ¾ÍÄÜ¹»Ö±½ÓÒ»´Î¶ÁÈ¡Ò»ĞĞ,¶øreadLine()·½·¨ÊÇBufferedReaderµÄ
-		// // ËùÒÔ£¬ÎÒÃÇÒª´´½¨BufferedReaderµÄ¶ÔÏó
-		// // ¶øÕâ¸öÊ±ºò£¬Ö±½Ó°Ñis×÷Îª¹¹Ôì²ÎÊı´«µİ£¬±¨´í£¬ÎªÊ²Ã´ÄØ?
-		// // ÒòÎªBufferedReaderÊÇ×Ö·û»º³åÁ÷£¬ËüÖ»ÄÜ¶Ô×Ö·ûÊäÈëÁ÷½øĞĞ»º³å
-		// // ¶øis¶ÔÏó´ú±íµÄÊÇ×Ö½ÚÁ÷£¬ËùÒÔ£¬ÎÒÃÇĞèÒª¿¼ÂÇ°Ñ×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷£¬È»ºóÔÙ¶Ô×Ö·ûÁ÷½øĞĞ»º³å
-		// // ÎÒÃÇÇ°ÃæÑ§Ï°¹ıÒ»¸ö×ª»»Á÷£º°Ñ×Ö½Ú×ª»»Îª×Ö·û
+		// // éœ€æ±‚ï¼šæˆ‘æƒ³ä¸€æ¬¡è¯»å–ä¸€è¡Œæ•°æ®,ä½†æ˜¯ç°åœ¨æˆ‘ä»¬æ˜¯å¯ä»¥å®ç°çš„ï¼Œå®ƒçš„åŸç†å’ŒBufferedReaderæ˜¯ä¸€æ ·çš„,åªä¸è¿‡ç¨å¾®éº»çƒ¦äº†
+		// // å¦‚ä½•æ”¹è¿›å‘¢?
+		// // æˆ‘æ˜¯è¿™æ ·æƒ³çš„ï¼Œæˆ‘èƒ½ä¸èƒ½ç›´æ¥ä½¿ç”¨readLine()å‘¢?
+		// // å¦‚æœèƒ½ï¼Œæˆ‘å°±èƒ½å¤Ÿç›´æ¥ä¸€æ¬¡è¯»å–ä¸€è¡Œ,è€ŒreadLine()æ–¹æ³•æ˜¯BufferedReaderçš„
+		// // æ‰€ä»¥ï¼Œæˆ‘ä»¬è¦åˆ›å»ºBufferedReaderçš„å¯¹è±¡
+		// // è€Œè¿™ä¸ªæ—¶å€™ï¼Œç›´æ¥æŠŠisä½œä¸ºæ„é€ å‚æ•°ä¼ é€’ï¼ŒæŠ¥é”™ï¼Œä¸ºä»€ä¹ˆå‘¢?
+		// // å› ä¸ºBufferedReaderæ˜¯å­—ç¬¦ç¼“å†²æµï¼Œå®ƒåªèƒ½å¯¹å­—ç¬¦è¾“å…¥æµè¿›è¡Œç¼“å†²
+		// // è€Œiså¯¹è±¡ä»£è¡¨çš„æ˜¯å­—èŠ‚æµï¼Œæ‰€ä»¥ï¼Œæˆ‘ä»¬éœ€è¦è€ƒè™‘æŠŠå­—èŠ‚æµè½¬æ¢ä¸ºå­—ç¬¦æµï¼Œç„¶åå†å¯¹å­—ç¬¦æµè¿›è¡Œç¼“å†²
+		// // æˆ‘ä»¬å‰é¢å­¦ä¹ è¿‡ä¸€ä¸ªè½¬æ¢æµï¼šæŠŠå­—èŠ‚è½¬æ¢ä¸ºå­—ç¬¦
 		// InputStreamReader isr = new InputStreamReader(is);
 		// BufferedReader br = new BufferedReader(isr);
 
-		// ·â×°¼üÅÌÂ¼Èë£¬ÓÃIOÊµÏÖ
+		// å°è£…é”®ç›˜å½•å…¥ï¼Œç”¨IOå®ç°
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š");
 		String line = br.readLine();
 		System.out.println(line);
 
-		System.out.println("ÇëÊäÈëÒ»¸öintÀàĞÍµÄÖµ£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªintç±»å‹çš„å€¼ï¼š");
 		line = br.readLine();
 		int number = Integer.parseInt(line);
 		System.out.println(number);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		// br.close();
 
-		System.out.println("ÇëÊäÈëÒ»¸öintÀàĞÍµÄÖµ£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªintç±»å‹çš„å€¼ï¼š");
 		line = br.readLine();
 		number = Integer.parseInt(line);
 		System.out.println(number);

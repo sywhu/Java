@@ -8,33 +8,33 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * ¸´ÖÆµ¥¼¶ÎÄ¼ş¼ĞÖĞÖ¸¶¨ÎÄ¼ş²¢ĞŞ¸ÄÎÄ¼şÃû³Æ
- * ĞèÇó£º°Ñd:\\javaÎÄ¼ş¼ĞÏÂµÄËùÓĞjavaÎÄ¼ş¸´ÖÆµ½d:\\jadÄ¿Â¼ÏÂ£¬²¢ĞŞ¸Äºó×ºÃûÎªjad¡£
+ * å¤åˆ¶å•çº§æ–‡ä»¶å¤¹ä¸­æŒ‡å®šæ–‡ä»¶å¹¶ä¿®æ”¹æ–‡ä»¶åç§°
+ * éœ€æ±‚ï¼šæŠŠd:\\javaæ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰javaæ–‡ä»¶å¤åˆ¶åˆ°d:\\jadç›®å½•ä¸‹ï¼Œå¹¶ä¿®æ”¹åç¼€åä¸ºjadã€‚
  * 
- * ·ÖÎö£º
- * 		A:·â×°Êı¾İÔ´Ä¿Â¼
- * 		B:·â×°Ä¿µÄµØÄ¿Â¼
- * 		C:»ñÈ¡Êı¾İÔ´Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼şµÄFileÊı×é
- * 		D:±éÀúFileÊı×é,µÃµ½Ã¿Ò»¸öFile¶ÔÏó
- * 		E:¸´ÖÆ¼´¿É
- * 			Êı¾İÔ´£ºd:\\java\\ForDemo.java
- * 			Ä¿µÄµØ£ºd:\\jad\\ForDemo.jad
+ * åˆ†æï¼š
+ * 		A:å°è£…æ•°æ®æºç›®å½•
+ * 		B:å°è£…ç›®çš„åœ°ç›®å½•
+ * 		C:è·å–æ•°æ®æºç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶çš„Fileæ•°ç»„
+ * 		D:éå†Fileæ•°ç»„,å¾—åˆ°æ¯ä¸€ä¸ªFileå¯¹è±¡
+ * 		E:å¤åˆ¶å³å¯
+ * 			æ•°æ®æºï¼šd:\\java\\ForDemo.java
+ * 			ç›®çš„åœ°ï¼šd:\\jad\\ForDemo.jad
  */
 public class ChangeNameDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´Ä¿Â¼
+		// å°è£…æ•°æ®æºç›®å½•
 		File srcFolder = new File("d:\\java");
 
-		// ·â×°Ä¿µÄµØÄ¿Â¼
+		// å°è£…ç›®çš„åœ°ç›®å½•
 		File destFolder = new File("d:\\jad");
 		if (!destFolder.exists()) {
 			destFolder.mkdir();
 		}
 
-		// »ñÈ¡Êı¾İÔ´Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼şµÄFileÊı×é
+		// è·å–æ•°æ®æºç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶çš„Fileæ•°ç»„
 		File[] fileArray = srcFolder.listFiles();
 
-		// ±éÀúFileÊı×é,µÃµ½Ã¿Ò»¸öFile¶ÔÏó
+		// éå†Fileæ•°ç»„,å¾—åˆ°æ¯ä¸€ä¸ªFileå¯¹è±¡
 		for (File file : fileArray) {
 			// System.out.println(file); // d:\java\ForDemo.java
 			String name = file.getName(); // ForDemo.java

@@ -1,41 +1,41 @@
 /*
-	¼üÅÌÂ¼ÈëÁ½¸öÊý¾Ý£¬»ñÈ¡ÕâÁ½¸öÊý¾ÝÖÐµÄ×î´óÖµ
+	é”®ç›˜å½•å…¥ä¸¤ä¸ªæ•°æ®ï¼ŒèŽ·å–è¿™ä¸¤ä¸ªæ•°æ®ä¸­çš„æœ€å¤§å€¼
 
-	·ÖÎö£º
-		A:¼üÅÌÂ¼ÈëÊý¾Ý
-		B:ÅÐ¶Ï£¬ÓÃifÓï¾äÊµÏÖ
-		C:Êä³ö½á¹û
+	åˆ†æžï¼š
+		A:é”®ç›˜å½•å…¥æ•°æ®
+		B:åˆ¤æ–­ï¼Œç”¨ifè¯­å¥å®žçŽ°
+		C:è¾“å‡ºç»“æžœ
 
-	Á·Ï°£º
-		¼üÅÌÂ¼ÈëÁ½¸öÊý¾Ý£¬±È½ÏÕâÁ½¸öÊý¾ÝÊÇ·ñÏàµÈ
-		ÓÃifÓï¾äÊµÏÖ¡£
+	ç»ƒä¹ ï¼š
+		é”®ç›˜å½•å…¥ä¸¤ä¸ªæ•°æ®ï¼Œæ¯”è¾ƒè¿™ä¸¤ä¸ªæ•°æ®æ˜¯å¦ç›¸ç­‰
+		ç”¨ifè¯­å¥å®žçŽ°ã€‚
 */
 import java.util.Scanner;
 
 class IfTest {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊý¾Ý£º");
+		//é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°æ®ï¼š");
 		int firstNumber = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶þ¸öÊý¾Ý£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°æ®ï¼š");
 		int secondNumber = sc.nextInt();
 
-		//ÓÃifÓï¾äÊµÏÖ
+		//ç”¨ifè¯­å¥å®žçŽ°
 
-		//·½Ê½1£ºÖ±½Ó°Ñ½á¹ûÊä³ö
+		//æ–¹å¼1ï¼šç›´æŽ¥æŠŠç»“æžœè¾“å‡º
 		if(firstNumber > secondNumber) {
-			System.out.println("½Ï´óµÄÖµÊÇ£º"+firstNumber);
+			System.out.println("è¾ƒå¤§çš„å€¼æ˜¯ï¼š"+firstNumber);
 		}else {
-			System.out.println("½Ï´óµÄÖµÊÇ£º"+secondNumber);
+			System.out.println("è¾ƒå¤§çš„å€¼æ˜¯ï¼š"+secondNumber);
 		}
 		System.out.println("-----------------------------");
 
-		//·½Ê½2£º°Ñ½á¹û±£´æÏÂÀ´
+		//æ–¹å¼2ï¼šæŠŠç»“æžœä¿å­˜ä¸‹æ¥
 		/*
-		±äÁ¿µÄÉúÃüÖÜÆÚÎÊÌâ,×÷ÓÃÓòÎÊÌâ
+		å˜é‡çš„ç”Ÿå‘½å‘¨æœŸé—®é¢˜,ä½œç”¨åŸŸé—®é¢˜
 		if(firstNumber > secondNumber) {
 			int max = firstNumber;
 		}else {
@@ -49,6 +49,6 @@ class IfTest {
 		}else {
 			max = secondNumber;
 		}
-		System.out.println("½Ï´óµÄÖµÊÇ£º"+max);
+		System.out.println("è¾ƒå¤§çš„å€¼æ˜¯ï¼š"+max);
 	}
 }

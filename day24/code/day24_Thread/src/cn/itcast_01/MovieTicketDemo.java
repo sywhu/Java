@@ -1,20 +1,20 @@
 package cn.itcast_01;
 
 /*
- * ÎªÁË¸üÇå³şµÄÈÃÎÒÃÇÖªµÀÊÇÈçºÎ¼ÓËøºÍÊÍ·ÅËøµÄ£¬JDK5ÒÔºó¾ÍÌá¹©ÁËÒ»¸ö½Ó¿Ú£ºLockËø¡£
+ * ä¸ºäº†æ›´æ¸…æ¥šçš„è®©æˆ‘ä»¬çŸ¥é“æ˜¯å¦‚ä½•åŠ é”å’Œé‡Šæ”¾é”çš„ï¼ŒJDK5ä»¥åå°±æä¾›äº†ä¸€ä¸ªæ¥å£ï¼šLocké”ã€‚
  * Lock
- * 		public void lock():¼ÓËø
- * 		public void unlock():ÊÍ·ÅËø
- * ÊµÏÖÀà¶ÔÏó
+ * 		public void lock():åŠ é”
+ * 		public void unlock():é‡Šæ”¾é”
+ * å®ç°ç±»å¯¹è±¡
  * 		public ReentrantLock()
  */
 public class MovieTicketDemo {
 	public static void main(String[] args) {
 		MovieTicket mt = new MovieTicket();
 
-		Thread t1 = new Thread(mt, "´°¿Ú1");
-		Thread t2 = new Thread(mt, "´°¿Ú2");
-		Thread t3 = new Thread(mt, "´°¿Ú3");
+		Thread t1 = new Thread(mt, "çª—å£1");
+		Thread t2 = new Thread(mt, "çª—å£2");
+		Thread t3 = new Thread(mt, "çª—å£3");
 
 		t1.start();
 		t2.start();

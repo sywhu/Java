@@ -8,15 +8,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * ¸´ÖÆÍ¼Æ¬(4ÖÖ)
- * A:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú
- * B:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é
- * C:¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú
- * D:¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é
+ * å¤åˆ¶å›¾ç‰‡(4ç§)
+ * A:åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚
+ * B:åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„
+ * C:é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚
+ * D:é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„
  */
 public class CopyBmpDemo {
 	public static void main(String[] args) throws IOException {
-		File srcFile = new File("c:\\ÁÖÇàÏ¼.bmp");
+		File srcFile = new File("c:\\æ—é’éœ.bmp");
 		File destFile = new File("d:\\mn.bmp");
 
 		// method1(srcFile, destFile);
@@ -25,7 +25,7 @@ public class CopyBmpDemo {
 		method4(srcFile, destFile);
 	}
 
-	// ¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é
+	// é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„
 	public static void method4(File srcFile, File destFile) throws IOException {
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
 				srcFile));
@@ -42,7 +42,7 @@ public class CopyBmpDemo {
 		bis.close();
 	}
 
-	// ¸ßĞ§×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú
+	// é«˜æ•ˆå­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚
 	public static void method3(File srcFile, File destFile) throws IOException {
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
 				srcFile));
@@ -58,7 +58,7 @@ public class CopyBmpDemo {
 		bis.close();
 	}
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é
+	// åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚æ•°ç»„
 	public static void method2(File srcFile, File destFile) throws IOException {
 		FileInputStream fis = new FileInputStream(srcFile);
 		FileOutputStream fos = new FileOutputStream(destFile);
@@ -73,7 +73,7 @@ public class CopyBmpDemo {
 		fis.close();
 	}
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁĞ´Ò»¸ö×Ö½Ú
+	// åŸºæœ¬å­—èŠ‚æµä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—èŠ‚
 	public static void method1(File srcFile, File destFile) throws IOException {
 		FileInputStream fis = new FileInputStream(srcFile);
 		FileOutputStream fos = new FileOutputStream(destFile);

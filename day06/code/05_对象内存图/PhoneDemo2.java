@@ -1,45 +1,45 @@
-//ÊÖ»úÀàµÄ¶¨Òå
+//æ‰‹æœºç±»çš„å®šä¹‰
 class Phone {
-	//Æ·ÅÆ
+	//å“ç‰Œ
 	String brand;
-	//¼Û¸ñ
+	//ä»·æ ¼
 	int price;
-	//ÑÕÉ«
+	//é¢œè‰²
 	String color;
 
-	//´òµç»°µÄ·½·¨
+	//æ‰“ç”µè¯çš„æ–¹æ³•
 	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("ç»™"+name+"æ‰“ç”µè¯");
 	}
 
-	//·¢¶ÌĞÅ
+	//å‘çŸ­ä¿¡
 	public void sendMessage() {
-		System.out.println("Èº·¢¶ÌĞÅ");
+		System.out.println("ç¾¤å‘çŸ­ä¿¡");
 	}
 }
 
 class PhoneDemo2 {
 	public static void main(String[] args) {
 		Phone p = new Phone();
-		p.brand = "Åµ»ùÑÇ";
+		p.brand = "è¯ºåŸºäºš";
 		p.price = 299;
-		p.color = "ÍÁºÀ½ğ";
-		//Ê¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p.color);
-		p.call("ÁÖÇàÏ¼");
+		p.color = "åœŸè±ªé‡‘";
+		//ä½¿ç”¨æˆå‘˜å˜é‡
+		System.out.println("å“ç‰Œæ˜¯ï¼š"+p.brand);
+		System.out.println("ä»·æ ¼æ˜¯ï¼š"+p.price);
+		System.out.println("é¢œè‰²æ˜¯ï¼š"+p.color);
+		p.call("æ—é’éœ");
 		p.sendMessage();
 
 		Phone p2 = new Phone();
-		p2.brand = "Ğ¡Ã×";
+		p2.brand = "å°ç±³";
 		p2.price = 699;
-		p2.color = "ºÚ°×";
-		//Ê¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p2.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p2.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p2.color);
-		p2.call("ÁõÒà·Æ");
+		p2.color = "é»‘ç™½";
+		//ä½¿ç”¨æˆå‘˜å˜é‡
+		System.out.println("å“ç‰Œæ˜¯ï¼š"+p2.brand);
+		System.out.println("ä»·æ ¼æ˜¯ï¼š"+p2.price);
+		System.out.println("é¢œè‰²æ˜¯ï¼š"+p2.color);
+		p2.call("åˆ˜äº¦è²");
 		p2.sendMessage();
 	}
 }

@@ -1,13 +1,13 @@
 package cn.itcast;
 
 /*
-	µ¼°ü¸ñÊ½
-		import °üÃû..ÀàÃû;
+	å¯¼åŒ…æ ¼å¼
+		import åŒ…å..ç±»å;
 
-	package,import,classÓÐÃ»ÓÐË³Ðò¹ØÏµ(ÃæÊÔÌâ)
-		ÓÐ¡£
+	package,import,classæœ‰æ²¡æœ‰é¡ºåºå…³ç³»(é¢è¯•é¢˜)
+		æœ‰ã€‚
 		package --> import --> class
-		Î¨Ò»		¶à¸ö		¶à¸ö
+		å”¯ä¸€		å¤šä¸ª		å¤šä¸ª
 */
 import com.liuyi.Demo;
 

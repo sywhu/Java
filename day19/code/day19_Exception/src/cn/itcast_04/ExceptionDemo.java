@@ -1,23 +1,23 @@
 package cn.itcast_04;
 
 /*
- *getMessage():»ñÈ¡Òì³£ĞÅÏ¢£¬·µ»Ø×Ö·û´®¡£
- *toString():»ñÈ¡Òì³£ÀàÃûºÍÒì³£ĞÅÏ¢£¬·µ»Ø×Ö·û´®¡£
- *printStackTrace():»ñÈ¡Òì³£ÀàÃûºÍÒì³£ĞÅÏ¢£¬ÒÔ¼°Òì³£³öÏÖÔÚ³ÌĞòÖĞµÄÎ»ÖÃ¡£·µ»ØÖµvoid¡£
+ *getMessage():è·å–å¼‚å¸¸ä¿¡æ¯ï¼Œè¿”å›å­—ç¬¦ä¸²ã€‚
+ *toString():è·å–å¼‚å¸¸ç±»åå’Œå¼‚å¸¸ä¿¡æ¯ï¼Œè¿”å›å­—ç¬¦ä¸²ã€‚
+ *printStackTrace():è·å–å¼‚å¸¸ç±»åå’Œå¼‚å¸¸ä¿¡æ¯ï¼Œä»¥åŠå¼‚å¸¸å‡ºç°åœ¨ç¨‹åºä¸­çš„ä½ç½®ã€‚è¿”å›å€¼voidã€‚
  */
 public class ExceptionDemo {
 	public static void main(String[] args) {
 		int a = 10;
 		int b = 0;
 		try {
-			System.out.println(a / b); // ´ÓÄÄÀï²úÉúÒì³££¬¾Í»áÔÚÄÄÀï´´½¨Ò»¸öÒì³£µÄ¶ÔÏó¡£new
+			System.out.println(a / b); // ä»å“ªé‡Œäº§ç”Ÿå¼‚å¸¸ï¼Œå°±ä¼šåœ¨å“ªé‡Œåˆ›å»ºä¸€ä¸ªå¼‚å¸¸çš„å¯¹è±¡ã€‚new
 										// ArithmeticException();
-										// È»ºó£¬ÄÃ×Å¸ÃÒì³£¶ÔÏó£¬µ½catchÀïÃæÈ¥Æ¥Åä¡£
+										// ç„¶åï¼Œæ‹¿ç€è¯¥å¼‚å¸¸å¯¹è±¡ï¼Œåˆ°catché‡Œé¢å»åŒ¹é…ã€‚
 
 		} catch (ArithmeticException e) { // ArithmeticException e = new
 											// ArithmeticException();
 			// System.out.println(e.toString());
-			// System.out.println("³ıÊı²»ÄÜÎª0");
+			// System.out.println("é™¤æ•°ä¸èƒ½ä¸º0");
 
 			// System.out.println(e.getMessage()); // by zero
 			// System.out.println(e.toString());

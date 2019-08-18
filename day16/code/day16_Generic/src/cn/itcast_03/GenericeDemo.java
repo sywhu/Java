@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /*
- *·ºĞÍ¸ß¼¶£º
- *·ºĞÍÍ¨Åä·û<?>
- *		ÈÎÒâÀàĞÍ£¬Èç¹ûÃ»ÓĞÃ÷È·£¬ÄÇÃ´¾ÍÊÇObjectÒÔ¼°ÈÎÒâµÄJavaÀàÁË
+ *æ³›å‹é«˜çº§ï¼š
+ *æ³›å‹é€šé…ç¬¦<?>
+ *		ä»»æ„ç±»å‹ï¼Œå¦‚æœæ²¡æœ‰æ˜ç¡®ï¼Œé‚£ä¹ˆå°±æ˜¯Objectä»¥åŠä»»æ„çš„Javaç±»äº†
  *? extends E
- *		ÏòÏÂÏŞ¶¨£¬E¼°Æä×ÓÀà
+ *		å‘ä¸‹é™å®šï¼ŒEåŠå…¶å­ç±»
  *? super E
- *		ÏòÉÏÏŞ¶¨£¬E¼°Æä¸¸Àà
+ *		å‘ä¸Šé™å®šï¼ŒEåŠå…¶çˆ¶ç±»
  */
 public class GenericeDemo {
 	public static void main(String[] args) {
-		// ·ºĞÍÍ¨Åä·û<?>
+		// æ³›å‹é€šé…ç¬¦<?>
 		Collection<?> c1 = new ArrayList<Animal>();
 		Collection<?> c2 = new ArrayList<Dog>();
 		Collection<?> c3 = new ArrayList<Cat>();

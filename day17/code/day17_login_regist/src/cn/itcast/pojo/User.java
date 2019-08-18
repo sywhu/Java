@@ -1,15 +1,15 @@
 package cn.itcast.pojo;
 
 /**
- * ÓÃ»§ÃèÊöÀà
+ * ç”¨æˆ·æè¿°ç±»
  * 
  * @author fqy
  * @version V1.0
  */
 public class User {
-	// ÓÃ»§Ãû
+	// ç”¨æˆ·å
 	private String username;
-	// ÃÜÂë
+	// å¯†ç 
 	private String password;
 
 	public User() {

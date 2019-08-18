@@ -36,7 +36,7 @@ public class BroadCast extends Thread {
                     if(flag){
                     	try
                         {
-                        	//Ïò¼ÍÂ¼µÄÃ¿Ò»¸ö¿Í»§¶Ë·¢ËÍÊı¾İĞÅÏ¢
+                        	//å‘çºªå½•çš„æ¯ä¸€ä¸ªå®¢æˆ·ç«¯å‘é€æ•°æ®ä¿¡æ¯
                             if(str.contains("@exit")){
                             	serverThread.clients.remove(i);
                             	clientThread.closeClienthread(clientThread);
@@ -64,7 +64,7 @@ public class BroadCast extends Thread {
                     		flag = true;
                     		try
                             {
-                            	//Ïò¼ÍÂ¼µÄÃ¿Ò»¸ö¿Í»§¶Ë·¢ËÍÊı¾İĞÅÏ¢
+                            	//å‘çºªå½•çš„æ¯ä¸€ä¸ªå®¢æˆ·ç«¯å‘é€æ•°æ®ä¿¡æ¯
                                 clientThread.dos.writeUTF(str);
                                 if(str.contains("@exit")){
                                 	serverThread.clients.remove(i);

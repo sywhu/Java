@@ -1,25 +1,25 @@
 /*
-	ĞèÇó£ºÇëÊä³öÒ»¸ö4ĞĞ5ÁĞµÄĞÇĞÇ(*)Í¼°¸¡£
+	éœ€æ±‚ï¼šè¯·è¾“å‡ºä¸€ä¸ª4è¡Œ5åˆ—çš„æ˜Ÿæ˜Ÿ(*)å›¾æ¡ˆã€‚
 
 			*****
 			*****
 			*****
 			*****
 
-	Êä³öÓï¾äµÄÎÊÌâ£º
+	è¾“å‡ºè¯­å¥çš„é—®é¢˜ï¼š
 		System.out.println("*");
-			ÔÚµ±Ç°ĞĞÊä³ö*£¬²¢»»ĞĞ¡£
+			åœ¨å½“å‰è¡Œè¾“å‡º*ï¼Œå¹¶æ¢è¡Œã€‚
 
 		System.out.print("*");
-			½ö½öÔÚµ±Ç°ĞĞÊä³ö*
+			ä»…ä»…åœ¨å½“å‰è¡Œè¾“å‡º*
 
-	Ñ­»·Ç¶Ì×ÖĞ£º
-		ÍâÑ­»·¿ØÖÆĞĞÊı
-		ÄÚÑ­»·¿ØÖÆÁĞÊı
+	å¾ªç¯åµŒå¥—ä¸­ï¼š
+		å¤–å¾ªç¯æ§åˆ¶è¡Œæ•°
+		å†…å¾ªç¯æ§åˆ¶åˆ—æ•°
 */
 class ForForDemo {
 	public static void main(String[] args) {
-		//·½Ê½Ò»
+		//æ–¹å¼ä¸€
 		/*
 		System.out.println("*****");
 		System.out.println("*****");
@@ -27,7 +27,7 @@ class ForForDemo {
 		System.out.println("*****");
 		*/
 
-		//·½Ê½¶ş
+		//æ–¹å¼äºŒ
 		/*
 		System.out.println("*");
 		System.out.println("*");
@@ -36,7 +36,7 @@ class ForForDemo {
 		System.out.println("*");
 		*/
 
-		//Êä³öÓï¾ä
+		//è¾“å‡ºè¯­å¥
 		/*
 		System.out.println("*");
 		System.out.println("*");
@@ -54,34 +54,34 @@ class ForForDemo {
 		System.out.print("*");
 		*/
 
-		//ÓÃÑ­»·¸Ä½øÒ»ĞĞÊä³ö5¸ö*
+		//ç”¨å¾ªç¯æ”¹è¿›ä¸€è¡Œè¾“å‡º5ä¸ª*
 		/*
-		//µÚÒ»ĞĞ
+		//ç¬¬ä¸€è¡Œ
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 
-		//µÚ¶şĞĞ
+		//ç¬¬äºŒè¡Œ
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 
-		//µÚÈıĞĞ
+		//ç¬¬ä¸‰è¡Œ
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 
-		//µÚËÄĞĞ
+		//ç¬¬å››è¡Œ
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 		*/
 
-		//Í¬ÑùµÄÊÂÇé×öÁËºÜ¶à´Î
+		//åŒæ ·çš„äº‹æƒ…åšäº†å¾ˆå¤šæ¬¡
 		for(int y=0; y<4; y++) {
 			for(int x=0; x<5; x++) {
 				System.out.print("*");

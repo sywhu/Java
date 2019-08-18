@@ -1,17 +1,17 @@
 package cn.itcast_07;
 
 /*
- * 实现Runnable接口
+ * 瀹炵幇Runnable鎺ュ彛
  */
 public class MovieTicketDemo {
 	public static void main(String[] args) {
-		// 创建一个票资源
+		// 鍒涘缓涓�涓エ璧勬簮
 		MovieTicket mt = new MovieTicket();
 
-		// 创建三个线程
-		Thread t1 = new Thread(mt, "窗口1");
-		Thread t2 = new Thread(mt, "窗口2");
-		Thread t3 = new Thread(mt, "窗口3");
+		// 鍒涘缓涓変釜绾跨▼
+		Thread t1 = new Thread(mt, "绐楀彛1");
+		Thread t2 = new Thread(mt, "绐楀彛2");
+		Thread t3 = new Thread(mt, "绐楀彛3");
 
 		t1.start();
 		t2.start();

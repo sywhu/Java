@@ -3,24 +3,24 @@ package cn.itcast_04;
 import java.util.Scanner;
 
 /*
- * Í³¼ÆÒ»¸ö×Ö·û´®ÖÐ´óÐ´×ÖÄ¸×Ö·û£¬Ð¡Ð´×ÖÄ¸×Ö·û£¬Êý×Ö×Ö·û³öÏÖµÄ´ÎÊý¡£(²»¿¼ÂÇÆäËû×Ö·û)
- * ¾ÙÀý£ºHello123World
- * ½á¹û£º
- * 		´óÐ´£º2
- * 		Ð¡Ð´£º8
- * 		Êý×Ö£º3
+ * ç»Ÿè®¡ä¸€ä¸ªå­—ç¬¦ä¸²ä¸­å¤§å†™å­—æ¯å­—ç¬¦ï¼Œå°å†™å­—æ¯å­—ç¬¦ï¼Œæ•°å­—å­—ç¬¦å‡ºçŽ°çš„æ¬¡æ•°ã€‚(ä¸è€ƒè™‘å…¶ä»–å­—ç¬¦)
+ * ä¸¾ä¾‹ï¼šHello123World
+ * ç»“æžœï¼š
+ * 		å¤§å†™ï¼š2
+ * 		å°å†™ï¼š8
+ * 		æ•°å­—ï¼š3
  * 
- * ·ÖÎö£º
- * 		A:¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
- * 		B:¶¨ÒåÈý¸öÍ³¼Æ±äÁ¿
+ * åˆ†æžï¼š
+ * 		A:é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
+ * 		B:å®šä¹‰ä¸‰ä¸ªç»Ÿè®¡å˜é‡
  * 			int bigCount = 0;
  * 			int smallCount = 0;
  * 			int numberCount = 0;
- * 		C:±éÀú×Ö·û´®£¬µÃµ½Ã¿Ò»¸ö×Ö·û
- * 		D:ÈçºÎÅÐ¶Ï×Ö·ûÊÇ´óÐ´£¬Ð¡Ð´»¹ÊÇÊý×ÖÄØ?
+ * 		C:éåŽ†å­—ç¬¦ä¸²ï¼Œå¾—åˆ°æ¯ä¸€ä¸ªå­—ç¬¦
+ * 		D:å¦‚ä½•åˆ¤æ–­å­—ç¬¦æ˜¯å¤§å†™ï¼Œå°å†™è¿˜æ˜¯æ•°å­—å‘¢?
  * 			char ch = ???;
  * 
- * 			ASCIIÂë±í£º
+ * 			ASCIIç è¡¨ï¼š
  * 				a	97	z=122
  * 				A	65  Z=90
  * 				0	48	9=57
@@ -31,25 +31,25 @@ import java.util.Scanner;
  * 			ch>='a' && ch<='z'
  * 			ch>='A'	&& ch<='Z'
  * 			ch>='0'	&& ch<='9'
- * 		E:Êä³ö½á¹û
+ * 		E:è¾“å‡ºç»“æžœ
  */
 public class StringTest2 {
 	public static void main(String[] args) {
-		// ¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
+		// é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š");
 		String s = sc.nextLine();
 
-		// ¶¨ÒåÈý¸öÍ³¼Æ±äÁ¿
+		// å®šä¹‰ä¸‰ä¸ªç»Ÿè®¡å˜é‡
 		int bigCount = 0;
 		int smallCount = 0;
 		int numberCount = 0;
 
-		// ±éÀú×Ö·û´®£¬µÃµ½Ã¿Ò»¸ö×Ö·û
+		// éåŽ†å­—ç¬¦ä¸²ï¼Œå¾—åˆ°æ¯ä¸€ä¸ªå­—ç¬¦
 		for (int x = 0; x < s.length(); x++) {
 			char ch = s.charAt(x);
 
-			// ÈçºÎÅÐ¶Ï×Ö·ûÊÇ´óÐ´£¬Ð¡Ð´»¹ÊÇÊý×ÖÄØ?
+			// å¦‚ä½•åˆ¤æ–­å­—ç¬¦æ˜¯å¤§å†™ï¼Œå°å†™è¿˜æ˜¯æ•°å­—å‘¢?
 			if (ch >= 'A' && ch <= 'Z') {
 				bigCount++;
 			} else if (ch >= 'a' && ch <= 'z') {
@@ -59,9 +59,9 @@ public class StringTest2 {
 			}
 		}
 
-		// Êä³ö½á¹û
-		System.out.println("´óÐ´£º" + bigCount);
-		System.out.println("Ð¡Ð´£º" + smallCount);
-		System.out.println("Êý×Ö£º" + numberCount);
+		// è¾“å‡ºç»“æžœ
+		System.out.println("å¤§å†™ï¼š" + bigCount);
+		System.out.println("å°å†™ï¼š" + smallCount);
+		System.out.println("æ•°å­—ï¼š" + numberCount);
 	}
 }

@@ -6,15 +6,15 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /*
- * ÇóºÍ°¸Àı
+ * æ±‚å’Œæ¡ˆä¾‹
  */
 public class ThreadPoolDemo {
 	public static void main(String[] args) throws InterruptedException,
 			ExecutionException {
-		// ´´½¨Ïß³Ì³Ø¶ÔÏó
+		// åˆ›å»ºçº¿ç¨‹æ± å¯¹è±¡
 		ExecutorService pool = Executors.newFixedThreadPool(3);
 
-		// Ìá½»Êı¾İ
+		// æäº¤æ•°æ®
 		Future<Integer> f1 = pool.submit(new MyCallable(10));
 		Future<Integer> f2 = pool.submit(new MyCallable(50));
 		Future<Integer> f3 = pool.submit(new MyCallable(100));

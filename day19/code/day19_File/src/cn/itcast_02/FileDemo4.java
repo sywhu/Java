@@ -3,12 +3,12 @@ package cn.itcast_02;
 import java.io.File;
 
 /*
- *public boolean isDirectory():ÊÇ·ñÊÇÎÄ¼ş¼Ğ
- *public boolean isFile():ÊÇ·ñÊÇÎÄ¼ş
- *public boolean exists():ÊÇ·ñ´æÔÚ
- *public boolean canRead():ÊÇ·ñ¿É¶Á
- *public boolean canWrite():ÊÇ·ñ¿ÉĞ´
- *public boolean isHidden():ÊÇ·ñÒş²Ø
+ *public boolean isDirectory():æ˜¯å¦æ˜¯æ–‡ä»¶å¤¹
+ *public boolean isFile():æ˜¯å¦æ˜¯æ–‡ä»¶
+ *public boolean exists():æ˜¯å¦å­˜åœ¨
+ *public boolean canRead():æ˜¯å¦å¯è¯»
+ *public boolean canWrite():æ˜¯å¦å¯å†™
+ *public boolean isHidden():æ˜¯å¦éšè—
  */
 public class FileDemo4 {
 	public static void main(String[] args) {

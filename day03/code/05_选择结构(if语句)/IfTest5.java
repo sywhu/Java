@@ -1,29 +1,29 @@
 /*
-	ÐèÇó£º»ñÈ¡Èý¸öÊý¾ÝÖÐµÄ×î´óÖµ
+	éœ€æ±‚ï¼šèŽ·å–ä¸‰ä¸ªæ•°æ®ä¸­çš„æœ€å¤§å€¼
 */
 import java.util.Scanner;
 
 class IfTest5 {
 	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊý¾Ý£º");
+		//é”®ç›˜å½•å…¥æ•°æ®
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°æ®ï¼š");
 		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶þ¸öÊý¾Ý£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°æ®ï¼š");
 		int b = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚÈý¸öÊý¾Ý£º");
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸‰ä¸ªæ•°æ®ï¼š");
 		int c = sc.nextInt();
 
-		//ÈýÔªÔËËã·ûÊµÏÖ
+		//ä¸‰å…ƒè¿ç®—ç¬¦å®žçŽ°
 		//int max  = (a>b)?(a>c?a:c):(b>c?b:c);
 		int temp = a>b?a:b;
 		int max = temp>c?temp:c;
-		System.out.println("×î´óÖµÊÇ£º"+max);
+		System.out.println("æœ€å¤§å€¼æ˜¯ï¼š"+max);
 
 
-		//ifÓï¾äÊµÏÖ(ifÓï¾äµÄÇ¶Ì×Ê¹ÓÃ)
+		//ifè¯­å¥å®žçŽ°(ifè¯­å¥çš„åµŒå¥—ä½¿ç”¨)
 		int max2;
 		if(a > b) {
 			if(a > c) {
@@ -38,6 +38,6 @@ class IfTest5 {
 				max2 = c;
 			}
 		}
-		System.out.println("×î´óÖµÊÇ£º"+max2);
+		System.out.println("æœ€å¤§å€¼æ˜¯ï¼š"+max2);
 	}
 }

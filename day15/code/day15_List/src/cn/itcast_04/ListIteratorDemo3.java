@@ -5,49 +5,49 @@ import java.util.List;
 import java.util.ListIterator;
 
 /*
- * ÐèÇó£ºÎÒÓÐÒ»¸ö¼¯ºÏ£¬ÀïÃæÓÐÈý¸öÔªËØ"hello","world","java",ÇëÐ´³ÌÐòÊµÏÖÈçÏÂ²Ù×÷
- * 	         ÅÐ¶ÏÕâ¸ö¼¯ºÏÖÐÓÐÃ»ÓÐÔªËØÎªworldµÄ£¬Èç¹ûÓÐ£¬¾ÍÌí¼ÓÒ»¸öÔªËØAndroid¡£
+ * éœ€æ±‚ï¼šæˆ‘æœ‰ä¸€ä¸ªé›†åˆï¼Œé‡Œé¢æœ‰ä¸‰ä¸ªå…ƒç´ "hello","world","java",è¯·å†™ç¨‹åºå®žçŽ°å¦‚ä¸‹æ“ä½œ
+ * 	         åˆ¤æ–­è¿™ä¸ªé›†åˆä¸­æœ‰æ²¡æœ‰å…ƒç´ ä¸ºworldçš„ï¼Œå¦‚æžœæœ‰ï¼Œå°±æ·»åŠ ä¸€ä¸ªå…ƒç´ Androidã€‚
  * 
- * ·ÖÎö£º
- * 		A:´´½¨Ò»¸ö¼¯ºÏ£¬²¢Ìí¼Ó¶à¸öÔªËØ
- * 		B:±éÀú¼¯ºÏ£¬»ñÈ¡µ½Ã¿Ò»¸öÔªËØ
- * 		C:ÅÐ¶ÏÔªËØÓÐÃ»ÓÐÊÇ"world"µÄ£¬Èç¹ûÓÐ£¬¾ÍÍù¼¯ºÏÖÐÌí¼ÓÒ»¸öÐÂÔªËØandroid
- * 		D:Ö±½ÓÊä³ö¼¯ºÏÃû³Æ
+ * åˆ†æžï¼š
+ * 		A:åˆ›å»ºä¸€ä¸ªé›†åˆï¼Œå¹¶æ·»åŠ å¤šä¸ªå…ƒç´ 
+ * 		B:éåŽ†é›†åˆï¼ŒèŽ·å–åˆ°æ¯ä¸€ä¸ªå…ƒç´ 
+ * 		C:åˆ¤æ–­å…ƒç´ æœ‰æ²¡æœ‰æ˜¯"world"çš„ï¼Œå¦‚æžœæœ‰ï¼Œå°±å¾€é›†åˆä¸­æ·»åŠ ä¸€ä¸ªæ–°å…ƒç´ android
+ * 		D:ç›´æŽ¥è¾“å‡ºé›†åˆåç§°
  * 
- * ConcurrentModificationException:²¢·¢ÐÞ¸ÄÒì³£¡£
+ * ConcurrentModificationException:å¹¶å‘ä¿®æ”¹å¼‚å¸¸ã€‚
  * 
- * Ô­Òò£º
- * 		µü´úÆ÷ÊÇÒÀÀµÓÚ¼¯ºÏ¶ø´æÔÚµÄ£¬ÎÒÃÇÓÃµü´úÆ÷±éÀú¼¯ºÏµÄÊ±ºò£¬Èç¹ûÓÐÂú×ãÌõ¼þµÄ£¬
- * 		ÎÒÃÇ¾ÍÍ¨¹ý¼¯ºÏµ÷ÓÃadd()¹¦ÄÜÌí¼ÓÁËÒ»¸öÔªËØ£¬Ò²¾ÍÊÇËµÕâ¸öÊ±ºò£¬¼¯ºÏ·¢ÉúÁË¸Ä±ä£¬
- * 		¶øµü´úÆ÷²¢Ã»ÓÐ·¢Éú¸Ä±ä£¬ÕâÑù¾Í²úÉúÁËÕâ¸öÎÊÌâ¡£
- * 		Õâ¸öÎÊÌâµÄÖ÷ÒªÔ­Òò£ºÍ¨¹ýµü´úÆ÷È¥±éÀú¼¯ºÏµÄÊ±ºò£¬²»ÄÜÔÚÍ¨¹ý¼¯ºÏÈ¥²Ù×÷¡£
+ * åŽŸå› ï¼š
+ * 		è¿­ä»£å™¨æ˜¯ä¾èµ–äºŽé›†åˆè€Œå­˜åœ¨çš„ï¼Œæˆ‘ä»¬ç”¨è¿­ä»£å™¨éåŽ†é›†åˆçš„æ—¶å€™ï¼Œå¦‚æžœæœ‰æ»¡è¶³æ¡ä»¶çš„ï¼Œ
+ * 		æˆ‘ä»¬å°±é€šè¿‡é›†åˆè°ƒç”¨add()åŠŸèƒ½æ·»åŠ äº†ä¸€ä¸ªå…ƒç´ ï¼Œä¹Ÿå°±æ˜¯è¯´è¿™ä¸ªæ—¶å€™ï¼Œé›†åˆå‘ç”Ÿäº†æ”¹å˜ï¼Œ
+ * 		è€Œè¿­ä»£å™¨å¹¶æ²¡æœ‰å‘ç”Ÿæ”¹å˜ï¼Œè¿™æ ·å°±äº§ç”Ÿäº†è¿™ä¸ªé—®é¢˜ã€‚
+ * 		è¿™ä¸ªé—®é¢˜çš„ä¸»è¦åŽŸå› ï¼šé€šè¿‡è¿­ä»£å™¨åŽ»éåŽ†é›†åˆçš„æ—¶å€™ï¼Œä¸èƒ½åœ¨é€šè¿‡é›†åˆåŽ»æ“ä½œã€‚
  * 
- * ½â¾ö·½°¸£º
- * 		A:²»ÊÇÓÃµü´úÆ÷±éÀú£¬ÓÃÆÕÍ¨forÑ­»·±éÀú
- * 			ÔªËØÌí¼Óµ½ÁË¼¯ºÏµÄÄ©Î²¡£
- * 		B:Ê¹ÓÃÁÐ±íµü´úÆ÷£¬±éÀúÊ¹ÓÃµü´úÆ÷£¬Ìí¼ÓÒ²Ê¹ÓÃµü´úÆ÷
- * 			±éÀúµ½ÄÄÀï£¬ÔªËØ¾ÍÌí¼Óµ½ÄÄÀï
+ * è§£å†³æ–¹æ¡ˆï¼š
+ * 		A:ä¸æ˜¯ç”¨è¿­ä»£å™¨éåŽ†ï¼Œç”¨æ™®é€šforå¾ªçŽ¯éåŽ†
+ * 			å…ƒç´ æ·»åŠ åˆ°äº†é›†åˆçš„æœ«å°¾ã€‚
+ * 		B:ä½¿ç”¨åˆ—è¡¨è¿­ä»£å™¨ï¼ŒéåŽ†ä½¿ç”¨è¿­ä»£å™¨ï¼Œæ·»åŠ ä¹Ÿä½¿ç”¨è¿­ä»£å™¨
+ * 			éåŽ†åˆ°å“ªé‡Œï¼Œå…ƒç´ å°±æ·»åŠ åˆ°å“ªé‡Œ
  */
 public class ListIteratorDemo3 {
 	public static void main(String[] args) {
-		// ´´½¨Ò»¸ö¼¯ºÏ£¬²¢Ìí¼Ó¶à¸öÔªËØ
+		// åˆ›å»ºä¸€ä¸ªé›†åˆï¼Œå¹¶æ·»åŠ å¤šä¸ªå…ƒç´ 
 		List list = new ArrayList();
 		list.add("hello");
 		list.add("world");
 		list.add("java");
 
-		// ±éÀú¼¯ºÏ£¬»ñÈ¡µ½Ã¿Ò»¸öÔªËØ
+		// éåŽ†é›†åˆï¼ŒèŽ·å–åˆ°æ¯ä¸€ä¸ªå…ƒç´ 
 		// Iterator it = list.iterator();
 		// while (it.hasNext()) {
 		// String s = (String) it.next();
-		// // ÅÐ¶ÏÔªËØÓÐÃ»ÓÐÊÇ"world"µÄ£¬Èç¹ûÓÐ£¬¾ÍÍù¼¯ºÏÖÐÌí¼ÓÒ»¸öÐÂÔªËØandroid
+		// // åˆ¤æ–­å…ƒç´ æœ‰æ²¡æœ‰æ˜¯"world"çš„ï¼Œå¦‚æžœæœ‰ï¼Œå°±å¾€é›†åˆä¸­æ·»åŠ ä¸€ä¸ªæ–°å…ƒç´ android
 		// if ("world".equals(s)) {
 		// list.add("android");
 		// // it = list.iterator();
 		// }
 		// }
 
-		// ÆÕÍ¨for
+		// æ™®é€šfor
 		// for (int x = 0; x < list.size(); x++) {
 		// String s = (String) list.get(x);
 		// if ("world".equals(s)) {
@@ -55,7 +55,7 @@ public class ListIteratorDemo3 {
 		// }
 		// }
 
-		// Ê¹ÓÃÁÐ±íµü´úÆ÷
+		// ä½¿ç”¨åˆ—è¡¨è¿­ä»£å™¨
 		ListIterator lit = list.listIterator();
 		while (lit.hasNext()) {
 			String s = (String) lit.next();
@@ -64,7 +64,7 @@ public class ListIteratorDemo3 {
 			}
 		}
 
-		// Ö±½ÓÊä³ö¼¯ºÏÃû³Æ
+		// ç›´æŽ¥è¾“å‡ºé›†åˆåç§°
 		System.out.println("list:" + list);
 	}
 }

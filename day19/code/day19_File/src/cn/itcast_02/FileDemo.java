@@ -4,30 +4,30 @@ import java.io.File;
 import java.io.IOException;
 
 /*
- * ´´½¨¹¦ÄÜ£º
- * A:´´½¨ÎÄ¼ş,Èç¹ûÎÄ¼ş²»´æÔÚ£¬¾Í´´½¨¡£´æÔÚ£¬¾Í²»´´½¨¡£
+ * åˆ›å»ºåŠŸèƒ½ï¼š
+ * A:åˆ›å»ºæ–‡ä»¶,å¦‚æœæ–‡ä»¶ä¸å­˜åœ¨ï¼Œå°±åˆ›å»ºã€‚å­˜åœ¨ï¼Œå°±ä¸åˆ›å»ºã€‚
  * 		public boolean createNewFile() throws IOException
  * 		
- * B:´´½¨ÎÄ¼ş¼Ğ£¬Èç¹ûÎÄ¼ş¼Ğ²»´æÔÚ£¬¾Í´´½¨¡£´æÔÚ£¬¾Í²»´´½¨¡£
- * 	 public boolean mkdir() µ¥¼¶ÎÄ¼ş¼Ğ
- *   public boolean mkdirs() ¶à¼¶ÎÄ¼ş¼Ğ
+ * B:åˆ›å»ºæ–‡ä»¶å¤¹ï¼Œå¦‚æœæ–‡ä»¶å¤¹ä¸å­˜åœ¨ï¼Œå°±åˆ›å»ºã€‚å­˜åœ¨ï¼Œå°±ä¸åˆ›å»ºã€‚
+ * 	 public boolean mkdir() å•çº§æ–‡ä»¶å¤¹
+ *   public boolean mkdirs() å¤šçº§æ–‡ä»¶å¤¹
  *   
- * µ½µ×´´½¨µÄÊÇÎÄ¼ş»¹ÊÇÎÄ¼ş¼Ğ£¬È¡¾öÓÚÄãÊ¹ÓÃµÄ·½·¨¡£²»È¡¾öÓÚºó×ºÃû¡£
- * Æï°×ÂíµÄ²»Ò»¶¨ÊÇ°à³¤£¬¿ÉÄÜÊÇ×é³¤¡£
+ * åˆ°åº•åˆ›å»ºçš„æ˜¯æ–‡ä»¶è¿˜æ˜¯æ–‡ä»¶å¤¹ï¼Œå–å†³äºä½ ä½¿ç”¨çš„æ–¹æ³•ã€‚ä¸å–å†³äºåç¼€åã€‚
+ * éª‘ç™½é©¬çš„ä¸ä¸€å®šæ˜¯ç­é•¿ï¼Œå¯èƒ½æ˜¯ç»„é•¿ã€‚
  */
 public class FileDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨FileÎÄ¼ş
+		// åˆ›å»ºFileæ–‡ä»¶
 		File file = new File("d:\\a.txt");
 
 		// public boolean createNewFile() throws IOException
 		System.out.println("createNewFile:" + file.createNewFile());
 
-		// ´´½¨ÎÄ¼ş¼Ğ
+		// åˆ›å»ºæ–‡ä»¶å¤¹
 		File file2 = new File("d:\\demo");
 		System.out.println("mkdir:" + file2.mkdir());
 
-		// ´´½¨¶à¼¶ÎÄ¼ş¼Ğ
+		// åˆ›å»ºå¤šçº§æ–‡ä»¶å¤¹
 		// File file3 = new File("d:\\aaa\\bbb");
 		// System.out.println("mkdir:" + file3.mkdir());
 
@@ -36,12 +36,12 @@ public class FileDemo {
 		// File file5 = new File(file4,"bbb");
 		System.out.println("mkdir:" + file4.mkdir());
 		System.out.println("mkdir:" + file5.mkdir());
-		// ÕâÖÖ·½Ê½ËäÈ»¿ÉÒÔ£¬µ«ÊÇ±È½ÏÂé·³
-		// ÔõÃ´°ìÄØ,ÓĞÒ»ÖÖ¸ü¼òµ¥µÄ·½Ê½
+		// è¿™ç§æ–¹å¼è™½ç„¶å¯ä»¥ï¼Œä½†æ˜¯æ¯”è¾ƒéº»çƒ¦
+		// æ€ä¹ˆåŠå‘¢,æœ‰ä¸€ç§æ›´ç®€å•çš„æ–¹å¼
 		File file6 = new File("d:\\ccc\\dddd\\eee\\fff");
 		System.out.println("mkdirs:" + file6.mkdirs());
 
-		// ÏÂÃæÕâ¸öÎÒµ½µ×´´½¨µÄÊÇÊ²Ã´ÄØ?
+		// ä¸‹é¢è¿™ä¸ªæˆ‘åˆ°åº•åˆ›å»ºçš„æ˜¯ä»€ä¹ˆå‘¢?
 		File file7 = new File("d:\\aaa\\bbb\\ccc.txt");
 		System.out.println("mkdir:" + file7.mkdir());
 	}

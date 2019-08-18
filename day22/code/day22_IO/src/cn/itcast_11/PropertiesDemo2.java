@@ -4,30 +4,30 @@ import java.util.Properties;
 import java.util.Set;
 
 /*
- * PropertiesµÄÌØÓĞ¹¦ÄÜ£º
- * A:Ìí¼Ó¹¦ÄÜ
+ * Propertiesçš„ç‰¹æœ‰åŠŸèƒ½ï¼š
+ * A:æ·»åŠ åŠŸèƒ½
  * 		public Object setProperty(String key,String value)
- * B:»ñÈ¡¹¦ÄÜ
+ * B:è·å–åŠŸèƒ½
  * 		public String getProperty(String key)
  * 		public String getProperty(String key,String defaultValue)
  * 		public Set<String> stringPropertyNames()
  */
 public class PropertiesDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
+		// åˆ›å»ºé›†åˆ
 		Properties prop = new Properties();
 
-		// Ìí¼ÓÊı¾İ
+		// æ·»åŠ æ•°æ®
 		prop.setProperty("it001", "javase");
 		prop.setProperty("it003", "android");
 		prop.setProperty("it002", "javaee");
 
-		// »ñÈ¡Êı¾İ
+		// è·å–æ•°æ®
 		// // public String getProperty(String key)
 		// System.out.println(prop.getProperty("it001"));
 		// System.out.println(prop.getProperty("it007"));
 		// // public String getProperty(String key,String defaultValue)
-		// System.out.println(prop.getProperty("it007", "ÖÜĞÇ³Û"));
+		// System.out.println(prop.getProperty("it007", "å‘¨æ˜Ÿé©°"));
 
 		// public Set<String> stringPropertyNames()
 		Set<String> set = prop.stringPropertyNames();

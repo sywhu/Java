@@ -1,15 +1,15 @@
 /*
-	privateµÄÓ¦ÓÃ³¡¾°£º
-		a:°Ñ³ÉÔ±±äÁ¿¸øË½ÓĞ»¯
-		b:¶ÔÍâÌá¹©¹«¹²µÄgetXxx()ºÍsetXxx()·½·¨
+	privateçš„åº”ç”¨åœºæ™¯ï¼š
+		a:æŠŠæˆå‘˜å˜é‡ç»™ç§æœ‰åŒ–
+		b:å¯¹å¤–æä¾›å…¬å…±çš„getXxx()å’ŒsetXxx()æ–¹æ³•
 */
 class Student {
 	private String name;
 	private int age;
 
-	//Õë¶Ôname¸ø³ögetºÍset·½·¨
+	//é’ˆå¯¹nameç»™å‡ºgetå’Œsetæ–¹æ³•
 	public void setName(String n) {
-		//ÎÒÃÇÔÚÕâÀïÆäÊµÒ²ÊÇ¿ÉÒÔ¶Ôname×öÒ»Ğ©ÅĞ¶ÏµÄ
+		//æˆ‘ä»¬åœ¨è¿™é‡Œå…¶å®ä¹Ÿæ˜¯å¯ä»¥å¯¹nameåšä¸€äº›åˆ¤æ–­çš„
 		name = n;
 	}
 
@@ -17,7 +17,7 @@ class Student {
 		return name;
 	}
 
-	//Õë¶Ôage¸ø³ögetºÍset
+	//é’ˆå¯¹ageç»™å‡ºgetå’Œset
 	public void setAge(int a) {
 		age = a;
 	}
@@ -29,16 +29,16 @@ class Student {
 
 class StudentDemo2 {
 	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
+		//åˆ›å»ºå¯¹è±¡
 		Student s = new Student();
-		//Êä³ö³ÉÔ±±äÁ¿µÄÖµ
+		//è¾“å‡ºæˆå‘˜å˜é‡çš„å€¼
 		System.out.println(s.getName()+"---"+s.getAge());
 
-		//¸ø³ÉÔ±±äÁ¿¸³Öµ
-		s.setName("ÁÖÇàÏ¼");
+		//ç»™æˆå‘˜å˜é‡èµ‹å€¼
+		s.setName("æ—é’éœ");
 		s.setAge(28);
 
-		//ÔÙ´ÎÊä³ö³ÉÔ±±äÁ¿µÄÖµ
+		//å†æ¬¡è¾“å‡ºæˆå‘˜å˜é‡çš„å€¼
 		System.out.println(s.getName()+"---"+s.getAge());
 	}	
 }

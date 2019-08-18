@@ -1,7 +1,7 @@
 package cn.itcast_02;
 
 /*
- * ·ºĞÍÔÚÄ¬ÈÏÇé¿öÏÂ£¬ÊÇObjectÀàĞÍ¡£
+ * æ³›å‹åœ¨é»˜è®¤æƒ…å†µä¸‹ï¼Œæ˜¯Objectç±»å‹ã€‚
  */
 public class Tool2Test {
 	public static void main(String[] args) {
@@ -9,11 +9,11 @@ public class Tool2Test {
 		Teacher t = new Teacher();
 
 		// Tool2 tool = new Tool2();
-		// // ÉèÖÃÎªStudent
+		// // è®¾ç½®ä¸ºStudent
 		// tool.setQq(s);
 		// Student ss = (Student) tool.getQq();
 		// ss.love();
-		// // ÉèÖÃÎªTeacher
+		// // è®¾ç½®ä¸ºTeacher
 		// tool.setQq(t);
 		// Teacher tt = (Teacher) tool.getQq();
 		// tt.love();
@@ -25,7 +25,7 @@ public class Tool2Test {
 		Student ss = tool.getQq();
 		ss.love();
 
-		// tool.setQq(t); // ±àÒëÆÚ¼ä¾Í¸æËßÄã£¬Äã´íÁË£¬ÎÒÒÑ¾­Ã÷È·ÁË£¬StudentÀàĞÍ
+		// tool.setQq(t); // ç¼–è¯‘æœŸé—´å°±å‘Šè¯‰ä½ ï¼Œä½ é”™äº†ï¼Œæˆ‘å·²ç»æ˜ç¡®äº†ï¼ŒStudentç±»å‹
 
 		Tool2<Teacher> tool2 = new Tool2<Teacher>();
 		tool2.setQq(t);

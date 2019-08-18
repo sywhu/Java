@@ -1,5 +1,5 @@
 /*
-	¶şÎ¬Êı×é±éÀú
+	æµœå²€æ·®éæ‰®ç²é–¬å¶…å·»
 */
 class Array2Test {
 	public static void main(String[] args) {

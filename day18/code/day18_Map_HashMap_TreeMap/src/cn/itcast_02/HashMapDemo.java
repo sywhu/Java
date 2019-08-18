@@ -6,22 +6,22 @@ import java.util.Set;
 
 /*
  * HashMap<String,String>
- * ¼ü£ºÑ§ÉúĞÕÃû
- * Öµ£ºµØÖ·
- * ´æ´¢Èı¸öÔªËØ£¬È»ºó±éÀú¡£
+ * é”®ï¼šå­¦ç”Ÿå§“å
+ * å€¼ï¼šåœ°å€
+ * å­˜å‚¨ä¸‰ä¸ªå…ƒç´ ï¼Œç„¶åéå†ã€‚
  */
 public class HashMapDemo {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		HashMap<String, String> hm = new HashMap<String, String>();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
-		hm.put("ÕÔŞ±", "°²»Õ");
-		hm.put("Àî±ù±ù", "ºÚÁú½­");
-		hm.put("·¶±ù±ù", "É½¶«");
+		// åˆ›å»ºå¹¶æ·»åŠ å…ƒç´ 
+		hm.put("èµµè–‡", "å®‰å¾½");
+		hm.put("æå†°å†°", "é»‘é¾™æ±Ÿ");
+		hm.put("èŒƒå†°å†°", "å±±ä¸œ");
 
-		// ±éÀú
-		// ·½Ê½1
+		// éå†
+		// æ–¹å¼1
 		Set<String> keySet = hm.keySet();
 		for (String key : keySet) {
 			String value = hm.get(key);
@@ -29,7 +29,7 @@ public class HashMapDemo {
 		}
 		System.out.println("---------------------");
 
-		// ·½Ê½2
+		// æ–¹å¼2
 		// Set<Map.Entry<String, String>> entrySet = hm.entrySet();
 		// for (Map.Entry<String, String> me : entrySet) {
 		// String key = me.getKey();

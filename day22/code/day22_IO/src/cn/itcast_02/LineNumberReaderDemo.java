@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.LineNumberReader;
 
 /*
- * public int getLineNumber():»ñÈ¡µ±Ç°µÄĞĞºÅ
- * public void setLineNumber(int lineNumber):ÉèÖÃµ±Ç°µÄĞĞºÅ
+ * public int getLineNumber():è·å–å½“å‰çš„è¡Œå·
+ * public void setLineNumber(int lineNumber):è®¾ç½®å½“å‰çš„è¡Œå·
  */
 public class LineNumberReaderDemo {
 	public static void main(String[] args) throws IOException {

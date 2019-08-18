@@ -1,33 +1,33 @@
-1£ºFile(ÕÆÎÕ)
-	(1)FileÊÇÓÃÀ´ÃèÊöÓ²ÅÌÉÏµÄÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄ
-	(2)FileµÄ¹¹Ôì·½·¨
+1ï¼šFile(æŒæ¡)
+	(1)Fileæ˜¯ç”¨æ¥æè¿°ç¡¬ç›˜ä¸Šçš„æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„
+	(2)Fileçš„æ„é€ æ–¹æ³•
 		A:File file = new File("d:\\demo\\a.txt");
 		B:File file = new File("d:\\demo","a.txt");
 		C:File file = new File("d:\\demo");
 		  File file2 = new File(file,"a.txt");
-	(3)FileµÄ³ÉÔ±·½·¨(×Ô¼º²¹Æë·½·¨ºÍÖĞÎÄÒâË¼)
-		A:´´½¨¹¦ÄÜ
+	(3)Fileçš„æˆå‘˜æ–¹æ³•(è‡ªå·±è¡¥é½æ–¹æ³•å’Œä¸­æ–‡æ„æ€)
+		A:åˆ›å»ºåŠŸèƒ½
 			CreateNewFile()
 			mkdir()
 			mkdirs()
-		B:É¾³ı¹¦ÄÜ
+		B:åˆ é™¤åŠŸèƒ½
 			delete()
-		C:ÖØÃüÃû¹¦ÄÜ
+		C:é‡å‘½ååŠŸèƒ½
 			renameTo()
-		D:ÅĞ¶Ï¹¦ÄÜ
+		D:åˆ¤æ–­åŠŸèƒ½
 			isDirectory()
 			isFile()
 			exists()
 			isHidden()
 			canWrite()
 			canRead()
-		E:»ù±¾»ñÈ¡¹¦ÄÜ
-			getÈı¸ö
+		E:åŸºæœ¬è·å–åŠŸèƒ½
+			getä¸‰ä¸ª
 			lastModifiedTime
 			length
-		F:¸ß¼¶»ñÈ¡¹¦ÄÜ
+		F:é«˜çº§è·å–åŠŸèƒ½
 			String[] filename = file.list()
 			File[] fileArray = file.listFiles()
-		G:ÎÄ¼şÃû³Æ¹ıÂËÆ÷
-	(4)°¸Àı£º
-		Êä³öÖ¸¶¨Ä¿Â¼ÏÂÖ¸¶¨ºó×ºÃû½áÎ²µÄÎÄ¼şÃû³Æ
+		G:æ–‡ä»¶åç§°è¿‡æ»¤å™¨
+	(4)æ¡ˆä¾‹ï¼š
+		è¾“å‡ºæŒ‡å®šç›®å½•ä¸‹æŒ‡å®šåç¼€åç»“å°¾çš„æ–‡ä»¶åç§°

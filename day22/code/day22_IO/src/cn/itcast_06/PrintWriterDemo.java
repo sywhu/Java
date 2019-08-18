@@ -4,21 +4,21 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /*
- * ´òÓ¡Á÷£º
- * 		×Ö½ÚÁ÷´òÓ¡Á÷	PrintStream
- * 		×Ö·û´òÓ¡Á÷		PrintWriter
+ * æ‰“å°æµï¼š
+ * 		å­—èŠ‚æµæ‰“å°æµ	PrintStream
+ * 		å­—ç¬¦æ‰“å°æµ		PrintWriter
  * 
- * ÌØµã£º
- * 		A:Ö»ÄÜ²Ù×÷Ä¿µÄµØ£¬²»ÄÜ²Ù×÷Êı¾İÔ´¡£
- * 		B:¿ÉÒÔ²Ù×÷ÈÎÒâÀàĞÍµÄÊı¾İ¡£
- * 		C:Èç¹ûÆô¶¯ÁË×Ô¶¯Ë¢ĞÂ£¬ÄÜ¹»×Ô¶¯Ë¢ĞÂ¡£
- * 		D:¿ÉÒÔ²Ù×÷ÎÄ¼şµÄÁ÷	
- * 			ÄÄĞ©Á÷¿ÉÒÔÖ±½Ó²Ù×÷ÎÄ¼şÄØ? FileInputStream,FileOutputStream,FileReader,FileWriter,PrintStream,PrintWriter
- * 			¿´¹¹Ôì·½·¨£ºÈç¹ûÍ¬Ê±¿ÉÒÔ½ÓÊÕFileºÍStringÀàĞÍµÄ¹¹Ôì²ÎÊı£¬¾ÍÊÇ¿ÉÒÔµÄ¡£
+ * ç‰¹ç‚¹ï¼š
+ * 		A:åªèƒ½æ“ä½œç›®çš„åœ°ï¼Œä¸èƒ½æ“ä½œæ•°æ®æºã€‚
+ * 		B:å¯ä»¥æ“ä½œä»»æ„ç±»å‹çš„æ•°æ®ã€‚
+ * 		C:å¦‚æœå¯åŠ¨äº†è‡ªåŠ¨åˆ·æ–°ï¼Œèƒ½å¤Ÿè‡ªåŠ¨åˆ·æ–°ã€‚
+ * 		D:å¯ä»¥æ“ä½œæ–‡ä»¶çš„æµ	
+ * 			å“ªäº›æµå¯ä»¥ç›´æ¥æ“ä½œæ–‡ä»¶å‘¢? FileInputStream,FileOutputStream,FileReader,FileWriter,PrintStream,PrintWriter
+ * 			çœ‹æ„é€ æ–¹æ³•ï¼šå¦‚æœåŒæ—¶å¯ä»¥æ¥æ”¶Fileå’ŒStringç±»å‹çš„æ„é€ å‚æ•°ï¼Œå°±æ˜¯å¯ä»¥çš„ã€‚
  */
 public class PrintWriterDemo {
 	public static void main(String[] args) throws IOException {
-		// ´òÓ¡Á÷×÷ÎªWriterµÄ×ÓÀàµÄÊ¹ÓÃ
+		// æ‰“å°æµä½œä¸ºWriterçš„å­ç±»çš„ä½¿ç”¨
 		PrintWriter pw = new PrintWriter("pw.txt");
 
 		pw.write("hello");
@@ -31,7 +31,7 @@ public class PrintWriterDemo {
 		pw.write("\r\n");
 		pw.flush();
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		pw.close();
 	}
 }

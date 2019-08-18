@@ -8,33 +8,33 @@ import java.io.IOException;
 import java.util.Arrays;
 
 /*
- *ÒÑÖªs.txtÎÄ¼þÖÐÓÐÕâÑùµÄÒ»¸ö×Ö·û´®£º¡°hcexfgijkamdnoqrzstuvwybpl¡±
- *Çë±àÐ´³ÌÐò¶ÁÈ¡Êý¾ÝÄÚÈÝ£¬°ÑÊý¾ÝÅÅÐòºóÐ´Èëss.txtÖÐ¡£
+ *å·²çŸ¥s.txtæ–‡ä»¶ä¸­æœ‰è¿™æ ·çš„ä¸€ä¸ªå­—ç¬¦ä¸²ï¼šâ€œhcexfgijkamdnoqrzstuvwybplâ€
+ *è¯·ç¼–å†™ç¨‹åºè¯»å–æ•°æ®å†…å®¹ï¼ŒæŠŠæ•°æ®æŽ’åºåŽå†™å…¥ss.txtä¸­ã€‚
  *
- *·ÖÎö£º
- *	A:¶ÁÈ¡ÎÄ¼þÄÚÈÝ£¬¶ÁÒ»´Î£¬ÓÃ×Ö·û´®½ÓÊÜ¡£
- *	B:°Ñ×Ö·û´®×ª»»³É×Ö·ûÊý×é
- *	C:¶Ô×Ö·ûÊý×é½øÐÐÅÅÐò
- *	D:°Ñ×Ö·ûÊý×é×ª»»×Ö·û´®
- *	E:°Ñ×Ö·û´®Ð´ÈëÎÄ±¾ÎÄ¼þ
+ *åˆ†æžï¼š
+ *	A:è¯»å–æ–‡ä»¶å†…å®¹ï¼Œè¯»ä¸€æ¬¡ï¼Œç”¨å­—ç¬¦ä¸²æŽ¥å—ã€‚
+ *	B:æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆå­—ç¬¦æ•°ç»„
+ *	C:å¯¹å­—ç¬¦æ•°ç»„è¿›è¡ŒæŽ’åº
+ *	D:æŠŠå­—ç¬¦æ•°ç»„è½¬æ¢å­—ç¬¦ä¸²
+ *	E:æŠŠå­—ç¬¦ä¸²å†™å…¥æ–‡æœ¬æ–‡ä»¶
  */
 public class StringDemo {
 	public static void main(String[] args) throws IOException {
-		// ¶ÁÈ¡ÎÄ¼þÄÚÈÝ£¬¶ÁÒ»´Î£¬ÓÃ×Ö·û´®½ÓÊÜ¡£
+		// è¯»å–æ–‡ä»¶å†…å®¹ï¼Œè¯»ä¸€æ¬¡ï¼Œç”¨å­—ç¬¦ä¸²æŽ¥å—ã€‚
 		BufferedReader br = new BufferedReader(new FileReader("s.txt"));
 		String line = br.readLine();
 		br.close();
 
-		// °Ñ×Ö·û´®×ª»»³É×Ö·ûÊý×é
+		// æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆå­—ç¬¦æ•°ç»„
 		char[] chs = line.toCharArray();
 
-		// ¶Ô×Ö·ûÊý×é½øÐÐÅÅÐò
+		// å¯¹å­—ç¬¦æ•°ç»„è¿›è¡ŒæŽ’åº
 		Arrays.sort(chs);
 
-		// °Ñ×Ö·ûÊý×é×ª»»×Ö·û´®
+		// æŠŠå­—ç¬¦æ•°ç»„è½¬æ¢å­—ç¬¦ä¸²
 		String s = String.valueOf(chs);
 
-		// °Ñ×Ö·û´®Ð´ÈëÎÄ±¾ÎÄ¼þ
+		// æŠŠå­—ç¬¦ä¸²å†™å…¥æ–‡æœ¬æ–‡ä»¶
 		BufferedWriter bw = new BufferedWriter(new FileWriter("ss.txt"));
 		bw.write(s);
 		bw.newLine();

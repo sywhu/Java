@@ -1,5 +1,5 @@
 /*
-	需求：
+	闇�姹傦細
 */
 
 class Array2Sum {
@@ -11,6 +11,6 @@ class Array2Sum {
 				sum +=arr[i][j];
 			}
 		}
-		System.out.println("总数为：" +sum);
+		System.out.println("鎬绘暟涓猴細" +sum);
 	}
 }

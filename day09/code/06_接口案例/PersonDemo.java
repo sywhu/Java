@@ -1,43 +1,43 @@
 /*
-	ÀÏÊ¦ºÍÑ§Éú°¸Àı,¼ÓÈë³éÑÌµÄ¶îÍâ¹¦ÄÜ
+	è€å¸ˆå’Œå­¦ç”Ÿæ¡ˆä¾‹,åŠ å…¥æŠ½çƒŸçš„é¢å¤–åŠŸèƒ½
 
 	Smoking:
-		³éÑÌµÄ¹¦ÄÜ
+		æŠ½çƒŸçš„åŠŸèƒ½
 
-	ÀÏÊ¦£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°£¬Ë¯¾õ
-	Ñ§Éú£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°£¬Ë¯¾õ
+	è€å¸ˆï¼š
+		æˆå‘˜å˜é‡ï¼šå§“åï¼Œå¹´é¾„
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx(),å­¦ä¹ ï¼Œç¡è§‰
+	å­¦ç”Ÿï¼š
+		æˆå‘˜å˜é‡ï¼šå§“åï¼Œå¹´é¾„
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx(),å­¦ä¹ ï¼Œç¡è§‰
 
-	Í¨¹ıÀÏÊ¦ºÍÑ§ÉúÎÒÃÇ¿ÉÒÔ·ÖÎö³öÈËÀà£º
+	é€šè¿‡è€å¸ˆå’Œå­¦ç”Ÿæˆ‘ä»¬å¯ä»¥åˆ†æå‡ºäººç±»ï¼š
 		
-	ÈË£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°()£¬Ë¯¾õ(){}
+	äººï¼š
+		æˆå‘˜å˜é‡ï¼šå§“åï¼Œå¹´é¾„
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx(),å­¦ä¹ ()ï¼Œç¡è§‰(){}
 
-	×îÖÕµÄ·ÖÎö£º
-	ÈË£º³éÏóÀà
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°()£¬Ë¯¾õ(){}
-			ÀÏÊ¦
-				²¿·ÖÀÏÊ¦³éÑÌ
-			Ñ§Éú
-				²¿·ÖÑ§Éú³éÑÌ
-	Smoking:½Ó¿Ú
-		³éÑÌµÄ¹¦ÄÜ
+	æœ€ç»ˆçš„åˆ†æï¼š
+	äººï¼šæŠ½è±¡ç±»
+		æˆå‘˜å˜é‡ï¼šå§“åï¼Œå¹´é¾„
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx(),å­¦ä¹ ()ï¼Œç¡è§‰(){}
+			è€å¸ˆ
+				éƒ¨åˆ†è€å¸ˆæŠ½çƒŸ
+			å­¦ç”Ÿ
+				éƒ¨åˆ†å­¦ç”ŸæŠ½çƒŸ
+	Smoking:æ¥å£
+		æŠ½çƒŸçš„åŠŸèƒ½
 */
-//³éÑÌ½Ó¿Ú
+//æŠ½çƒŸæ¥å£
 interface Smoking {
 	public abstract void smoke();
 }
 
-//ÈË³éÏóÀà
+//äººæŠ½è±¡ç±»
 abstract class Person {
 	private String name;
 	private int age;
@@ -65,16 +65,16 @@ abstract class Person {
 		return age;
 	}
 
-	//Ë¯¾õ
+	//ç¡è§‰
 	public void sleep() {
-		System.out.println("Ë¯¾õ");
+		System.out.println("ç¡è§‰");
 	}
 
-	//Ñ§Ï°
+	//å­¦ä¹ 
 	public abstract void study();
 }
 
-//ÀÏÊ¦
+//è€å¸ˆ
 class Teacher extends Person {
 	public Teacher(){}
 
@@ -83,11 +83,11 @@ class Teacher extends Person {
 	}
 
 	public void study() {
-		System.out.println("ÀÏÊ¦ÒªÑ§Ï°ÈçºÎ°ÑÖªÊ¶½²Ã÷°×");
+		System.out.println("è€å¸ˆè¦å­¦ä¹ å¦‚ä½•æŠŠçŸ¥è¯†è®²æ˜ç™½");
 	}
 }
 
-//²¿·Ö³éÑÌÀÏÊ¦
+//éƒ¨åˆ†æŠ½çƒŸè€å¸ˆ
 class SmokeTeacher extends Teacher implements Smoking {
 	public SmokeTeacher(){}
 
@@ -96,11 +96,11 @@ class SmokeTeacher extends Teacher implements Smoking {
 	}
 
 	public void smoke() {
-		System.out.println("°®³éÑÌµÄÀÏÊ¦");
+		System.out.println("çˆ±æŠ½çƒŸçš„è€å¸ˆ");
 	}
 }
 
-//Ñ§Éú
+//å­¦ç”Ÿ
 class Student extends Person {
 	public Student(){}
 
@@ -109,11 +109,11 @@ class Student extends Person {
 	}
 
 	public void study() {
-		System.out.println("Ñ§ÉúÒªºÃºÃÑ§Ï°£¬ÌìÌìÏòÉÏ");
+		System.out.println("å­¦ç”Ÿè¦å¥½å¥½å­¦ä¹ ï¼Œå¤©å¤©å‘ä¸Š");
 	}
 }
 
-//²¿·Ö³éÑÌÑ§Éú
+//éƒ¨åˆ†æŠ½çƒŸå­¦ç”Ÿ
 class SmokeStudent extends Student implements Smoking {
 	public SmokeStudent(){}
 
@@ -122,16 +122,16 @@ class SmokeStudent extends Student implements Smoking {
 	}
 
 	public void smoke() {
-		System.out.println("°®³éÑÌµÄÑ§Éú");
+		System.out.println("çˆ±æŠ½çƒŸçš„å­¦ç”Ÿ");
 	}
 }
 
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 class PersonDemo {
 	public static void main(String[] args) {
 		//SmokeTeacher
 		SmokeTeacher st = new SmokeTeacher();
-		st.setName("±ÏÀÑÒ¯");
+		st.setName("æ¯•å§¥çˆ·");
 		st.setAge(35);
 		System.out.println(st.getName()+"---"+st.getAge());
 		st.sleep();
@@ -139,7 +139,7 @@ class PersonDemo {
 		st.smoke();
 		System.out.println("--------------------------");
 
-		SmokeTeacher st2 = new SmokeTeacher("´«ÖÇ¼±ÏÈ·æ",30);
+		SmokeTeacher st2 = new SmokeTeacher("ä¼ æ™ºæ€¥å…ˆé”‹",30);
 		System.out.println(st2.getName()+"---"+st2.getAge());
 		st2.sleep();
 		st2.study();

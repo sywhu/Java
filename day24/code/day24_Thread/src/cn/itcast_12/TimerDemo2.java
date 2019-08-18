@@ -7,27 +7,27 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /*
- * Õ¨µ¯ÒªÁ¬ĞøÕ¨
+ * ç‚¸å¼¹è¦è¿ç»­ç‚¸
  */
 public class TimerDemo2 {
 	public static void main(String[] args) throws ParseException {
-		// ´´½¨¶¨ÒåÆ÷
+		// åˆ›å»ºå®šä¹‰å™¨
 		Timer t = new Timer();
 
-		// Æô¶¯ÈÎÎñ
+		// å¯åŠ¨ä»»åŠ¡
 		// t.schedule(new TimerTask() {
 		// @Override
 		// public void run() {
-		// System.out.println("ÒªÕ¨ÁË£¬¿ìÅÜ");
+		// System.out.println("è¦ç‚¸äº†ï¼Œå¿«è·‘");
 		// }
 		// }, 2000);
 
 		// public void schedule(TimerTask task,long delay,long
-		// period):µÚÒ»´ÎÊÇdelayºóÆô¶¯£¬ÒÔºóÃ¿´ÎÊÇperiodÆô¶¯
+		// period):ç¬¬ä¸€æ¬¡æ˜¯delayåå¯åŠ¨ï¼Œä»¥åæ¯æ¬¡æ˜¯periodå¯åŠ¨
 		// t.schedule(new TimerTask() {
 		// @Override
 		// public void run() {
-		// System.out.println("Õ¨ËÀÄã");
+		// System.out.println("ç‚¸æ­»ä½ ");
 		// }
 		// }, 3000, 1000);
 
@@ -39,7 +39,7 @@ public class TimerDemo2 {
 		t.schedule(new TimerTask() {
 			@Override
 			public void run() {
-				System.out.println("Õ¨ËÀÄã");
+				System.out.println("ç‚¸æ­»ä½ ");
 			}
 		}, d, 3000);
 	}

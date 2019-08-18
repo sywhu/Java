@@ -10,27 +10,27 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * Ò»¸ö´°Ìå£¬Ò»¸ö±êÇ©£¬Ò»¸öÎÄ±¾¿ò
+ * ä¸€ä¸ªçª—ä½“ï¼Œä¸€ä¸ªæ ‡ç­¾ï¼Œä¸€ä¸ªæ–‡æœ¬æ¡†
  */
 public class KeyDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("¼üÅÌÊÂ¼þ");
-		// ÉèÖÃ´°ÌåÊôÐÔ
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
+		final Frame f = new Frame("é”®ç›˜äº‹ä»¶");
+		// è®¾ç½®çª—ä½“å±žæ€§
 		f.setBounds(500, 250, 400, 300);
-		// ÉèÖÃ²¼¾Ö
+		// è®¾ç½®å¸ƒå±€
 		f.setLayout(new FlowLayout());
 
-		// ´´½¨±êÇ©¶ÔÏó
-		Label label = new Label("ÇëÊäÈëÄãµÄqqºÅÂë£¬Ö»ÄÜÊäÈëÊý×Ö,²»ÐÅÄãÊÔÊÔ:");
-		// ´´½¨ÎÄ±¾¿ò
+		// åˆ›å»ºæ ‡ç­¾å¯¹è±¡
+		Label label = new Label("è¯·è¾“å…¥ä½ çš„qqå·ç ï¼Œåªèƒ½è¾“å…¥æ•°å­—,ä¸ä¿¡ä½ è¯•è¯•:");
+		// åˆ›å»ºæ–‡æœ¬æ¡†
 		TextField tf = new TextField(20);
 
-		// Ìí¼Óµ½´°Ìå
+		// æ·»åŠ åˆ°çª—ä½“
 		f.add(label);
 		f.add(tf);
 
-		// ×¢²áÊÂ¼þ
+		// æ³¨å†Œäº‹ä»¶
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -44,13 +44,13 @@ public class KeyDemo {
 				// public char getKeyChar()
 				char ch = e.getKeyChar();
 				if (!(ch >= KeyEvent.VK_0 && ch <= KeyEvent.VK_9)) {
-					System.out.println("ÄãÊäÈëµÄÊÇ£º" + ch);
+					System.out.println("ä½ è¾“å…¥çš„æ˜¯ï¼š" + ch);
 					e.consume();
 				}
 			}
 		});
 
-		// ÉèÖÃ¿É¼û
+		// è®¾ç½®å¯è§
 		f.setVisible(true);
 	}
 }

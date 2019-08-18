@@ -1,29 +1,29 @@
 package cn.itcast_02;
 
 /*
- * Ñ¡ÔñÅÅĞò£º
+ * é€‰æ‹©æ’åºï¼š
  */
 public class ArrayDemo {
 	public static void main(String[] args) {
-		// ¶¨ÒåÊı×é
+		// å®šä¹‰æ•°ç»„
 		int[] arr = { 24, 69, 80, 57, 13 };
 
 		/*
-		 * // µÚÒ»´Î int x = 0; for (int y = x + 1; y < arr.length; y++) { if
+		 * // ç¬¬ä¸€æ¬¡ int x = 0; for (int y = x + 1; y < arr.length; y++) { if
 		 * (arr[y] < arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] =
-		 * temp; } } System.out.println("µÚÒ»´Î±È½Ï£º"); // ±éÀúÊı×é printArray(arr);
+		 * temp; } } System.out.println("ç¬¬ä¸€æ¬¡æ¯”è¾ƒï¼š"); // éå†æ•°ç»„ printArray(arr);
 		 * 
-		 * // µÚ¶ş´Î x = 1; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
+		 * // ç¬¬äºŒæ¬¡ x = 1; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
 		 * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
-		 * System.out.println("µÚ¶ş´Î±È½Ï£º"); // ±éÀúÊı×é printArray(arr);
+		 * System.out.println("ç¬¬äºŒæ¬¡æ¯”è¾ƒï¼š"); // éå†æ•°ç»„ printArray(arr);
 		 * 
-		 * // µÚÈı´Î x = 2; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
+		 * // ç¬¬ä¸‰æ¬¡ x = 2; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
 		 * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
-		 * System.out.println("µÚÈı´Î±È½Ï£º"); // ±éÀúÊı×é printArray(arr);
+		 * System.out.println("ç¬¬ä¸‰æ¬¡æ¯”è¾ƒï¼š"); // éå†æ•°ç»„ printArray(arr);
 		 * 
-		 * // µÚËÄ´Î x = 3; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
+		 * // ç¬¬å››æ¬¡ x = 3; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
 		 * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
-		 * System.out.println("µÚËÄ´Î±È½Ï£º"); // ±éÀúÊı×é printArray(arr);
+		 * System.out.println("ç¬¬å››æ¬¡æ¯”è¾ƒï¼š"); // éå†æ•°ç»„ printArray(arr);
 		 */
 
 		// for (int x = 0; x < arr.length - 1; x++) {
@@ -36,13 +36,13 @@ public class ArrayDemo {
 		// }
 		// }
 
-		// Ñ¡ÔñÅÅĞò
+		// é€‰æ‹©æ’åº
 		selectSort(arr);
-		// ±éÀúÊı×é
+		// éå†æ•°ç»„
 		printArray(arr);
 	}
 
-	// Ñ¡ÔñÅÅĞò
+	// é€‰æ‹©æ’åº
 	public static void selectSort(int[] arr) {
 		for (int x = 0; x < arr.length - 1; x++) {
 			for (int y = x + 1; y < arr.length; y++) {
@@ -55,7 +55,7 @@ public class ArrayDemo {
 		}
 	}
 
-	// ±éÀúÊı×é
+	// éå†æ•°ç»„
 	public static void printArray(int[] arr) {
 		System.out.print("[");
 		for (int x = 0; x < arr.length; x++) {

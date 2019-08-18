@@ -1,39 +1,39 @@
 package cn.itcast_01;
 
 /*
- * StringBuffer:Ïß³Ì°²È«µÄ¿É±ä×Ö·û´®¡£
- * Í¨¹ı²é¿´API£¬ÎÒÃÇÖªµÀÁË£¬ËüÊÇ¿ÉÒÔ¸Ä±äÄÚÈİºÍ³¤¶ÈµÄ¡£
+ * StringBuffer:çº¿ç¨‹å®‰å…¨çš„å¯å˜å­—ç¬¦ä¸²ã€‚
+ * é€šè¿‡æŸ¥çœ‹APIï¼Œæˆ‘ä»¬çŸ¥é“äº†ï¼Œå®ƒæ˜¯å¯ä»¥æ”¹å˜å†…å®¹å’Œé•¿åº¦çš„ã€‚
  * 
- * StringBufferºÍStringµÄÇø±ğ?
- * A:StringBufferµÄ³¤¶È¿É±ä
- * B:StringµÄ³¤¶È¹Ì¶¨
+ * StringBufferå’ŒStringçš„åŒºåˆ«?
+ * A:StringBufferçš„é•¿åº¦å¯å˜
+ * B:Stringçš„é•¿åº¦å›ºå®š
  * 
- * ¹¹Ôì·½·¨£º
- * 		StringBuffer()£º ¹¹ÔìÒ»¸öÆäÖĞ²»´ø×Ö·ûµÄ×Ö·û´®»º³åÇø£¬Æä³õÊ¼ÈİÁ¿Îª 16 ¸ö×Ö·û¡£
- * 		StringBuffer(int capacity)£º¹¹ÔìÒ»¸ö²»´ø×Ö·û£¬µ«¾ßÓĞÖ¸¶¨³õÊ¼ÈİÁ¿µÄ×Ö·û´®»º³åÇø¡£
- * 		StringBuffer(String str):¹¹ÔìÒ»¸ö×Ö·û´®»º³åÇø£¬²¢½«ÆäÄÚÈİ³õÊ¼»¯ÎªÖ¸¶¨µÄ×Ö·û´®ÄÚÈİ¡£
+ * æ„é€ æ–¹æ³•ï¼š
+ * 		StringBuffer()ï¼š æ„é€ ä¸€ä¸ªå…¶ä¸­ä¸å¸¦å­—ç¬¦çš„å­—ç¬¦ä¸²ç¼“å†²åŒºï¼Œå…¶åˆå§‹å®¹é‡ä¸º 16 ä¸ªå­—ç¬¦ã€‚
+ * 		StringBuffer(int capacity)ï¼šæ„é€ ä¸€ä¸ªä¸å¸¦å­—ç¬¦ï¼Œä½†å…·æœ‰æŒ‡å®šåˆå§‹å®¹é‡çš„å­—ç¬¦ä¸²ç¼“å†²åŒºã€‚
+ * 		StringBuffer(String str):æ„é€ ä¸€ä¸ªå­—ç¬¦ä¸²ç¼“å†²åŒºï¼Œå¹¶å°†å…¶å†…å®¹åˆå§‹åŒ–ä¸ºæŒ‡å®šçš„å­—ç¬¦ä¸²å†…å®¹ã€‚
  * 
- * ³ÉÔ±·½·¨£º
- * 		public int length():·µ»Ø³¤¶È£¨×Ö·ûÊı£©Êµ¼ÊÖµ
- * 		public int capacity():·µ»Øµ±Ç°ÈİÁ¿	ÀíÂÛÖµ
+ * æˆå‘˜æ–¹æ³•ï¼š
+ * 		public int length():è¿”å›é•¿åº¦ï¼ˆå­—ç¬¦æ•°ï¼‰å®é™…å€¼
+ * 		public int capacity():è¿”å›å½“å‰å®¹é‡	ç†è®ºå€¼
  */
 public class StringBufferDemo {
 	public static void main(String[] args) {
-		// StringBuffer()£º ¹¹ÔìÒ»¸öÆäÖĞ²»´ø×Ö·ûµÄ×Ö·û´®»º³åÇø£¬Æä³õÊ¼ÈİÁ¿Îª 16 ¸ö×Ö·û¡£
+		// StringBuffer()ï¼š æ„é€ ä¸€ä¸ªå…¶ä¸­ä¸å¸¦å­—ç¬¦çš„å­—ç¬¦ä¸²ç¼“å†²åŒºï¼Œå…¶åˆå§‹å®¹é‡ä¸º 16 ä¸ªå­—ç¬¦ã€‚
 		StringBuffer sb = new StringBuffer();
 		System.out.println("sb:" + sb);
 		System.out.println("sb.length():" + sb.length());
 		System.out.println("sb.capacity():" + sb.capacity());
 		System.out.println("----------------------------");
 
-		// StringBuffer(int capacity)£º¹¹ÔìÒ»¸ö²»´ø×Ö·û£¬µ«¾ßÓĞÖ¸¶¨³õÊ¼ÈİÁ¿µÄ×Ö·û´®»º³åÇø¡£
+		// StringBuffer(int capacity)ï¼šæ„é€ ä¸€ä¸ªä¸å¸¦å­—ç¬¦ï¼Œä½†å…·æœ‰æŒ‡å®šåˆå§‹å®¹é‡çš„å­—ç¬¦ä¸²ç¼“å†²åŒºã€‚
 		StringBuffer sb2 = new StringBuffer(20);
 		System.out.println("sb2:" + sb2);
 		System.out.println("sb2.length():" + sb2.length());
 		System.out.println("sb2.capacity():" + sb2.capacity());
 		System.out.println("----------------------------");
 
-		// StringBuffer(String str):¹¹ÔìÒ»¸ö×Ö·û´®»º³åÇø£¬²¢½«ÆäÄÚÈİ³õÊ¼»¯ÎªÖ¸¶¨µÄ×Ö·û´®ÄÚÈİ¡£
+		// StringBuffer(String str):æ„é€ ä¸€ä¸ªå­—ç¬¦ä¸²ç¼“å†²åŒºï¼Œå¹¶å°†å…¶å†…å®¹åˆå§‹åŒ–ä¸ºæŒ‡å®šçš„å­—ç¬¦ä¸²å†…å®¹ã€‚
 		StringBuffer sb3 = new StringBuffer("helloworld");
 		System.out.println("sb3:" + sb3);
 		System.out.println("sb3.length():" + sb3.length());

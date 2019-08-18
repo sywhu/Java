@@ -1,29 +1,29 @@
 package cn.itcast_04;
 
 /*
- * ÅĞ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÊÇ¶Ô³Æ×Ö·û´®
- * ÀıÈç"abc"²»ÊÇ¶Ô³Æ×Ö·û´®£¬"aba"¡¢"abba"¡¢"aaa"¡¢"mnanm"ÊÇ¶Ô³Æ×Ö·û´®
+ * åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦ä¸²æ˜¯å¦æ˜¯å¯¹ç§°å­—ç¬¦ä¸²
+ * ä¾‹å¦‚"abc"ä¸æ˜¯å¯¹ç§°å­—ç¬¦ä¸²ï¼Œ"aba"ã€"abba"ã€"aaa"ã€"mnanm"æ˜¯å¯¹ç§°å­—ç¬¦ä¸²
  */
 public class StringBufferTest3 {
 	public static void main(String[] args) {
 		String s = "mnanm";
 		// String s = "abcde";
 
-		// ·½Ê½1²âÊÔ
+		// æ–¹å¼1æµ‹è¯•
 		// boolean b = isDuiCheng(s);
 		// System.out.println(b);
 
-		// ·½Ê½2²âÊÔ
+		// æ–¹å¼2æµ‹è¯•
 		boolean b2 = isDuiCheng(s);
 		System.out.println(b2);
 
 	}
 
-	// ·½Ê½1
+	// æ–¹å¼1
 	// public static boolean isDuiCheng(String s) {
-	// // °Ñ×Ö·û´®×ª³ÉÊı×é
+	// // æŠŠå­—ç¬¦ä¸²è½¬æˆæ•°ç»„
 	// char[] chs = s.toCharArray();
-	// // °ÑÊı×éµÄÔªËØ·´×ª
+	// // æŠŠæ•°ç»„çš„å…ƒç´ åè½¬
 	// for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
 	// if (chs[start] != chs[end]) {
 	// return false;
@@ -34,9 +34,9 @@ public class StringBufferTest3 {
 
 	// public static boolean isDuiCheng(String s) {
 	// boolean flag = true;
-	// // °Ñ×Ö·û´®×ª³ÉÊı×é
+	// // æŠŠå­—ç¬¦ä¸²è½¬æˆæ•°ç»„
 	// char[] chs = s.toCharArray();
-	// // °ÑÊı×éµÄÔªËØ·´×ª
+	// // æŠŠæ•°ç»„çš„å…ƒç´ åè½¬
 	// for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
 	// if (chs[start] != chs[end]) {
 	// flag = false;
@@ -46,9 +46,9 @@ public class StringBufferTest3 {
 	// return flag;
 	// }
 
-	// ·½Ê½2
+	// æ–¹å¼2
 	public static boolean isDuiCheng(String s) {
-		// ·´×ª
+		// åè½¬
 		StringBuffer sb = new StringBuffer(s);
 		sb.reverse();
 		String ss = new String(sb);
@@ -59,7 +59,7 @@ public class StringBufferTest3 {
 		// }
 		return ss.equals(s);
 
-		// Ò»¾ä»°¸ã¶¨
+		// ä¸€å¥è¯æå®š
 		// return new String(new StringBuffer(s).reverse()).equals(s);
 	}
 }

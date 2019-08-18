@@ -4,47 +4,47 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /*
- * »ñÈ¡¹¦ÄÜ
- * 		PatternºÍMatcherÀàµÄÊ¹ÓÃ
+ * è·å–åŠŸèƒ½
+ * 		Patternå’ŒMatcherç±»çš„ä½¿ç”¨
  * 
  */
 public class RegexDemo {
 	public static void main(String[] args) {
-		// Ä£Ê½¶ÔÏóºÍÆ¥ÅäÆ÷¶ÔÏóµÄ»ù±¾Ê¹ÓÃ
-		// // °Ñ¹æÔò×ª»»ÎªÄ£Ê½¶ÔÏó
+		// æ¨¡å¼å¯¹è±¡å’ŒåŒ¹é…å™¨å¯¹è±¡çš„åŸºæœ¬ä½¿ç”¨
+		// // æŠŠè§„åˆ™è½¬æ¢ä¸ºæ¨¡å¼å¯¹è±¡
 		// Pattern p = Pattern.compile("a*b");
-		// // Í¨¹ıÄ£Ê½¶ÔÏóµÃµ½Æ¥ÅäÆ÷¶ÔÏó
+		// // é€šè¿‡æ¨¡å¼å¯¹è±¡å¾—åˆ°åŒ¹é…å™¨å¯¹è±¡
 		// Matcher m = p.matcher("aaaaab");
-		// // Í¨¹ıÆ¥ÅäÆ÷¶ÔÏóµ÷ÓÃ¹¦ÄÜ
+		// // é€šè¿‡åŒ¹é…å™¨å¯¹è±¡è°ƒç”¨åŠŸèƒ½
 		// boolean b = m.matches();
 		// System.out.println(b);
 
-		// ×÷ÎªÅĞ¶ÏÀ´Ëµ
+		// ä½œä¸ºåˆ¤æ–­æ¥è¯´
 		// String s = "aaaaab";
 		// String regex = "a*b";
 		// boolean flag = s.matches(regex);
 		// System.out.println(flag);
 
-		// ĞèÇó£º»ñÈ¡¹¦ÄÜ
-		// »ñÈ¡ÓÉÈı¸ö×Ö·û×é³ÉµÄµ¥´Ê
+		// éœ€æ±‚ï¼šè·å–åŠŸèƒ½
+		// è·å–ç”±ä¸‰ä¸ªå­—ç¬¦ç»„æˆçš„å•è¯
 		String s = "da jia hao,wo men dou hen ai java.";
-		// ¶¨Òå¹æÔò
+		// å®šä¹‰è§„åˆ™
 		String regex = "\\b[a-z]{3}\\b";
 
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(s);
 
-		// public boolean find():ÎÊÊÇ·ñÓĞÆ¥ÅäµÄ
+		// public boolean find():é—®æ˜¯å¦æœ‰åŒ¹é…çš„
 		// boolean b = m.find();
 		// System.out.println(b);
-		// ÎÒÃÇµÃÄÃ³öÀ´
+		// æˆ‘ä»¬å¾—æ‹¿å‡ºæ¥
 		// public String group()
 		// String ss = m.group();
 		// System.out.println(ss);
 
 		// b = m.find();
 		// System.out.println(b);
-		// // ÎÒÃÇµÃÄÃ³öÀ´
+		// // æˆ‘ä»¬å¾—æ‹¿å‡ºæ¥
 		// // public String group()
 		// ss = m.group();
 		// System.out.println(ss);

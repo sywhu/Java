@@ -1,15 +1,15 @@
 /*
-	ÄäÃû¶ÔÏó£ºÃ»ÓĞÃû×ÖµÄ¶ÔÏó¡£
+	åŒ¿åå¯¹è±¡ï¼šæ²¡æœ‰åå­—çš„å¯¹è±¡ã€‚
 
-	Ê¹ÓÃ³¡¾°£º
-		A:µ÷ÓÃ·½·¨,¸Ã·½·¨½ö½ö±»Ê¹ÓÃÒ»´ÎµÄÊ±ºòÊÊÓÃ¡£
-		B:×÷ÎªÊµ¼Ê²ÎÊı´«µİ
+	ä½¿ç”¨åœºæ™¯ï¼š
+		A:è°ƒç”¨æ–¹æ³•,è¯¥æ–¹æ³•ä»…ä»…è¢«ä½¿ç”¨ä¸€æ¬¡çš„æ—¶å€™é€‚ç”¨ã€‚
+		B:ä½œä¸ºå®é™…å‚æ•°ä¼ é€’
 */
 
-//¶¨ÒåÑ§ÉúÀà£¬Ğ´Ò»¸ölove·½·¨
+//å®šä¹‰å­¦ç”Ÿç±»ï¼Œå†™ä¸€ä¸ªloveæ–¹æ³•
 class Student  {
 	public void love() {
-		System.out.println("Ñ§ÉúÏ²»¶·Å¼Ù");
+		System.out.println("å­¦ç”Ÿå–œæ¬¢æ”¾å‡");
 	}
 }
 
@@ -19,30 +19,30 @@ class StudentDemo {
 	}
 }
 
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 class NoNameObject {
 	public static void main(String[] args) {
 		/*
-		//´´½¨¶ÔÏó
+		//åˆ›å»ºå¯¹è±¡
 		Student s = new Student();
 		s.love();
 		s.love();
 
-		//ÄäÃû¶ÔÏó
+		//åŒ¿åå¯¹è±¡
 		new Student().love();
 		new Student().love();
 		*/
 
-		//ÓĞÃû×ÖµÄÇé¿ö
+		//æœ‰åå­—çš„æƒ…å†µ
 		//StudentDemo sd = new StudentDemo();
 		//Student s = new Student();
 		//sd.test(s);
 
-		//Ã»ÓĞÃû×ÖµÄÇé¿ö
+		//æ²¡æœ‰åå­—çš„æƒ…å†µ
 		//StudentDemo sd = new StudentDemo();
 		//sd.test(new Student());
 
-		//²»·ÁÔÚÀ´Ò»²½
+		//ä¸å¦¨åœ¨æ¥ä¸€æ­¥
 		new StudentDemo().test(new Student());
 	}
 }

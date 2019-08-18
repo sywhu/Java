@@ -1,26 +1,26 @@
 /*
-	Á·Ï°2£ºÇë°ÑÃ¨¹·°¸Àı¸ÄÎª¼Ì³ĞµÄ°æ±¾£¬×Ô¼º·ÖÎö£¬×Ô¼º²âÊÔ¡£µÈ»á½²
+	ç»ƒä¹ 2ï¼šè¯·æŠŠçŒ«ç‹—æ¡ˆä¾‹æ”¹ä¸ºç»§æ‰¿çš„ç‰ˆæœ¬ï¼Œè‡ªå·±åˆ†æï¼Œè‡ªå·±æµ‹è¯•ã€‚ç­‰ä¼šè®²
 
-	Ã¨£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()£¬show()£¬catchMouse()
-	¹·£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()£¬show()£¬lookDoor()
+	çŒ«ï¼š
+		æˆå‘˜å˜é‡ï¼šå§“åï¼Œå¹´é¾„
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx()ï¼Œshow()ï¼ŒcatchMouse()
+	ç‹—ï¼š
+		æˆå‘˜å˜é‡ï¼šå§“åï¼Œå¹´é¾„
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx()ï¼Œshow()ï¼ŒlookDoor()
 
-	¶¯Îï£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()£¬show()
+	åŠ¨ç‰©ï¼š
+		æˆå‘˜å˜é‡ï¼šå§“åï¼Œå¹´é¾„
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx()ï¼Œshow()
 
-	Ã¨£º¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
+	çŒ«ï¼šæ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
 		catchMouse()
-	¹·£º¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
+	ç‹—ï¼šæ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
 		lookDoor()
 
-	²âÊÔÀà£º
+	æµ‹è¯•ç±»ï¼š
 		main(String[] args):
 */
 class Animal {
@@ -63,7 +63,7 @@ class Cat extends Animal {
 	}
 
 	public void catchMouse() {
-		System.out.println("Ã¨×½ÀÏÊó");
+		System.out.println("çŒ«æ‰è€é¼ ");
 	}
 }
 
@@ -75,32 +75,32 @@ class Dog extends Animal {
 	}
 
 	public void lookDoor() {
-		System.out.println("¹·¿ÉÒÔ¿´ÃÅ");
+		System.out.println("ç‹—å¯ä»¥çœ‹é—¨");
 	}
 }
 
 class AnimalDemo {
 	public static void main(String[] args) {
-		//Ã¨Àà²âÊÔ
+		//çŒ«ç±»æµ‹è¯•
 		Cat c = new Cat();
-		c.setName("¼Ó·ÆÃ¨");
+		c.setName("åŠ è²çŒ«");
 		c.setAge(3);
 		c.show();
 		c.catchMouse();
 		System.out.println("------------");
-		Cat cc = new Cat("tomÃ¨",6);
+		Cat cc = new Cat("tomçŒ«",6);
 		cc.show();
 		cc.catchMouse();
 		System.out.println("------------");
 
 		Dog d = new Dog();
-		d.setName("Ğ¥Ìì");
+		d.setName("å•¸å¤©");
 		d.setAge(5);
 		d.show();
 		d.lookDoor();
 		System.out.println("------------");
 
-		Dog dd = new Dog("Íú²Æ",8);
+		Dog dd = new Dog("æ—ºè´¢",8);
 		dd.show();
 		dd.lookDoor();
 	}

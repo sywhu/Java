@@ -3,11 +3,11 @@ package cn.itcast_03;
 import java.io.IOException;
 
 /*
- * Runtime£º
+ * Runtimeï¼š
  * 		public static Runtime getRuntime()
  * 
- * Ã»ÓĞ¹¹Ôì£¬·½·¨²»È«ÊÇ¾²Ì¬µÄ¡£
- * ÕâÖĞÀà¿Ï¶¨ÊÇÍ¨¹ı¾²Ì¬µÄ·½·¨·µ»ØÁË¸ÃÀàµÄ¶ÔÏó¡£
+ * æ²¡æœ‰æ„é€ ï¼Œæ–¹æ³•ä¸å…¨æ˜¯é™æ€çš„ã€‚
+ * è¿™ä¸­ç±»è‚¯å®šæ˜¯é€šè¿‡é™æ€çš„æ–¹æ³•è¿”å›äº†è¯¥ç±»çš„å¯¹è±¡ã€‚
  */
 public class RuntimeDemo {
 	public static void main(String[] args) throws IOException {

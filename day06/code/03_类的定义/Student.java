@@ -1,49 +1,49 @@
 /*
-	µÚÒ»²½£º·ÖÎöÊÂÎï
-		Ñ§ÉúÊÂÎï£º
-			ÊôÐÔ£ºÑ§ºÅ£¬ÐÕÃû£¬ÄêÁä
-			ÐÐÎª£ºÑ§Ï°£¬³Ô·¹£¬Ë¯¾õ
+	ç¬¬ä¸€æ­¥ï¼šåˆ†æžäº‹ç‰©
+		å­¦ç”Ÿäº‹ç‰©ï¼š
+			å±žæ€§ï¼šå­¦å·ï¼Œå§“åï¼Œå¹´é¾„
+			è¡Œä¸ºï¼šå­¦ä¹ ï¼Œåƒé¥­ï¼Œç¡è§‰
 
-	µÚ¶þ²½£º°ÑÊÂÎï×ª»»ÎªÀà
-		Ñ§ÉúÀà£º
-			³ÉÔ±±äÁ¿£ºÑ§ºÅ£¬ÐÕÃû£¬ÄêÁä
-			³ÉÔ±·½·¨£ºÑ§Ï°£¬³Ô·¹£¬Ë¯¾õ
+	ç¬¬äºŒæ­¥ï¼šæŠŠäº‹ç‰©è½¬æ¢ä¸ºç±»
+		å­¦ç”Ÿç±»ï¼š
+			æˆå‘˜å˜é‡ï¼šå­¦å·ï¼Œå§“åï¼Œå¹´é¾„
+			æˆå‘˜æ–¹æ³•ï¼šå­¦ä¹ ï¼Œåƒé¥­ï¼Œç¡è§‰
 
-	µÚÈý²½£º°ÑÀàÓÃÓ¢ÎÄÌåÏÖ
+	ç¬¬ä¸‰æ­¥ï¼šæŠŠç±»ç”¨è‹±æ–‡ä½“çŽ°
 		Student:
-			³ÉÔ±±äÁ¿£ºsid£¬name£¬age
-			³ÉÔ±·½·¨£ºstudy()£¬eat()£¬sleep()
+			æˆå‘˜å˜é‡ï¼šsidï¼Œnameï¼Œage
+			æˆå‘˜æ–¹æ³•ï¼šstudy()ï¼Œeat()ï¼Œsleep()
 
-	µÚËÄ²½£ºÐ´´úÂëÌåÏÖ
-		³ÉÔ±±äÁ¿£ºÆäÊµ¾ÍÊÇÒ»¸ö±äÁ¿£¬Ö»²»¹ý¶¨ÒåÔÚÀàÖÐ·½·¨Íâ£¬²¢ÇÒÒ²¿ÉÒÔ²»¸ø³õÊ¼»¯Öµ¡£
-		³ÉÔ±·½·¨£ºÆäÊµ¾ÍÊÇÒ»¸ö·½·¨£¬Ö»²»¹ý²»ÐèÒªstaticÁË¡£
+	ç¬¬å››æ­¥ï¼šå†™ä»£ç ä½“çŽ°
+		æˆå‘˜å˜é‡ï¼šå…¶å®žå°±æ˜¯ä¸€ä¸ªå˜é‡ï¼Œåªä¸è¿‡å®šä¹‰åœ¨ç±»ä¸­æ–¹æ³•å¤–ï¼Œå¹¶ä¸”ä¹Ÿå¯ä»¥ä¸ç»™åˆå§‹åŒ–å€¼ã€‚
+		æˆå‘˜æ–¹æ³•ï¼šå…¶å®žå°±æ˜¯ä¸€ä¸ªæ–¹æ³•ï¼Œåªä¸è¿‡ä¸éœ€è¦staticäº†ã€‚
 
-	Á·Ï°£º
-		ÊÖ»ú
+	ç»ƒä¹ ï¼š
+		æ‰‹æœº
 */
-//ÕâÊÇÎÒµÄÑ§ÉúÀà
+//è¿™æ˜¯æˆ‘çš„å­¦ç”Ÿç±»
 class Student {
-	//³ÉÔ±±äÁ¿
-	//Ñ§ºÅ
+	//æˆå‘˜å˜é‡
+	//å­¦å·
 	String sid;
-	//ÐÕÃû
+	//å§“å
 	String name;
-	//ÄêÁä
+	//å¹´é¾„
 	int age;
 
-	//³ÉÔ±·½·¨
-	//Ñ§Ï°µÄ·½·¨
+	//æˆå‘˜æ–¹æ³•
+	//å­¦ä¹ çš„æ–¹æ³•
 	public void study() {
-		System.out.println("Ñ§Éú°®Ñ§Ï°");
+		System.out.println("å­¦ç”Ÿçˆ±å­¦ä¹ ");
 	}
 
-	//³Ô·¹µÄ·½·¨
+	//åƒé¥­çš„æ–¹æ³•
 	public void eat() {
-		System.out.println("Ñ§ÉúÒª³Ô·¹");
+		System.out.println("å­¦ç”Ÿè¦åƒé¥­");
 	}
 
-	//Ë¯¾õµÄ·½·¨
+	//ç¡è§‰çš„æ–¹æ³•
 	public void sleep() {
-		System.out.println("Ñ§ÉúÏëË¯¾õ");
+		System.out.println("å­¦ç”Ÿæƒ³ç¡è§‰");
 	}
 }

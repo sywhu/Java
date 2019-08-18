@@ -6,19 +6,19 @@ import java.util.Date;
 public class ThreadKill extends Thread {
 	@Override
 	public void run() {
-		System.out.println("¿ªÊ¼Ö´ĞĞ£º"
+		System.out.println("å¼€å§‹æ‰§è¡Œï¼š"
 				+ new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 						.format(new Date()));
 
 		try {
-			// Ç×£¬²»Òª´òÈÅÎÒ£¬ÎÒÒªĞİÏ¢10Ãë
+			// äº²ï¼Œä¸è¦æ‰“æ‰°æˆ‘ï¼Œæˆ‘è¦ä¼‘æ¯10ç§’
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// e.printStackTrace();
-			System.out.println("ÎÒ±»É±ËÀÁË");
+			System.out.println("æˆ‘è¢«æ€æ­»äº†");
 		}
 
-		System.out.println("½áÊøÖ´ĞĞ£º"
+		System.out.println("ç»“æŸæ‰§è¡Œï¼š"
 				+ new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 						.format(new Date()));
 	}

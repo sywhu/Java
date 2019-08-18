@@ -1,4 +1,4 @@
-//¾²Ì¬µÄÄÚÈİÊÇ±»ËùÓĞ¶ÔÏó¹²ÏíµÄ£¬·Ç¾²Ì¬µÄÊÇÃ¿¸ö¶ÔÏóÌØÓĞµÄ¡£
+//é™æ€çš„å†…å®¹æ˜¯è¢«æ‰€æœ‰å¯¹è±¡å…±äº«çš„ï¼Œéé™æ€çš„æ˜¯æ¯ä¸ªå¯¹è±¡ç‰¹æœ‰çš„ã€‚
 class Student {
 	String name;
 	int age;
@@ -22,15 +22,15 @@ class Student {
 
 class StudentDemo4 {
 	public static void main(String[] args) {
-		Student s1 = new Student("´óÇÇ",28,"sgyy001");
-		Student s2 = new Student("Ğ¡ÇÇ",20);
-		Student s3 = new Student("õõ²õ",18);
+		Student s1 = new Student("å¤§ä¹”",28,"sgyy001");
+		Student s2 = new Student("å°ä¹”",20);
+		Student s3 = new Student("è²‚è‰",18);
 
 		s1.show();
 		s2.show();
 		s3.show();
 
-		s2.name = "²Ü²Ù";
+		s2.name = "æ›¹æ“";
 		s2.classNumber = "sgyy007";
 
 		s1.show();

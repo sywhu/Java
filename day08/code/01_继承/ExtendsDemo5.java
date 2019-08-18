@@ -1,11 +1,11 @@
-//ÈËÀà
+//äººç±»
 class Person {
 	private String name;
 	private int age;
 
 	public Person() {}
 
-	public Person(String name,int age) { //"Íõ±¦Ç¿",18
+	public Person(String name,int age) { //"ç‹å®å¼º",18
 		this.name = name;
 		this.age = age;
 	}
@@ -27,47 +27,47 @@ class Person {
 	}
 
 	public void eat() {
-		System.out.println("³Ô·¹");
+		System.out.println("åƒé¥­");
 	}
 
 	public void sleep() {
-		System.out.println("Ë¯¾õ");
+		System.out.println("ç¡è§‰");
 	}
 }
-//Ñ§ÉúÀà
+//å­¦ç”Ÿç±»
 class Student extends Person  {
 	public Student() {}
 
-	public Student(String name,int age) {	//"Íõ±¦Ç¿",18
-		super(name,age); //"Íõ±¦Ç¿",18
+	public Student(String name,int age) {	//"ç‹å®å¼º",18
+		super(name,age); //"ç‹å®å¼º",18
 	}
 }
 
-//ÀÏÊ¦Àà
+//è€å¸ˆç±»
 class Teacher extends Person {
 }
 
 class ExtendsDemo5 {
 	public static void main(String[] args) {
-		//Ñ§ÉúÀà
+		//å­¦ç”Ÿç±»
 		Student s = new Student();
-		s.setName("Íõ×æÏÍ");
+		s.setName("ç‹ç¥–è´¤");
 		s.setAge(27);
 		System.out.println(s.getName()+"---"+s.getAge());
 		s.eat();
 		s.sleep();
 		System.out.println("--------------------------");
 
-		Student s2 = new Student("Íõ±¦Ç¿",18);
+		Student s2 = new Student("ç‹å®å¼º",18);
 		System.out.println(s2.getName()+"---"+s2.getAge());
 		s2.eat();
 		s2.sleep();
 		System.out.println("--------------------------");
 
 
-		//ÀÏÊ¦Àà
+		//è€å¸ˆç±»
 		Teacher t = new Teacher();
-		t.setName("Íõ×æÀ¶");
+		t.setName("ç‹ç¥–è“");
 		t.setAge(25);
 		System.out.println(t.getName()+"---"+t.getAge());
 		t.eat();

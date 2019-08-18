@@ -1,21 +1,21 @@
 package cn.itcast_04;
 
 /*
- * public final void setDaemon(boolean on):µ±ÕıÔÚÔËĞĞµÄÏß³Ì¶¼ÊÇÊØ»¤Ïß³ÌÊ±£¬Java ĞéÄâ»úÍË³ö¡£ 
+ * public final void setDaemon(boolean on):å½“æ­£åœ¨è¿è¡Œçš„çº¿ç¨‹éƒ½æ˜¯å®ˆæŠ¤çº¿ç¨‹æ—¶ï¼ŒJava è™šæ‹Ÿæœºé€€å‡ºã€‚ 
  * 
- * ¾ÙÀı£ºÌ¹¿Ë´óÕ½
+ * ä¸¾ä¾‹ï¼šå¦å…‹å¤§æˆ˜
  */
 public class ThreadDaemonDemo {
 	public static void main(String[] args) {
-		Thread.currentThread().setName("Áõ±¸");
+		Thread.currentThread().setName("åˆ˜å¤‡");
 
 		ThreadDaemon td1 = new ThreadDaemon();
 		ThreadDaemon td2 = new ThreadDaemon();
 
-		td1.setName("¹ØÓğ");
-		td2.setName("ÕÅ·É");
+		td1.setName("å…³ç¾½");
+		td2.setName("å¼ é£");
 
-		// ÉèÖÃÊØ»¤Ïß³Ì
+		// è®¾ç½®å®ˆæŠ¤çº¿ç¨‹
 		td1.setDaemon(true);
 		td2.setDaemon(true);
 

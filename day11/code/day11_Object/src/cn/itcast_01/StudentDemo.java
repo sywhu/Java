@@ -1,23 +1,23 @@
 package cn.itcast_01;
 
 /*
- * Object:ÊÇÀà²ã´Î½á¹¹µÄ¸ùÀà£¬ËùÓĞÀà¶¼Ö±½Ó»òÕß¼ä½ÓµÄ¼Ì³Ğ×Ô¸ÃÀà¡£
+ * Object:æ˜¯ç±»å±‚æ¬¡ç»“æ„çš„æ ¹ç±»ï¼Œæ‰€æœ‰ç±»éƒ½ç›´æ¥æˆ–è€…é—´æ¥çš„ç»§æ‰¿è‡ªè¯¥ç±»ã€‚
  * 
- * ObjectÀàµÄ·½·¨£º
- * public int hashCode():·µ»Ø¸Ã¶ÔÏóµÄ¹şÏ£ÂëÖµ¡£
- * 		¹şÏ£Öµ²»ÊÇÊµ¼ÊµÄµØÖ·Öµ£¬Ò»°ãÎÒÃÇ°ÑËüÀí½âÎªµØÖ·Öµ¡£ÒòÎªËüÊÇ¸ù¾İµØÖ·Öµ»»Ëã³öÀ´µÄÒ»¸öÖµ¡£
- * 		¾ÙÀı£º401£¬401
- * public final Class<?> getClass():·µ»Ø´Ë Object µÄÔËĞĞÊ±Àà¡£
- * 		public String getName():·µ»Ø¸Ã¶ÔÏó¶ÔÓ¦µÄÀà/³éÏóÀà/½Ó¿ÚµÄÃû³Æ¡£
- * public String toString():·µ»Ø¸Ã¶ÔÏóµÄ×Ö·û´®±íÊ¾¡£
+ * Objectç±»çš„æ–¹æ³•ï¼š
+ * public int hashCode():è¿”å›è¯¥å¯¹è±¡çš„å“ˆå¸Œç å€¼ã€‚
+ * 		å“ˆå¸Œå€¼ä¸æ˜¯å®é™…çš„åœ°å€å€¼ï¼Œä¸€èˆ¬æˆ‘ä»¬æŠŠå®ƒç†è§£ä¸ºåœ°å€å€¼ã€‚å› ä¸ºå®ƒæ˜¯æ ¹æ®åœ°å€å€¼æ¢ç®—å‡ºæ¥çš„ä¸€ä¸ªå€¼ã€‚
+ * 		ä¸¾ä¾‹ï¼š401ï¼Œ401
+ * public final Class<?> getClass():è¿”å›æ­¤ Object çš„è¿è¡Œæ—¶ç±»ã€‚
+ * 		public String getName():è¿”å›è¯¥å¯¹è±¡å¯¹åº”çš„ç±»/æŠ½è±¡ç±»/æ¥å£çš„åç§°ã€‚
+ * public String toString():è¿”å›è¯¥å¯¹è±¡çš„å­—ç¬¦ä¸²è¡¨ç¤ºã€‚
  * 		getClass().getName() + '@' + Integer.toHexString(hashCode())
  * 
  * 		Integer
- * 			public static String toHexString(int i):·µ»ØÒ»¸öÕûÊıµÄÊ®Áù½øÖÆµÄ×Ö·û´®±íÊ¾ĞÎÊ½
+ * 			public static String toHexString(int i):è¿”å›ä¸€ä¸ªæ•´æ•°çš„åå…­è¿›åˆ¶çš„å­—ç¬¦ä¸²è¡¨ç¤ºå½¢å¼
  * 
- * 		Õâ¸ö·½·¨ÊÇÃ»ÓĞÈÎºÎÒâÒåµÄ£¬½¨ÒéÖØĞ´´Ë·½·¨¡£
- * 			A:×Ô¼ºÊÖ¶¯Ğ´£¬µ«ÊÇĞ§¹û²»ºÃ¿´£¬ËùÒÔ²»×Ô¼ºĞ´¡£
- * 			B:×Ô¶¯Éú³É£¬Ğ§¹û»¹ĞĞ£¬ÍÆ¼ö·½Ê½¡£
+ * 		è¿™ä¸ªæ–¹æ³•æ˜¯æ²¡æœ‰ä»»ä½•æ„ä¹‰çš„ï¼Œå»ºè®®é‡å†™æ­¤æ–¹æ³•ã€‚
+ * 			A:è‡ªå·±æ‰‹åŠ¨å†™ï¼Œä½†æ˜¯æ•ˆæœä¸å¥½çœ‹ï¼Œæ‰€ä»¥ä¸è‡ªå·±å†™ã€‚
+ * 			B:è‡ªåŠ¨ç”Ÿæˆï¼Œæ•ˆæœè¿˜è¡Œï¼Œæ¨èæ–¹å¼ã€‚
  * 
  * public boolean equals(Object obj)
  * protected void finalize()
@@ -38,7 +38,7 @@ public class StudentDemo {
 		System.out.println("------------");
 
 		Student s4 = new Student();
-		// Èç¹ûÄãÖ±½ÓÊä³öÒ»¸ö¶ÔÏóµÄÃû³Æ£¬ÆäÊµÊä³öµÄÊÇ¸Ã¶ÔÏóµ÷ÓÃµÄtoString()·½·¨ºóµÄ×Ö·û´®
+		// å¦‚æœä½ ç›´æ¥è¾“å‡ºä¸€ä¸ªå¯¹è±¡çš„åç§°ï¼Œå…¶å®è¾“å‡ºçš„æ˜¯è¯¥å¯¹è±¡è°ƒç”¨çš„toString()æ–¹æ³•åçš„å­—ç¬¦ä¸²
 		System.out.println(s4); // cn.itcast_01.Student@79f1d448
 		// System.out.println(s4.toString()); // cn.itcast_01.Student@79f1d448
 
@@ -47,7 +47,7 @@ public class StudentDemo {
 		// Integer.toHexString(s4.hashCode());
 		// System.out.println(s);
 		
-		Student s5 = new Student("ÁÖÇàÏ¼",28);
+		Student s5 = new Student("æ—é’éœ",28);
 		System.out.println(s5);
 	}
 }

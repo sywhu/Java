@@ -3,11 +3,11 @@ package cn.itcast_02;
 import java.util.HashSet;
 
 /*
- * HashSet£º²»±£Ö¤ set µÄµü´úË³Ğò£¬ÌØ±ğÊÇËü²»±£Ö¤¸ÃË³Ğòºã¾Ã²»±ä¡£
+ * HashSetï¼šä¸ä¿è¯ set çš„è¿­ä»£é¡ºåºï¼Œç‰¹åˆ«æ˜¯å®ƒä¸ä¿è¯è¯¥é¡ºåºæ’ä¹…ä¸å˜ã€‚
  */
 public class HashSetDemo {
 	public static void main(String[] args) {
-		// HashSet´æ´¢×Ö·û´®ÔªËØ
+		// HashSetå­˜å‚¨å­—ç¬¦ä¸²å…ƒç´ 
 		HashSet<String> hs = new HashSet<String>();
 
 		System.out.println(hs.add("hello"));

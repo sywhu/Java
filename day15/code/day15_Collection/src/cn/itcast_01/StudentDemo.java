@@ -1,31 +1,31 @@
 package cn.itcast_01;
 
 /*
- * ĞèÇó£ºÇë¶¨ÒåÒ»¸öÊı×é£¬´æ´¢Èı¸öÑ§Éú¶ÔÏó£¬È»ºó±éÀú¸ÃÊı×é£¬µÃµ½Ã¿Ò»¸öÑ§Éú¶ÔÏóµÄ³ÉÔ±±äÁ¿Öµ¡£
+ * éœ€æ±‚ï¼šè¯·å®šä¹‰ä¸€ä¸ªæ•°ç»„ï¼Œå­˜å‚¨ä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡ï¼Œç„¶åéå†è¯¥æ•°ç»„ï¼Œå¾—åˆ°æ¯ä¸€ä¸ªå­¦ç”Ÿå¯¹è±¡çš„æˆå‘˜å˜é‡å€¼ã€‚
  * 
- * Student[]	¶ÔÏóÊı×é¡£
+ * Student[]	å¯¹è±¡æ•°ç»„ã€‚
  */
 public class StudentDemo {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏóÊı×é
+		// åˆ›å»ºå¯¹è±¡æ•°ç»„
 		Student[] students = new Student[3];
 
-		// Ä¬ÈÏÖµÊÇnull
+		// é»˜è®¤å€¼æ˜¯null
 		for (int x = 0; x < students.length; x++) {
 			System.out.println(students[x]);
 		}
 
-		// ´´½¨Ñ§Éú¶ÔÏóÔªËØ
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
-		Student s2 = new Student("·çÇåÑï", 31);
-		Student s3 = new Student("ÁÖÖ¾Áá", 18);
+		// åˆ›å»ºå­¦ç”Ÿå¯¹è±¡å…ƒç´ 
+		Student s1 = new Student("æ—é’éœ", 28);
+		Student s2 = new Student("é£æ¸…æ‰¬", 31);
+		Student s3 = new Student("æ—å¿—ç²", 18);
 
-		// °ÑÔªËØ·Åµ½Êı×éÖĞ
+		// æŠŠå…ƒç´ æ”¾åˆ°æ•°ç»„ä¸­
 		students[0] = s1;
 		students[1] = s2;
 		students[2] = s3;
 
-		// ¸³ÖµºóµÄÑ§Éú¶ÔÏó
+		// èµ‹å€¼åçš„å­¦ç”Ÿå¯¹è±¡
 		for (int x = 0; x < students.length; x++) {
 			// System.out.println(students[x]);
 			Student s = students[x];

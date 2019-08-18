@@ -4,25 +4,25 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /*
- * Ïß³Ì³Ø£ºÏß³Ì³ØÀïµÄÃ¿Ò»¸öÏß³Ì´úÂë½áÊøºó£¬²¢²»»áËÀÍö£¬¶øÊÇÔÙ´Î»Øµ½Ïß³Ì³ØÖĞ³ÉÎª¿ÕÏĞ×´Ì¬£¬µÈ´ıÏÂÒ»¸ö¶ÔÏóÀ´Ê¹ÓÃ¡£
+ * çº¿ç¨‹æ± ï¼šçº¿ç¨‹æ± é‡Œçš„æ¯ä¸€ä¸ªçº¿ç¨‹ä»£ç ç»“æŸåï¼Œå¹¶ä¸ä¼šæ­»äº¡ï¼Œè€Œæ˜¯å†æ¬¡å›åˆ°çº¿ç¨‹æ± ä¸­æˆä¸ºç©ºé—²çŠ¶æ€ï¼Œç­‰å¾…ä¸‹ä¸€ä¸ªå¯¹è±¡æ¥ä½¿ç”¨ã€‚
  * 
- * ²½Öè£º
- * 		A:¶¨ÒåÀàMyCallableÊµÏÖCallable½Ó¿Ú
- * 		B:´´½¨MyCallable¶ÔÏó
- * 		C:´´½¨Ïß³Ì³Ø¶ÔÏó
- * 		D:Ìá½»
- * 		E:ÊÍ·Å
+ * æ­¥éª¤ï¼š
+ * 		A:å®šä¹‰ç±»MyCallableå®ç°Callableæ¥å£
+ * 		B:åˆ›å»ºMyCallableå¯¹è±¡
+ * 		C:åˆ›å»ºçº¿ç¨‹æ± å¯¹è±¡
+ * 		D:æäº¤
+ * 		E:é‡Šæ”¾
  */
 public class ThreadPoolDemo {
 	public static void main(String[] args) {
-		// ´´½¨ÊµÏÖÁËRunnable½Ó¿ÚµÄ¶ÔÏó
+		// åˆ›å»ºå®ç°äº†Runnableæ¥å£çš„å¯¹è±¡
 		MyCallable my = new MyCallable();
 
-		// ´´½¨Ïß³Ì³Ø¶ÔÏó
+		// åˆ›å»ºçº¿ç¨‹æ± å¯¹è±¡
 		// public static ExecutorService newFixedThreadPool(int nThreads)
 		ExecutorService pool = Executors.newFixedThreadPool(5);
 
-		// Ìá½»´úÂë
+		// æäº¤ä»£ç 
 		// Future<?> submit(Runnable task)
 		pool.submit(my);
 		pool.submit(my);
@@ -30,7 +30,7 @@ public class ThreadPoolDemo {
 		pool.submit(my);
 		pool.submit(my);
 
-		// ÊÍ·Å
+		// é‡Šæ”¾
 		pool.shutdown();
 	}
 }

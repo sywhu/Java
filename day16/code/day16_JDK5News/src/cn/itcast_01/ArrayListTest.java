@@ -3,20 +3,20 @@ package cn.itcast_01;
 import java.util.ArrayList;
 
 /*
- * ÓÃArrayList´æ´¢×Ô¶¨Òå¶ÔÏó²¢±éÀú¡£ÒªÇó¼ÓÈë·ºĞÍ£¬±éÀúÊ¹ÓÃÈıÖÖ·½Ê½
+ * ç”¨ArrayListå­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡å¹¶éå†ã€‚è¦æ±‚åŠ å…¥æ³›å‹ï¼Œéå†ä½¿ç”¨ä¸‰ç§æ–¹å¼
  */
 public class ArrayListTest {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		ArrayList<Student> array = new ArrayList<Student>();
 
-		// ´´½¨ÔªËØ
-		Student s1 = new Student("ÂíËÕ", 18);
-		Student s2 = new Student("Ù¡Àöæ«", 20);
-		Student s3 = new Student("Íõ´ó´¸", 19);
-		Student s4 = new Student("ÂŞÈıÅÚ", 21);
+		// åˆ›å»ºå…ƒç´ 
+		Student s1 = new Student("é©¬è‹", 18);
+		Student s2 = new Student("ä½Ÿä¸½å¨…", 20);
+		Student s3 = new Student("ç‹å¤§é”¤", 19);
+		Student s4 = new Student("ç½—ä¸‰ç‚®", 21);
 
-		// Ìí¼ÓÔªËØ
+		// æ·»åŠ å…ƒç´ 
 		array.add(s1);
 		array.add(s2);
 		array.add(s3);

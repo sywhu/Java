@@ -9,21 +9,21 @@ public class StringTest4 {
 		System.out.println(count);
 	}
 
-	// Ğ´¹¦ÄÜÊµÏÖ£º
-	// ĞÎÊ½²ÎÊı:String maxString,String minString;
-	// ·µ»ØÖµÀàĞÍ:int
+	// å†™åŠŸèƒ½å®ç°ï¼š
+	// å½¢å¼å‚æ•°:String maxString,String minString;
+	// è¿”å›å€¼ç±»å‹:int
 	public static int getCount(String maxString, String minString) {
-		// ¶¨ÒåÍ³¼Æ±äÁ¿
+		// å®šä¹‰ç»Ÿè®¡å˜é‡
 		int count = 0;
 
-		// µÚÒ»´Î²éÕÒ
+		// ç¬¬ä¸€æ¬¡æŸ¥æ‰¾
 		int index = maxString.indexOf(minString);
 
 		while (index != -1) {
 			count++;
-			// ½ØÈ¡£¬µÃµ½ĞÂµÄ´ó´®
+			// æˆªå–ï¼Œå¾—åˆ°æ–°çš„å¤§ä¸²
 			maxString = maxString.substring(index + minString.length());
-			// ¼ÌĞø²éÕÒ
+			// ç»§ç»­æŸ¥æ‰¾
 			index = maxString.indexOf(minString);
 		}
 

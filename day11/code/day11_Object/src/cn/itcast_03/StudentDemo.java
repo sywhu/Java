@@ -5,7 +5,7 @@ package cn.itcast_03;
  */
 public class StudentDemo {
 	public static void main(String[] args) throws CloneNotSupportedException {
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
+		Student s1 = new Student("æ—é’éœ", 28);
 
 		Object obj = s1.clone();
 		Student s2 = (Student) obj;
@@ -17,7 +17,7 @@ public class StudentDemo {
 		System.out.println(s3.getName() + "---" + s3.getAge());
 		System.out.println("--------------------------------");
 
-		s1.setName("ÕÅÂüÓñ");
+		s1.setName("å¼ æ›¼ç‰");
 
 		System.out.println(s1.getName() + "---" + s1.getAge());
 		System.out.println(s2.getName() + "---" + s2.getAge());

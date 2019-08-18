@@ -1,5 +1,5 @@
 /*
-	¶¨ÒåÒ»¸ö³¤·½ĞÎÀà,¶¨ÒåÇóÖÜ³¤ºÍÃæ»ıµÄ·½·¨£¬È»ºó¶¨ÒåÒ»¸ö²âÊÔÁËTest£¬½øĞĞ²âÊÔ¡£
+	å®šä¹‰ä¸€ä¸ªé•¿æ–¹å½¢ç±»,å®šä¹‰æ±‚å‘¨é•¿å’Œé¢ç§¯çš„æ–¹æ³•ï¼Œç„¶åå®šä¹‰ä¸€ä¸ªæµ‹è¯•äº†Testï¼Œè¿›è¡Œæµ‹è¯•ã€‚
 */
 class ChangFangXing {
 	private int length;
@@ -39,16 +39,16 @@ class ChangFangXing {
 
 class Test {
 	public static void main(String[] args) {
-		//ÎŞ²Î
+		//æ— å‚
 		ChangFangXing cfx = new ChangFangXing();
 		cfx.setLength(100);
 		cfx.setWidth(50);
-		System.out.println("ÖÜ³¤ÊÇ£º"+cfx.zhouChang());
-		System.out.println("Ãæ»ıÊÇ£º"+cfx.area());
+		System.out.println("å‘¨é•¿æ˜¯ï¼š"+cfx.zhouChang());
+		System.out.println("é¢ç§¯æ˜¯ï¼š"+cfx.area());
 
-		//´ø²Î
+		//å¸¦å‚
 		ChangFangXing cfx2 = new ChangFangXing(100,50);
-		System.out.println("ÖÜ³¤ÊÇ£º"+cfx2.zhouChang());
-		System.out.println("Ãæ»ıÊÇ£º"+cfx2.area());
+		System.out.println("å‘¨é•¿æ˜¯ï¼š"+cfx2.zhouChang());
+		System.out.println("é¢ç§¯æ˜¯ï¼š"+cfx2.area());
 	}
 }

@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * List集合的特有遍历：普通for循环
- * size()方法和get()方法结合使用
+ * List闆嗗悎鐨勭壒鏈夐亶鍘嗭細鏅�歠or寰幆
+ * size()鏂规硶鍜実et()鏂规硶缁撳悎浣跨敤
  */
 public class ListDemo2 {
 	public static void main(String[] args) {
-		// 创建集合对象
+		// 鍒涘缓闆嗗悎瀵硅薄
 		List list = new ArrayList();
 
-		// 测试功能
+		// 娴嬭瘯鍔熻兘
 		list.add("hello");
 		list.add("world");
 		list.add("java");

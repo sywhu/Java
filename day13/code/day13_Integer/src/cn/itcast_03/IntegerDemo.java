@@ -1,7 +1,7 @@
 package cn.itcast_03;
 
 /*
- * intºÍStringÀàĞÍµÄÏà»¥×ª»»¼´¿É¡£
+ * intå’ŒStringç±»å‹çš„ç›¸äº’è½¬æ¢å³å¯ã€‚
  * 
  * int -- String
  * 		String.valueOf(number)
@@ -14,25 +14,25 @@ public class IntegerDemo {
 	public static void main(String[] args) {
 		// int -- String
 		int number = 100;
-		// ·½·¨1
+		// æ–¹æ³•1
 		String s1 = number + "";
-		//·½Ê½2
+		//æ–¹å¼2
 		String s2 = String.valueOf(number);
-		//·½Ê½3
+		//æ–¹å¼3
 		//int -- Integer -- String
 		Integer i = new Integer(number);
 		String s3 = i.toString();
-		//·½Ê½4
+		//æ–¹å¼4
 		String s4 = Integer.toString(number);
 		System.out.println("--------------");
 
 		String s = "100";
-		//·½Ê½1
+		//æ–¹å¼1
 		//String -- Integer -- int
 		Integer ii = new Integer(s);
 		//public int intValue()
 		int num = ii.intValue();
-		//·½Ê½2
+		//æ–¹å¼2
 		//public static int parseInt(String s)
 		int num2 = Integer.parseInt(s);
 	}

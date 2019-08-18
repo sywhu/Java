@@ -1,10 +1,10 @@
 /*
-	Ç¿ÖÆ×ª»»:´Ó´óµ½Ð¡£¬²»½¨ÒéÊ¹ÓÃ£¬ÒòÎª¿ÉÄÜÓÐ¾«¶ÈµÄ¶ªÊ§¡£
-		Ä¿±êÀàÐÍ ±äÁ¿Ãû=(Ä¿±êÀàÐÍ)(±»×ª»»µÄÊý¾Ý);
+	å¼ºåˆ¶è½¬æ¢:ä»Žå¤§åˆ°å°ï¼Œä¸å»ºè®®ä½¿ç”¨ï¼Œå› ä¸ºå¯èƒ½æœ‰ç²¾åº¦çš„ä¸¢å¤±ã€‚
+		ç›®æ ‡ç±»åž‹ å˜é‡å=(ç›®æ ‡ç±»åž‹)(è¢«è½¬æ¢çš„æ•°æ®);
 */
 class DataTypeDemo2 {
 	public static void main(String[] args) {
-		//¶¨Òå±äÁ¿
+		//å®šä¹‰å˜é‡
 		byte by = 3;
 		int i = 4;
 		byte bb = (byte)(by + i);

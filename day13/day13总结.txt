@@ -1,36 +1,36 @@
-1£ºStringBuffer/StringBuilder(ÕÆÎÕ)
-	(1)StringBufferÊÇÏß³Ì°²È«µÄ¿É±ä×Ö·û´®¡£
-	   StringBuilderÊÇÏß³Ì²»°²È«µÄ¿É±ä×Ö·û´®¡£
-	   ºÍStringBufferµÄ¹¦ÄÜÒ»Ñù¡£¾ÍÊÇĞ§ÂÊ¸ßÒ»Ğ©£¬µ«ÊÇ²»°²È«¡£
-	(2)¹¹Ôì·½·¨£º
+1ï¼šStringBuffer/StringBuilder(æŒæ¡)
+	(1)StringBufferæ˜¯çº¿ç¨‹å®‰å…¨çš„å¯å˜å­—ç¬¦ä¸²ã€‚
+	   StringBuilderæ˜¯çº¿ç¨‹ä¸å®‰å…¨çš„å¯å˜å­—ç¬¦ä¸²ã€‚
+	   å’ŒStringBufferçš„åŠŸèƒ½ä¸€æ ·ã€‚å°±æ˜¯æ•ˆç‡é«˜ä¸€äº›ï¼Œä½†æ˜¯ä¸å®‰å…¨ã€‚
+	(2)æ„é€ æ–¹æ³•ï¼š
 		A:StringBuffer sb = new StringBuffer();
 		B:StringBuffer sb = new StringBuffer(50);
 		C:StringBuffer sb = new StringBuffer("hello");
-	(3)³ÉÔ±·½·¨£º(×Ô¼º²¹Æë·½·¨ºÍÒâË¼)
-		A:Ìí¼Ó¹¦ÄÜ
-			public StringBuffer append(String str):×·¼Ó×Ö·û´®
-			public StringBuffer insert(int offset,String str):ÔÚÖ¸¶¨Î»ÖÃ²åÈë×Ö·û´®
-		B:É¾³ı¹¦ÄÜ
-			public StringBuffer deleteCharAt(int index):É¾³ıÖ¸¶¨Î»ÖÃ×Ö·û
-			public StringBuffer delete(int start,int end):É¾³ı´ÓÖ¸¶¨¿ªÊ¼µ½½áÊøµÄ×Ö·û£¬×ó°üÓÒ²»°ü
-		C:Ìæ»»¹¦ÄÜ
-			public StringBuffer replace(int start,int end,String str):ÒÔ×Ö·û´®Ìæ´ú´ÓÖ¸¶¨¿ªÊ¼µ½½áÊøµÄ×Ö·û
-		D:·´×ª¹¦ÄÜ
-			public StringBuffer reverse():·´×ª
-		E:½ØÈ¡¹¦ÄÜ
-			public String substring(int start):´ÓÖ¸¶¨Ë÷Òıµ½Ä©Î²µÄ×Ö·û´®
-			public String substring(int start,int end):´ÓÖ¸¶¨Ë÷Òı¿ªÊ¼µ½Ö¸¶¨Ë÷Òı½áÊøµÄ×Ö·û´®
-	(4)°¸Àı£º
-		A:StringºÍStringBufferµÄÏà»¥×ª»»
-			Í¨¹ı¹¹Ôì¼´¿É¡£
-		B:°ÑÊı×é×ª³ÉÖ¸¶¨µÄ×Ö·û´®¸ñÊ½
-		C:°Ñ×Ö·û´®·´×ª
-		D:ÅĞ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÊÇ¶Ô³Æ×Ö·û´®
+	(3)æˆå‘˜æ–¹æ³•ï¼š(è‡ªå·±è¡¥é½æ–¹æ³•å’Œæ„æ€)
+		A:æ·»åŠ åŠŸèƒ½
+			public StringBuffer append(String str):è¿½åŠ å­—ç¬¦ä¸²
+			public StringBuffer insert(int offset,String str):åœ¨æŒ‡å®šä½ç½®æ’å…¥å­—ç¬¦ä¸²
+		B:åˆ é™¤åŠŸèƒ½
+			public StringBuffer deleteCharAt(int index):åˆ é™¤æŒ‡å®šä½ç½®å­—ç¬¦
+			public StringBuffer delete(int start,int end):åˆ é™¤ä»æŒ‡å®šå¼€å§‹åˆ°ç»“æŸçš„å­—ç¬¦ï¼Œå·¦åŒ…å³ä¸åŒ…
+		C:æ›¿æ¢åŠŸèƒ½
+			public StringBuffer replace(int start,int end,String str):ä»¥å­—ç¬¦ä¸²æ›¿ä»£ä»æŒ‡å®šå¼€å§‹åˆ°ç»“æŸçš„å­—ç¬¦
+		D:åè½¬åŠŸèƒ½
+			public StringBuffer reverse():åè½¬
+		E:æˆªå–åŠŸèƒ½
+			public String substring(int start):ä»æŒ‡å®šç´¢å¼•åˆ°æœ«å°¾çš„å­—ç¬¦ä¸²
+			public String substring(int start,int end):ä»æŒ‡å®šç´¢å¼•å¼€å§‹åˆ°æŒ‡å®šç´¢å¼•ç»“æŸçš„å­—ç¬¦ä¸²
+	(4)æ¡ˆä¾‹ï¼š
+		A:Stringå’ŒStringBufferçš„ç›¸äº’è½¬æ¢
+			é€šè¿‡æ„é€ å³å¯ã€‚
+		B:æŠŠæ•°ç»„è½¬æˆæŒ‡å®šçš„å­—ç¬¦ä¸²æ ¼å¼
+		C:æŠŠå­—ç¬¦ä¸²åè½¬
+		D:åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦ä¸²æ˜¯å¦æ˜¯å¯¹ç§°å­—ç¬¦ä¸²
 
-2£ºÊı×é¸ß¼¶²¿·Ö(Àí½â)
-	(1)ÅÅĞò
-		A:Ã°ÅİÅÅĞò
-			ÏàÁÚÔªËØ£¬Á½Á½±È½Ï£¬´óµÄÍùºó·Å¡£
+2ï¼šæ•°ç»„é«˜çº§éƒ¨åˆ†(ç†è§£)
+	(1)æ’åº
+		A:å†’æ³¡æ’åº
+			ç›¸é‚»å…ƒç´ ï¼Œä¸¤ä¸¤æ¯”è¾ƒï¼Œå¤§çš„å¾€åæ”¾ã€‚
 
 			public static void bubbleSort(int[] arr) {
 				for(int x=0; x<arr.length-1; x++) {
@@ -44,8 +44,8 @@
 				}
 			}
 
-		B:Ñ¡ÔñÅÅĞò
-			´Ó0¿ªÊ¼£¬ÒÀ´ÎºÍºóÃæµÄ±È½Ï£¬Ğ¡µÄÍùÇ°·Å¡£
+		B:é€‰æ‹©æ’åº
+			ä»0å¼€å§‹ï¼Œä¾æ¬¡å’Œåé¢çš„æ¯”è¾ƒï¼Œå°çš„å¾€å‰æ”¾ã€‚
 
 			public static void selectSort(int[] arr) {
 				for(int x=0; x<arr.length-1; x++) {
@@ -58,11 +58,11 @@
 					}
 				}
 			}
-	(2)²éÕÒ
-		A:»ù±¾²éÕÒ
-			Êı×éÎŞĞò
-		B:¶ş·Ö²éÕÒ
-			Êı×éÓĞĞò
+	(2)æŸ¥æ‰¾
+		A:åŸºæœ¬æŸ¥æ‰¾
+			æ•°ç»„æ— åº
+		B:äºŒåˆ†æŸ¥æ‰¾
+			æ•°ç»„æœ‰åº
 
 			public static int getIndex(int[] arr,int value) {
 				int max = arr.length-1;
@@ -86,21 +86,21 @@
 				return mid;
 			}
 
-3£ºArrays¹¤¾ßÀà(ÕÆÎÕ)
-	(1)ArraysÊÇÕë¶ÔÊı×é½øĞĞ²Ù×÷µÄ¹¤¾ßÀà£¬Ìá¹©ÁËÅÅĞòºÍ²éÕÒµÈ¹¦ÄÜ
-	(2)³ÉÔ±·½·¨£º(×Ô¼º²¹Æë·½·¨ºÍÒâË¼)
-		A:°ÑÊı×é×ª³É×Ö·û´®
-			public static String toString():½«ÈÎÒâÀàĞÍÊı¾İ×ª»»³É×Ö·û´®
-		B:ÅÅĞò
-			public static void sort()£º
-		C:¶ş·Ö²éÕÒ
+3ï¼šArrayså·¥å…·ç±»(æŒæ¡)
+	(1)Arraysæ˜¯é’ˆå¯¹æ•°ç»„è¿›è¡Œæ“ä½œçš„å·¥å…·ç±»ï¼Œæä¾›äº†æ’åºå’ŒæŸ¥æ‰¾ç­‰åŠŸèƒ½
+	(2)æˆå‘˜æ–¹æ³•ï¼š(è‡ªå·±è¡¥é½æ–¹æ³•å’Œæ„æ€)
+		A:æŠŠæ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+			public static String toString():å°†ä»»æ„ç±»å‹æ•°æ®è½¬æ¢æˆå­—ç¬¦ä¸²
+		B:æ’åº
+			public static void sort()ï¼š
+		C:äºŒåˆ†æŸ¥æ‰¾
 			public static int binarySearch(int[] arr,int key)
-	(3)°¸Àı£º
-		°Ñ×Ö·û´®ÖĞµÄ×Ö·û½øĞĞÅÅĞò
+	(3)æ¡ˆä¾‹ï¼š
+		æŠŠå­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦è¿›è¡Œæ’åº
 
-4£º»ù±¾ÀàĞÍ°ü×°Àà(ÕÆÎÕ)
-	(1)ÎªÁËÈÃÎÒÃÇ¶Ô»ù±¾ÀàĞÍ½øĞĞ¸ü¶àµÄ²Ù×÷£¬javaÕë¶ÔÃ¿ÖÖ»ù±¾ÀàĞÍÌá¹©ÁË¶ÔÓ¦µÄ°ü×°ÀàÀàĞÍ¡£
-	(2)·Ö±ğÊÇÄÄĞ©ÄØ?
+4ï¼šåŸºæœ¬ç±»å‹åŒ…è£…ç±»(æŒæ¡)
+	(1)ä¸ºäº†è®©æˆ‘ä»¬å¯¹åŸºæœ¬ç±»å‹è¿›è¡Œæ›´å¤šçš„æ“ä½œï¼Œjavaé’ˆå¯¹æ¯ç§åŸºæœ¬ç±»å‹æä¾›äº†å¯¹åº”çš„åŒ…è£…ç±»ç±»å‹ã€‚
+	(2)åˆ†åˆ«æ˜¯å“ªäº›å‘¢?
 		byte		Byte
 		short		Short
 		int		Integer
@@ -109,40 +109,40 @@
 		double		Double
 		char		Character
 		boolean		Boolean
-	ÌØÊâ£º  void		Void
+	ç‰¹æ®Šï¼š  void		Void
 	(3)Integer
-		A:¹¹Ôì·½·¨
+		A:æ„é€ æ–¹æ³•
 			a:Integer i = new Integer(100);
 			b:Integer i = new Integer("100");
-		B:³ÉÔ±·½·¨(×Ô¼º²¹Æë·½·¨ºÍÒâË¼)
-			a:°Ñ×Ö·û´®×ª³ÉintÀàĞÍ
+		B:æˆå‘˜æ–¹æ³•(è‡ªå·±è¡¥é½æ–¹æ³•å’Œæ„æ€)
+			a:æŠŠå­—ç¬¦ä¸²è½¬æˆintç±»å‹
 				String-int:Integer.parseInt()
 				int-String:String.valueOf()
 					   Integer.toString()
-		C:JDK5µÄĞÂÌØĞÔ
-			×Ô¶¯×°Ïä£º
+		C:JDK5çš„æ–°ç‰¹æ€§
+			è‡ªåŠ¨è£…ç®±ï¼š
 				int -- Integer		//Integer.valueOf()
-			×Ô¶¯²ğÏä£º
+			è‡ªåŠ¨æ‹†ç®±ï¼š
 				Integer -- int		//Integer.intValue()
 
-			Çë½âÊÍ£º
+			è¯·è§£é‡Šï¼š
 				Integer i = 100;
 				i+=200;
 				System.out.println(i);
-		D:byte»º´æ³ØÃæÊÔÌâ
-			byte,short,char--->Ğ¡ÓÚ127£¬·ñÔò±¨-6µÄ´íÎó(²é¿´JDK)
+		D:byteç¼“å­˜æ± é¢è¯•é¢˜
+			byte,short,char--->å°äº127ï¼Œå¦åˆ™æŠ¥-6çš„é”™è¯¯(æŸ¥çœ‹JDK)
 	(4)Character
-		A:¹¹Ôì·½·¨
+		A:æ„é€ æ–¹æ³•
 			Character ch = new Character('a');
-		B:³ÉÔ±·½·¨(×Ô¼º²¹Æë·½·¨ºÍÒâË¼)
-			a:ÅĞ¶Ï×Ö·ûÊÇ·ñÊÇ´óĞ´×ÖÄ¸
+		B:æˆå‘˜æ–¹æ³•(è‡ªå·±è¡¥é½æ–¹æ³•å’Œæ„æ€)
+			a:åˆ¤æ–­å­—ç¬¦æ˜¯å¦æ˜¯å¤§å†™å­—æ¯
 				public boolean isUpperCase(char ch)
-			b:ÅĞ¶Ï×Ö·ûÊÇ·ñÊÇĞ¡Ğ´×ÖÄ¸
+			b:åˆ¤æ–­å­—ç¬¦æ˜¯å¦æ˜¯å°å†™å­—æ¯
 				public boolean isLowerCase(Char ch)
-			c:ÅĞ¶Ï×Ö·ûÊÇ·ñÊÇÊı×Ö×Ö·û
+			c:åˆ¤æ–­å­—ç¬¦æ˜¯å¦æ˜¯æ•°å­—å­—ç¬¦
 				public boolean isDigit(Char ch)
-			d:°Ñ×Ö·û×ª³É´óĞ´
+			d:æŠŠå­—ç¬¦è½¬æˆå¤§å†™
 				public Char toUpperCase(Char ch)
 
-			e:°Ñ×Ö·û×ª³ÉĞ¡Ğ´
+			e:æŠŠå­—ç¬¦è½¬æˆå°å†™
 				public Char toLowerCase(Char ch)

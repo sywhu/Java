@@ -1,9 +1,9 @@
 package cn.itcast_02;
 
 /*
- * ʵ������ʵ�ַ��ͽӿڵ�ʱ��
- * A:��ʵ�ֽӿڵ�ʱ�����Ѿ���ȷ�˽ӿڵķ��Ͳ�������
- * B:��ʵ�ֽӿڵ�ʱ���һ���֪���ӿڵķ��Ͳ�������
+ * 实现类在实现泛型接口的时候：
+ * A:在实现接口的时候，我已经明确了接口的泛型参数类型
+ * B:在实现接口的时候，我还不知道接口的泛型参数类型
  */
 //public class InterImpl implements Inter<String> {
 //	@Override

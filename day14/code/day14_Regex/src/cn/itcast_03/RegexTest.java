@@ -3,34 +3,34 @@ package cn.itcast_03;
 import java.util.Arrays;
 
 /*
- * ÎÒÓÐÈçÏÂÒ»¸ö×Ö·û´®:¡±91 27 46 38 50¡±
- * ÇëÐ´´úÂëÊµÏÖ×îÖÕÊä³ö½á¹ûÊÇ£º¡±27 38 46 50 91¡±
+ * æˆ‘æœ‰å¦‚ä¸‹ä¸€ä¸ªå­—ç¬¦ä¸²:â€91 27 46 38 50â€
+ * è¯·å†™ä»£ç å®žçŽ°æœ€ç»ˆè¾“å‡ºç»“æžœæ˜¯ï¼šâ€27 38 46 50 91â€
  * 
- * ·ÖÎö£º
- * 		A:¶¨ÒåÒ»¸ö×Ö·û´®
- * 		B:°´ÕÕ¿Õ¸ñ½øÐÐ·Ö¸î×Ö·û´®£¬µÃµ½Ò»¸ö×Ö·û´®Êý×é
- * 		C:°Ñ×Ö·û´®Êý×é×ª»»ÎªÕûÊýÊý×é
- * 		D:¶ÔÕûÊýÊý×é½øÐÐÅÅÐò
- * 		E:°ÑÅÅÐòºóµÄÕûÊýÊý×é×ª»»³É×Ö·û´®
+ * åˆ†æžï¼š
+ * 		A:å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²
+ * 		B:æŒ‰ç…§ç©ºæ ¼è¿›è¡Œåˆ†å‰²å­—ç¬¦ä¸²ï¼Œå¾—åˆ°ä¸€ä¸ªå­—ç¬¦ä¸²æ•°ç»„
+ * 		C:æŠŠå­—ç¬¦ä¸²æ•°ç»„è½¬æ¢ä¸ºæ•´æ•°æ•°ç»„
+ * 		D:å¯¹æ•´æ•°æ•°ç»„è¿›è¡ŒæŽ’åº
+ * 		E:æŠŠæŽ’åºåŽçš„æ•´æ•°æ•°ç»„è½¬æ¢æˆå­—ç¬¦ä¸²
  */
 public class RegexTest {
 	public static void main(String[] args) {
-		// ¶¨ÒåÒ»¸ö×Ö·û´®
+		// å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²
 		String s = "91 27 46 38 50";
 
-		// °´ÕÕ¿Õ¸ñ½øÐÐ·Ö¸î×Ö·û´®£¬µÃµ½Ò»¸ö×Ö·û´®Êý×é
+		// æŒ‰ç…§ç©ºæ ¼è¿›è¡Œåˆ†å‰²å­—ç¬¦ä¸²ï¼Œå¾—åˆ°ä¸€ä¸ªå­—ç¬¦ä¸²æ•°ç»„
 		String[] strArray = s.split(" ");
 
-		// °Ñ×Ö·û´®Êý×é×ª»»ÎªÕûÊýÊý×é
+		// æŠŠå­—ç¬¦ä¸²æ•°ç»„è½¬æ¢ä¸ºæ•´æ•°æ•°ç»„
 		int[] arr = new int[strArray.length];
 		for (int x = 0; x < arr.length; x++) {
 			arr[x] = Integer.parseInt(strArray[x]);
 		}
 
-		// ¶ÔÕûÊýÊý×é½øÐÐÅÅÐò
+		// å¯¹æ•´æ•°æ•°ç»„è¿›è¡ŒæŽ’åº
 		Arrays.sort(arr);
 
-		// °ÑÅÅÐòºóµÄÕûÊýÊý×é×ª»»³É×Ö·û´®
+		// æŠŠæŽ’åºåŽçš„æ•´æ•°æ•°ç»„è½¬æ¢æˆå­—ç¬¦ä¸²
 		StringBuilder sb = new StringBuilder();
 		for (int x = 0; x < arr.length; x++) {
 			if (x == arr.length - 1) {

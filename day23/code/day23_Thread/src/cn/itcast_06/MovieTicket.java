@@ -1,17 +1,17 @@
 package cn.itcast_06;
 
 public class MovieTicket extends Thread {
-	// ¶¨Òå³ÉÔ±±äÁ¿
+	// å®šä¹‰æˆå‘˜å˜é‡
 	private static int tickets = 100;
 
 	@Override
 	public void run() {
-		// ¶¨Òå100ÕÅÆ±
+		// å®šä¹‰100å¼ ç¥¨
 		// int tickets = 100;
 
 		while (true) {
 			if (tickets > 0) {
-				System.out.println(getName() + "ÕıÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
+				System.out.println(getName() + "æ­£åœ¨å‡ºå”®ç¬¬" + (tickets--) + "å¼ ç¥¨");
 			}
 		}
 	}

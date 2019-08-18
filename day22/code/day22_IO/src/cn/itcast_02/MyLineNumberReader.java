@@ -35,7 +35,7 @@ public class MyLineNumberReader {
 				sb.append((char) ch);
 			}
 		}
-		// ·ÀÖ¹Êý¾Ý¶ªÊ§
+		// é˜²æ­¢æ•°æ®ä¸¢å¤±
 		if (sb.length() > 0) {
 			return sb.toString();
 		}

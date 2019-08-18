@@ -4,19 +4,19 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 /*
- * String s = "ÄãºÃ";
+ * String s = "ä½ å¥½";
  * 
- * ±àÂë£º
- * 		°ÑÄãÄÜ¹»¿´¶®µÄ±ä³ÉÄã¿´²»¶®
- * ½âÂë£º
- * 		°ÑÄã¿´²»¶®±ä³ÉÄãÄÜ¿´¶®µÄ
+ * ç¼–ç ï¼š
+ * 		æŠŠä½ èƒ½å¤Ÿçœ‹æ‡‚çš„å˜æˆä½ çœ‹ä¸æ‡‚
+ * è§£ç ï¼š
+ * 		æŠŠä½ çœ‹ä¸æ‡‚å˜æˆä½ èƒ½çœ‹æ‡‚çš„
  * 
- * µıÕ½Æ¬£ºÇ±·ü,»Ø¼Ò¿´¿´È¥
- * 		½ñÌìÍíÉÏÀÏµØ·½¼û -- 1011110000111  -- Ê®½øÖÆ -- ÕÒ¸öĞ¡±¾×Ó -- ÕÒ×Ö·û
+ * è°æˆ˜ç‰‡ï¼šæ½œä¼,å›å®¶çœ‹çœ‹å»
+ * 		ä»Šå¤©æ™šä¸Šè€åœ°æ–¹è§ -- 1011110000111  -- åè¿›åˆ¶ -- æ‰¾ä¸ªå°æœ¬å­ -- æ‰¾å­—ç¬¦
  */
 public class StringDemo {
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		String s = "ÄãºÃ";
+		String s = "ä½ å¥½";
 
 		// public byte[] getBytes()
 		// byte[] bys = s.getBytes();

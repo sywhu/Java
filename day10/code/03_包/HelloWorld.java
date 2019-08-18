@@ -1,13 +1,13 @@
 /*
-	������ʵ�����ļ���
-	���ã�������з������
+	包：其实就是文件夹
+	作用：对类进行分类管理
 	
-	���Ļ��֣�
-	������
-		ѧ�������ӣ�ɾ�����޸ģ���ѯ
-		��ʦ�����ӣ�ɾ�����޸ģ���ѯ
-		���˵����ӣ�ɾ�����޸ģ���ѯ
-	A:���չ��ܷ�
+	包的划分：
+	举例：
+		学生的增加，删除，修改，查询
+		老师的增加，删除，修改，查询
+		工人的增加，删除，修改，查询
+	A:按照功能分
 		cn.itcast.add
 			AddStudent
 			AddTeacher
@@ -18,7 +18,7 @@
 			DeleteWorker
 		cn.itcast.update
 		cn.itcast.find
-	B:����ģ���
+	B:按照模块分
 		cn.itcast.student
 			add
 			delete
@@ -35,26 +35,26 @@
 			update
 			find
 	
-	������ĸ�ʽ:
-		package ����;
+	定义包的格式:
+		package 包名;
 
-	�����ı�������У�
-		�ֶ�ʽ��
-			A:������������ļ�
-			B:�Լ��ֶ�������
-			C:�ѱ������ɵ�class�ļ��ŵ�������ȥ
-			D:���м��ɣ�ע��Ҫ������
+	带包的编译和运行：
+		手动式：
+			A:编译带包的类文件
+			B:自己手动创建包
+			C:把编译生成的class文件放到包里面去
+			D:运行即可，注意要带包名
 				java cn.itcast.HelloWorld
-		�Զ�ʽ��
-			A:�����ʱ���һ������ -d
+		自动式：
+			A:编译的时候带一个参数 -d
 				javac -d . HelloWorld.java
-			B:���м��ɣ�ע��Ҫ������
+			B:运行即可，注意要带包名
 				java cn.itcast.HelloWorld
 
-		ע�����
-			package�������ǳ���ĵ�һ����ִ�еĴ���
-			package�����һ��java�ļ���ֻ����һ��
-			���û��package��Ĭ�ϱ�ʾ�ް���
+		注意事项：
+			package语句必须是程序的第一条可执行的代码
+			package语句在一个java文件中只能有一个
+			如果没有package，默认表示无包名
 */
 package cn.itcast;
 

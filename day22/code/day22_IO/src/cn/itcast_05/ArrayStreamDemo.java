@@ -5,7 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /*
- * ÄÚ´æ²Ù×÷Á÷£ºÊı¾İÔÚÄÚ´æÖĞ×ªÒ»È¦
+ * å†…å­˜æ“ä½œæµï¼šæ•°æ®åœ¨å†…å­˜ä¸­è½¬ä¸€åœˆ
  * ByteArrayInputStream
  * ByteArrayOutputStream
  */

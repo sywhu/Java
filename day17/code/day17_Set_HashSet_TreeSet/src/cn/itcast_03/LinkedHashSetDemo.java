@@ -3,9 +3,9 @@ package cn.itcast_03;
 import java.util.LinkedHashSet;
 
 /*
- * LinkedHashSet£ºµ×²ãÊı¾İ½á¹¹ÊÇ¹şÏ£±íºÍÁ´±í¡£
- * ¹şÏ£±í£ºÄÜ¹»±£Ö¤ÔªËØµÄÎ¨Ò»ĞÔ
- * Á´±í£ºÄÜ¹»±£Ö¤ÔªËØÓĞĞò
+ * LinkedHashSetï¼šåº•å±‚æ•°æ®ç»“æ„æ˜¯å“ˆå¸Œè¡¨å’Œé“¾è¡¨ã€‚
+ * å“ˆå¸Œè¡¨ï¼šèƒ½å¤Ÿä¿è¯å…ƒç´ çš„å”¯ä¸€æ€§
+ * é“¾è¡¨ï¼šèƒ½å¤Ÿä¿è¯å…ƒç´ æœ‰åº
  */
 public class LinkedHashSetDemo {
 	public static void main(String[] args) {

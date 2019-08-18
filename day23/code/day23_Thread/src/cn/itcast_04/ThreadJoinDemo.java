@@ -1,7 +1,7 @@
 package cn.itcast_04;
 
 /*
- * public final void join():µÈ´ı¸ÃÏß³ÌÖÕÖ¹¡£ 
+ * public final void join():ç­‰å¾…è¯¥çº¿ç¨‹ç»ˆæ­¢ã€‚ 
  */
 public class ThreadJoinDemo {
 	public static void main(String[] args) {
@@ -9,9 +9,9 @@ public class ThreadJoinDemo {
 		ThreadJoin tj2 = new ThreadJoin();
 		ThreadJoin tj3 = new ThreadJoin();
 
-		tj1.setName("ÀîÔ¨");
-		tj2.setName("ÀîÊÀÃñ");
-		tj3.setName("ÀîÔª°Ô");
+		tj1.setName("ææ¸Š");
+		tj2.setName("æä¸–æ°‘");
+		tj3.setName("æå…ƒéœ¸");
 
 		tj1.start();
 		try {

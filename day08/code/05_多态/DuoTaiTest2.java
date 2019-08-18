@@ -3,12 +3,12 @@ class A{
 		show2();
 	}
 	public void show2(){
-		System.out.println("ÎÒ");
+		System.out.println("æˆ‘");
 	}
 }
 class B extends A {
 	public void show2(){
-		System.out.println("°®");
+		System.out.println("çˆ±");
 	}
 }
 class C extends B {
@@ -17,7 +17,7 @@ class C extends B {
 	}
 	
 	public void show2(){
-		System.out.println("Äã");
+		System.out.println("ä½ ");
 	}
 }
 

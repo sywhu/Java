@@ -1,4 +1,4 @@
-1:±éÀúÊı×é
+1:éå†æ•°ç»„
 	public static void printArray(int[] arr) {
 		System.out.print("[");
 		for(int x=0; x<arr.length; x++) {
@@ -11,7 +11,7 @@
 		System.out.println("]");
 	}
 
-2:»ñÈ¡×îÖµ
+2:è·å–æœ€å€¼
 	public static int getMax(int[] arr) {
 		int max = arr[0];
 
@@ -36,7 +36,7 @@
 		return min;
 	}
 
-3:Êı×é·´×ª
+3:æ•°ç»„åè½¬
 	public static void reverse(int[] arr) {
 		for(int start=0,end=arr.length-1; start<=end; start++,end--) {
 			int temp = arr[start];
@@ -46,14 +46,14 @@
 	}
 
 
-4:²é±í·¨
-	String[] strArray = {"","ĞÇÆÚÒ»","ĞÇÆÚ¶ş","ĞÇÆÚÈı","ĞÇÆÚËÄ","ĞÇÆÚÎå","ĞÇÆÚÁù","ĞÇÆÚÈÕ"};
+4:æŸ¥è¡¨æ³•
+	String[] strArray = {"","æ˜ŸæœŸä¸€","æ˜ŸæœŸäºŒ","æ˜ŸæœŸä¸‰","æ˜ŸæœŸå››","æ˜ŸæœŸäº”","æ˜ŸæœŸå…­","æ˜ŸæœŸæ—¥"};
 
 	int index = ???;
 
 	System.out.println(strArray[index]);
 
-5:²éÕÒÔªËØÔÚÊı×éÖĞµÚÒ»´Î³öÏÖµÄË÷Òı
+5:æŸ¥æ‰¾å…ƒç´ åœ¨æ•°ç»„ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ç´¢å¼•
 	public static int getIndex(int[] arr,int key) {
 		int index = -1;
 

@@ -8,7 +8,7 @@ public class MovieTicket implements Runnable {
 	private int tickets = 100;
 	private Object obj = new Object();
 
-	// ÔìËø
+	// é€ é”
 	// private ReentrantLock lock = new ReentrantLock();
 	private Lock lock = new ReentrantLock();
 
@@ -24,7 +24,7 @@ public class MovieTicket implements Runnable {
 	// }
 	//
 	// System.out.println(Thread.currentThread().getName()
-	// + "ÕıÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
+	// + "æ­£åœ¨å‡ºå”®ç¬¬" + (tickets--) + "å¼ ç¥¨");
 	// }
 	// }
 	// }
@@ -34,7 +34,7 @@ public class MovieTicket implements Runnable {
 	public void run() {
 		while (true) {
 			try {
-				// ¼ÓËø
+				// åŠ é”
 				lock.lock();
 
 				if (tickets > 0) {
@@ -45,10 +45,10 @@ public class MovieTicket implements Runnable {
 					}
 
 					System.out.println(Thread.currentThread().getName()
-							+ "ÕıÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
+							+ "æ­£åœ¨å‡ºå”®ç¬¬" + (tickets--) + "å¼ ç¥¨");
 				}
 			} finally {
-				// ÊÍ·ÅËø
+				// é‡Šæ”¾é”
 				lock.unlock();
 			}
 		}

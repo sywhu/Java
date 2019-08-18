@@ -5,49 +5,49 @@ import java.util.Set;
 import java.util.TreeMap;
 
 /*
- * "dabcdababcabcea",»ñÈ¡×Ö·û´®ÖĞÃ¿Ò»¸ö×ÖÄ¸³öÏÖµÄ´ÎÊıÒªÇó½á¹û:a(5)b(4)c(3)d(2)e(1)
+ * "dabcdababcabcea",è·å–å­—ç¬¦ä¸²ä¸­æ¯ä¸€ä¸ªå­—æ¯å‡ºç°çš„æ¬¡æ•°è¦æ±‚ç»“æœ:a(5)b(4)c(3)d(2)e(1)
  * 
- * ×÷Òµ£º×Ô¼º¶ÏµãÒ»´Î
+ * ä½œä¸šï¼šè‡ªå·±æ–­ç‚¹ä¸€æ¬¡
  */
 public class TreeMapTest {
 	public static void main(String[] args) {
-		// ¼üÅÌÈÎÒâÂ¼ÈëÒ»¸ö×Ö·û´®
+		// é”®ç›˜ä»»æ„å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š");
 		String s = sc.nextLine();
 
-		// ¶¨ÒåÒ»¸öMap¼¯ºÏ£¬¼üÊÇCharacter£¬ÖµÊÇInteger£¬²¢ÇÒÊÇTreeMap
+		// å®šä¹‰ä¸€ä¸ªMapé›†åˆï¼Œé”®æ˜¯Characterï¼Œå€¼æ˜¯Integerï¼Œå¹¶ä¸”æ˜¯TreeMap
 		TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>();
 
-		// °Ñ×Ö·û´®×ª³É×Ö·ûÊı×é
+		// æŠŠå­—ç¬¦ä¸²è½¬æˆå­—ç¬¦æ•°ç»„
 		char[] chs = s.toCharArray();
 
-		// ±éÀú×Ö·û´®£¬µÃµ½Ã¿Ò»¸ö×Ö·û
+		// éå†å­—ç¬¦ä¸²ï¼Œå¾—åˆ°æ¯ä¸€ä¸ªå­—ç¬¦
 		for (char ch : chs) {
-			// ÄÃÕâ¸ö×Ö·û×÷Îª¼üµ½mapÀïÃæÕÒÖµ
+			// æ‹¿è¿™ä¸ªå­—ç¬¦ä½œä¸ºé”®åˆ°mapé‡Œé¢æ‰¾å€¼
 			Integer i = tm.get(ch);
-			// ·µ»Ønull
+			// è¿”å›null
 			if (i == null) {
-				// ´æ´¢
+				// å­˜å‚¨
 				tm.put(ch, 1);
 			} else {
-				// °ÑÖµ++£¬ÖØĞÂ´æ´¢
+				// æŠŠå€¼++ï¼Œé‡æ–°å­˜å‚¨
 				i++;
 				tm.put(ch, i);
 			}
 		}
 
-		// ¶¨ÒåÒ»¸öStringBuilder×Ö·û´®
+		// å®šä¹‰ä¸€ä¸ªStringBuilderå­—ç¬¦ä¸²
 		StringBuilder sb = new StringBuilder();
 
-		// ±éÀúTreeMap¼¯ºÏ
+		// éå†TreeMapé›†åˆ
 		Set<Character> set = tm.keySet();
 		for (Character key : set) {
 			Integer value = tm.get(key);
 			sb.append(key).append("(").append(value).append(")");
 		}
 
-		// °ÑStringBuilder×ª»»Îª×Ö·û´®
+		// æŠŠStringBuilderè½¬æ¢ä¸ºå­—ç¬¦ä¸²
 		String result = sb.toString();
 
 		System.out.println(result);

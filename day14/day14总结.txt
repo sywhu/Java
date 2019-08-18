@@ -1,77 +1,77 @@
-1£ºÕıÔò±í´ïÊ½(Àí½â)
-	(1)·ûºÏÒ»¶¨¹æÔòµÄ×Ö·û´®¡£
-	(2)³£¼û²Ù×÷
-		A:ÅĞ¶Ï¹¦ÄÜ(StringÀàµÄ·½·¨)
+1ï¼šæ­£åˆ™è¡¨è¾¾å¼(ç†è§£)
+	(1)ç¬¦åˆä¸€å®šè§„åˆ™çš„å­—ç¬¦ä¸²ã€‚
+	(2)å¸¸è§æ“ä½œ
+		A:åˆ¤æ–­åŠŸèƒ½(Stringç±»çš„æ–¹æ³•)
 			public boolean matches(String regex)
-		B:·Ö¸î¹¦ÄÜ(StringÀàµÄ·½·¨)
+		B:åˆ†å‰²åŠŸèƒ½(Stringç±»çš„æ–¹æ³•)
 			public String[] split(String regex)
-		C:Ìæ»»¹¦ÄÜ(StringÀàµÄ·½·¨)
+		C:æ›¿æ¢åŠŸèƒ½(Stringç±»çš„æ–¹æ³•)
 			public String replaceAll(String regex,String replacement)
-		D:»ñÈ¡¹¦ÄÜ(PatternºÍMatcherÀàµÄ¹¦ÄÜ)
+		D:è·å–åŠŸèƒ½(Patternå’ŒMatcherç±»çš„åŠŸèƒ½)
 			a:Pattern
 				public static Pattern compile(String regex)
 				public Matcher matcher(String s)
 			b:Matcher
 				public boolean find()
 				public String group()
-	(3)°¸Àı£º(ÕÆÎÕ)
-		A:Ğ£ÑéÊÖ»úºÅÂë
-		B:Ğ£ÑéÓÊÏä
-		C:ÎÒÓĞÈçÏÂÒ»¸ö×Ö·û´®:¡±91 27 46 38 50¡±
-		  ÇëĞ´´úÂëÊµÏÖ×îÖÕÊä³ö½á¹ûÊÇ£º¡±27 38 46 50 91¡±
-		D:»ñÈ¡ÓÉÈı¸ö×Ö·û×é³ÉµÄµ¥´Ê
+	(3)æ¡ˆä¾‹ï¼š(æŒæ¡)
+		A:æ ¡éªŒæ‰‹æœºå·ç 
+		B:æ ¡éªŒé‚®ç®±
+		C:æˆ‘æœ‰å¦‚ä¸‹ä¸€ä¸ªå­—ç¬¦ä¸²:â€91 27 46 38 50â€
+		  è¯·å†™ä»£ç å®ç°æœ€ç»ˆè¾“å‡ºç»“æœæ˜¯ï¼šâ€27 38 46 50 91â€
+		D:è·å–ç”±ä¸‰ä¸ªå­—ç¬¦ç»„æˆçš„å•è¯
 
-2£ºMath(Àí½â)
-	(1)ÓÃÓÚÊıÑ§ÔËËãµÄÀà£¬»¹°üÀ¨Ò»Ğ©Èı½Çº¯Êı¡£
-	(2)³£¼û¹¦ÄÜ£º
+2ï¼šMath(ç†è§£)
+	(1)ç”¨äºæ•°å­¦è¿ç®—çš„ç±»ï¼Œè¿˜åŒ…æ‹¬ä¸€äº›ä¸‰è§’å‡½æ•°ã€‚
+	(2)å¸¸è§åŠŸèƒ½ï¼š
 		public static int abs(int a)
 		public static double ceil(double a)
 		public static double floor(double a)
-		public static int max(int a,int b) min×ÔÑ§
+		public static int max(int a,int b) minè‡ªå­¦
 		public static double pow(double a,double b)
 		public static double random()
-		public static int round(float a) ²ÎÊıÎªdoubleµÄ×ÔÑ§
+		public static int round(float a) å‚æ•°ä¸ºdoubleçš„è‡ªå­¦
 		public static double sqrt(double a)
-	(3)°¸Àı£º(ÕÆÎÕ)
-		²ÂÊı×ÖĞ¡ÓÎÏ·
+	(3)æ¡ˆä¾‹ï¼š(æŒæ¡)
+		çŒœæ•°å­—å°æ¸¸æˆ
 
-3£ºRandom(Àí½â)
-	(1)RandomÊÇÓÃÓÚ²úÉúËæ»úÊıµÄÀà
-	(2)¹¹Ôì·½·¨£º
+3ï¼šRandom(ç†è§£)
+	(1)Randomæ˜¯ç”¨äºäº§ç”Ÿéšæœºæ•°çš„ç±»
+	(2)æ„é€ æ–¹æ³•ï¼š
 		public Random()
 		public Random(long seed)
 
-		ÖÖ×ÓÏàÍ¬£¬²úÉúµÄËæ»úÊıÒ²ÏàÍ¬¡£
-	(3)³ÉÔ±·½·¨£º
-		public int nextInt():int·¶Î§ÄÚµÄÊı¾İ
-		public int nextInt(int n):[0,n)·¶Î§ÄÚµÄÊı¾İ
+		ç§å­ç›¸åŒï¼Œäº§ç”Ÿçš„éšæœºæ•°ä¹Ÿç›¸åŒã€‚
+	(3)æˆå‘˜æ–¹æ³•ï¼š
+		public int nextInt():intèŒƒå›´å†…çš„æ•°æ®
+		public int nextInt(int n):[0,n)èŒƒå›´å†…çš„æ•°æ®
 
-		²úÉú1-100Ö®¼äµÄËæ»úÊı£º
+		äº§ç”Ÿ1-100ä¹‹é—´çš„éšæœºæ•°ï¼š
 			Random r = new Random();
 			int number = r.nextInt(100) + 1;
 
-4£ºSystem(Àí½â)
-	(1)Ìá¹©ÁËÒ»Ğ©ÓĞÓÃµÄÀà×Ö¶ÎºÍ·½·¨
-	(2)³ÉÔ±·½·¨
+4ï¼šSystem(ç†è§£)
+	(1)æä¾›äº†ä¸€äº›æœ‰ç”¨çš„ç±»å­—æ®µå’Œæ–¹æ³•
+	(2)æˆå‘˜æ–¹æ³•
 		public static void gc()
 		public static void exit(int status)
 		public static long currentTimeMillis()
 		public static void arraycopy(Object src,int srcPos,Object dest,int destPos,int length)
 
-5£ºBigInteger/BigDecimal(Àí½â)
+5ï¼šBigInteger/BigDecimal(ç†è§£)
 	(1)BigInteger
-		A:¹¹Ôì·½·¨
+		A:æ„é€ æ–¹æ³•
 			public BigInteger(String val)
-		B:³ÉÔ±·½·¨
+		B:æˆå‘˜æ–¹æ³•
 			public BigInteger add(BigInteger val)
 			public BigInteger subtract(BigInteger val)
 			public BigInteger multiply(BigInteger val)
 			public BigInteger divide(BigInteger val)
 			public BigInteger[] divideAndRemainder(BigInteger val)
-	(2)BigDecimal(ÕÆÎÕ)
-		A:¹¹Ôì·½·¨
+	(2)BigDecimal(æŒæ¡)
+		A:æ„é€ æ–¹æ³•
 			public BigDecimal(String val)
-		B:³ÉÔ±·½·¨
+		B:æˆå‘˜æ–¹æ³•
 			public BigDecimal add(BigDecimal augend)
 			public BigDecimal subtract(BigDecimal subtrahend)
 			public BigDecimal multiply(BigDecimal multiplicand)
@@ -79,28 +79,28 @@
 			public BigDecimal divide(BigDecimal divisor,int scale,
 			     int roundingMode)
 
-6£ºDate/DateFormat/Calendar(ÕÆÎÕ)
+6ï¼šDate/DateFormat/Calendar(æŒæ¡)
 	(1)Date
-		A:¹¹Ôì·½·¨
+		A:æ„é€ æ–¹æ³•
 			public Date()
 			public Date(long date)
-		B:³ÉÔ±·½·¨
+		B:æˆå‘˜æ–¹æ³•
 			public long getTime()
 			public void setTime(long time)
 	(2)SimpleDateFormat
-		A:¹¹Ôì·½·¨
+		A:æ„é€ æ–¹æ³•
 			public SimpleDateFormat(String pattern)
-			³£¼ûÄ£Ê½£ºyyyy-MM--dd HH:mm:ss
-		B:³ÉÔ±·½·¨
+			å¸¸è§æ¨¡å¼ï¼šyyyy-MM--dd HH:mm:ss
+		B:æˆå‘˜æ–¹æ³•
 			public final String format(Date date)
 			public Date parse(String source)
 	(3)Calendar
-		A:ÈçºÎµÃµ½¶ÔÏóÄØ?
+		A:å¦‚ä½•å¾—åˆ°å¯¹è±¡å‘¢?
 			public static Calendar getInstance()
-		B:³ÉÔ±·½·¨
+		B:æˆå‘˜æ–¹æ³•
 			public int get(int field)
 			public void add(int field,int amount)
 			public final void set(int year,int month,int date)
-	(4)°¸Àı£º
-		A:ÄãÀ´µ½Õâ¸öÊÀ½ç¶àÉÙÌìÄØ?
-		B:ÈÎÒâÒ»ÄêµÄ2ÔÂ·İÓĞ¶àÉÙÌì?
+	(4)æ¡ˆä¾‹ï¼š
+		A:ä½ æ¥åˆ°è¿™ä¸ªä¸–ç•Œå¤šå°‘å¤©å‘¢?
+		B:ä»»æ„ä¸€å¹´çš„2æœˆä»½æœ‰å¤šå°‘å¤©?

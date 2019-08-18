@@ -14,28 +14,28 @@ public class SetThread implements Runnable {
 		while (true) {
 			synchronized (s) {
 				if (s.flag) {
-					// Õâ¾Í±íÊ¾ÓĞÊı¾İ
+					// è¿™å°±è¡¨ç¤ºæœ‰æ•°æ®
 					try {
-						s.wait(); // t1¾ÍµÈ´ıÁË
+						s.wait(); // t1å°±ç­‰å¾…äº†
 					} catch (InterruptedException e) {
 						e.printStackTrace();
-					}// ¾ÍÔÚÕâÀïµÈ´ı
+					}// å°±åœ¨è¿™é‡Œç­‰å¾…
 				}
 
 				if (x % 2 == 0) {
-					s.name = "ÁÖÇàÏ¼";
+					s.name = "æ—é’éœ";
 					s.age = 28;
 				} else {
-					s.name = "ÁõÒâ";
+					s.name = "åˆ˜æ„";
 					s.age = 31;
 				}
 				x++; // x=1,x=2
 
-				// ¸ø³öÌáÊ¾
+				// ç»™å‡ºæç¤º
 				s.flag = true;
-				s.notify(); // »½ĞÑµÈ´ıµÄÏß³Ì£¬²¢²»´ú±í¸ÃÏß³ÌÄÜ¹»Á¢¼´»ñÈ¡CPUµÄÖ´ĞĞÈ¨
+				s.notify(); // å”¤é†’ç­‰å¾…çš„çº¿ç¨‹ï¼Œå¹¶ä¸ä»£è¡¨è¯¥çº¿ç¨‹èƒ½å¤Ÿç«‹å³è·å–CPUçš„æ‰§è¡Œæƒ
 			}
-			// t1,t2ÇÀ
+			// t1,t2æŠ¢
 		}
 	}
 

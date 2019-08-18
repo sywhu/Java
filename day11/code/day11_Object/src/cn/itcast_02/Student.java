@@ -65,20 +65,20 @@ public class Student {
 	// // return false;
 	// // }
 	//
-	// // ��Ϊ�Լ����Լ��ȣ���û�б�Ҫ����ת���ģ����ԣ�Ϊ����߳����Ч�ʣ����Ǽ���һ���ж�
+	// // 因为自己和自己比，是没有必要进行转换的，所以，为了提高程序的效率，我们加入一个判断
 	// if (this == obj) {
 	// return true;
 	// }
 	//
-	// // Ϊ���ó������׳һЩ������һ���ж�
-	// // ����ж���ʵ�����ж�ĳ�������Ƿ���ĳ����Ķ���
-	// // �õ���һ���жϷ��ţ�instanceof
-	// // ��ʽ�������� instanceof ����
+	// // 为了让程序更健壮一些，加入一个判断
+	// // 这个判断其实是在判断某个对象是否是某个类的对象
+	// // 用到了一个判断符号：instanceof
+	// // 格式：对象名 instanceof 类名
 	// if (!(obj instanceof Student)) {
 	// return false;
 	// }
 	//
-	// // if���ĵڶ��ָ�ʽ����ʹ����Ԫ������滻
+	// // if语句的第二种格式可以使用三元运算符替换
 	// Student s = (Student) obj;
 	// // System.out.println("AAAAAA");
 	// return this.name.equals(s.name) && this.age == s.age;

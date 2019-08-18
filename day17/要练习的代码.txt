@@ -1,16 +1,16 @@
-¼¯ºÏµÄ²Ù×÷²½Öè£º
-	A:´´½¨¼¯ºÏ¶ÔÏó
-	B:´´½¨ÔªËØ¶ÔÏó
-	C:°ÑÔªËØÌí¼Óµ½¼¯ºÏ
-	D:±éÀú¼¯ºÏ
+é›†åˆçš„æ“ä½œæ­¥éª¤ï¼š
+	A:åˆ›å»ºé›†åˆå¯¹è±¡
+	B:åˆ›å»ºå…ƒç´ å¯¹è±¡
+	C:æŠŠå…ƒç´ æ·»åŠ åˆ°é›†åˆ
+	D:éå†é›†åˆ
 
-¼¯ºÏµÄ±éÀú·½Ê½£º
-	Collection:µü´úÆ÷,ÔöÇ¿for
-		|--List:ÆÕÍ¨for
+é›†åˆçš„éå†æ–¹å¼ï¼š
+	Collection:è¿­ä»£å™¨,å¢å¼ºfor
+		|--List:æ™®é€šfor
 		|--Set:
 
-×Ö·û´®(Ëæ±ã¸ø hello,world,java)
-×Ô¶¨Òå¶ÔÏó(Ñ§ÉúÀà)
+å­—ç¬¦ä¸²(éšä¾¿ç»™ hello,world,java)
+è‡ªå®šä¹‰å¯¹è±¡(å­¦ç”Ÿç±»)
 	class Student {
 		private String name;
 		private int age;
@@ -39,8 +39,8 @@
 		}
 	}
 
-1£ºCollection
-	A:×Ö·û´®
+1ï¼šCollection
+	A:å­—ç¬¦ä¸²
 		Collection<String> c = new ArrayList<String>();
 
 		c.add("hello");
@@ -57,12 +57,12 @@
 			System.out.println(s);
 		}
 
-	B:×Ô¶¨Òå¶ÔÏó
+	B:è‡ªå®šä¹‰å¯¹è±¡
 		Collection<Student> c = new ArrayList<Student>();
 
-		Student s1 = new Student("ÀîÁ¬½Ü",50);
-		Student s2 = new Student("ÕÔÎÄ×¿",40);
-		Student s3 = new Student("Îâ¾©",30);
+		Student s1 = new Student("æè¿æ°",50);
+		Student s2 = new Student("èµµæ–‡å“",40);
+		Student s3 = new Student("å´äº¬",30);
 
 		c.add(s1);
 		c.add(s2);
@@ -78,8 +78,8 @@
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-2£ºList
-	A:×Ö·û´®
+2ï¼šList
+	A:å­—ç¬¦ä¸²
 		List<String> list = new ArrayList<String>();
 
 		list.add("hello");
@@ -101,12 +101,12 @@
 			System.out.println(s);
 		}
 
-	B:×Ô¶¨Òå¶ÔÏó
+	B:è‡ªå®šä¹‰å¯¹è±¡
 		List<Student> list = new ArrayList<Student>();
 
-		Student s1 = new Student("ÀîÁ¬½Ü",50);
-		Student s2 = new Student("ÕÔÎÄ×¿",40);
-		Student s3 = new Student("Îâ¾©",30);
+		Student s1 = new Student("æè¿æ°",50);
+		Student s2 = new Student("èµµæ–‡å“",40);
+		Student s3 = new Student("å´äº¬",30);
 
 		list.add(s1);
 		list.add(s2);
@@ -127,32 +127,32 @@
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-3£ºArrayList(ÕÆÎÕ ×Ô¼º²¹Æë)
-	A:×Ö·û´®
+3ï¼šArrayList(æŒæ¡ è‡ªå·±è¡¥é½)
+	A:å­—ç¬¦ä¸²
 		ArrayList<String> array  = new ArrayList<String>();
 
 		array.add("java");
 		array.add("hello");
 		array.add("world");
 
-		//ÆÕÍ¨forÑ­»·
+		//æ™®é€šforå¾ªç¯
 		for(int i =0; i<array.size(); i++) {
 			String s = array.get(i);
 			System.out.println(s);
 		}
 
-		//ÔöÇ¿for
+		//å¢å¼ºfor
 		for(String s : array) {
 			System.out.println(s);
 		}
 
-		//µü´úÆ÷
+		//è¿­ä»£å™¨
 		Iterator<String> it = array.iterator();
 		while(it.hasNext()) {
 			String s = it.next();
 			System.out.println(s);
 		}
-	B:×Ô¶¨Òå¶ÔÏó
+	B:è‡ªå®šä¹‰å¯¹è±¡
 		ArrayList<Student> array = new ArrayList<Student>();
 
 		Student s1 = new Student("laozi",1000);
@@ -163,50 +163,50 @@
 		array.add(s2);
 		array.add(s3);
 
-		//ÆÕÍ¨forÑ­»·
+		//æ™®é€šforå¾ªç¯
 		for (int i = 0; i<array.size(); i++) {
 			Student s = array.get(i);
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-		//ÔöÇ¿forÑ­»·
+		//å¢å¼ºforå¾ªç¯
 		for (Student s : array) {
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-		//µü´úÆ÷Ñ­»·
+		//è¿­ä»£å™¨å¾ªç¯
 		for(Iterator<Student> it = array.iterator(); it.hasNext();) {
 			Student s = it.next();
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 		
 
-4£ºVector(×Ô¼º²¹Æë)
-A:×Ö·û´®
+4ï¼šVector(è‡ªå·±è¡¥é½)
+A:å­—ç¬¦ä¸²
 		Vector<String> vector = new Voctor<String>();
 
 		vector.add("java");
 		vector.add("hello");
 		vector.add("world");
 
-		//ÆÕÍ¨forÑ­»·
+		//æ™®é€šforå¾ªç¯
 		for(int i =0; i<vector.size(); i++) {
 			String s = vector.get(i);
 			System.out.println(s);
 		}
 
-		//ÔöÇ¿for
+		//å¢å¼ºfor
 		for(String s : vector) {
 			System.out.println(s);
 		}
 
-		//µü´úÆ÷
+		//è¿­ä»£å™¨
 		Iterator<String> it = vector.iterator();
 		while(it.hasNext()) {
 			String s = it.next();
 			System.out.println(s);
 		}
-	B:×Ô¶¨Òå¶ÔÏó
+	B:è‡ªå®šä¹‰å¯¹è±¡
 		vectorList<Student> array = new vectorList<Student>();
 
 		Student s1 = new Student("laozi",1000);
@@ -217,27 +217,27 @@ A:×Ö·û´®
 		vector.add(s2);
 		vector.add(s3);
 
-		//ÆÕÍ¨forÑ­»·
+		//æ™®é€šforå¾ªç¯
 		for (int i = 0; i<vector.size(); i++) {
 			Student s = vector.get(i);
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-		//ÔöÇ¿forÑ­»·
+		//å¢å¼ºforå¾ªç¯
 		for (Student s : vector) {
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-		//µü´úÆ÷Ñ­»·
+		//è¿­ä»£å™¨å¾ªç¯
 		for(Iterator<Student> it = vector.iterator(); it.hasNext();) {
 			Student s = it.next();
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-5£ºLinkedList(ÕÆÎÕ ×Ô¼º²¹Æë)
+5ï¼šLinkedList(æŒæ¡ è‡ªå·±è¡¥é½)
 
-6£ºSet
-	A:×Ö·û´®
+6ï¼šSet
+	A:å­—ç¬¦ä¸²
 		Set<String> set = new HashSet<String>();
 
 		set.add("hello");
@@ -254,12 +254,12 @@ A:×Ö·û´®
 			System.out.println(s);
 		}
 
-	B:×Ô¶¨Òå¶ÔÏó
+	B:è‡ªå®šä¹‰å¯¹è±¡
 		Set<Student> set = new HashSet<Student>();
 
-		Student s1 = new Student("ÀîÁ¬½Ü",50);
-		Student s2 = new Student("ÕÔÎÄ×¿",40);
-		Student s3 = new Student("Îâ¾©",30);
+		Student s1 = new Student("æè¿æ°",50);
+		Student s2 = new Student("èµµæ–‡å“",40);
+		Student s3 = new Student("å´äº¬",30);
 
 		set.add(s1);
 		set.add(s2);
@@ -275,9 +275,9 @@ A:×Ö·û´®
 			System.out.println(s.getName()+"---"+s.getAge());
 		}
 
-7£ºHashSet(ÕÆÎÕ ×Ô¼º²¹Æë)
-	´æ´¢×Ô¶¨Òå¶ÔÏóµÄÊ±ºò£¬Èç¹û³ÉÔ±±äÁ¿ÖµÏàÍ¬£¬ÎÒÃÇ¾ÍÈÏÎªÊÇÍ¬Ò»¸öÔªËØ¡£
+7ï¼šHashSet(æŒæ¡ è‡ªå·±è¡¥é½)
+	å­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡çš„æ—¶å€™ï¼Œå¦‚æœæˆå‘˜å˜é‡å€¼ç›¸åŒï¼Œæˆ‘ä»¬å°±è®¤ä¸ºæ˜¯åŒä¸€ä¸ªå…ƒç´ ã€‚
 
-8£ºTreeSet(ÕÆÎÕ ×Ô¼º²¹Æë)
-	´æ´¢×Ô¶¨Òå¶ÔÏóµÄÊ±ºò£¬Èç¹û³ÉÔ±±äÁ¿ÖµÏàÍ¬£¬ÎÒÃÇ¾ÍÈÏÎªÊÇÍ¬Ò»¸öÔªËØ¡£
-	Ê×ÏÈ¸ù¾İÄêÁä´ÓĞ¡µ½´óÅÅĞò£¬Æä´ÎÔÚ¸ù¾İĞÕÃûµÄ³¤¶ÈÅÅĞò¡£
+8ï¼šTreeSet(æŒæ¡ è‡ªå·±è¡¥é½)
+	å­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡çš„æ—¶å€™ï¼Œå¦‚æœæˆå‘˜å˜é‡å€¼ç›¸åŒï¼Œæˆ‘ä»¬å°±è®¤ä¸ºæ˜¯åŒä¸€ä¸ªå…ƒç´ ã€‚
+	é¦–å…ˆæ ¹æ®å¹´é¾„ä»å°åˆ°å¤§æ’åºï¼Œå…¶æ¬¡åœ¨æ ¹æ®å§“åçš„é•¿åº¦æ’åºã€‚

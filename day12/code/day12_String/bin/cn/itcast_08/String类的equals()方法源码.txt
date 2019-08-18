@@ -2,20 +2,20 @@ String s1 = "admin";
 String s2 = "admin";
 System.out.println(s1.equals(s2));
 
-	private final char value[]; //×Ö·û´®Æä±¾ÖÊ¾ÍÊÇÒ»¸ö×Ö·ûÊı×é¡£µ×²ã×Ô¼º¿ÉÒÔÊµÏÖ×ª»»¡£
+	private final char value[]; //å­—ç¬¦ä¸²å…¶æœ¬è´¨å°±æ˜¯ä¸€ä¸ªå­—ç¬¦æ•°ç»„ã€‚åº•å±‚è‡ªå·±å¯ä»¥å®ç°è½¬æ¢ã€‚
 
 	public boolean equals(Object anObject) {
 		//this	--	s1
 		//anObject	--	s2
 	
-		//±È½Ï¶ÔÏóµÄµØÖ·ÊÇ·ñÏàÍ¬
+		//æ¯”è¾ƒå¯¹è±¡çš„åœ°å€æ˜¯å¦ç›¸åŒ
         if (this == anObject) {
             return true;
         }
         
-        //ÅĞ¶ÏanObjectÊÇ²»ÊÇ×Ö·û´®µÄÒ»¸ö¶ÔÏó
+        //åˆ¤æ–­anObjectæ˜¯ä¸æ˜¯å­—ç¬¦ä¸²çš„ä¸€ä¸ªå¯¹è±¡
         if (anObject instanceof String) {
-        	//Èç¹ûanObject¶ÔÏóÊÇ×Ö·û´®¶ÔÏó£¬¾Í×ª»»ÎªÒ»¸ö×Ö·û´®
+        	//å¦‚æœanObjectå¯¹è±¡æ˜¯å­—ç¬¦ä¸²å¯¹è±¡ï¼Œå°±è½¬æ¢ä¸ºä¸€ä¸ªå­—ç¬¦ä¸²
             String anotherString = (String) anObject;
             
             int n = value.length; 

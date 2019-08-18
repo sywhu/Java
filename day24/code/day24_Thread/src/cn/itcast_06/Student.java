@@ -3,7 +3,7 @@ package cn.itcast_06;
 public class Student {
 	private String name;
 	private int age;
-	private boolean flag = false; // ±íÊ¾ÊÇ·ñÓĞÊı¾İ
+	private boolean flag = false; // è¡¨ç¤ºæ˜¯å¦æœ‰æ•°æ®
 
 	public synchronized void set(String name, int age) {
 		if (this.flag) {

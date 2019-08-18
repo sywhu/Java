@@ -1,12 +1,12 @@
 /*
-	¶¨ÒåÒ»¸öÔ±¹¤Àà,×Ô¼º·ÖÎö³ö¼¸¸ö³ÉÔ±£¬
-	È»ºó¸ø³ö³ÉÔ±±äÁ¿£¬¹¹Ôì·½·¨£¬getXxx()/setXxx()·½·¨£¬
-	ÒÔ¼°Ò»¸öÏÔÊ¾ËùÓĞ³ÉÔ±ĞÅÏ¢µÄ·½·¨¡£²¢²âÊÔ¡£
+	å®šä¹‰ä¸€ä¸ªå‘˜å·¥ç±»,è‡ªå·±åˆ†æå‡ºå‡ ä¸ªæˆå‘˜ï¼Œ
+	ç„¶åç»™å‡ºæˆå‘˜å˜é‡ï¼Œæ„é€ æ–¹æ³•ï¼ŒgetXxx()/setXxx()æ–¹æ³•ï¼Œ
+	ä»¥åŠä¸€ä¸ªæ˜¾ç¤ºæ‰€æœ‰æˆå‘˜ä¿¡æ¯çš„æ–¹æ³•ã€‚å¹¶æµ‹è¯•ã€‚
 
-	Employee£º
-		³ÉÔ±±äÁ¿£ºÔ±¹¤±àºÅ,ĞÕÃû,Ö°Î»
-		¹¹Ôì·½·¨£ºÎŞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()·½·¨£¬show()
+	Employeeï¼š
+		æˆå‘˜å˜é‡ï¼šå‘˜å·¥ç¼–å·,å§“å,èŒä½
+		æ„é€ æ–¹æ³•ï¼šæ— å‚ï¼Œå¸¦å‚
+		æˆå‘˜æ–¹æ³•ï¼šgetXxx()/setXxx()æ–¹æ³•ï¼Œshow()
 */
 class Employee {
 	private String eid;
@@ -46,21 +46,21 @@ class Employee {
 	}
 
 	public void show() {
-		System.out.println("Ô±¹¤±àºÅÊÇ£º"+eid+",ĞÕÃûÊÇ£º"+name+",Ö°Î»ÊÇ£º"+job);
+		System.out.println("å‘˜å·¥ç¼–å·æ˜¯ï¼š"+eid+",å§“åæ˜¯ï¼š"+name+",èŒä½æ˜¯ï¼š"+job);
 	}
 }
 
 class EmployeeDemo {
 	public static void main(String[] args) {
-		//ÎŞ²Î
+		//æ— å‚
 		Employee e = new Employee();
 		e.setEid("itcast007");
-		e.setName("ÖÜĞÇ³Û");
-		e.setJob("¸ß¼¶¹¤³ÌÊ¦");
+		e.setName("å‘¨æ˜Ÿé©°");
+		e.setJob("é«˜çº§å·¥ç¨‹å¸ˆ");
 		e.show();
 
-		//´ø²Î
-		Employee e2 = new Employee("itcast003","ÁõµÂ»ª","ÍÚ¾ò»ú¹¤³ÌÊ¦");
+		//å¸¦å‚
+		Employee e2 = new Employee("itcast003","åˆ˜å¾·å","æŒ–æ˜æœºå·¥ç¨‹å¸ˆ");
 		e2.show();
 	}
 }

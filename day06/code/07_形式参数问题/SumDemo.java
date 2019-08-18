@@ -1,22 +1,22 @@
-//»ù±¾ÀàĞÍ×÷ÎªĞÎÊ½²ÎÊı´«µİ£¬Ö±½Ó´«µİ»ù±¾ÀàĞÍµÄÖµ¼´¿É¡£
+//åŸºæœ¬ç±»å‹ä½œä¸ºå½¢å¼å‚æ•°ä¼ é€’ï¼Œç›´æ¥ä¼ é€’åŸºæœ¬ç±»å‹çš„å€¼å³å¯ã€‚
 
-//¶¨ÒåDemoÀà£¬Ğ´Ò»¸ö¹¦ÄÜÊµÏÖÇóºÍ
+//å®šä¹‰Demoç±»ï¼Œå†™ä¸€ä¸ªåŠŸèƒ½å®ç°æ±‚å’Œ
 class Demo {
 	public int sum(int a,int b) {
 		return a + b;
 	}
 }
 
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 class SumDemo {
 	public static void main(String[] args) {
-		//¶¨Òå±äÁ¿
+		//å®šä¹‰å˜é‡
 		int a = 10;
 		int b = 20;
 
-		//´´½¨¶ÔÏó
+		//åˆ›å»ºå¯¹è±¡
 		Demo d = new Demo();
 		int result = d.sum(a,b);
-		System.out.println("½á¹ûÊÇ£º"+result);
+		System.out.println("ç»“æœæ˜¯ï¼š"+result);
 	}
 }

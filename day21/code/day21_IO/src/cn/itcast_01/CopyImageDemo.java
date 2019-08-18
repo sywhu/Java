@@ -5,33 +5,33 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * ĞèÇó£ºÇë°ÑÏîÄ¿Â·¾¶ÏÂµÄ±ÕÔÂĞß»¨.bmp¸´ÖÆµ½ÏîÄ¿Â·¾¶ÏÂµÄÁÖÇàÏ¼.bmpÖĞ
- * Êı¾İÔ´£º
- * 		±ÕÔÂĞß»¨.bmp	--	FileInputStream
- * Ä¿µÄµØ£º		
- * 		ÁÖÇàÏ¼.bmp	--	FileOutputStream
+ * éœ€æ±‚ï¼šè¯·æŠŠé¡¹ç›®è·¯å¾„ä¸‹çš„é—­æœˆç¾èŠ±.bmpå¤åˆ¶åˆ°é¡¹ç›®è·¯å¾„ä¸‹çš„æ—é’éœ.bmpä¸­
+ * æ•°æ®æºï¼š
+ * 		é—­æœˆç¾èŠ±.bmp	--	FileInputStream
+ * ç›®çš„åœ°ï¼š		
+ * 		æ—é’éœ.bmp	--	FileOutputStream
  */
 public class CopyImageDemo {
 	public static void main(String[] args) throws IOException {
-		// ·â×°Êı¾İÔ´
-		FileInputStream fis = new FileInputStream("±ÕÔÂĞß»¨.bmp");
-		// ·â×°Ä¿µÄµØ
-		FileOutputStream fos = new FileOutputStream("ÁÖÇàÏ¼.bmp");
+		// å°è£…æ•°æ®æº
+		FileInputStream fis = new FileInputStream("é—­æœˆç¾èŠ±.bmp");
+		// å°è£…ç›®çš„åœ°
+		FileOutputStream fos = new FileOutputStream("æ—é’éœ.bmp");
 
-		// ·½Ê½1
+		// æ–¹å¼1
 		// int by = 0;
 		// while ((by = fis.read()) != -1) {
 		// fos.write(by);
 		// }
 
-		// ·½Ê½2
+		// æ–¹å¼2
 		byte[] bys = new byte[1024];
 		int len = 0;
 		while ((len = fis.read(bys)) != -1) {
 			fos.write(bys, 0, len);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		fos.close();
 		fis.close();
 	}

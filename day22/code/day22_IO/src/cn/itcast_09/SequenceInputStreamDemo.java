@@ -10,12 +10,12 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /*
- * SequenceInputStream ±íÊ¾ÆäËûÊäÈëÁ÷µÄÂß¼­´®Áª¡£Ëü´ÓÊäÈëÁ÷µÄÓĞĞò¼¯ºÏ¿ªÊ¼£¬²¢´ÓµÚÒ»¸öÊäÈëÁ÷¿ªÊ¼¶ÁÈ¡£¬Ö±µ½µ½´ïÎÄ¼şÄ©Î²£¬
- * ½Ó×Å´ÓµÚ¶ş¸öÊäÈëÁ÷¶ÁÈ¡£¬ÒÀ´ÎÀàÍÆ£¬Ö±µ½µ½´ï°üº¬µÄ×îºóÒ»¸öÊäÈëÁ÷µÄÎÄ¼şÄ©Î²ÎªÖ¹¡£ 
+ * SequenceInputStream è¡¨ç¤ºå…¶ä»–è¾“å…¥æµçš„é€»è¾‘ä¸²è”ã€‚å®ƒä»è¾“å…¥æµçš„æœ‰åºé›†åˆå¼€å§‹ï¼Œå¹¶ä»ç¬¬ä¸€ä¸ªè¾“å…¥æµå¼€å§‹è¯»å–ï¼Œç›´åˆ°åˆ°è¾¾æ–‡ä»¶æœ«å°¾ï¼Œ
+ * æ¥ç€ä»ç¬¬äºŒä¸ªè¾“å…¥æµè¯»å–ï¼Œä¾æ¬¡ç±»æ¨ï¼Œç›´åˆ°åˆ°è¾¾åŒ…å«çš„æœ€åä¸€ä¸ªè¾“å…¥æµçš„æ–‡ä»¶æœ«å°¾ä¸ºæ­¢ã€‚ 
  * 
- * ¹¹Ôì·½·¨£º
- * 		SequenceInputStream(InputStream s1, InputStream s2):ºÏ²¢Á½¸öÁ÷¶ÔÏó
- * 		SequenceInputStream(Enumeration e):ºÏ²¢¶à¸öÁ÷¶ÔÏó
+ * æ„é€ æ–¹æ³•ï¼š
+ * 		SequenceInputStream(InputStream s1, InputStream s2):åˆå¹¶ä¸¤ä¸ªæµå¯¹è±¡
+ * 		SequenceInputStream(Enumeration e):åˆå¹¶å¤šä¸ªæµå¯¹è±¡
  */
 public class SequenceInputStreamDemo {
 	public static void main(String[] args) throws IOException {
@@ -24,26 +24,26 @@ public class SequenceInputStreamDemo {
 	}
 
 	private static void mergeMore() throws IOException {
-		// SequenceInputStream(Enumeration e):ºÏ²¢¶à¸öÁ÷¶ÔÏó
+		// SequenceInputStream(Enumeration e):åˆå¹¶å¤šä¸ªæµå¯¹è±¡
 		// public Enumeration<E> elements()
 		// Vector
 
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Vector<InputStream> v = new Vector<InputStream>();
-		// ´´½¨ÔªËØ¶ÔÏó
+		// åˆ›å»ºå…ƒç´ å¯¹è±¡
 		InputStream s1 = new FileInputStream("MyBufferedReader.java");
 		InputStream s2 = new FileInputStream("MyBufferedReaderDemo.java");
 		InputStream s3 = new FileInputStream("MyLineNumberReader.java");
 		InputStream s4 = new FileInputStream("MyMyLineNumberReaderDemo.java");
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
+		// æŠŠå…ƒç´ æ·»åŠ åˆ°é›†åˆ
 		v.add(s1);
 		v.add(s2);
 		v.add(s3);
 		v.add(s4);
-		// Í¨¹ı¼¯ºÏµÄµ½Enumeration
+		// é€šè¿‡é›†åˆçš„åˆ°Enumeration
 		Enumeration<InputStream> en = v.elements();
 
-		// ´´½¨ºÏ²¢Á÷¶ÔÏó
+		// åˆ›å»ºåˆå¹¶æµå¯¹è±¡
 		SequenceInputStream sis = new SequenceInputStream(en);
 		BufferedOutputStream bos = new BufferedOutputStream(
 				new FileOutputStream("Copy.java"));

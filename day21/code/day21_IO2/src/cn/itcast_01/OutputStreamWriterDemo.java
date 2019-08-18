@@ -5,46 +5,46 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 /*
- * ×Ö·ûÁ÷ = ×Ö½ÚÁ÷ +±àÂë±í
- * OutputStreamWriter:°Ñ×Ö½ÚÁ÷×ª»»³É×Ö·ûÁ÷¡£
- * OutputStreamWriter(OutputStream out):Ä¬ÈÏ×Ö·û¼¯
- * OutputStreamWriter(OutputStream out, String charsetName):Ö¸¶¨×Ö·û¼¯ 
+ * å­—ç¬¦æµ = å­—èŠ‚æµ +ç¼–ç è¡¨
+ * OutputStreamWriter:æŠŠå­—èŠ‚æµè½¬æ¢æˆå­—ç¬¦æµã€‚
+ * OutputStreamWriter(OutputStream out):é»˜è®¤å­—ç¬¦é›†
+ * OutputStreamWriter(OutputStream out, String charsetName):æŒ‡å®šå­—ç¬¦é›† 
  * 
- * flush()ºÍclose()µÄÇø±ğ?
- * A:flush Ë¢ĞÂÁ÷£¬Á÷¶ÔÏó»¹¿ÉÒÔ¼ÌĞøÊ¹ÓÃ
- * B:close ¹Ø±ÕÁ÷£¬Á÷¶ÔÏó²»¿ÉÒÔ¼ÌĞøÊ¹ÓÃ
+ * flush()å’Œclose()çš„åŒºåˆ«?
+ * A:flush åˆ·æ–°æµï¼Œæµå¯¹è±¡è¿˜å¯ä»¥ç»§ç»­ä½¿ç”¨
+ * B:close å…³é—­æµï¼Œæµå¯¹è±¡ä¸å¯ä»¥ç»§ç»­ä½¿ç”¨
  */
 public class OutputStreamWriterDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
 				"osw.txt"));
 
-		// Ğ´Êı¾İµÄ·½·¨
-		// Ğ´Ò»¸ö×Ö·û
-		// osw.write('ÖĞ');
+		// å†™æ•°æ®çš„æ–¹æ³•
+		// å†™ä¸€ä¸ªå­—ç¬¦
+		// osw.write('ä¸­');
 		/*
-		 * Õâ¸öÊ±ºò£¬ÎªÊ²Ã´Ã»ÓĞÊı¾İÄØ? ×Ö·û = 2×Ö½Ú
+		 * è¿™ä¸ªæ—¶å€™ï¼Œä¸ºä»€ä¹ˆæ²¡æœ‰æ•°æ®å‘¢? å­—ç¬¦ = 2å­—èŠ‚
 		 */
-		// Ğ´Ò»¸ö×Ö·ûÊı×é
-		// char[] chs = { 'a', 'b', 'c', 'ÁÖ', 'Çà', 'Ï¼' };
+		// å†™ä¸€ä¸ªå­—ç¬¦æ•°ç»„
+		// char[] chs = { 'a', 'b', 'c', 'æ—', 'é’', 'éœ' };
 		// osw.write(chs);
 
-		// Ğ´Ò»¸ö×Ö·ûÊı×éµÄÒ»²¿·Ö
+		// å†™ä¸€ä¸ªå­—ç¬¦æ•°ç»„çš„ä¸€éƒ¨åˆ†
 		// osw.write(chs, 0, 3);
 
-		// Ğ´Ò»¸ö×Ö·û´®
+		// å†™ä¸€ä¸ªå­—ç¬¦ä¸²
 		// osw.write("helloworld");
 
-		// Ğ´Ò»¸ö×Ö·û´®µÄÒ»²¿·Ö
+		// å†™ä¸€ä¸ªå­—ç¬¦ä¸²çš„ä¸€éƒ¨åˆ†
 		String s = "hello";
 		osw.write(s, 0, s.length());
 
 		osw.flush();
 		// 10M-20M
 
-		// ÊÍ·Å×ÊÔ´
-		osw.close();// ¹Ø±Õ´ËÁ÷£¬µ«ÒªÏÈË¢ĞÂËü
+		// é‡Šæ”¾èµ„æº
+		osw.close();// å…³é—­æ­¤æµï¼Œä½†è¦å…ˆåˆ·æ–°å®ƒ
 		// osw.write("haha"); //java.io.IOException: Stream closed
 	}
 }

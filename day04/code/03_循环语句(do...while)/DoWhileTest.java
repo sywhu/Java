@@ -1,11 +1,11 @@
 /*
-	����ѭ��������
-		A:do��whileѭ�����ٻ�ִ��һ��ѭ���塣
-		B:forѭ����whileѭ��ֻ��������������ʱ��Ż�ȥִ��ѭ���塣
+	三种循环的区别：
+		A:do…while循环至少会执行一次循环体。
+		B:for循环和while循环只有在条件成立的时候才会去执行循环体。
 
-	ע�����
-		A:д�������ȿ���forѭ�����ٿ���whileѭ���������do��whileѭ����
-		B:��򵥵���ѭ������
+	注意事项：
+		A:写程序优先考虑for循环，再考虑while循环，最后考虑do…while循环。
+		B:最简单的死循环代码
 			for(;;){}
 		
 */

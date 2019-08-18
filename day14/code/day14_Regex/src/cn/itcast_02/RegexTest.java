@@ -3,7 +3,7 @@ package cn.itcast_02;
 import java.util.Scanner;
 
 /*
- * 校验邮箱
+ * 鏍￠獙閭
  * 
  * liuyi@163.com
  * linqingxia@126.com
@@ -14,16 +14,16 @@ import java.util.Scanner;
  */
 public class RegexTest {
 	public static void main(String[] args) {
-		//定义规则
+		//瀹氫箟瑙勫垯
 		//String regex = "[a-zA-Z_0-9]+@[a-zA-Z_0-9]{2,8}(\\.[a-z]{2,3})+";
 		String regex = "\\w+@\\w{2,8}(\\.[a-z]{2,3})+";
 		
-		//键盘录入邮箱
+		//閿洏褰曞叆閭
 		Scanner sc=  new Scanner(System.in);
-		System.out.println("请输入邮箱：");
+		System.out.println("璇疯緭鍏ラ偖绠憋細");
 		String email = sc.nextLine();
 		
-		//校验
+		//鏍￠獙
 		boolean flag = email.matches(regex);
 		System.out.println(flag);
 	}

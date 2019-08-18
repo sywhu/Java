@@ -1,23 +1,23 @@
 /*
-	ÊÖ»úÀà
-		³ÉÔ±±äÁ¿£ºÆ·ÅÆ£¬¼Û¸ñ£¬ÑÕÉ«
-		³ÉÔ±·½·¨£º´òµç»°£¬·¢¶ÌĞÅ
+	æ‰‹æœºç±»
+		æˆå‘˜å˜é‡ï¼šå“ç‰Œï¼Œä»·æ ¼ï¼Œé¢œè‰²
+		æˆå‘˜æ–¹æ³•ï¼šæ‰“ç”µè¯ï¼Œå‘çŸ­ä¿¡
 */
 class Phone {
-	//Æ·ÅÆ
+	//å“ç‰Œ
 	String brand;
-	//¼Û¸ñ
+	//ä»·æ ¼
 	int price;
-	//ÑÕÉ«
+	//é¢œè‰²
 	String color;
 
-	//´òµç»°µÄ·½·¨
+	//æ‰“ç”µè¯çš„æ–¹æ³•
 	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("ç»™"+name+"æ‰“ç”µè¯");
 	}
 
-	//·¢¶ÌĞÅ
+	//å‘çŸ­ä¿¡
 	public void sendMessage() {
-		System.out.println("Èº·¢¶ÌĞÅ");
+		System.out.println("ç¾¤å‘çŸ­ä¿¡");
 	}
 }

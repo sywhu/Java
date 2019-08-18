@@ -3,19 +3,19 @@ package cn.itcast_01;
 import java.util.Date;
 
 /*
- * Àà Date ±íÊ¾ÌØ¶¨µÄË²¼ä£¬¾«È·µ½ºÁÃë¡£ 
+ * ç±» Date è¡¨ç¤ºç‰¹å®šçš„ç¬é—´ï¼Œç²¾ç¡®åˆ°æ¯«ç§’ã€‚ 
  * 
- * ¹¹Ôì·½·¨£º
- * 		public Date():Ä¬ÈÏ¾ÍÊÇµ±Ç°Ê±¼ä
- *		public Date(long date):°Ñ¸ø¶¨µÄºÁÃëÖµ¸³Öµ¸øÈÕÆÚ¶ÔÏó
+ * æ„é€ æ–¹æ³•ï¼š
+ * 		public Date():é»˜è®¤å°±æ˜¯å½“å‰æ—¶é—´
+ *		public Date(long date):æŠŠç»™å®šçš„æ¯«ç§’å€¼èµ‹å€¼ç»™æ—¥æœŸå¯¹è±¡
  *
- * ³ÉÔ±·½·¨£º
- * 		public long getTime()£º»ñÈ¡ºÁÃëÖµ
- *		public void setTime(long time):°ÑºÁÃëÖµ×÷Îª²ÎÊı´«µİ
+ * æˆå‘˜æ–¹æ³•ï¼š
+ * 		public long getTime()ï¼šè·å–æ¯«ç§’å€¼
+ *		public void setTime(long time):æŠŠæ¯«ç§’å€¼ä½œä¸ºå‚æ•°ä¼ é€’
  */
 public class DateDemo {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		Date d = new Date();
 		System.out.println("d:" + d);
 
@@ -25,12 +25,12 @@ public class DateDemo {
 		// e.printStackTrace();
 		// }
 
-		long time = System.currentTimeMillis(); // »ñÈ¡µ±Ç°Ê±¼äµÄºÁÃëÖµ
-		Date d2 = new Date(time);// °ÑºÁÃëÖµ×ª»»ÎªÈÕÆÚ±íÊ¾
+		long time = System.currentTimeMillis(); // è·å–å½“å‰æ—¶é—´çš„æ¯«ç§’å€¼
+		Date d2 = new Date(time);// æŠŠæ¯«ç§’å€¼è½¬æ¢ä¸ºæ—¥æœŸè¡¨ç¤º
 		System.out.println("d2:" + d2);
 
 		Date d3 = new Date(3600000);
-		// 3600000/1000/60/60 = 1¸öĞ¡Ê±
+		// 3600000/1000/60/60 = 1ä¸ªå°æ—¶
 		System.out.println("d3:" + d3);
 		System.out.println("--------------------");
 

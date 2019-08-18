@@ -5,48 +5,48 @@ import java.util.HashMap;
 import java.util.Set;
 
 /*
- ĞèÇó£º
- ¼ÙÉèHashMap¼¯ºÏµÄÔªËØÖµÊÇArrayList¡£ÓĞ3¸ö¡£
- Ã¿Ò»¸öArrayList¼¯ºÏµÄÖµÊÇ×Ö·û´®¡£
+ éœ€æ±‚ï¼š
+ å‡è®¾HashMapé›†åˆçš„å…ƒç´ å€¼æ˜¯ArrayListã€‚æœ‰3ä¸ªã€‚
+ æ¯ä¸€ä¸ªArrayListé›†åˆçš„å€¼æ˜¯å­—ç¬¦ä¸²ã€‚
 
- ÔªËØÎÒÒÑ¾­Íê³É£¬Çë±éÀú¡£
- ½á¹û£º
- Èı¹úÑİÒå
- ÂÀ²¼
- ÖÜè¤
- Ğ¦°Á½­ºş
- Áîºü³å
- ÁÖÆ½Ö®
- ÉñµñÏÀÂÂ
- ¹ù¾¸
- Ñî¹ı  
+ å…ƒç´ æˆ‘å·²ç»å®Œæˆï¼Œè¯·éå†ã€‚
+ ç»“æœï¼š
+ ä¸‰å›½æ¼”ä¹‰
+ å•å¸ƒ
+ å‘¨ç‘œ
+ ç¬‘å‚²æ±Ÿæ¹–
+ ä»¤ç‹å†²
+ æ—å¹³ä¹‹
+ ç¥é›•ä¾ ä¾£
+ éƒ­é–
+ æ¨è¿‡  
  */
 public class HashMapAndArrayListTest {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		HashMap<String, ArrayList<String>> hm = new HashMap<String, ArrayList<String>>();
 
-		// ´´½¨ÔªËØ
+		// åˆ›å»ºå…ƒç´ 
 		ArrayList<String> sgyy = new ArrayList<String>();
-		sgyy.add("ÂÀ²¼");
-		sgyy.add("ÖÜè¤");
+		sgyy.add("å•å¸ƒ");
+		sgyy.add("å‘¨ç‘œ");
 
-		// ´´½¨ÔªËØ
+		// åˆ›å»ºå…ƒç´ 
 		ArrayList<String> xajh = new ArrayList<String>();
-		xajh.add("Áîºü³å");
-		xajh.add("ÁÖÆ½Ö®");
+		xajh.add("ä»¤ç‹å†²");
+		xajh.add("æ—å¹³ä¹‹");
 
-		// ´´½¨ÔªËØ
+		// åˆ›å»ºå…ƒç´ 
 		ArrayList<String> sdxl = new ArrayList<String>();
-		sdxl.add("¹ù¾¸");
-		sdxl.add("Ñî¹ı");
+		sdxl.add("éƒ­é–");
+		sdxl.add("æ¨è¿‡");
 
-		// Ìí¼ÓÔªËØ
-		hm.put("Èı¹úÑİÒå", sgyy);
-		hm.put("Ğ¦°Á½­ºş", xajh);
-		hm.put("ÉñµñÏÀÂÂ", sdxl);
+		// æ·»åŠ å…ƒç´ 
+		hm.put("ä¸‰å›½æ¼”ä¹‰", sgyy);
+		hm.put("ç¬‘å‚²æ±Ÿæ¹–", xajh);
+		hm.put("ç¥é›•ä¾ ä¾£", sdxl);
 
-		// ±éÀú¼¯ºÏ
+		// éå†é›†åˆ
 		Set<String> hmSet = hm.keySet();
 		for (String key : hmSet) {
 			System.out.println(key);

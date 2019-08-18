@@ -4,26 +4,26 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /*
- * ¶¨ÒåÈÎÎñÓÉÁ½¸öÀàÀ´Ò»ÆğÍê³É£º
+ * å®šä¹‰ä»»åŠ¡ç”±ä¸¤ä¸ªç±»æ¥ä¸€èµ·å®Œæˆï¼š
  * Timer,TimerTask
  * 
  * Timer:
- * 		public Timer()´´½¨Ò»¸öĞÂ¼ÆÊ±Æ÷¡£
+ * 		public Timer()åˆ›å»ºä¸€ä¸ªæ–°è®¡æ—¶å™¨ã€‚
  */
 public class TimerDemo {
 	public static void main(String[] args) {
-		// ´´½¨¶¨ÒåÆ÷
+		// åˆ›å»ºå®šä¹‰å™¨
 		final Timer t = new Timer();
 
-		// public void schedule(TimerTask task,long delay):ÔÚdelayºÁÃëºóÍê³ÉtaskµÄÈÎÎñ
+		// public void schedule(TimerTask task,long delay):åœ¨delayæ¯«ç§’åå®Œæˆtaskçš„ä»»åŠ¡
 		// t.schedule(new MyTask(t), 3000);
 
-		// ÄäÃûÄÚ²¿ÀàÊµÏÖ
+		// åŒ¿åå†…éƒ¨ç±»å®ç°
 		t.schedule(new TimerTask() {
 
 			@Override
 			public void run() {
-				System.out.println("Õ¨µ¯±¬Õ¨ÁË,duang duang duang");
+				System.out.println("ç‚¸å¼¹çˆ†ç‚¸äº†,duang duang duang");
 				t.cancel();
 			}
 
@@ -40,7 +40,7 @@ class MyTask extends TimerTask {
 
 	@Override
 	public void run() {
-		System.out.println("Õ¨µ¯±¬Õ¨ÁË,duang duang duang");
+		System.out.println("ç‚¸å¼¹çˆ†ç‚¸äº†,duang duang duang");
 		t.cancel();
 	}
 }

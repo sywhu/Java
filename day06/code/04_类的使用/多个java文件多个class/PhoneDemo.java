@@ -1,29 +1,29 @@
 class PhoneDemo {
 	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
+		//åˆ›å»ºå¯¹è±¡
 		Phone p = new Phone();
 
-		//Ê¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p.color);
+		//ä½¿ç”¨æˆå‘˜å˜é‡
+		System.out.println("å“ç‰Œæ˜¯ï¼š"+p.brand);
+		System.out.println("ä»·æ ¼æ˜¯ï¼š"+p.price);
+		System.out.println("é¢œè‰²æ˜¯ï¼š"+p.color);
 		System.out.println("----------------");
 
-		//¸ø³ÉÔ±±äÁ¿¸³Öµ
-		p.brand = "ÈıĞÇ";
+		//ç»™æˆå‘˜å˜é‡èµ‹å€¼
+		p.brand = "ä¸‰æ˜Ÿ";
 		p.price = 2999;
-		p.color = "À¶É«";
+		p.color = "è“è‰²";
 
-		//ÔÙ´ÎÊ¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p.color);
+		//å†æ¬¡ä½¿ç”¨æˆå‘˜å˜é‡
+		System.out.println("å“ç‰Œæ˜¯ï¼š"+p.brand);
+		System.out.println("ä»·æ ¼æ˜¯ï¼š"+p.price);
+		System.out.println("é¢œè‰²æ˜¯ï¼š"+p.color);
 		System.out.println("----------------");
 
-		//µ÷ÓÃ³ÉÔ±·½·¨
-		//String name = "ÁÖÇàÏ¼";
+		//è°ƒç”¨æˆå‘˜æ–¹æ³•
+		//String name = "æ—é’éœ";
 		//p.call(name);
-		p.call("ÁÖÇàÏ¼");
+		p.call("æ—é’éœ");
 		p.sendMessage();
 	}
 }

@@ -1,59 +1,59 @@
 /*
-	·½·¨ÖØĞ´£º×ÓÀàÖĞ³öÏÖÁËºÍ¸¸ÀàÖĞÒ»Ä£Ò»ÑùµÄ·½·¨ÉùÃ÷£¬Ò²±»³ÆÎª·½·¨¸²¸Ç£¬·½·¨¸´Ğ´
+	æ–¹æ³•é‡å†™ï¼šå­ç±»ä¸­å‡ºç°äº†å’Œçˆ¶ç±»ä¸­ä¸€æ¨¡ä¸€æ ·çš„æ–¹æ³•å£°æ˜ï¼Œä¹Ÿè¢«ç§°ä¸ºæ–¹æ³•è¦†ç›–ï¼Œæ–¹æ³•å¤å†™
 */
-//ÊÖ»ú
+//æ‰‹æœº
 /*
 class Phone {
 	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("ç»™"+name+"æ‰“ç”µè¯");
 	}
 }
 
-//ĞÂ¿îÊÖ»ú
+//æ–°æ¬¾æ‰‹æœº
 class NewPhone {
 	public void call(String name) {
-		System.out.println("Ìı²ÊÁå");
-		System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("å¬å½©é“ƒ");
+		System.out.println("ç»™"+name+"æ‰“ç”µè¯");
 	}
 }
 
 class PhoneDemo {
 	public static void main(String[] args) {
-		//ÊÖ»ú
+		//æ‰‹æœº
 		Phone p = new Phone();
-		p.call("ÁÖÇàÏ¼");
+		p.call("æ—é’éœ");
 		System.out.println("-----------");
 	
-		//ĞÂÊÖ»ú
+		//æ–°æ‰‹æœº
 		NewPhone np = new NewPhone();
-		np.call("ÁÖÇàÏ¼");
+		np.call("æ—é’éœ");
 	}
 }
 */
 
 class Phone {
 	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("ç»™"+name+"æ‰“ç”µè¯");
 	}
 }
 
 class NewPhone extends Phone {
 	public void call(String name) {
-		System.out.println("Ìı²ÊÁå");
-		//System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("å¬å½©é“ƒ");
+		//System.out.println("ç»™"+name+"æ‰“ç”µè¯");
 		super.call(name);
 	}
 }
 
 class PhoneDemo {
 	public static void main(String[] args) {
-		//ÊÖ»ú
+		//æ‰‹æœº
 		Phone p = new Phone();
-		p.call("ÁÖÇàÏ¼");
+		p.call("æ—é’éœ");
 		System.out.println("-----------");
 	
-		//ĞÂÊÖ»ú
+		//æ–°æ‰‹æœº
 		NewPhone np = new NewPhone();
-		np.call("ÁÖÇàÏ¼");
+		np.call("æ—é’éœ");
 	}
 }

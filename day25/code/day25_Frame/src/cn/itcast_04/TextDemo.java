@@ -11,32 +11,32 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * Í¨¹ı¹Û²ìÍ¼£¬ÎÒÃÇ·ÖÎöÖªµÀÓ¦¸ÃÓĞÈçÏÂµÄ¼¸¸ö×é¼ş£º
- * ´°Ìå£¬ÎÄ±¾¿ò£¬°´Å¥£¬ÎÄ±¾Óò
- * ²¢ÇÒ¶Ô´°ÌåºÍ°´Å¥Ìí¼ÓÊÂ¼ş
+ * é€šè¿‡è§‚å¯Ÿå›¾ï¼Œæˆ‘ä»¬åˆ†æçŸ¥é“åº”è¯¥æœ‰å¦‚ä¸‹çš„å‡ ä¸ªç»„ä»¶ï¼š
+ * çª—ä½“ï¼Œæ–‡æœ¬æ¡†ï¼ŒæŒ‰é’®ï¼Œæ–‡æœ¬åŸŸ
+ * å¹¶ä¸”å¯¹çª—ä½“å’ŒæŒ‰é’®æ·»åŠ äº‹ä»¶
  */
 public class TextDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		Frame f = new Frame("Êı¾İ×ªÒÆ");
-		// ÉèÖÃ´°ÌåÊôĞÔ
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
+		Frame f = new Frame("æ•°æ®è½¬ç§»");
+		// è®¾ç½®çª—ä½“å±æ€§
 		f.setBounds(500, 250, 400, 300);
-		// ÉèÖÃ²¼¾Ö
+		// è®¾ç½®å¸ƒå±€
 		f.setLayout(new FlowLayout());
 
-		// ´´½¨ÎÄ±¾¿ò
+		// åˆ›å»ºæ–‡æœ¬æ¡†
 		final TextField tf = new TextField(20);
-		// ´´½¨°´Å¥
-		Button bu = new Button("Êı¾İ×ªÒÆ");
-		// ´´½¨ÎÄ±¾Óò
+		// åˆ›å»ºæŒ‰é’®
+		Button bu = new Button("æ•°æ®è½¬ç§»");
+		// åˆ›å»ºæ–‡æœ¬åŸŸ
 		final TextArea ta = new TextArea(10, 40);
 
-		// Ìí¼Óµ½´°Ìå
+		// æ·»åŠ åˆ°çª—ä½“
 		f.add(tf);
 		f.add(bu);
 		f.add(ta);
 
-		// ×¢²áÊÂ¼ş
+		// æ³¨å†Œäº‹ä»¶
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -44,13 +44,13 @@ public class TextDemo {
 			}
 		});
 
-		// ¶ÔbuÌí¼ÓÊÂ¼ş
+		// å¯¹buæ·»åŠ äº‹ä»¶
 		bu.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// »ñÈ¡ÎÄ±¾¿òµÄÖµ£¬¸³Öµ¸øÎÄ±¾Óò
+				// è·å–æ–‡æœ¬æ¡†çš„å€¼ï¼Œèµ‹å€¼ç»™æ–‡æœ¬åŸŸ
 				String tf_str = tf.getText();
-				// Çå¿ÕÊı¾İ
+				// æ¸…ç©ºæ•°æ®
 				tf.setText("");
 
 				// ta.setText(tf_str);
@@ -58,7 +58,7 @@ public class TextDemo {
 			}
 		});
 
-		// ÉèÖÃ´°Ìå¿É¼û
+		// è®¾ç½®çª—ä½“å¯è§
 		f.setVisible(true);
 	}
 }

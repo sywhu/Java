@@ -1,36 +1,36 @@
 /*
-	»ù´¡ÖªÊ¶£º
-		A:´úÂë¿éµÄÖ´ĞĞË³Ğò£º
-			¾²Ì¬´úÂë¿é --> ¹¹Ôì´úÂë¿é --> ¹¹Ôì·½·¨
-		B:´úÂëµÄÖ´ĞĞÌØµã
-			¾²Ì¬´úÂë¿éÖ»Ö´ĞĞÒ»´Î
-			¹¹Ôì´úÂë¿éÃ¿´Îµ÷ÓÃ¹¹Ôì·½·¨¶¼Ö´ĞĞ
+	åŸºç¡€çŸ¥è¯†ï¼š
+		A:ä»£ç å—çš„æ‰§è¡Œé¡ºåºï¼š
+			é™æ€ä»£ç å— --> æ„é€ ä»£ç å— --> æ„é€ æ–¹æ³•
+		B:ä»£ç çš„æ‰§è¡Œç‰¹ç‚¹
+			é™æ€ä»£ç å—åªæ‰§è¡Œä¸€æ¬¡
+			æ„é€ ä»£ç å—æ¯æ¬¡è°ƒç”¨æ„é€ æ–¹æ³•éƒ½æ‰§è¡Œ
 */
 class Fu {
 	static {
-		System.out.println("¾²Ì¬´úÂë¿éFu");
+		System.out.println("é™æ€ä»£ç å—Fu");
 	}
 
 	{
-		System.out.println("¹¹Ôì´úÂë¿éFu");
+		System.out.println("æ„é€ ä»£ç å—Fu");
 	}
 
 	public Fu() {
-		System.out.println("¹¹Ôì·½·¨Fu");
+		System.out.println("æ„é€ æ–¹æ³•Fu");
 	}
 }
 
 class Zi extends Fu {
 	static {
-		System.out.println("¾²Ì¬´úÂë¿éZi");
+		System.out.println("é™æ€ä»£ç å—Zi");
 	}
 
 	{
-		System.out.println("¹¹Ôì´úÂë¿éZi");
+		System.out.println("æ„é€ ä»£ç å—Zi");
 	}
 
 	public Zi() {
-		System.out.println("¹¹Ôì·½·¨Zi");
+		System.out.println("æ„é€ æ–¹æ³•Zi");
 	}
 }
 

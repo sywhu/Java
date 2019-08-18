@@ -3,28 +3,28 @@ package cn.itcast_05;
 import java.util.Scanner;
 
 /*
- * °ÑÒ»¸ö×Ö·û´®µÄÊ××ÖÄ¸×ª³É´óĞ´£¬ÆäÓàÎªĞ¡Ğ´¡£(Ö»¿¼ÂÇÓ¢ÎÄ´óĞ¡Ğ´×ÖÄ¸×Ö·û)
- * ¾ÙÀı£ºhelloWorldAbCde
- * ½á¹û£ºHelloworldabcde
+ * æŠŠä¸€ä¸ªå­—ç¬¦ä¸²çš„é¦–å­—æ¯è½¬æˆå¤§å†™ï¼Œå…¶ä½™ä¸ºå°å†™ã€‚(åªè€ƒè™‘è‹±æ–‡å¤§å°å†™å­—æ¯å­—ç¬¦)
+ * ä¸¾ä¾‹ï¼šhelloWorldAbCde
+ * ç»“æœï¼šHelloworldabcde
  * 
- * ·ÖÎö£º
- * 		A:¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
- * 		B:½ØÈ¡Ê××ÖÄ¸µÃµ½s1
- * 		C:½ØÈ¡³ıÊ××ÖÄ¸ÒÔÍâµÄÆäËû×Ö·û´®µÃµ½s2
- * 		D:s1×ª´óĞ´+s2×ªĞ¡Ğ´
+ * åˆ†æï¼š
+ * 		A:é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
+ * 		B:æˆªå–é¦–å­—æ¯å¾—åˆ°s1
+ * 		C:æˆªå–é™¤é¦–å­—æ¯ä»¥å¤–çš„å…¶ä»–å­—ç¬¦ä¸²å¾—åˆ°s2
+ * 		D:s1è½¬å¤§å†™+s2è½¬å°å†™
  */
 public class StringTest {
 	public static void main(String[] args) {
-		// ¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
+		// é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š");
 		String s = sc.nextLine();
 
-		// ½ØÈ¡Ê××ÖÄ¸µÃµ½s1
+		// æˆªå–é¦–å­—æ¯å¾—åˆ°s1
 		String s1 = s.substring(0, 1);
-		// ½ØÈ¡³ıÊ××ÖÄ¸ÒÔÍâµÄÆäËû×Ö·û´®µÃµ½s2
+		// æˆªå–é™¤é¦–å­—æ¯ä»¥å¤–çš„å…¶ä»–å­—ç¬¦ä¸²å¾—åˆ°s2
 		String s2 = s.substring(1);
-		// s1×ª´óĞ´+s2×ªĞ¡Ğ´
+		// s1è½¬å¤§å†™+s2è½¬å°å†™
 		String result = s1.toUpperCase().concat(s2.toLowerCase());
 		System.out.println(result);
 

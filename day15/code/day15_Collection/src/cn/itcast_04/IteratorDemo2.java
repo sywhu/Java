@@ -5,22 +5,22 @@ import java.util.Collection;
 
 public class IteratorDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
+		// åˆ›å»ºé›†åˆå¯¹è±¡
 		Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ²¢Ìí¼ÓÔªËØ
+		// åˆ›å»ºå…ƒç´ å¹¶æ·»åŠ å…ƒç´ 
 		c.add("hello");
 		c.add("world");
 		c.add("java");
 
-		// ±éÀú
+		// éå†
 		// Iterator it = c.iterator();
 		// while (it.hasNext()) {
 		// String s = (String) it.next();
 		// System.out.println(s);
 		// }
 
-		// forÑ­»·¸Ä½ø
+		// forå¾ªç¯æ”¹è¿›
 		// for (Iterator it = c.iterator(); it.hasNext();) {
 		// String s = (String) it.next();
 		// System.out.println(s);

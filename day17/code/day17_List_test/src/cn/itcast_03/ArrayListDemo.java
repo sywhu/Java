@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * 集合对象的toString()是如何实现的
+ * 闆嗗悎瀵硅薄鐨則oString()鏄浣曞疄鐜扮殑
  */
 public class ArrayListDemo {
 	public static void main(String[] args) {
